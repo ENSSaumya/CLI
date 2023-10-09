@@ -1,34 +1,37 @@
 <div class="cart_main">
   <div class="content_cart">
-    <button class="class_variant" variant-id="{{ product.selected_or_first_available_variant.id }}" onclick="POST_add()">CART</button>
+    <button
+      class="class_variant"
+      variant-id="{{ product.selected_or_first_available_variant.id }}"
+      onclick="POST_add()">CART</button>
   </div>
 </div>
 
 <style>
-  .cart_main{
+  .cart_main {
     width: 80%;
     text-align: center;
   }
-  .content_cart button{
+  .content_cart button {
     padding: 15px;
     width: 100%;
     border-radius: 30px;
-    font-weight:900;
-    color:#4770db;
-    background:#ffffff;
-    border:none;
+    font-weight: 900;
+    color: #4770db;
+    background: #ffffff;
+    border: none;
   }
-  .content_cart button:hover{
-    color:#ffffff;
-    background:#4770db;
+  .content_cart button:hover {
+    color: #ffffff;
+    background: #4770db;
   }
 </style>
 
 <script>
- var attr = document.querySelector('.class_variant').getAttribute('variant-id');
+   var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
   
-function POST_add(){
+  function POST_add(){
    var quan = document.querySelector('[name="quantity"]').value;
     var store = parseInt(quan);
   alert("Add to Cart working on cli");
@@ -74,10 +77,10 @@ function POST_add(){
   .catch(error => {
     console.error("ERROR :",error);
   });
-};
+  };
 
-// Change using POST, at least 1 item should be present in cart and change is used for one line item only
-function POST_change(){
+  // Change using POST, at least 1 item should be present in cart and change is used for one line item only
+  function POST_change(){
   alert("Change Workking");
   let formData = {
     "line":1, // line item indicates the first index present in the cart.
@@ -99,20 +102,13 @@ function POST_change(){
   .catch(error => {
     console.error("Error : ",error);
   })
-};
+  };
 
-//Update through api
-function POST_update(){
-  // document.querySelector(".class_variant").addEventListener("click", () => {
-  //   var quan = document.getElementById("Quantity-{{ section.id }}").value;
-  //   var store = parseInt(quan);
-  //   console.log("Value",quan);
-  // });
+  //Update through api
+  function POST_update(){
   alert("Update working");
   let formData = {
     updates:{
-      // 45451593220402:4,
-      // 45465007784242:2
       "id":attr,
       "quantity": 1
     }
@@ -133,10 +129,10 @@ function POST_update(){
   .catch(error => {
     console.error("ERROR : ", error);
   })
-};
+  };
 
-// POST clear to clear the cart
-function POST_clear(){
+  // POST clear to clear the cart
+  function POST_clear(){
   alert("POST clear is working");
   let formData = {
     
@@ -157,5 +153,5 @@ function POST_clear(){
   .catch(error => {
     console.error("ERROR : ",error);
   })
-};
+  };
 </script>
