@@ -1,0 +1,46 @@
+<div class="section_recipe">
+  <div class="heading_recipe">
+    <h2>Recipes</h2>
+  </div>
+  <div class="div_image">
+    {% for block in section.blocks %}
+      <img src="{{ block.settings.picture | img_url:"300x" }}" />
+    {% endfor %}
+  </div>
+</div>
+{% render "meta-recipes" %}
+
+{% render "task" %}
+{% schema %}
+  {
+    "name": "Recipe",
+    "settings": [],
+    "blocks":[{
+      "name":"Pick",
+      "type":"image",
+      "settings":[{
+        "type":"image_picker",
+        "id":"picture",
+        "label":"Image"
+      },
+      {
+        "type":"url",
+        "id":"link",
+        "label":"Link"
+      }]
+    }],
+    "presets":[{"name":"Recipe"}]
+  }
+{% endschema %}
+<style>
+  .heading_recipe{
+    padding:10px;
+    text-align:center;
+  }
+  .div_image{
+    padding:10px;
+    text-align:center;
+
+  }
+  .div_image img{ cursor:pointer }
+</style>

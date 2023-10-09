@@ -1,0 +1,170 @@
+<section class="main_iplanet7">
+  <div class="content_iplanet7">
+    <div class="div_left_iplanet7">
+     <div class="testimonial_content">
+       <h2>Testimonials</h2>
+       <p>Customer delights makes us to deliver more!</p>
+     </div>
+      {% for block in section.blocks %}
+      <div class="img_text_iplanet7">
+        <div class="image_iplanet7">
+          <img src="{{ block.settings.pic_section7 | img_url:"" }}" >
+        </div>
+        <div class="text_iplanet7">
+          <p>{{ block.settings.text_section7 }}</p>
+          <h4>{{ block.settings.heading_section7 }}</h4>
+          <h6>{{ block.settings.subscript_section7 }}</h6>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% render "iplanet_snippet8" %}
+{% schema %}
+  {
+    "name": "iplanet7",
+    "settings": [],
+    "blocks":[{
+      "type":"image",
+      "name":"section7",
+      "settings":[{
+        "type":"image_picker",
+        "id":"pic_section7",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"heading_section7",
+        "label":"Heading"
+      },
+      {
+        "type":"text",
+        "id":"subscript_section7",
+        "label":"Designation"
+      },
+      {
+        "type":"textarea",
+        "id":"text_section7",
+        "label":"Text"
+      }]
+    }],
+    "presets":[{"name":"iplanet7"}]
+  }
+{% endschema %}
+
+<style>
+  .main_iplanet7{
+    background:#ffffff;
+    padding:50px 20px;
+  }
+ .main_iplanet7 .testimonial_content h2::before{
+    content:"";
+    position:absolute;
+    top:-35px;
+    border:2px solid #38b6ff;
+    width:13%;
+    border-radius:5px;
+  }
+ .main_iplanet7 .content_iplanet7{
+    width:80%;
+    margin:auto;   
+    display:flex;
+  }
+ .main_iplanet7 .content_iplanet7 h6, .main_iplanet7 .content_iplanet7 h4{
+    margin:0;
+  }
+ .main_iplanet7 .div_left_iplanet7 {
+      display: grid;
+      grid-template-columns: auto auto;
+  }
+ .main_iplanet7 .testimonial_content{
+    position:relative;
+  }
+  .main_iplanet7 .testimonial_content h2{
+    font-size:40px;
+  }
+ .main_iplanet7 .testimonial_content p{
+    color:#000000;
+  }
+ .main_iplanet7 .img_text_iplanet7{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+  }
+ .main_iplanet7 .image_iplanet7{
+    width:40%;
+  }
+ .main_iplanet7 .image_iplanet7 img{
+    width:100%
+  }
+ .main_iplanet7 .text_iplanet7{
+    width: 50%;
+    font-size: 16px;
+    text-align: left;
+    padding:0 10px;
+  }
+ .main_iplanet7 .text_iplanet7 p{
+    color:#000000;
+    padding: 0 10px;
+  }
+ .main_iplanet7 .div_right_iplanet7{
+    margin-top:30px;
+  }
+@media (max-width: 767px){
+  .content_iplanet7{
+    width:100%;
+    flex-direction:column;
+  }
+ .main_iplanet7 .text_iplanet7 h4, .main_iplanet7 .text_iplanet7 h6{
+    padding:0 10px;
+  }
+ .main_iplanet7 .div_left_iplanet7{
+    display:flow !important;
+  }
+ .main_iplanet7 .img_text_iplanet7{
+    flex-direction:column;
+  }
+ .main_iplanet7 .testimonial_content h2 {
+    font-size: 26px;
+    font-weight:700;
+    color:#000000;
+  }
+ .main_iplanet7 .image_iplanet7{
+    width:70%;
+  }
+ .main_iplanet7 .text_iplanet7{
+    width:100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+ .main_iplanet7 .content_iplanet7{
+    width:90%;
+    flex-direction:column;
+  }
+.main_iplanet7 .testimonial_content h2{
+    font-size:30px;
+    font-weight:700;
+  }
+ .main_iplanet7 .testimonial_content h2::before{
+    width:6%;
+  }
+ .main_iplanet7 .div_left_iplanet7{
+    padding-bottom:30px;
+    display:block;
+  }
+  .main_iplanet7 .image_iplanet7{
+    width:70%;
+  }
+ .main_iplanet7 .text_iplanet7{
+    width:100%;
+    padding:0 10px 0 40px;
+  }
+ .main_iplanet7 .text_iplanet7 h4, .main_iplanet7 .text_iplanet7 h6{
+    padding:0 10px;
+  }
+}
+</style>
+
+{% javascript %}
+{% endjavascript %}

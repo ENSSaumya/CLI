@@ -1,0 +1,177 @@
+<div class="main">
+  <h2 class="title">TRENDING TODAY</h2>
+  <p class="demo">Your favourite daily care products</p>
+</div>
+<div class="child1">
+  {% for block in section.blocks %}
+    <div class="child2">
+        <img src="{{ block.settings.image | img_url: "400x" }}"/>  
+        <h4>{{ block.settings.text }}</h4>
+        <h5>{{ block.settings.textnum }}</h5>
+        <button type="button">{{ block.settings.btn }}</button>
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "Section1",
+    "settings": [],
+    "blocks":[
+      {
+        "name":"pick",
+        "type":"image_picker",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+          },
+          {
+            "type":"text",
+            "id":"text",
+            "label":"Text"
+          },
+          {
+            "type":"text",
+            "id":"textnum",
+            "label":"Amount"
+          },
+          {
+            "type":"text",
+            "id":"btn",
+            "label":"button"
+          }
+        ]
+      }
+    ],
+    "presets":[{"name":"Section1"}]
+  }
+{% endschema %}
+
+<style>
+  .title:before{
+    content: "";
+    height: 2px;
+    background-color: black;
+    width: 30%;
+    margin-left: 10px;
+  }
+  .main .title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .title:after{
+    content: "";
+    height: 2px;
+    background-color: black;
+    width: 30%;
+    margin-right: 10px;
+  }
+  .demo
+  {
+    text-align:center;
+    justify-content:center;
+  }
+  .child1
+  {
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    padding:30px;
+    
+  }
+  .child2
+  {
+    width: 25%;
+    border: 1px solid grey;
+    padding: 10px 7px 0px 7px;
+  }
+  .child2 img
+  {
+    width:100%;
+    item-align:left;
+  }
+  .child2 button
+  {
+    border-radius:10px;
+    color: white;
+    background: mediumvioletred;
+    width:100%;
+    padding:3px;
+  }
+   .child1 .slick-next
+  {
+    right:2px;
+  }
+  .child1 .slick-next:before{
+    color:brown;
+  }
+  .child1 .slick-dots li.slick-active button:before{
+    color:yellow;
+  }
+  .child1 .slick-dots li button:before{
+    font-size:40px;
+  }
+  @media (min-width:300px) and (max-width:600px)
+  {
+    .main
+    {
+      display:flex;
+      flex-direction:column;
+      width:95%;
+      margin:0 auto;
+    }
+    .title:before{
+      width: 30%;
+    }
+    .main .title{
+      font-size:10px;
+    }
+    .title:after{
+      width: 30%;
+    }
+    .main .demo{
+      font-size:12px;
+    }
+    .child2{
+      width:50%;
+    }
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $('.child1').slick({
+      slidesToShow:4,
+      slidesToScroll:1,
+      autoplay:true,
+      autoplaySpeed:2800,
+      arrows:false,
+      dots:false,
+      responsive:[
+        {
+        breakpoint:1024,
+        settings:{
+        slidesToShow:3,
+        slidesToScroll:2
+        }
+      },
+      {
+        breakpoint:600,
+        settings:{       
+        slidesToShow:2,
+        slidesToScroll:2
+        }
+      },
+      {
+        breakpoint:400,
+        settings:{
+        slidesToShow:1,
+        slidesToScroll:1,
+        }
+      }
+      ]
+    });
+    });
+</script>

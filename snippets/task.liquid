@@ -1,0 +1,30 @@
+{% assign number = "251,251" | split:"," %}
+{% assign total = 0 %}
+{% for sum in number %}
+  {% assign total = total | plus:sum %}
+{% endfor %}
+{% assign avg = total | divided_by:number.size %}
+Average : {{ avg }}<br><br>
+{% assign last = avg | modulo:100 %}
+{% comment %}  {% if last < 50 %}
+    {% assign before = avg | minus:last %} 
+    Round Off : {{ before }}
+  {% elsif last > 50 %}
+    {% assign net = 100 | minus:last %}
+    {% assign next = avg | plus:net %}
+    round Off : {{ next }}
+  {% else %}
+    Round Off:{{ avg }}
+  {% endif %} {% endcomment %}
+
+{% if last < 50 %}
+  {% assign const = 50 | minus:last %}
+  {% assign new = avg | plus:const %}
+  Closest : {{ new }}
+{% elsif last > 50 %}
+  {% assign const1 = 100 | minus:last %}
+  {% assign new1 = avg | plus:const1 %}
+  Closest : {{ new1 }}
+{% else %}
+  Closest : {{ avg }}
+{% endif %} 

@@ -1,0 +1,82 @@
+{% comment %} Snippet/card-product {% endcomment %}
+<!-- Line No. 55 for icon & line no. 394 for render of file -->
+<div class="main_quick_view">
+  <div class="heading_quick_view">
+    <h4>{{ product.title }}</h4>
+  </div>
+  <div class="close_quick_view">
+    <span class="cut">X</span>
+  </div>
+  <div class="content_quick_view">
+    <img src="{{ product.featured_image | img_url:"200x" }}" >
+    <div class="price_quick_view">
+      <p>{{ product.price | money_with_currency}}</p><br>
+      <p><strike>{{ product.compare_at_price | money_with_currency}}</strike></p>
+    </div>
+    <div class="variant_quick_view">
+      <fieldset>
+        <legend>Color</legend>
+        <label></label>
+      </fieldset>
+    </div>
+  </div>
+</div>
+
+<style>
+  .main_div{
+    /* position:absolute; */
+    top:0;
+    width:50vw;
+  }
+  .main_quick_view{
+    position: relative;
+    background: wheat;
+    display:none;
+    padding:20px;
+  }
+  .heading_quick_view{
+    text-align:center;
+    padding-bottom:10px;
+  }
+  .heading_quick_view h4{
+    margin:0;
+  }
+  .close_quick_view{
+    position:absolute;
+    top:0;
+    right:0;
+  }
+  .close_quick_view span{
+    margin:10px 10px;
+    font-size:24px;
+    color:black;
+  }
+  .content_quick_view{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;   
+  }
+</style>
+
+<script>
+  // Pop up Open
+  var popshow = document.querySelectorAll(".fa-home");
+  var poptoshow = document.querySelectorAll(".main_quick_view");
+    popshow.forEach((item) => {
+    item.addEventListener("click",() => {
+      poptoshow.forEach((pop) => {
+        pop.style.display = "none";
+      });
+      item.closest(".grid__item").querySelector(".main_quick_view").style.display = "block";
+    });
+  });
+  
+  // Popup close
+  var popclose = document.querySelectorAll(".cut");
+  popclose.forEach((close) => {
+      close.addEventListener("click", () => {
+      close.closest(".grid__item").querySelector(".main_quick_view").style.display ="none";
+    });
+  })
+
+</script>

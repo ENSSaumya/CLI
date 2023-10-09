@@ -1,0 +1,106 @@
+<!-- sections/vertical-slider-announcement-bar -->
+ {% render 'back_button' %}
+  <div class="main-vertical-slider">
+    <span class = "announcement-bar-close"> <i class="fa fa-close"></i> </span>
+    <div class="content-main">
+    {% for block in section.blocks %}
+        <p class="slide-vertical" >{{ block.settings.txt0 }}</p>
+    {% endfor %}
+  </div>
+  </div>
+{% schema %}
+  {
+    "name": "Vertical-Slider",
+    "settings": [],
+    "blocks":[{
+      "type":"text",
+      "name":"Pick",
+      "settings":[{
+        "type":"text",
+        "id":"txt0",
+        "label":"TEXT"
+      }]
+    }],
+    "presets":[{"name":"Vertical-Slider"}]
+  }
+{% endschema %}
+
+<style>
+  .main-vertical-slider{
+    display:flex;
+    position:relative;
+    display:none;
+  }
+  .content-main{
+    color: #FFFFFF;
+    width: 100%;
+    background-color: orange;
+    justify-content: center;
+  }
+  .slide-vertical {
+    text-align: center;
+    font-size: 25px;
+  }
+  .slide-vertical .slick-slide {
+    height: 40px;
+  }
+  .announcement-bar-close{
+    color: black;
+    font-size: 25px;
+    z-index: 1;
+    right: 10px;
+    cursor: crosshair;
+    position: absolute;
+    top: 13%;
+    transform: translate(5px, -50%);
+  }
+  .content-main:not(.slick-initialized) .slide-vertical{
+    display:none;
+  }
+  .content-main .slide-vertical:nth-child(1){
+    display:block;
+  }
+</style>
+{% comment %}-----------------------------JQuery for Close Button--------------------------------------------{% endcomment %}
+<script>
+  $(document).ready(function(){
+  $('body').on('click', '.announcement-bar-close', function() {
+   $(".content-main").hide();
+   $(".fa fa-close").hide();
+  });
+});
+</script>
+{% comment %}---------------------------------- Slider Vertical -------------------------------------------{% endcomment %}
+<script>
+ $(document).ready(function() {
+    $(".content-main").slick({
+      vertical:true,
+      arrows: false,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000
+    });
+});
+</script>
+
+  {% comment %}------------------------------- Set & Get Cookies-----------------------------------------{% endcomment %}
+  <script>
+    // Cookie Get
+    function Cookiecheck(){ 
+      if(document.cookie.indexOf("Present=true") === -1){
+        document.querySelector(".main-vertical-slider").style.display = "block";
+      }
+    }
+    // Cookie Set
+    function Cookieset(){
+      document.cookie = "Present=true";
+    }
+    document.querySelector(".announcement-bar-close").addEventListener("click",() => {
+      document.querySelector(".main-vertical-slider").style.display = "none";
+      Cookieset();
+    });
+    window.addEventListener("load",Cookiecheck)
+  </script>
+  {% comment %}-----------------------------------------------------------------------------------------{% endcomment %}

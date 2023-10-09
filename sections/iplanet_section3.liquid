@@ -1,0 +1,137 @@
+<div class="main_iplanet3">
+    <div class="heading_iplanet3">
+      <h2>Your Business Enhancers</h2>
+    </div>
+  <div class="content_iplanet3">
+  {% for product in collection.products %}
+    {% for block in section.blocks %}
+      <div class="image_text_iplanet3">
+        <div class="img_iplanet3">
+          <img src="{{ product.collections.first | img_url:"" }}" >
+          <!-- <img src="{{ block.settings.image_iplanet3 | img_url:"200x"}}" > -->
+        </div>
+        <div class="txt_iplanet3">
+          <p>{{ block.settings.text_iplanet3 }}</p>
+        </div>
+      </div>
+    {% endfor %}
+   {% endfor %} 
+  </div>
+  <div class="button_iplanet3">
+    <span>VIEW MORE</span>
+  </div>
+</div>
+{% render "iplanet_snippet4" %}
+{% schema %}
+  {
+    "name":"iplanet3",
+    "settings": [],
+    "blocks":[{
+      "type":"image",
+      "name":"Choose",
+      "settings":[{
+        "type":"image_picker",
+        "id":"image_iplanet3",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"text_iplanet3",
+        "label":"Text"
+      }]
+    }],
+    "presets":[{"name":"iplanet3"}]
+  }
+{% endschema %}
+
+<style>
+  .main_iplanet3{
+    width:100%;
+    padding:5% 0;
+    background:#f8f8f8;
+  }
+  .content_iplanet3{
+    display:flex;
+    justify-content:space-evenly;
+  }
+  .heading_iplanet3 h2::before{
+    content:"";
+    position:absolute;
+    top:-60%;
+    border:2px solid #38b6ff;
+    width:7%;
+    border-radius:5px;
+  }
+  .heading_iplanet3{
+    padding:0 6%;
+    position:relative;
+  }
+  .heading_iplanet3 h2{
+    font-size:40px;
+    color:#000000;
+  }
+  .image_text_iplanet3{
+    position:relative;
+  }
+  .txt_iplanet3{
+    text-align:center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:#ffffff;
+    opacity:0.7;
+  }
+  .txt_iplanet3:hover{
+    opacity:1;
+  }
+  .txt_iplanet3 p{
+    font-weight:700;
+    color:#000000;
+  }
+  .button_iplanet3{
+    text-align: center;
+    padding-top: 50px;
+  }
+  .button_iplanet3 span{
+    background: #5db7fe;
+    padding: 16px 32px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing:2px;
+  }
+  .button_iplanet3 span:hover{
+    background:#ffffff;
+    color:#5db7fe;
+  }
+@media (max-width: 749px){
+  .content_iplanet3{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    row-gap: 50px;
+  }
+  .heading_iplanet3 h2{
+    font-size:26px;
+  }
+  .image_text_iplanet3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+ @media (max-width: 1024px){
+  .content_iplanet3{
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding:10px;
+   }
+ }
+</style>
+
+{% javascript %}
+{% endjavascript %}

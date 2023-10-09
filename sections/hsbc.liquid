@@ -1,0 +1,84 @@
+<div class="main_hsbc">
+  <div class="content_hsbc">
+    <div class="heading_hsbc">
+      <p class="hsbc">HSBC</p>
+      <p class="credit_card">CREDIT CARD</p>
+      <p class="discount">Discount</p>
+    </div>
+    <table class="table_hsbc">
+      <tr>
+        <th>Category</th>
+        <th>Offer Capping On Non EMI</th>
+        <th>Offer Capping EMI</th>
+        <th>Exclusions</th>
+      </tr>
+      {% for val in page.metafields.custom.credit_card.value %}
+      <tr>
+        <td>{{ val.category }}</td>
+        <td>{{ val.offer_capping_non_emi }}</td>
+        <td>{{ val.offer_capping_emi }}</td>
+        <td>{{ val.exclusions }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "HSBC",
+    "settings": [],
+    "presets":[{"name":"HSBC"}]
+  }
+{% endschema %}
+
+<style>
+  .main_hsbc{
+    background:#ffffff;
+    color:#000000;
+  }
+  .main_hsbc .content_hsbc{
+    width:80%;
+    margin:auto;
+  }
+  .main_hsbc .table_hsbc{
+    width:100%;
+    padding:1% 7%;
+    border:1px solid #f2f2f2;
+    box-shadow: 1px 1px 1px 1px #f2f2f2;
+  }
+  .main_hsbc .table_hsbc tr, .main_hsbc .heading_hsbc{
+    text-align:center;
+  }
+  .heading_hsbc .hsbc, .discount{
+    font-weight:bold;
+    margin:0;
+  }
+  p.credit_card{
+    letter-spacing: 2px;
+    padding-top: 5px;
+    font-weight:600;
+    margin:0;
+  }
+  tr:nth-child(even){
+    background:#ffffff;
+  }
+  tr:nth-child(odd){
+    background:#f2f2f2;
+  }
+  .table_hsbc th, tr{
+    font-weight:700;
+    /* color:#000000; */
+  }
+  .table_hsbc th{
+    font-size:17px;
+  }
+  .table_hsbc tr{
+    font-size:14px;
+  }
+  .table_hsbc th, td{
+    padding:1em;
+  }
+</style>
+
+{% javascript %}
+{% endjavascript %}

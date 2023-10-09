@@ -1,0 +1,88 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "e4895fd2-3557-45e4-ad7f-ca3670ccdaac": {
+      "type": "vertical-slider-announcement-bar",
+      "blocks": {
+        "c4bec9ea-3610-4ecd-8d9f-d63f8e919273": {
+          "type": "text",
+          "settings": {
+            "txt0": "Welcome To Store 1"
+          }
+        },
+        "f388eeb4-b828-43c7-8067-817019dc4242": {
+          "type": "text",
+          "settings": {
+            "txt0": "Welcome To Store 2"
+          }
+        },
+        "c867ed25-413d-4565-9842-f39c77f17e2b": {
+          "type": "text",
+          "settings": {
+            "txt0": "Welcome To Store 3"
+          }
+        }
+      },
+      "block_order": [
+        "c4bec9ea-3610-4ecd-8d9f-d63f8e919273",
+        "f388eeb4-b828-43c7-8067-817019dc4242",
+        "c867ed25-413d-4565-9842-f39c77f17e2b"
+      ],
+      "settings": {
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
+        "9283f571-eb36-4712-9e77-129978891a4e": {
+          "type": "announcement",
+          "settings": {
+            "text": "Saumya",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "9283f571-eb36-4712-9e77-129978891a4e"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-1",
+        "show_line_separator": true,
+        "auto_rotate": true,
+        "change_slides_speed": 5
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "top-center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "inverse",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "e4895fd2-3557-45e4-ad7f-ca3670ccdaac",
+    "announcement-bar",
+    "header"
+  ]
+}

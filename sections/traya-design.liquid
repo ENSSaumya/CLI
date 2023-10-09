@@ -1,0 +1,137 @@
+<div class="traya-main">
+    <div class="div-main">
+      {% for block in section.blocks %}
+      <div class="text_image">
+        <div class="div-image">
+          <img class="class-image" id="image{{ forloop.index }}" src="{{ block.settings.img1 | img_url: "200x" }}"/>  
+        </div>
+        <div class="div-text">
+          <p class="class-text" id="text{{ forloop.index }}">{{ block.settings.txt1 }}</p>
+        </div>
+        <div class="div-url">
+          <a class="class-url" id="url{{ forloop.index }}" href="{{ block.settings.lnk1 }}">Read More <i class="fa fa-long-arrow-right"></i></a>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+</div>
+{% schema %}
+  {
+    "name": "Traya",
+    "settings": [],
+    "blocks":[{
+      "name":"Pick",
+      "type":"image_picker",
+      "settings":[{
+        "type":"image_picker",
+        "id":"img1",
+        "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"txt1",
+          "label":"Text"
+        },
+        {
+          "type":"url",
+          "id":"Lnk1",
+          "label":"Link"
+        }
+      ]
+    }],
+    "presets":[{"name":"Traya"}]
+  }
+{% endschema %}
+<style>
+  .traya-main, .div-image, .class-image
+  {
+    width:100%;
+  }
+  .div-main:not(.slick-initialized) {
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+  .text_image
+  {
+    position:relative;
+    width:33%;
+    padding:5px;
+  }
+  .div-text
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+  }
+  .div-text:after
+  {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+    bottom: -20px;
+    right: auto;
+    top: auto;
+    border-left: 0px solid transparent;
+    border-right: 23px solid transparent;
+    border-top: 27px solid #fffffff2;
+  }
+  .class-text
+  {
+    margin: 0;
+    padding: 5px 5px 5px 13px;
+    font-size: 17px;
+    font-weight:900;
+    background-color: #fffffff2;
+    border-radius: 10px 10px 10px 0px;
+  }
+  .div-url
+  {
+    position: relative;
+  }
+  .class-url
+  {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 17x;
+  }
+  @media screen and (max-width: 768px){
+    .class-text{
+      font-size:13px;
+      font-weight:700;
+    }
+    .class-url{
+      font-size:12px;
+    }
+    .div-main:not(.slick-initialized) .text_image{
+      display:none;
+    }
+    .div-main:not(.slick-initialized) .text_image:nth-child(1),
+    .div-main:not(.slick-initialized) .text_image:nth-child(2){
+      display:block;
+      width: 50%;
+    }
+  }
+</style>
+<script>
+  $(document).ready(function() {
+  if ($(window).width() < 768) {
+    $(".div-main").slick({
+      arrows: false,
+      dots: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2500
+    });
+  }
+});
+</script>

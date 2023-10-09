@@ -1,0 +1,86 @@
+<div class="main_clear_origin">
+  <div class="content_clear_origin">
+    <div class="heading_clear_origin">
+      <p>Shop By Shape</p>
+    </div>
+    <div class="img_text_clear_origin">  
+      {% for block in section.blocks %}
+        <div class="image_clear_origin">
+          <a href="{{ block.settings.url_clear }}"><img class="img_class" src="{{ block.settings.image_clear | img_url:'100x' }}"></a>
+          <p>{{ block.settings.text_clear }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="button_clear_origin">
+      <span><a href="https://beautyrec.myshopify.com/collections/diamond" style="text-decoration:none;">Explore</a></span>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Clear Origin",
+    "settings": [],
+    "blocks":[{
+      "type":"image",
+      "name":"Pick",
+      "settings":[{
+        "type":"image_picker",
+        "id":"image_clear",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"text_clear",
+        "label":"text"
+      },
+      {
+        "type":"url",
+        "id":"url_clear",
+        "label":"URL"
+      }]
+    }],
+    "presets":[{"name":"Clear Origin"}]
+  }
+{% endschema %}
+
+<style>
+  .main_clear_origin{
+    width:100%;
+  }
+  .content_clear_origin{
+    width:90%;
+    margin:auto;
+  }
+  .heading_clear_origin{
+    text-align:center;
+  }
+  .heading_clear_origin p{
+    font-family:'Bradford LightItalic';
+    font-size:32px;
+    font-weight:400;
+    color:#474747;
+  }
+  .img_text_clear_origin{
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+  }
+  .img_text_clear_origin p{
+    font-family:'Bradford LightItalic';
+    font-size:18px;
+    color:#474747;
+  }
+  .button_clear_origin{
+    text-align:center;
+    margin-top:30px;
+  }
+  .button_clear_origin span{
+    padding: 20px 90px;
+    font-size: 20px;
+    font-family: monospace;
+    border:1px solid;
+  }
+</style>
+
+{% javascript %}
+{% endjavascript %}

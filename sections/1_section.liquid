@@ -1,0 +1,158 @@
+<div class="main">
+  <h2 class="title">SHOP BY CATEGORY</h2>
+  <p class="demo">Essential for everyone</p>
+</div>
+<div class="parent">
+    {% for block in section.blocks %}
+    <div class="child3">
+      <div style="margin-bottom: 25px;">
+      <a href="{{ block.settings.url }}" style="text-decoration:none">
+        <img src="{{ block.settings.image | img_url: "400x" }}"/>  
+      </a>
+      </div>
+     <div class="btnt"> 
+       <a href="{{ block.settings.url }}" >
+        <h5  class="txt{{ forloop.index }} fix">{{ block.settings.text }}</h5>
+      </a>
+       </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div>
+  
+</div>
+{% schema %}
+  {
+    "name": "section 2",
+    "settings": [],
+    "blocks":[
+      {
+        "name":"pick",
+        "type":"image_picker",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+          },
+          {
+            "type":"text",
+            "id":"text",
+            "label":"Text"
+          },
+          {
+            "type":"url",
+            "id":"url",
+            "label":"Link"
+          }
+        ]
+      }
+    ],
+    "presets":[{"name":"section 2"}]
+  }
+{% endschema %}
+
+<style>
+   .title:before{
+    content: "";
+    height: 2px;
+    background-color: black;
+    width: 30%;
+    margin-left: 10px;
+  }
+  .main title
+  {
+    align-items:center;
+    justify-content:center;
+    display:flex;
+  }
+  .title:after{
+    content: "";
+    height: 2px;
+    background-color: black;
+    width: 30%;
+    margin-right: 10px;
+  }
+  .demo{
+    justify-content:center;
+    text-align:center;
+  }
+  .parent{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    padding:30px
+  }
+  .child3{
+    width: calc(25% - 15px);
+    margin: 10px 10px 0px 5px;
+    border: 1px solid black;
+    position:relative;
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .child3 img{
+    width:100%;
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+  }
+  .child3 h5{
+    margin-bottom:0;
+    width:100%;
+    text-align:center;
+    color:black;
+    border-radius:0px 0px 12px 12px;
+    padding: 2px 0px 1px 1px;
+  }
+  .child3 .txt1{
+    background:red;
+  }
+  .btnt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .child3 .txt2{
+    background:yellow;
+  }
+  .child3 .txt3{
+    background:green;
+  }
+  .child3 .txt4{
+    background:blue;
+  }
+  a.fix
+  {
+    bottom: 0;
+    width: 100%;
+  }
+
+  @media (min-width:300px ) and (max-width:600px)
+  {
+    .main
+    {
+      width:95%;
+      margin:0 auto;
+    }
+    .title:before{
+      width: 20%;
+    }
+    .main .title{
+      font-size:10px;
+    }
+    .title:after{
+      width: 20%;
+    }
+    .main .demo{
+      font-size:12px;
+    }
+    .child3
+    {
+        width: calc(50% - 16px);
+    }
+  }
+</style>
+

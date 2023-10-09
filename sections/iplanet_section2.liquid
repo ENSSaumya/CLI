@@ -1,0 +1,246 @@
+<div class="main_iplanet2">
+  <div class="content_iplanet2">
+      <div class="image_iplanet2">
+        <img src="{{ section.settings.img_iplanet2 | img_url:"" }}" >
+      </div>
+      <div class="enterprise_iplanet2">
+      <div class="dash_enterprise">
+      </div>
+      <div class="heading_enterprise">
+        <h2>{{ section.settings.heading1_iplanet2 }}</h2>
+      </div>
+      <div class="text_enterprise">
+        <p>{{ section.settings.paragraph_iplanet6 }}</p>
+      </div>
+      <div class="script_enterprise">
+        <div class="countdown1_script">
+          <span id="count1">0</span>
+        </div>
+        <div class="text1_script">
+          <p>Years of Excellence</p>
+        </div>
+        <div class="countdown2_script">
+          <span id="count2">0</span><span id="plus_icon">+</span>
+        </div>
+        <div class="text2_script">
+          <p>Apple Experts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="authorised_iplanet2">
+    <div class="text_authorised">
+      <p>Explore, evaluate and deploy technology solutions for work — from office, from home and on the go. We have the knowledge, insights and best practices to ease the transformation, from technology, content and people management perspectives.</p>
+    </div>
+    <div class="symbol_authorised">
+      <img style="width:358px;height:211px;" src="https://iplanet.one/wp-content/uploads/2022/03/Apple-Authorised-Reseller.png">
+    </div>
+  </section>
+</div>
+
+{% schema %}
+  {
+    "name": "iplanet2",
+    "settings":[{
+        "type":"image_picker",
+        "id":"img_iplanet2",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"heading1_iplanet2",
+        "label":"Title"
+      },
+      {
+        "type":"html",
+        "id":"paragraph_iplanet6",
+        "label":"Content"
+      }
+    ],
+    "presets":[{"name":"iplanet2"}]
+  }
+{% endschema %}
+
+<style>
+  .content_iplanet2{
+    display:flex;
+    background:#e8e8ea;
+    height:fit-content;
+    /* height:110vh; */
+    padding:0 12px;   
+  }
+   .content_iplanet2 .image_iplanet2{
+    width:30%;
+    overflow:hidden;
+  }
+   .content_iplanet2 .image_iplanet2 img{
+    /* width:640px;
+    height:957px; */
+    width:100%;
+  }
+   .content_iplanet2 .dash_enterprise{
+    height: 5px;
+    width: 100px;
+    background-color: #38B6FF;
+    border: none;
+     top:160px;
+     position:absolute;
+  }
+   .content_iplanet2 .enterprise_iplanet2{
+    padding:128px 40px 0px 60px;
+    position:relative;
+     width:70%;
+  }
+   .content_iplanet2 .heading_enterprise h2{
+    font-size:50pt;
+    color:#000000;
+    font-weight:700;
+  }
+   .content_iplanet2 .text_enterprise p{
+    font-size:15px;
+    color:#454b6f;
+  }
+   .content_iplanet2 .script_enterprise{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    justify-content: space-evenly;
+    border-top: 1px solid;
+    gap:10px;
+  }
+   .content_iplanet2 .script_enterprise span{
+    color: #5db7fe;
+    font-family:"verdana";
+    font-size: 60px;
+    font-weight:700;
+  }
+  .content_iplanet2 .text1_script p,  .content_iplanet2 .text2_script p{
+    font-weight:900;
+  }
+   .main_iplanet2 .authorised_iplanet2{
+    width:100%;
+    display:flex;
+    align-items:center;
+    padding:104px 180px 80px 161px;
+    background:#ffffff;
+    
+  }
+ .main_iplanet2 .authorised_iplanet2 .text_authorised{
+    color:#000000;
+    padding:30px 0px;
+  }
+   .main_iplanet2 .authorised_iplanet2 .symbol_authorised{
+    border-left:2px solid #000000;
+  }
+   .main_iplanet2 .authorised_iplanet2 .text_authorised p{
+    padding-right:70px;
+    font-size:15px;
+  }
+ @media (max-width: 768px){
+   .content_iplanet2 .content_iplanet2{
+     display:section;
+     height:100%;
+     padding:0 20px;
+   }
+   .content_iplanet2 .image_iplanet2{
+     width:100%;
+   }
+   .content_iplanet2 .image_iplanet2 img{
+     width:100% !important;
+     height:100% !important;
+   }
+   .content_iplanet2 .enterprise_iplanet2{
+     padding:0;
+     margin:0;
+   }
+   .content_iplanet2 .heading_enterprise h2{
+     font-size:65px;
+   }
+  .main_iplanet2 .authorised_iplanet2{
+    flex-direction:column;
+    padding:0 19px;
+  }
+    .main_iplanet2 .authorised_iplanet2 .text_authorised p{
+    padding-right: 40px;
+    font-size: 15px;
+   }
+    .content_iplanet2 .script_enterprise{
+    width: 100%;
+    position: initial;
+    padding: 0 10px;
+   }
+   .content_iplanet2 .script_enterprise p{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    line-height: 15.6px;
+  }
+  .content_iplanet2 .script_enterprise span{
+     font-size:40px;
+   }
+  .content_iplanet2 .dash_enterprise{
+     width:50px;
+   }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  .content_iplanet2{
+    flex-direction:column;
+  }
+   .content_iplanet2 .dash_enterprise{
+    top:50px;
+    position:absolute;
+  }
+   .content_iplanet2 .text_enterprise p{
+     font-size:14px;
+   }
+   .content_iplanet2 .image_iplanet2{
+    width:100%;
+  }
+  .content_iplanet2 .image_iplanet2 img{
+    width:100%;
+  }
+   .main_iplanet2 .authorised_iplanet2{
+    padding:104px 20px 80px 20px;
+  }
+   .content_iplanet2 .enterprise_iplanet2{
+    padding:20px 60px 0px 60px;
+  }
+  .content_iplanet2 .script_enterprise{
+    width:100%;
+    position:relative;
+  }
+  .content_iplanet2 .script_enterprise span{
+    font-size:48px;
+  }
+ }
+/* @media (min-width: 1020px){
+  .authorised_iplanet2{
+    flex-direction:unset;
+  }
+} */
+</style>
+
+<script>
+var time_initial = 0;
+  function countdown1() {
+      time_initial++;
+      document.getElementById("count1").innerHTML = String(time_initial);
+      if (time_initial <= 10) { 
+          setTimeout(countdown1, 155); 
+      }
+  };
+var time_left = 0;
+  function countdown2(){
+    time_left++;
+    document.getElementById("count2").innerHTML = String(time_left);
+    if (time_left < 19){
+      setTimeout(countdown2, 70);
+    }
+  };
+window.onload = function() {
+    setTimeout(countdown1, 2000);
+    setTimeout(countdown2, 2000);
+};
+</script>

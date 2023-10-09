@@ -1,0 +1,77 @@
+<div class="main_croma">
+  <div class="contnet_croma">
+    <div class="item_croma">
+      <ul class="croma_ul">
+      {% for block in section.blocks %}
+        <li class="croma_li">{{ block.settings.Croma }}</li>
+      {% endfor %}
+      </ul>
+      <div class="tc_croma">
+        <p>*T&C Apply</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "croma_section",
+    "settings": [],
+    "blocks":[{
+      "name":"CROMA",
+      "type":"image",
+      "settings":[{
+        "type":"text",
+        "id":"Croma",
+        "label":"Text"
+      }]
+    }],
+    "presets":[{"name":"croma"}]
+  }
+{% endschema %}
+
+<style>
+  .contnet_croma{
+    width: 90%;
+    margin: auto;
+    background:#ffffff;
+    border-radius:20px;
+    position:relative;
+  }
+  .item_croma{
+    width: 85%;
+    margin: auto;
+  }
+  .croma_ul{
+    padding:2% 17%;
+  }
+  .croma_li::marker{
+    font-size:40px;
+    color:#000000;
+  }
+  .croma_li{
+    color:#000000;
+    font-size:30px;
+    font-weight:700;
+    line-height:36px;
+  }
+  .tc_croma{
+    margin: 0 20px;
+    text-align: end;
+    color: #000000;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+@media (max-width: 767px){
+  .croma_ul{
+    padding:0;
+  }
+  .croma_li::marker{
+    font-size:10px;
+  }
+}
+</style>
+
+{% javascript %}
+{% endjavascript %}

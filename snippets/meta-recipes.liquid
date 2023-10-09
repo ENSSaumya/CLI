@@ -1,0 +1,82 @@
+<div class="main_recipe">
+  {% for link in product.metafields.custom.recipe.value %}
+    <span class="cross_recipe"><i class="fa fa-close"></i></span>
+    <h4>{{ link.title }}</h4>
+    <div class="container_recipe">
+        <img src="{{ link.pic | img_url:"200x" }}" />
+      <div class="ingredients">
+        <p>{{ link.list_ingredients }}</p>
+      </div>
+      <div class="cook">
+        <p>{{ link.list_cook }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .main_recipe{
+    background: #915e59ed;
+    width: 80%;
+    margin: auto;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 23%);
+    z-index: 9;
+  }
+  .main_recipe h4{
+    text-align:center;
+    color:white;
+    padding:10px 0px 0px;
+  }
+  .container_recipe{
+    display:flex;
+    text-align:center;
+    padding:10px;
+  }
+  .ingredients p{
+    font-size:14px;
+    font-weight:400;
+    color:white;
+  }
+  li{
+    text-align:left;
+    color:#ffffff;
+  }
+  .cross_recipe{
+    color: #47c1bf;
+    font-weight: 1000;
+    font-size: 20px;
+    float: right;
+    padding: 0px 10px;
+    cursor:pointer;
+  }
+@media screen and (max-width: 768px){
+  .main_recipe{
+    overflow:scroll;
+    height:80%;
+  }
+  .container_recipe{
+    flex-direction:column;
+  }
+}
+</style>
+
+<script>
+  // Pop up open
+  var images = document.querySelectorAll(".div_image");
+  images.forEach((show) => {
+    show.addEventListener("click", () => {
+      document.querySelector(".main_recipe").style.display="block";
+    });
+  });
+
+  // Close button
+  // var cut = document.querySelector(".cross_recipe");
+  //   cut.addEventListener("click", () => {
+  //     document.querySelector(".main_recipe").style.display="none";
+  //   });
+ 
+</script>

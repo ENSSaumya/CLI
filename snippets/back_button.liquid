@@ -1,0 +1,22 @@
+<section class="back_button_main">
+  <div class="back_button_content">
+    <span class="previous_button">{% render 'back_button_icon' %}</span>
+  </div>
+</section>
+
+<style>
+  .back_button_main{
+    position:absolute;
+    z-index:9;
+    padding:20px 10px;
+  }
+</style>
+
+<script>
+  console.log(document.location);
+  console.log(document.state);
+  // document.querySelector(".back_button_content").addEventListener("click", ()=> {window.history.back()});
+  window.addEventListener("popState", (event) => {
+    
+  });
+</script>

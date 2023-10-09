@@ -1,0 +1,125 @@
+<div class="main-multiple-tabs-task">
+  <div class="div-of-content">
+    {% for block in section.blocks %}
+      {% assign tag = block.settings.tag-image %}
+        {% if block.type == "type1" %}
+        <div class="image-text">
+          <div class="div-of-img">
+            <img class="class-of-img" src="{{ block.settings.img2 | img_url: '200x' }}" width="" height=""/>
+          </div>
+          {% for block1 in section.blocks %}
+            {% if block1.type == "type2" %}
+              {% assign tag1 = block1.settings.tag-text %}
+              {% if tag == tag1 %}
+                <div class="div-of-text">
+                  <p class="class-of-text">{{ block1.settings.txt3 }}</p>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+{
+    "name": "multiple-tabs-task",
+    "settings": [],
+    "blocks":[
+      {
+        
+        "type":"type1",
+        "name":"Image",
+        "settings":[
+            {
+            "type":"image_picker",
+            "id":"img2",
+            "label":"Image"
+            },
+            {
+              "type":"text",
+              "id":"tag-image",
+              "label":"Text"
+            }
+          ]
+        },
+        {
+          "type":"type2",
+          "name":"Text",
+          "settings":[
+              {
+                "type":"text",
+                "id":"txt3",
+                "label":"Text"
+              },
+              {
+                "type":"text",
+                "id":"tag-text",
+                "label":"Tag"
+              }
+            ]
+          }
+      ],
+    "presets": [{"name": "multiple-tabs-task"}]
+}
+{% endschema %}
+<style>
+  .div-of-content {
+    display: flex;
+    justify-content: center;
+  }
+  .image-text {
+    padding: 20px;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+  }
+  .div-of-text{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+  .div-of-img {
+    height:30vh;
+  }
+  .class-of-img{
+    width:100%;
+    border-radius:15px;
+    box-shadow: -1px 19px 8px 20px #000 inset;
+  }
+  .class-of-text{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    margin: 5px;
+    font-weight: 500;
+    border-radius: 25px;
+    background-color: #8051ff91;
+    color:#FFFFFF;
+  }
+  @media screen and (max-width: 780px)
+  {
+    .div-of-img {
+       height:20vh;
+    } 
+    .class-of-text{
+      font-size:18px;
+     }
+  }
+  @media screen and (max-width: 500px)
+  {
+    .image-text{
+      height: 40vh;
+    }
+    .div-of-img {
+    } 
+    .class-of-text{
+       font-size: 10px;
+       border-radius: 15px;
+     }
+  }
+</style>
+
+{% javascript %}
+{% endjavascript %}

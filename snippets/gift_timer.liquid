@@ -1,0 +1,152 @@
+{% comment %} <div class="main_gift_timer">
+  <div class="content_gift_timer">
+    <div class="gift_gif">
+      <img width="48" height="48" src="https://img.icons8.com/fluency/48/gift--v1.png" alt="gift"/>
+      <div class="timer">
+        <span id="timer_gift"></span>
+      </div>
+    </div>
+    <div class="reward_gift">
+      <p class="close_X">X</p>
+      <p class="txt_reward">Congratulations! You Earned <span class="Rs_reward">Rs 100</span></p>
+    </div>
+    <div class="pre_reward">
+      <p class="cut_X">X</p>
+      <p class="txt_pre_reward">You will get your reward in <span id="time_reward"></span></p>
+    </div>
+  </div>
+</div>
+<style>
+  body.gradient{
+    position:relative;
+  }
+  .main_gift_timer{
+    position:sticky;
+    z-index:9;
+    top:50%;
+    transform:translateY(-50%);
+    margin:0 10px;
+    color:#ffffff;
+  }
+  .content_gift_timer{
+    position:absolute;
+    display:flex;
+    gap:2em;
+  }
+  .reward_gift{
+    display: none;
+    position:relative;
+  }
+  .pre_reward{
+    display: none;
+    position: relative;
+    background: yellow;
+    color: black;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  #timer_gift{
+    color:red;
+  }
+  .close_X{
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 0 5px;
+    color:#000000;
+    font-weight:700;
+  }
+  .cut_X{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 5px;
+  }
+  .reward_gift .txt_reward{
+    background: cyan;
+    padding: 30px;
+    color: blue;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+</style>
+
+<script>
+  // var startTimer = 20;
+  var startTimer = localStorage.getItem("time_value") || 480;
+  localStorage.setItem("time_value",startTimer);
+  var time_interval;
+  function countdown_start(){
+    var minute = Math.floor(startTimer/60);
+    var second = startTimer % 60;
+    var minute_format = String(minute).padStart(2,"0");
+    var second_format = String(second).padStart(2,"0");
+    document.getElementById("timer_gift").innerHTML = minute_format + ":" + second_format;    
+    document.getElementById("time_reward").innerHTML = minute_format + ":" + second_format;    
+    startTimer--; 
+    
+    if (startTimer >= 0){ 
+      pre_reward_message();
+      time_interval = setTimeout(countdown_start, 1000);
+    }
+    else{
+      reward_message();
+      pauseTimer();
+      document.querySelector(".reward_gift").style.display = "block";
+    }
+  };
+resumeTimer();
+  
+  function resumeTimer(){
+    if(!time_interval){
+      countdown_start();
+    }
+  };
+  
+  function pauseTimer(){
+    clearTimeout(time_interval);
+    time_interval = null;
+  };
+
+  function pre_reward_message(){
+    if (startTimer > 0){
+      document.querySelector(".gift_gif").addEventListener("click", () => {
+        document.querySelector(".pre_reward").style.display = "block";
+      });
+    }
+    else{
+      document.querySelector(".gift_gif").addEventListener("click", () => {
+        document.querySelector(".pre_reward").style.display = "none";
+      });
+    }
+      document.querySelector(".cut_X").addEventListener("click", () => {
+        document.querySelector(".pre_reward").style.display = "none";
+      });
+  };
+
+  function reward_message(){
+    if(startTimer <= 0 ){
+      document.querySelector(".gift_gif").addEventListener("click", () => {
+        document.querySelector(".reward_gift").style.display = "block";
+      });
+    }
+      document.querySelector(".close_X").addEventListener("click", () => {
+        document.querySelector(".reward_gift").style.display = "none";
+      });
+   };
+
+  window.onload = function(){
+     localStorage.setItem("time_value", startTimer);
+  }
+
+  window.addEventListener("visiblitychange", () => {
+    if(window.visiblitystate === "visible"){
+      resumeTimer();
+    }
+    else{
+      
+    }
+  });
+</script> {% endcomment %}

@@ -1,0 +1,115 @@
+<div class="hair-div">
+  <div class="content-div">
+    {% for block in section.blocks %}
+      <div class="image_text">
+        <div class="img-div1">
+          <img  class="class-img1" id="img{{ forloop.index }}" src="{{ block.settings.pic_img | img_url:"250x"}}"/>
+        </div>
+        <div class="text-div1">
+          <p class="class-text1" id="text{{ forloop.index }}">{{ block.settings.pic-txt }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Hair_New",
+    "settings": [],
+    "blocks":[{
+      "name":"Choose",
+      "type":"image_picker",
+      "settings":[{
+        "type":"image_picker",
+        "id":"pic_img",
+        "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"pic-txt",
+          "label":"Text"
+        }]
+    }],
+    "presets":[{"name":"Hair_New"}]
+  }
+{% endschema %}
+
+<style>
+  .hair-div
+  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content-div
+  {   
+    display: flex;
+  }
+  .image_text
+  {
+    padding: 15px;
+  }
+  .img-div1
+  {
+     position:relative; 
+  }
+  .text-div1
+  {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 70px;
+  }
+  .class-img1
+  {
+    border-radius:20px;
+  }
+  .class-text1
+  {
+    color:#ffffff;
+    font-weight:800;
+    font-size:17px;
+    margin:0;
+  }
+  @media screen and (min-width: 1000px)
+  {
+    .text-div1
+    {
+      bottom:80px;
+    }
+    .class-text1
+    {
+      font-size:21px;
+    }
+  }
+  @media screen and (max-width: 991.98px)
+  {
+    .image_text 
+    {
+      padding: 5px;
+    }
+    .class-img1
+    {
+      width:90%;
+    }
+  }
+  @media screen and (max-width: 575px)
+  {
+    .class-img1
+    {
+      width:100%;
+    }
+    .image_text 
+    {
+      padding:5px;
+    }
+    .text-div1
+    {
+      bottom:50px;
+    }
+/*     .class-text1
+    {
+      font-size:12px;
+    } */
+  }
+</style>

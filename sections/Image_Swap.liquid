@@ -1,0 +1,55 @@
+<div class="divmain">
+  {% for block in section.blocks %}
+    <img id="img1" src="{{ block.settings.image2 | img_url:"150x" }}" />
+    <img id="img2" src="{{ block.settings.image3 | img_url:"150x" }}" />
+  {% endfor %}
+</div>
+ <button class="sp" type="button" onclick="swap()"> SWAP </button>
+{% schema %}
+  {
+    "name": "ImageSwap",
+    "settings": [],
+    "blocks":[{
+      "name":"pick",
+      "type":"image",
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"image2",
+          "label":"Image 1"
+        },
+        {
+          "type":"image_picker",
+          "id":"image3",
+          "label":"Image 2"
+        }
+      ]
+    }],
+    "presets":[{"name":"ImageSwap"}]
+  }
+{% endschema %}
+<style>
+  .divmain{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+  }
+  .sp{
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+</style>
+<script>
+  function swap()
+    {
+      var one = document.getElementById("img1");
+      var two = document.getElementById("img2");
+      
+      let temp = one.src;
+      one.src = two.src;
+      two.src = temp;
+    }
+</script>

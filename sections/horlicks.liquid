@@ -1,0 +1,56 @@
+<div class="main_horlicks">
+  <div class="container_horlicks">
+    <div class="heading_horlicks">
+      <p>Select Language to download health improvemet pdf</p>
+    </div>
+    <div class="div_text_horlicks">    
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "horlicks",
+    "settings": [{
+      "type":"textarea",
+      "id":"textarea_horlicks",
+      "label":"Text Field"
+    }],
+    "presets":[{"name":"horlicks"}]
+  }
+{% endschema %}
+<style>
+  .container_horlicks{
+    background: #cfcbcb;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+  }
+  .heading_horlicks p{
+    text-align: center;
+    color: blue;
+    font-weight: 700;
+    padding: 15px 0px;
+  }
+  .div_text_horlicks{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content:space-around;
+  }
+  .div_text_horlicks p{
+    background: #1313df;
+    border-radius: 10px;
+    padding: 0px 10px;
+    color: #ffff;
+  }
+</style>
+<script>
+  var data = [{{ section.settings.textarea_horlicks }}]
+  var show = document.querySelector(".div_text_horlicks");
+  console.log(data);
+   for(var dt of data){
+     var visible = document.createElement("p");
+     visible.textContent = dt;
+     show.appendChild(visible);
+   }
+</script>

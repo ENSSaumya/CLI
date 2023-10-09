@@ -1,0 +1,71 @@
+<div class="Multiple-tabs-in-a-div-2">
+  <div class="maindiv">
+    {% for block in section.blocks %}
+      <div class="img-txt">
+        <div class="imgdiv">
+          <img class="classimage" src="{{ block.settings.imgpic | img_url:"200x"}}" width="" height=""/>
+        </div>
+      {% assign word = block.settings.text0 | split:',' %}
+        {% for txt in word %}
+          <div class="textdiv"> 
+            <p class="classtext">{{ txt }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Multiple-tabs-in-a-div2",
+    "settings": [],
+    "blocks":[{
+      "name":"Block",
+      "type":"Image",
+      "settings":[{
+        "type":"image_picker",
+        "id":"imgpic",
+        "label":"Image"
+      },
+      {
+        "type":"textarea",
+        "id":"text0",
+        "label":"Text"
+      }]
+    }],
+    "presets":[{"name":"Multiple-tabs-in-a-div2"}]
+  }
+{% endschema %}
+
+<style>
+  .maindiv{
+    display:flex;
+    justify-content:center;
+  }
+  .img-txt{
+    padding:15px;
+  }
+  .imgdiv{
+    width:100%;
+  }
+  .classimage{
+    
+  }
+  .textdiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .classtext{
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+    background-color: #7fb5f5;
+    font-weight: 700;
+    padding: 5px;
+    width: 100%;
+    border-radius: 25px;
+  }
+</style>
+{% javascript %}
+{% endjavascript %}

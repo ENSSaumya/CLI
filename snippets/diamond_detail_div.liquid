@@ -1,0 +1,123 @@
+<div class="main_table_round">
+  {% for product in collection.products %}
+  {% for item in product.metafields.custom.diamond_details.value %}
+    <div class="div_top">
+        <div class="table_heading">
+          <p>TABLE</p>
+          <span id="table">{{ item.table }}</span>
+        </div>
+        <div class="image_table">
+          <img src="{{ item.background_image | img_url:"" }}">
+        </div>
+        <div class="div_heading">
+          <div class="gridle_heading">
+            <p>GRIDLE</p>
+            <span id="gridle">{{ item.girdle }}</span>
+          </div>
+          <div class="culet_heading">
+            <p>CULET</p>
+            <span id="culet">{{ item.culet }}</span>
+          </div>
+          <div class="depth_heading">
+            <p>DEPTH</p>
+            <span>{{ item.depth }}</span>
+          </div>
+        </div>
+      <div class="lab_heading">
+        <p>{{ item.carat_weight }}</p>
+      </div>
+      <div class="grid_table_round">
+        <div class="sku_grid">
+          <p>sku</p>
+          <span>{{ product.selected_or_first_available_variant.sku }}</span>
+        </div>      
+        <div class="symmetry_grid">
+          <p>Symmetry</p>
+          <span>{{ item.symmetry }}</span>
+        </div>
+        <div class="measure_grid">
+          <p>Measurements</p>
+          <span>{{ item.measurements }}</span>
+        </div>
+        <div class="polish_grid">
+          <p>Polish</p>
+          <span>{{ item.polish }}</span>
+        </div>
+        <div class="table_grid">
+          <p>Table</p>
+          <span>{{ item.table }}</span>
+        </div>
+        <div class="girdle_grid">
+          <p>Girdle</p>
+          <span>{{ item.girdle }}</span>
+        </div>
+        <div class="depth_grid">
+          <p>Depth</p>
+          <span>{{ item.depth }}</span>
+        </div>
+        <div class="culet_grid">
+          <p>Culet</p>
+          <span>{{ item.culet }}</span>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  {% endfor %}
+</div>
+
+<style>
+  .main_table_round{
+    background:#eeebe5;
+    position:sticky;
+    display:block;
+    top:0;
+    right:0;
+    z-index:9;
+    width:40%;
+    padding:30px 10px;
+    height:600px;
+    overflow:hidden;
+  }
+  .div_top p, .div_top span{
+    font-family:'Mars Extended';
+    font-size:12px;
+    letter-spacing:.2em;
+    line-height:1.3rem;
+    text-transform:uppercase;
+    margin:0;
+  }
+  .div_top span{
+    font-size:10px;
+    letter-spacing:0;
+    font-family:'Bradford Regular';
+  }
+  .table_heading, .table_heading p{
+    text-align:center;
+    margin:0;
+  }
+  .image_table{
+    text-align:center;
+  }
+  .div_heading {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    text-align:center;
+  }
+  .lab_heading{
+    text-align:center;
+    font-size:15px !important;
+  }
+  .lab_heading p{
+    font-size:13px;
+    margin:30px 0px;
+    letter-spacing:0;
+  }
+  .grid_table_round{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    gap:10px;
+  }
+
+</style>

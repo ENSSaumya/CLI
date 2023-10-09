@@ -1,0 +1,178 @@
+<div class="main_iplanet">
+  <div class="content_iplanet1">
+    {% for block in section.blocks %}
+      <div class="image_iplanet">
+        <img src="{{ block.settings.iplanet_img1 | img_url:"" }}" >
+      </div>
+      <div class="heading_iplanet">
+        <h1>{{ block.settings.iplanet_heading1 }}</h1>
+      </div>
+      <div class="growth_iplanet">
+        <p>{{ block.settings.iplanet_textarea1 }}</p>
+      </div>
+      <section class="transform_iplanet">
+        <div class="heading_transform">
+          <h1>{{ block.settings.iplanet_heading2 }}</h1>
+        </div>
+        <div class="text_transform">
+          <p>{{ block.settings.iplanet_textarea2 }}</p> 
+        </div>
+      </section>
+    {% endfor%}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "iplanet1",
+    "settings": [],
+    "blocks":[{
+      "type":"image",
+      "name":"Choose",
+      "settings":[{
+        "type":"image_picker",
+        "id":"iplanet_img1",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"iplanet_heading1",
+        "label":"Heading 1"
+      },
+      {
+        "type":"text",
+        "id":"iplanet_heading2",
+        "label":"Heading 2"
+      },
+      {
+        "type":"textarea",
+        "id":"iplanet_textarea1",
+        "label":"Text Field1"
+      },
+      {
+        "type":"html",
+        "id":"iplanet_textarea2",
+        "label":"Text Field2"
+      }
+      ]
+    }],
+    "presets":[{"name":"iplanet1"}]
+  }
+{% endschema %}
+
+<style>
+  .main_iplanet{
+    width:100%;
+    text-align:center;
+    background:#ffffff;
+    padding-top:275px;
+  }
+  .content_iplanet1{
+    width:80%;
+    margin:auto;
+  }
+ .content_iplanet1 .image_iplanet{
+    text-align:center;
+  }
+ .content_iplanet1 .image_iplanet img{
+    width:250px;
+    height:91px;
+  }
+ .content_iplanet1 .heading_iplanet h1{
+    font-weight: 800;
+    font-size: 48px;
+    color: #000000;
+    letter-spacing: -2px;
+    padding: 0 150px;
+  }
+ .content_iplanet1 .growth_iplanet{
+    width:68%;
+    margin:auto;
+  }
+ .content_iplanet1 .growth_iplanet p{
+    font-size:17px;
+    padding:0 62px;
+  }
+ .content_iplanet1 .transform_iplanet{
+    width: 90%;
+    margin: auto;
+    padding: 120px 0px;
+  }
+ .content_iplanet1 .transform_iplanet .heading_transform h1{
+    color:#16172b;
+    font-size:39px;
+    font-weight:800;
+    padding:0 20px;
+  }
+ .content_iplanet1 .text_transform{
+    letter-spacing:normal;
+  }
+ .content_iplanet1 .transform_iplanet .text_transform p{
+    color:#3e3e45;
+    font-size:17px;
+    font-weight:400;
+  }
+@media screen and (max-width: 767px){
+  .main_iplanet{
+    padding-top:120px
+  }
+  .content_iplanet1{
+    width:100%;
+  }
+   .content_iplanet1 .dash_enterprise{
+    position:absolute;
+    top:-25px;
+    width:40px;
+  }
+ .content_iplanet1 .heading_iplanet h1{
+    font-weight: 600;
+    font-size: 35px;
+    padding:0 30px; 
+  }
+ .content_iplanet1 .growth_iplanet{
+    width:100%;
+  }
+ .content_iplanet1 .growth_iplanet p{
+    font-size: 16px;
+    padding: 0 10px;
+  }
+ .content_iplanet1 .transform_iplanet .heading_transform h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding:0 31px;
+  }
+ .content_iplanet1 .text_transform p{
+    margin: 0 40px;
+  }
+ .content_iplanet1 .transform_iplanet{
+    width:100%;
+    padding:60px 0px 128px 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .content_iplanet1{
+    width:90%;
+  }
+  .main_iplanet{
+    padding-top:120px;
+  }
+ .content_iplanet1 .heading_iplanet h1{
+    font-size:36px;
+    padding:0 100px;
+  }
+ .content_iplanet1 .transform_iplanet .heading_transform h1{
+    font-size:30px;
+  }
+ .content_iplanet1 .growth_iplanet{
+    width:90%;
+  }
+ .content_iplanet1 .growth_iplanet p{
+    padding:0px;
+  }
+ .content_iplanet1 .transform_iplanet{
+    padding:80px 0px 128px 0px;
+  }
+}
+</style>
+
+{% javascript %}
+{% endjavascript %}

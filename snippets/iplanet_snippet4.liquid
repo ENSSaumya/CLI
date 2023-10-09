@@ -1,0 +1,84 @@
+<div class="main_iplanet4">
+  <div class="content_iplanet4">
+    <div class="dashed_content">
+    </div>
+    <div class="impetus_content">
+      <p>iMpetus Program for Startups</p>
+    </div>
+    <div class="text_content_iplanet4">
+      <p>Exclusive Apple Program for Startups</p>
+    </div>
+    <div class="button_content">
+      <span>KNOW MORE</span>
+    </div>
+  </div>
+</div>
+{% render "iplanet_snippet5" %}
+
+<style>
+  .main_iplanet4{
+    width:100%;
+    background:#bbbbbe;
+    height:100vh;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+  }
+  .impetus_content p::before{
+    content:"";
+    position:absolute;
+    top:-30px;
+    border:2px solid #38b6ff;
+    width:13%;
+    border-radius:5px;
+  }
+  .content_iplanet4{
+    margin-right:10%;
+    width:40%;
+  }
+  .impetus_content{
+    position:relative;
+  }
+  .impetus_content p{
+    color:#ffffff;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:0;
+  }
+  .text_content_iplanet4 p{
+    color:#ffffff;   
+  }
+  .button_content{
+    margin-top:50px;
+  }
+  .button_content span{
+    background: #5db7fe;
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .button_content span:hover{
+    background:#ffffff;
+    color:#5db7fe;
+  }
+@media screen and (max-width: 750px){
+  content_iplanet4{
+    width:45%;
+  }
+  .impetus_content p{
+    font-size:30px;
+    line-height:normal;
+  }
+  .text_content_iplanet4{
+    font-size:17px;
+  }
+  .button_content{
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+  }
+}
+</style>

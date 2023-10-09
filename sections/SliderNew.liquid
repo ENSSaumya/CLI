@@ -1,0 +1,77 @@
+<div>
+  <div class="Main_div_Image">
+  {% for block in section.blocks %}   
+    <div class="Child_div_Image">
+        <img src="{{ block.settings.image | img_url:"master" }}"/>  
+    </div>
+  {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "SliderNew",
+    "settings": [],
+    "blocks":[{
+      "name":"pick",
+      "type":"image_picker",
+      "settings":[{
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+          }]
+    }],
+    "presets":[{"name":"SliderNew"}]
+  }
+{% endschema %}
+
+<style>
+  .Main_div_Image
+  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 20px 8px 24px;    
+  }
+  .Child_div_Image
+  {
+    width: 100%;
+    border: 1px solid black;
+  }
+  .Child_div_Image img
+  {
+    width:100%;
+  }
+  .Main_div_Image .slick-next
+  {
+    right:2px;
+  }
+  .Main_div_Image .slick-next:before{
+    color:orange;
+  }
+  .Main_div_Image .slick-dots li.slick-active button:before{
+    color:blue;
+   font-size:20px;
+  }
+  .Main_div_Image .slick-dots li button:before{
+    font-size:10px;
+  }
+  @media (min-width:300px) and (max-width:600px)
+  {
+    .Child_div_Image{
+      width:100%;
+    }
+  }
+</style>
+<script>
+  $(document).ready(function(){
+  $('.Main_div_Image').slick({
+    slidesToShow: 1,
+    slidesToScroll:1,
+    dots: true,
+    infinite: true,
+    autoplay: false,
+    autoplaySpeed: 2800,
+    arrows: false
+    });
+    });
+</script>

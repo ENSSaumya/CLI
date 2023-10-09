@@ -1,0 +1,472 @@
+{
+  "sections": {
+    "990c0355-84d4-49c0-8865-1e948154cfe4": {
+      "type": "iplanet_Section1",
+      "blocks": {
+        "1a330a65-9914-4c7a-9c0f-2099282e4f62": {
+          "type": "image",
+          "settings": {
+            "iplanet_img1": "shopify:\/\/shop_images\/iplanet.png",
+            "iplanet_text1": ""
+          }
+        }
+      },
+      "block_order": [
+        "1a330a65-9914-4c7a-9c0f-2099282e4f62"
+      ],
+      "settings": {
+      }
+    },
+    "75957dcc-a6e0-4586-beba-50f083ecab54": {
+      "type": "iplanet_section2",
+      "blocks": {
+        "2f5ab97c-127b-4833-836f-37b733b95471": {
+          "type": "image",
+          "settings": {
+            "iplanet_img2": "shopify:\/\/shop_images\/background_iplanet2.jpg",
+            "iplanet_text2": ""
+          }
+        }
+      },
+      "block_order": [
+        "2f5ab97c-127b-4833-836f-37b733b95471"
+      ],
+      "settings": {
+      }
+    },
+    "b4d50b18-e2c0-4352-8462-dd1d33700d4d": {
+      "type": "iplanet_section3",
+      "blocks": {
+        "a583bb91-32d8-4e77-ae2b-426da6bd5425": {
+          "type": "image",
+          "settings": {
+            "image_iplanet3": "shopify:\/\/shop_images\/phone.jpg",
+            "text_iplanet3": "iPhone"
+          }
+        },
+        "3eb3e535-187b-4fee-996c-015202def1cd": {
+          "type": "image",
+          "settings": {
+            "image_iplanet3": "shopify:\/\/shop_images\/macbook.jpg",
+            "text_iplanet3": "MacBook"
+          }
+        },
+        "c989bbdf-506b-4bdc-99d1-c76e1b679a1d": {
+          "type": "image",
+          "settings": {
+            "image_iplanet3": "shopify:\/\/shop_images\/ipad.jpg",
+            "text_iplanet3": "iPad"
+          }
+        },
+        "2fbbdc86-e31e-47ab-b7f6-e95f69b63901": {
+          "type": "image",
+          "settings": {
+            "image_iplanet3": "shopify:\/\/shop_images\/watch.jpg",
+            "text_iplanet3": "Apple Watch"
+          }
+        },
+        "177bd296-0962-4b66-9c05-994b0d4e83fc": {
+          "type": "image",
+          "settings": {
+            "image_iplanet3": "shopify:\/\/shop_images\/airpods.jpg",
+            "text_iplanet3": "Accessories"
+          }
+        }
+      },
+      "block_order": [
+        "a583bb91-32d8-4e77-ae2b-426da6bd5425",
+        "3eb3e535-187b-4fee-996c-015202def1cd",
+        "c989bbdf-506b-4bdc-99d1-c76e1b679a1d",
+        "2fbbdc86-e31e-47ab-b7f6-e95f69b63901",
+        "177bd296-0962-4b66-9c05-994b0d4e83fc"
+      ],
+      "settings": {
+      }
+    },
+    "f75816ca-1211-4f50-a953-b28fbd5d16df": {
+      "type": "clear_origin",
+      "blocks": {
+        "0ad2981c-3112-4153-9d81-990d03df01c8": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/round.svg",
+            "text_clear": "Round",
+            "url_clear": "shopify:\/\/collections\/round-collection"
+          }
+        },
+        "d345150d-3a60-4faf-a6f0-c820de1d14ec": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/oval.svg",
+            "text_clear": "Oval",
+            "url_clear": "shopify:\/\/collections\/oval-collection"
+          }
+        },
+        "ea5e6b86-f4af-4a45-9485-e900533527f7": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/emerald.svg",
+            "text_clear": "Emerald",
+            "url_clear": "shopify:\/\/collections\/emerald-collection"
+          }
+        },
+        "f0b25c13-b780-436d-9199-2d93bb11e564": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/pear.svg",
+            "text_clear": "Pear",
+            "url_clear": "shopify:\/\/collections\/pear-collection"
+          }
+        },
+        "ab5b4336-0ae9-4fb3-a8dd-24ad572288e9": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/princess.svg",
+            "text_clear": "Princess",
+            "url_clear": "shopify:\/\/collections\/princess-collection"
+          }
+        },
+        "e7441ecd-ea33-41bb-8a29-4a95dfc0ec3b": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/cushion.svg",
+            "text_clear": "Cushion",
+            "url_clear": "shopify:\/\/collections\/cushion-collection"
+          }
+        },
+        "0512c8b5-e213-4973-91d2-61f4ef818ead": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/radiant.svg",
+            "text_clear": "Radiant",
+            "url_clear": "shopify:\/\/collections\/radiant-collection"
+          }
+        },
+        "c7471edd-9dcd-4ead-8fae-c314f3289ef4": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/asscher.svg",
+            "text_clear": "Asscher",
+            "url_clear": "shopify:\/\/collections\/asscher-collection"
+          }
+        },
+        "65096271-26ae-4152-8c0b-bbf5982babc8": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/marquise.svg",
+            "text_clear": "Marquise",
+            "url_clear": "shopify:\/\/collections\/marquise"
+          }
+        },
+        "39b9d40f-ebbd-4f09-925f-bc3413fb5bc5": {
+          "type": "image",
+          "settings": {
+            "image_clear": "shopify:\/\/shop_images\/heart.svg",
+            "text_clear": "Heart",
+            "url_clear": ""
+          }
+        }
+      },
+      "block_order": [
+        "0ad2981c-3112-4153-9d81-990d03df01c8",
+        "d345150d-3a60-4faf-a6f0-c820de1d14ec",
+        "ea5e6b86-f4af-4a45-9485-e900533527f7",
+        "f0b25c13-b780-436d-9199-2d93bb11e564",
+        "ab5b4336-0ae9-4fb3-a8dd-24ad572288e9",
+        "e7441ecd-ea33-41bb-8a29-4a95dfc0ec3b",
+        "0512c8b5-e213-4973-91d2-61f4ef818ead",
+        "c7471edd-9dcd-4ead-8fae-c314f3289ef4",
+        "65096271-26ae-4152-8c0b-bbf5982babc8",
+        "39b9d40f-ebbd-4f09-925f-bc3413fb5bc5"
+      ],
+      "settings": {
+      }
+    },
+    "9858ae3e-abf1-42c7-9de0-4626402a98bc": {
+      "type": "horlicks",
+      "settings": {
+        "textarea_horlicks": "\"English\",\"Marathi\",\"Hindi\",\"Gujarati\",\"Tamil\",\"Telugu\",\"Malayalam\",\"Kannada\""
+      }
+    },
+    "56113299-dd3a-42d2-845d-4ebb9b9d2fb9": {
+      "type": "hair_routine",
+      "blocks": {
+        "5e889e69-c3d3-42b9-b9d5-2dfc78786181": {
+          "type": "image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Sulfate_Free_1.png",
+            "text1": "Sulfate Free"
+          }
+        },
+        "bcd34274-f562-4fdf-a77e-a921e58076e1": {
+          "type": "image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Paraben_Free_1.png",
+            "text1": "Parabean Free"
+          }
+        },
+        "68b7a5d0-cebb-4e16-b090-a439a0c72e9c": {
+          "type": "image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Vegan_Friendly_1.png",
+            "text1": "Vegan Friendly"
+          }
+        },
+        "34bba385-4821-48a5-b7dd-264c563ec3d7": {
+          "type": "image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Cruelty_Free_1.png",
+            "text1": "Cruelty Free"
+          }
+        },
+        "2d11e7e1-b3f2-4be5-9eed-f1ceda54e3da": {
+          "type": "image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Clean_Ingredients_2.png",
+            "text1": "Clean Ingredients"
+          }
+        },
+        "4f7d46c8-7439-4861-8a44-9c2ca2e952ea": {
+          "type": "image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/OBJECTS.png",
+            "text1": "GMO Free"
+          }
+        },
+        "273cf0c8-03af-4401-84dc-4f3d6da7d106": {
+          "type": "image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Vector.png",
+            "text1": "Pertoleun Free"
+          }
+        },
+        "17968df7-552b-4272-9981-d1a1ee871d18": {
+          "type": "image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Group_102353318.png",
+            "text1": "No Dyes"
+          }
+        }
+      },
+      "block_order": [
+        "5e889e69-c3d3-42b9-b9d5-2dfc78786181",
+        "bcd34274-f562-4fdf-a77e-a921e58076e1",
+        "68b7a5d0-cebb-4e16-b090-a439a0c72e9c",
+        "34bba385-4821-48a5-b7dd-264c563ec3d7",
+        "2d11e7e1-b3f2-4be5-9eed-f1ceda54e3da",
+        "4f7d46c8-7439-4861-8a44-9c2ca2e952ea",
+        "273cf0c8-03af-4401-84dc-4f3d6da7d106",
+        "17968df7-552b-4272-9981-d1a1ee871d18"
+      ],
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "b8545685-cf3e-4783-b083-c8c7dfad11c7": {
+      "type": "traya-design",
+      "blocks": {
+        "bcbb760a-dead-4741-b853-e39445b460cb": {
+          "type": "image_picker",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/image_1499.png",
+            "txt1": "Can it be used for all hair types?",
+            "Lnk1": ""
+          }
+        },
+        "da7ecec5-f808-444e-8ede-cd971ba6d633": {
+          "type": "image_picker",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/Frame_102352743.png",
+            "txt1": "Does Traya Damage Repair Regimen consist of any harsh chemical?",
+            "Lnk1": ""
+          }
+        },
+        "4cce5211-aef6-465f-af0d-a13c9e71efe4": {
+          "type": "image_picker",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/woman-getting-treatment-hairdresser-shop_1.png",
+            "txt1": "Is it suitable for coloured or chemically treated hair?",
+            "Lnk1": ""
+          }
+        },
+        "d0711e62-b111-49a8-93e6-3fc6fe4f48be": {
+          "type": "image_picker",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/long-brown-hair-palm-hair-care_1.png",
+            "txt1": "How long does it take to see results?",
+            "Lnk1": ""
+          }
+        }
+      },
+      "block_order": [
+        "bcbb760a-dead-4741-b853-e39445b460cb",
+        "da7ecec5-f808-444e-8ede-cd971ba6d633",
+        "4cce5211-aef6-465f-af0d-a13c9e71efe4",
+        "d0711e62-b111-49a8-93e6-3fc6fe4f48be"
+      ],
+      "settings": {
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "6434b34e-cbc3-443b-81f1-e2a228e5a5b1": {
+      "type": "Hair_New",
+      "blocks": {
+        "af0ac107-a6ee-48b9-b1e6-24114a32cd56": {
+          "type": "image_picker",
+          "settings": {
+            "pic_img": "shopify:\/\/shop_images\/Curly_1.png",
+            "pic-txt": "Curly"
+          }
+        },
+        "f5b49008-c5de-4be1-8aa7-bc038a29a2ca": {
+          "type": "image_picker",
+          "settings": {
+            "pic_img": "shopify:\/\/shop_images\/Wavy_1.png",
+            "pic-txt": "Wavy"
+          }
+        },
+        "43faf9e5-c5c6-4a83-96bb-e6929ec95cde": {
+          "type": "image_picker",
+          "settings": {
+            "pic_img": "shopify:\/\/shop_images\/Straight_1.png",
+            "pic-txt": "Straight"
+          }
+        }
+      },
+      "block_order": [
+        "af0ac107-a6ee-48b9-b1e6-24114a32cd56",
+        "f5b49008-c5de-4be1-8aa7-bc038a29a2ca",
+        "43faf9e5-c5c6-4a83-96bb-e6929ec95cde"
+      ],
+      "settings": {
+      }
+    },
+    "6a813b91-1c29-4103-ad70-1b759a01a774": {
+      "type": "Multiple-tabs-in-a-div",
+      "blocks": {
+        "addecf5f-3ec5-42f4-994f-9542d9274f08": {
+          "type": "type1",
+          "settings": {
+            "img2": "shopify:\/\/shop_images\/makeup-and-beauty-products.jpg",
+            "tag-image": "tag1"
+          }
+        },
+        "303cdc28-7240-46ac-b0ab-41c6b977b5cd": {
+          "type": "type1",
+          "settings": {
+            "img2": "shopify:\/\/shop_images\/bright-eyeshadow-makeup.jpg",
+            "tag-image": "tag2"
+          }
+        },
+        "baa1b036-923a-43b8-8375-18ef54a75de0": {
+          "type": "type1",
+          "settings": {
+            "img2": "shopify:\/\/shop_images\/beauty-products-flatlay.jpg",
+            "tag-image": "tag3"
+          }
+        },
+        "fb93d738-f9fb-401b-9400-4a03dee191e3": {
+          "type": "type2",
+          "settings": {
+            "txt3": "Make up",
+            "tag-text": "tag1"
+          }
+        },
+        "bffdc9b0-cbe9-46f8-be6e-8f220ea3da3e": {
+          "type": "type2",
+          "settings": {
+            "txt3": "Makeup kit",
+            "tag-text": "tag1"
+          }
+        },
+        "aab06b96-4ebe-4c9a-a7bb-e8d03da21d22": {
+          "type": "type2",
+          "settings": {
+            "txt3": "Colours",
+            "tag-text": "tag2"
+          }
+        },
+        "05895bd4-0e50-4096-a943-5ee3281aef7f": {
+          "type": "type2",
+          "settings": {
+            "txt3": "Facial kit",
+            "tag-text": "tag3"
+          }
+        }
+      },
+      "block_order": [
+        "addecf5f-3ec5-42f4-994f-9542d9274f08",
+        "303cdc28-7240-46ac-b0ab-41c6b977b5cd",
+        "baa1b036-923a-43b8-8375-18ef54a75de0",
+        "fb93d738-f9fb-401b-9400-4a03dee191e3",
+        "bffdc9b0-cbe9-46f8-be6e-8f220ea3da3e",
+        "aab06b96-4ebe-4c9a-a7bb-e8d03da21d22",
+        "05895bd4-0e50-4096-a943-5ee3281aef7f"
+      ],
+      "settings": {
+      }
+    },
+    "00eec319-bc25-4570-8868-3e25569882ca": {
+      "type": "Multiple-tabs-in-a-div-2",
+      "blocks": {
+        "4828580f-4607-4f8c-ad47-d60ee1ba9a60": {
+          "type": "Image",
+          "settings": {
+            "imgpic": "shopify:\/\/shop_images\/Curly_1.png",
+            "text0": "Soft,Shiny"
+          }
+        },
+        "497cee87-4760-45d5-8d03-fa93259e4cc5": {
+          "type": "Image",
+          "settings": {
+            "imgpic": "shopify:\/\/shop_images\/Straight_1.png",
+            "text0": "Volumious ,Tangle-Free,Hydration"
+          }
+        },
+        "ad4b62e5-4ca6-41da-b829-0c3c31d43b15": {
+          "type": "Image",
+          "settings": {
+            "imgpic": "shopify:\/\/shop_images\/Wavy_1.png",
+            "text0": "Nourishment"
+          }
+        }
+      },
+      "block_order": [
+        "4828580f-4607-4f8c-ad47-d60ee1ba9a60",
+        "497cee87-4760-45d5-8d03-fa93259e4cc5",
+        "ad4b62e5-4ca6-41da-b829-0c3c31d43b15"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "990c0355-84d4-49c0-8865-1e948154cfe4",
+    "75957dcc-a6e0-4586-beba-50f083ecab54",
+    "b4d50b18-e2c0-4352-8462-dd1d33700d4d",
+    "f75816ca-1211-4f50-a953-b28fbd5d16df",
+    "9858ae3e-abf1-42c7-9de0-4626402a98bc",
+    "56113299-dd3a-42d2-845d-4ebb9b9d2fb9",
+    "main",
+    "b8545685-cf3e-4783-b083-c8c7dfad11c7",
+    "form",
+    "6434b34e-cbc3-443b-81f1-e2a228e5a5b1",
+    "6a813b91-1c29-4103-ad70-1b759a01a774",
+    "00eec319-bc25-4570-8868-3e25569882ca"
+  ]
+}

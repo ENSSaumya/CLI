@@ -1,0 +1,123 @@
+<div class="main_iplanet4">
+  <div class="content_iplanet4">
+    <div class="impetus_content">
+      <p>{{ section.settings.heading_section4 }}</p>
+    </div>
+    <div class="text_content_iplanet4">
+      <p>{{ section.settings.text_section4 }}</p>
+    </div>
+    <div class="button_content">
+      <a href="{{ section.settings.url_section4 }}"><span>KNOW MORE</span></a>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "iplanet_Section4",
+      "settings":[{
+        "type":"image_picker",
+        "id":"image_section4",
+        "label":"Background Image"
+      },
+      {
+        "type":"text",
+        "id":"heading_section4",
+        "label":"Heading"
+      },
+      {
+        "type":"textarea",
+        "id":"text_section4",
+        "label":"Text"
+      },
+      {
+        "type":"url",
+        "id":"url_section4",
+        "label":"Link"
+      }
+    ],
+    "presets":[{"name":"iplanet_Section4"}]
+  }
+{% endschema %}
+
+<style>
+  .main_iplanet4{
+    width:100%;
+    background-image:url("{{  }}");
+    height:100vh;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+  }
+  .main_iplanet4 .impetus_content p::before{
+    content:"";
+    position:absolute;
+    top:-30px;
+    border:2px solid #38b6ff;
+    width:13%;
+    border-radius:5px;
+  }
+  .main_iplanet4 .content_iplanet4{
+    margin-right:10%;
+    width:40%;
+  }
+ .main_iplanet4 .impetus_content{
+    position:relative;
+  }
+ .main_iplanet4 .impetus_content p{
+    color:#ffffff;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:0;
+  }
+  .main_iplanet4 .text_content_iplanet4 p{
+    color:#ffffff;   
+  }
+ .main_iplanet4 .button_content{
+    margin-top:50px;
+  }
+  .main_iplanet4 .button_content span{
+    background: #5db7fe;
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .main_iplanet4 .button_content span:hover{
+    background:#ffffff;
+    color:#5db7fe;
+  }
+ .main_iplanet4 .button_content a{
+    text-decoration:"none";
+  }
+@media screen and (max-width: 768px){
+ .main_iplanet4 .content_iplanet4{
+    width:45%;
+  }
+ .main_iplanet4 .impetus_content p{
+    font-size:30px;
+    line-height:normal;
+  }
+ .main_iplanet4 .text_content_iplanet4{
+    font-size:17px;
+  }
+ .main_iplanet4 .button_content{
+    text-align: center;
+    line-height: normal;
+    width: min-content;
+    background: #5db7fe;
+    padding: 20px;
+  }
+ .main_iplanet4 .button_content span{
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+</style>
+
+{% javascript %}
+{% endjavascript %}

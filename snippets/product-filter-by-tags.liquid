@@ -1,0 +1,14 @@
+<div>
+  <div>
+    {% assign val = product.tags %}
+    {% for item in product.tags %}
+      {% if val == "women" %}
+        {{ "Women's Product -> ",val.title }}
+      {% elsif val == "men" %}
+        {{ "Mens ->",val.title }}
+      {% else  %}
+        {{ val.title }}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

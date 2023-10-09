@@ -1,0 +1,34 @@
+<div class="fr_main">
+  {% for block in section.blocks %}
+    <div class="fr_text-link">
+      <p class="fr_text"><a class="fr_link" href="{{ block.settings.fr_url }}">{{ block.settings.fr_text }}</a></p>
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "Popular searches",
+    "settings": [],
+    "blocks":[{
+      "name":"Choose",
+      "type":"text",
+      "settings":[{
+        "type":"text",
+        "id":"fr_text",
+        "label":"Text"
+      },
+      {
+        "type":"url",
+        "id":"fr_url",
+        "label":"URL"
+      }]
+    }],
+    "presets":[{"name":"Popular searches"}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

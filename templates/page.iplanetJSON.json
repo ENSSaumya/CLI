@@ -1,0 +1,157 @@
+{
+  "sections": {
+    "375ad0e2-25c5-4b08-bc2d-14ff0ad64c13": {
+      "type": "iplanet_timer",
+      "settings": {
+        "text_timer": "Why iPlanet?"
+      }
+    },
+    "5a5c385c-1eaa-4d46-9d58-041e8c230ed0": {
+      "type": "hsbc",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "cf901d4d-13c4-4102-8fe7-6b37fdb165b2": {
+      "type": "iplanet_Section1",
+      "blocks": {
+        "adaeb8da-05a5-4124-be07-75997929bb48": {
+          "type": "image",
+          "settings": {
+            "iplanet_img1": "shopify:\/\/shop_images\/iplanet.png",
+            "iplanet_heading1": "Help Companies to Grow with Apple Products!",
+            "iplanet_heading2": "Transform your business by empowering your employees with powerful Apple solutions.",
+            "iplanet_textarea1": "Growth in business is a continuous process. iPlanet Enterprise helps you to stay connected with top-notch apple solutions. Our Apple experts will take you through hassle-free support services.",
+            "iplanet_textarea2": "Consultancy  |   Devices |   Apps  |  Deployment |  Training |  Service Support"
+          }
+        }
+      },
+      "block_order": [
+        "adaeb8da-05a5-4124-be07-75997929bb48"
+      ],
+      "settings": {
+      }
+    },
+    "10a4fc4a-cec3-4418-9b10-7af4190c1240": {
+      "type": "iplanet_section2",
+      "settings": {
+        "img_iplanet2": "shopify:\/\/shop_images\/background_iplanet2.jpg",
+        "heading1_iplanet2": "Enterprise IT solutions",
+        "paragraph_iplanet6": "Consolidated Techware is the Enterprise vertical of the the organisation and is a 100% subsidiary of Consolidated Private Limited\n\nOur strength is in our focus on Apple’s technology. We have built credibility over the last 10 years, through Retail (25 iPlanet Apple Premium Reseller stores); Service (23 Apple Authorised Service centres – Planet Care); and offerings to Enterprise, Government and Education markets.\n\nProductivity, Collaboration and Security are key choices for a company’s IT policy framework. Apple’s strength of platform and ease of integration, makes this a preferred computing choice for employees from global companies to startups.\n\nWe align Apple’s zero touch deployment’s, market leading MDM’s, training and leasing solutions, to best align with your digital transformation journey"
+      }
+    },
+    "f204b972-7a0c-4149-8a0d-7df88dbb6840": {
+      "type": "iplanet_section3",
+      "blocks": {
+        "6b713c17-13a9-43c2-8ed8-4f73ef614431": {
+          "type": "image",
+          "settings": {
+            "text_iplanet3": ""
+          }
+        }
+      },
+      "block_order": [
+        "6b713c17-13a9-43c2-8ed8-4f73ef614431"
+      ],
+      "settings": {
+      }
+    },
+    "ab93d828-90b3-4640-8934-dc1b4cc62cc6": {
+      "type": "iplanet_section4",
+      "settings": {
+        "heading_section4": "",
+        "text_section4": "",
+        "url_section4": ""
+      }
+    },
+    "d8531cf8-b7bc-4a4e-86fa-9b98e9c9893a": {
+      "type": "iplanet_section6",
+      "blocks": {
+        "f36f51bd-627c-4e30-ac0e-4dbe9feb6f5c": {
+          "type": "image",
+          "settings": {
+            "pic_section6": "shopify:\/\/shop_images\/blog1.jpg",
+            "heading_section6": "Apple Products for Business Success: Profit-Driven System",
+            "text_section6": "Apple products for Business efficiency and success! Let’s discuss their importance, and benefits, and guide corporate leaders & decision-makers.",
+            "url_section6": "shopify:\/\/blogs\/news\/apple-products-for-business-success-profit-driven-system",
+            "tag_section6": ""
+          }
+        },
+        "729af1da-8d23-4697-b56b-85cb29e494a8": {
+          "type": "image",
+          "settings": {
+            "pic_section6": "shopify:\/\/shop_images\/blog2.jpg",
+            "heading_section6": "Apple Products in IT Infrastructure: Seamless Integration",
+            "text_section6": "Apple products in existing IT infrastructures offer many benefits, from improved productivity to streamlined workflows.",
+            "url_section6": "shopify:\/\/blogs\/news\/apple-products-in-it-infrastructure-seamless-integration",
+            "tag_section6": ""
+          }
+        }
+      },
+      "block_order": [
+        "f36f51bd-627c-4e30-ac0e-4dbe9feb6f5c",
+        "729af1da-8d23-4697-b56b-85cb29e494a8"
+      ],
+      "settings": {
+      }
+    },
+    "411aaca2-3052-4b10-b6a9-1b864e1d9638": {
+      "type": "iplanet_section7",
+      "blocks": {
+        "253c742c-4874-423b-a223-b7ac3f46b434": {
+          "type": "image",
+          "settings": {
+            "pic_section7": "shopify:\/\/shop_images\/Digit88.jpg",
+            "heading_section7": "Dheeraj Sood",
+            "subscript_section7": "Head",
+            "text_section7": "iPlanet Enterprise has been a rock solid IT Partner in Digit88’s growth over the past year helping us with critical IT needs with their super responsive and flexible approach to conducting business."
+          }
+        },
+        "6d62afca-f0d0-4b99-b31f-7845704575eb": {
+          "type": "image",
+          "settings": {
+            "pic_section7": "shopify:\/\/shop_images\/Nutanix.jpg",
+            "heading_section7": "Manunath N",
+            "subscript_section7": "Head",
+            "text_section7": "Appreciate iPlanet Enterprise support during this challenging time. Service team support is excellent. I’m always impressed with the dedication and skill of the team."
+          }
+        },
+        "b65be830-772f-474c-8e2a-66ad9fd727bf": {
+          "type": "image",
+          "settings": {
+            "pic_section7": "shopify:\/\/shop_images\/gameskraft.jpg",
+            "heading_section7": "Prasanth Natarajan",
+            "subscript_section7": "IT Manager",
+            "text_section7": "iPlanet Enterprise was the perfect partner for us, easily exceeded our expectations. They are personable, responsive and results oriented."
+          }
+        }
+      },
+      "block_order": [
+        "253c742c-4874-423b-a223-b7ac3f46b434",
+        "6d62afca-f0d0-4b99-b31f-7845704575eb",
+        "b65be830-772f-474c-8e2a-66ad9fd727bf"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "375ad0e2-25c5-4b08-bc2d-14ff0ad64c13",
+    "5a5c385c-1eaa-4d46-9d58-041e8c230ed0",
+    "main",
+    "cf901d4d-13c4-4102-8fe7-6b37fdb165b2",
+    "10a4fc4a-cec3-4418-9b10-7af4190c1240",
+    "f204b972-7a0c-4149-8a0d-7df88dbb6840",
+    "ab93d828-90b3-4640-8934-dc1b4cc62cc6",
+    "d8531cf8-b7bc-4a4e-86fa-9b98e9c9893a",
+    "411aaca2-3052-4b10-b6a9-1b864e1d9638"
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "sections": {
+    "9235e166-46f0-46dd-a2c8-09d9d996dbb2": {
+      "type": "SliderNew",
+      "blocks": {
+        "d8340e7e-ec46-4ab1-b059-5e39dcf6ed60": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_211268b8-76c7-40b3-8867-c08458bef3ce.webp"
+          }
+        },
+        "0c6d75c9-9724-4527-b2d8-d38ccdf03989": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_643fa782-4df8-4bec-ad13-151745291cb8.webp"
+          }
+        },
+        "db4b4a27-001c-49ce-a499-38650730427a": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_4d4e0cb1-50f8-474b-83ce-329856e6b90c.webp"
+          }
+        },
+        "4c14cc44-7839-4f11-b848-6984eb8602f7": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_0f938719-0fe0-4eb5-a2a5-27584bf0e363.webp"
+          }
+        }
+      },
+      "block_order": [
+        "d8340e7e-ec46-4ab1-b059-5e39dcf6ed60",
+        "0c6d75c9-9724-4527-b2d8-d38ccdf03989",
+        "db4b4a27-001c-49ce-a499-38650730427a",
+        "4c14cc44-7839-4f11-b848-6984eb8602f7"
+      ],
+      "settings": {
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "slide",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop all",
+            "link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 10,
+            "color_scheme": "background-2",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "ff4f9c42-f069-49fd-bbb9-74819cbb43ad": {
+      "type": "Slide_Banner",
+      "blocks": {
+        "d87c2680-31b2-4311-a5c2-41641aa3564f": {
+          "type": "image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/2_e5a11ce5-c111-4426-ba71-a16b3d1051b3.webp",
+            "txt1": "Saumya"
+          }
+        }
+      },
+      "block_order": [
+        "d87c2680-31b2-4311-a5c2-41641aa3564f"
+      ],
+      "disabled": true,
+      "settings": {
+        "select": "top"
+      }
+    },
+    "featured-collection-0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "63fe08e0-7f19-45ab-b117-ccd835b68c6a": {
+      "type": "initial_section",
+      "blocks": {
+        "4a2f396b-3ee3-4176-8682-4dd681c83e0f": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11.webp",
+            "text": "Lakmé Absolute Gel Stylist Glitterati Coll...",
+            "textnum": "₹ 325",
+            "btn": "Explore"
+          }
+        },
+        "bacf77fa-9f1c-4288-aa07-5b8499ec7b8c": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/22.webp",
+            "text": "LAKMÉ EYECONIC INSTA COOL KAJAL",
+            "textnum": "₹ 190",
+            "btn": "Explore"
+          }
+        },
+        "2510c4c0-e49b-4313-8b62-22dfdcb323ca": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/33.webp",
+            "text": "Lakmé Forever Matte Liquid Lip Color",
+            "textnum": "₹ 650",
+            "btn": "Explore"
+          }
+        },
+        "db670c70-ec8e-464a-a32c-9676ea06345f": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/44.webp",
+            "text": "Lakmé Absolute Sheer Lip Mousse in Black",
+            "textnum": "₹ 650",
+            "btn": "Explore"
+          }
+        },
+        "30516d59-209a-4935-b818-01a6d8720858": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11_4864d6c6-0f73-4510-9048-be96b0e3cc4d.webp",
+            "text": "VITAMIN C+ AFTER HOURS GLOW KIT",
+            "textnum": "₹ 1,399",
+            "btn": "Explore"
+          }
+        },
+        "76b4f342-0b12-47d2-a31c-1dad9967818f": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_85c3cf97-4bf5-4094-bb55-08d704a1a823.webp",
+            "text": "LAKMÉ ABSOLUTE HYDRA PRO SERUM",
+            "textnum": "₹ 359",
+            "btn": "Explore"
+          }
+        },
+        "839ed13a-b985-4998-b919-a2b219b82a0b": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_e5a11ce5-c111-4426-ba71-a16b3d1051b3.webp",
+            "text": "LAKMÉ YOUTH INFINITY SKIN FIRMING",
+            "textnum": "₹ 636",
+            "btn": "Explore"
+          }
+        }
+      },
+      "block_order": [
+        "4a2f396b-3ee3-4176-8682-4dd681c83e0f",
+        "bacf77fa-9f1c-4288-aa07-5b8499ec7b8c",
+        "2510c4c0-e49b-4313-8b62-22dfdcb323ca",
+        "db670c70-ec8e-464a-a32c-9676ea06345f",
+        "30516d59-209a-4935-b818-01a6d8720858",
+        "76b4f342-0b12-47d2-a31c-1dad9967818f",
+        "839ed13a-b985-4998-b919-a2b219b82a0b"
+      ],
+      "settings": {
+      }
+    },
+    "c46d1d61-253d-4f2d-8d03-978d174fb294": {
+      "type": "1_section",
+      "blocks": {
+        "c2a62a15-3774-4f8a-b9d5-6f44eb63e4e8": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_79e44245-411d-43e3-becd-99110df5184f.webp",
+            "text": "ACE THE BASE",
+            "url": "shopify:\/\/collections\/face"
+          }
+        },
+        "192ccba3-9e9b-4c56-907a-4b937348a96b": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_ab1e3aac-4548-402f-b419-969576a21878.webp",
+            "text": "SHOWSTOPPING SKIN",
+            "url": "shopify:\/\/collections\/serum"
+          }
+        },
+        "31c48c25-6a74-4d7d-b965-77953c09e2e4": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_97a44ec2-bee9-4f19-840b-6fefd8fc0214.webp",
+            "text": "POUT TO CART",
+            "url": "shopify:\/\/collections\/lips"
+          }
+        },
+        "d44f4e72-736e-46ba-be93-9b002b0c5c52": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_614b3259-0ae7-45c8-a975-f286e5807fee.webp",
+            "text": "NAIL IT LIKE A PRO",
+            "url": "shopify:\/\/collections\/nails"
+          }
+        }
+      },
+      "block_order": [
+        "c2a62a15-3774-4f8a-b9d5-6f44eb63e4e8",
+        "192ccba3-9e9b-4c56-907a-4b937348a96b",
+        "31c48c25-6a74-4d7d-b965-77953c09e2e4",
+        "d44f4e72-736e-46ba-be93-9b002b0c5c52"
+      ],
+      "settings": {
+      }
+    },
+    "05318239-e685-4be7-8247-16f908ed2b45": {
+      "type": "slider-product",
+      "settings": {
+        "text": "",
+        "collect": ""
+      }
+    },
+    "2ff86695-c5c3-4ce5-8c04-c2514fa676ea": {
+      "type": "Accordian",
+      "settings": {
+      }
+    },
+    "997f1523-3980-4cd4-9c8f-2566791b3fd3": {
+      "type": "Image_Swap",
+      "blocks": {
+        "bfcfa914-d53d-4af5-890f-940d437816f7": {
+          "type": "image",
+          "settings": {
+            "image2": "shopify:\/\/shop_images\/FOP_640x_1bfceb21-2086-449f-883c-1403201734bf.png",
+            "image3": "shopify:\/\/shop_images\/2_e5a11ce5-c111-4426-ba71-a16b3d1051b3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "bfcfa914-d53d-4af5-890f-940d437816f7"
+      ],
+      "settings": {
+      }
+    },
+    "eb8568c5-6f2b-46ff-bdc5-28999216126b": {
+      "type": "Button_Popup",
+      "settings": {
+      }
+    },
+    "3b89b44e-4610-4a0d-8bfb-2fcd7ba49f2b": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "9235e166-46f0-46dd-a2c8-09d9d996dbb2",
+    "slideshow",
+    "ff4f9c42-f069-49fd-bbb9-74819cbb43ad",
+    "featured-collection-0",
+    "63fe08e0-7f19-45ab-b117-ccd835b68c6a",
+    "c46d1d61-253d-4f2d-8d03-978d174fb294",
+    "05318239-e685-4be7-8247-16f908ed2b45",
+    "2ff86695-c5c3-4ce5-8c04-c2514fa676ea",
+    "997f1523-3980-4cd4-9c8f-2566791b3fd3",
+    "eb8568c5-6f2b-46ff-bdc5-28999216126b",
+    "3b89b44e-4610-4a0d-8bfb-2fcd7ba49f2b"
+  ]
+}

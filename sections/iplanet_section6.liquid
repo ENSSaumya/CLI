@@ -1,0 +1,253 @@
+<div class="main_iplanet6">
+  <div class="content_iplanet6">
+    <div class="text_content">
+      <h2>The Latest from The Enterprise Blog</h2>
+      <p>We bring in major resources of Apple Enterprise<br>solutions here.</p>
+    </div>
+    <div class="blog_iplanet6">
+    {% for block in section.blocks %}
+    <div class="first_blog">    
+      <div class="image_first_blog">
+        <img src="{{ block.settings.pic_section6 | img_url:"" }}">
+      </div>
+      <div class="heading_first_blog">
+        <h3><a href="">{{ block.settings.heading_section6 }}</a></h3>
+      </div>
+      <div class="text_first_blog">
+        <p>{{ block.settings.text_section6 }}</p>
+      </div>
+      <div class="read_more_first_blog">
+        <a href="{{ block.settings.url_section6 }}">READ MORE »</a>
+      </div> 
+      <div class="tag_iplanet6">
+        <span class="class_tag">{{ block.settings.tag_section6 }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+ </div>
+  <div class="view_iplanet6">
+    <span><a href="" style="text-decoration:none;">VIEW ALL</a></span>
+    <svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path>
+    </svg>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "iplanet6",
+    "settings": [],
+    "blocks":[{
+      "type":"image",
+      "name":"section6",
+      "settings":[{
+        "type":"image_picker",
+        "id":"pic_section6",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"heading_section6",
+        "label":"Heading"
+      },
+      {
+        "type":"textarea",
+        "id":"text_section6",
+        "label":"Text"
+      },
+      {
+        "type":"url",
+        "id":"url_section6",
+        "label":"Link"
+      },
+      {
+        "type":"text",
+        "id":"tag_section6",
+        "label":"Tag"
+      }]
+    }],
+    "presets":[{"name":"iplanet6"}]
+  }
+{% endschema %}
+
+<style>
+  .main_iplanet6{
+    width:100%;
+    padding:10% 5%;
+    background:#e8e8ea;
+  }
+  .text_content h2::before{
+    content:"";
+    position:absolute;
+    top:-2%;
+    border:2px solid #38b6ff;
+    width:13%;
+    border-radius:5px;
+  }
+  .content_iplanet6{
+    margin: 0 8%;
+  }
+  .content_iplanet6, .blog_iplanet6{
+    display:flex;
+    gap:25px;
+  }
+  .text_content{
+    width:50%;
+    padding-right:20%;
+    position:relative;
+  }
+  .text_content h2{
+    font-size:40px;
+    color:#000000;
+  }
+  .text_content p{
+    color:#3E3E45;
+    font-size:15px;
+  }
+  .blog_iplanet6{
+    width:50%;
+  }
+  .image_first_blog img{
+    width:100%;
+  }
+  .image_first_blog{
+    position:relative;
+  }
+  .image_first_blog::after {
+    display: block;
+    content: "";
+    background-image: linear-gradient(0deg,rgba(0,0,0,.35),transparent 75%);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transition: all .3s ease-out;
+  }
+  .heading_first_blog, .text_first_blog, .read_more_first_blog {
+    padding:0 30px;
+  }
+  .heading_first_blog a{
+    text-decoration:none;
+    color:#000000;
+    font-size:21px;
+  }
+  .text_first_blog {
+    font-size:12px;
+    color:#8286b4;
+  }
+  .first_blog{
+    position:relative;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    width:37%;
+    background:#ffffff;
+    height:fit-content;
+    padding-bottom:30px;
+  }
+  .blog_iplanet6 img:hover{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.35),transparent 40%);
+  }
+  .read_more_first_blog{
+    padding-top:15px;
+  }
+  .read_more_first_blog a{
+    text-decoration:none;
+    color:#63b7fe;
+    font-size:12px;
+    font-weight:800;
+  }
+  .view_iplanet6{
+    text-align: right;
+    width: 81%;
+    padding-top: 50px;
+    font-weight: 700;
+  }
+  .view_iplanet6 a{
+    color: #3566d0;
+  }
+  .view_iplanet6 svg{
+    width: 20px;
+    height: 15px;
+    fill: #3566d0;
+    border: #2666CF;
+  }
+  .tag_iplanet6{
+    width: 20%;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+  }
+  .tag_iplanet6 .class_tag{
+    color: #ffffff;
+    background: #818a91;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+@media (max-width: 767px){
+  .content_iplanet6, .blog_iplanet6{
+    flex-direction:column;
+    width:100%;
+    margin:0;
+  }
+  .text_content{
+    width:100%;
+    padding-right:0%;
+  }
+  .first_blog{
+    width:100%;
+  }
+  .text_content h2{
+    font-size:29px;
+  }
+  .text_first_blog, . {
+    font-size:15px;
+    padding: 0 29px;
+  }
+  .text_first_blog p{
+    font-size:12px;
+    color:#777;
+    line-height:1.5em;
+  }
+  .heading_first_blog a{
+    font-size:25px;
+    font-weight:800;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .first_blog{
+    width:100%;
+  }
+  .blog_iplanet6{
+    width:60%;
+  }
+  .main_iplanet6{
+    padding:10% 0;
+  }
+  .content_iplanet6{
+    margin:0 5%;
+  }
+  .text_content{
+    padding-right:0px;
+  }
+  .text_content h2::before{
+    top:0%;
+  }
+  .text_content h2{
+    font-size:35px;
+    font-weight:700;
+  }
+  .heading_first_blog, .text_first_blog, .read_more_first_blog{
+    padding:0 20px;
+  }
+}
+@media (min-width: 1025px){
+  .text_content{
+    padding-right:10%;
+  }
+  .blog_iplanet6{
+    width:70%;
+  }
+}
+</style>

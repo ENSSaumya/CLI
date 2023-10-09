@@ -1,0 +1,209 @@
+.yotpo-review{
+  height: 100px !important;
+}
+.yotpo-base-layout{
+  width:100% !important; 
+}
+svg.yotpo-star-rating-icon.yotpo-sr-star-full, .star-container{
+  width:16px !important;
+  height:15.36px !important;
+  stroke: #5a3b36 !important;
+}
+.yotpo-sr-star-full path{
+  fill:#5a3b36 !important;
+}
+.yotpo-review-rating-title{
+  margin-bottom:0 !important;
+  gap:10px !important;
+  flex-direction:column !important;
+}
+.yotpo-review-title{
+  font-size: 19px !important;
+}
+.yotpo-reviewer-name{
+  font-size: 16px !important;
+}
+.yotpo-review-title, .yotpo-reviewer-name{
+  font-family:"Mulish, sans-serif" !important;
+  color:#5a3b36 !important;
+  margin-left:0 !important;
+  font-weight:900 !important;
+}
+.yotpo-review-center-panel{
+  order:1 !important;
+  flex-basis:55% !important;
+  gap:10px !important;
+}
+.yotpo-review-right-panel {
+  order: 2 !important;
+  flex-basis:5% !important;
+  flex-grow:0 !important;
+}
+.yotpo-review-left-panel{
+  order:3 !important;
+  padding:25px !important; 
+  flex-basis:25% !important;
+  margin-left:16px !important;
+  background: #f8f4ee !important;
+}
+.yotpo-reviewer-image{
+  display:none;
+}
+.yotpo-date-format{
+  font-size:12px !important;
+  font-family:"Mulish, sans-serif" !important;
+}
+/* CSS For Quick view */
+
+.main-popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: #d7d7d7;
+  padding: 20px;
+}
+
+.quick-close{
+    background-color: red;
+    text-align:center;
+    color:white;
+    position:absolute;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    right:24px;
+    top:0;
+    font-size:20px;
+}
+
+.grid__item .popdiv{
+  display: none;
+}
+  .popbtn1
+  {
+    width: 20%;
+    height: 5%;
+    border-color: black;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 6px;
+    z-index:99;
+  }
+  .popbtn1 .popuptext1::after
+  {
+    content:"";
+    position:absolute;
+    top:95%;
+    left:54%;
+    border-color:red;
+    border-width:5px;
+    border-style:solid;
+  }
+  .show{
+    visibility: visible;
+  }
+  @keyframes fadeIn
+  {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  } 
+  .quick-add__submit{
+    display:none; 
+  }
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+  /* Collection.clear_origin.liquid for the table */
+
+    /* .main_round{
+    display:flex;
+  }
+  .content_round{
+    padding:0px 30px;
+    width:100%;
+  }
+  .table_round{
+    width:70%;
+  }
+  .table_round img{
+    width:30px;
+    height:30px;
+  }
+  .table_round th{
+    font-family:'Bradford Regular';
+    color:#474747;
+    font-size:14px;
+    font-weight:700;
+    line-height:20px;
+    background:#eeebe5;
+    height:60px;
+  }
+  .table_round td{
+    text-align:center;
+    font-family:"Bradford Regular";
+    font-size:14px;
+    font-weight:400;
+  }    
+  .table_row{
+    height:80px;
+  }
+  .table_row a{
+    text-decoration:none;
+    color:#47474d;
+  } */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* diamond_detail_div.liquid for right detail div */
+
+  /* .main_table_round{
+    background:#eeebe5;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:9;
+    width:30%;
+    padding:40px 10px;
+    height:80%;
+  }
+  .div_top p, .div_top span{
+    font-family:'Mars Extended';
+    font-size:12px;
+    letter-spacing:.2em;
+    line-height:1.3rem;
+    text-transform:uppercase;
+    margin:0;
+  }
+  .div_top span{
+    font-size:10px;
+    letter-spacing:0;
+    font-family:'Bradford Regular';
+    display:none;
+  }
+  .table_heading, .table_heading p{
+    text-align:center;
+    margin:0;
+  }
+  .image_table{
+    text-align:center;
+  }
+  .div_heading {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    text-align:center;
+  }
+  .lab_heading{
+    text-align:center;
+    font-size:15px !important;
+    margin:25px 0px;
+  }
+  .lab_heading p{
+    font-size:13px;
+    margin:30px 0px;
+    letter-spacing:0;
+  }
+  .grid_table_round{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    gap:10px;
+  } */

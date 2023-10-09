@@ -1,0 +1,85 @@
+<div class="range_div">
+  {% render "range_slider" %}
+</div>
+{% capture symbol %} $ {% endcapture %}
+<div class="main_round">
+  <div class="content_round">
+    <table class="table_round">
+      <tr>
+        <th></th>
+        <th>Shape</th>
+        <th onclick="sortTable()">Carat<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
+        <th onclick="sortTable()">Cut<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
+        <th onclick="sortTable()">Color<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
+        <th onclick="sortTable()">Clarity<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
+        <th onclick="sortTable()">Price<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
+      </tr>
+      {% for product in collection.products %}
+        {% for item in product.metafields.custom.clear_origin.value %}
+          <tr class="table_row">
+            <td><img src="{{ item.picture | img_url:"" }}"></td>
+            <td><a class="shape" href="{{ product.url }}">{{ item.shape }}</a></td>
+            <td><a class="carat" href="{{ product.url }}">{{ item.carat }}</a></td>
+            <td><a class="cut" href="{{ product.url }}">{{ item.cut }}</a></td>
+            <td><a class="color" href="{{ product.url }}">{{ item.color }}</a></td>
+            <td><a class="clarity" href="{{ product.url }}">{{ item.clarity }}</a></td>
+            <td><a class="price" href="{{ product.url }}">{{ symbol }}{{ product.price | money_without_currency }}</a></td>
+          </tr>
+        {% endfor %}
+      {% endfor %}
+    </table>
+  </div>
+  {% render "diamond_detail_div" %}
+</div>
+
+<style>
+  .main_round{
+    display:flex;  
+    padding:30px;
+  }
+  .content_round{
+    padding:0px 15px 0px 30px;
+    width:100%;
+  }
+  .table_round{
+    width:100%;
+    background:#ffffff;
+  }
+  .table_round img{
+    width:60px;
+    height:60px;
+  }
+  .table_round th{
+    font-family:'Bradford Regular';
+    color:#474747;
+    font-size:14px;
+    font-weight:700;
+    line-height:20px;
+    background:#eeebe5;
+    height:60px;
+  }
+  .table_round th i{
+    vertical-align:middle;
+    margin-left:5px;
+  }
+  .table_round td{
+    text-align:center;
+    font-family:"Bradford Regular";
+    font-size:14px;
+    font-weight:400;
+  }   
+  .table_round span:after{
+    content: '\e927';
+    font-family: 'Cleanorigin-Theme-Icons';
+    font-size: 14px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .table_row{
+    height:80px;
+  }
+  .table_row a{
+    text-decoration:none;
+    color:#47474d;
+  }
+</style>

@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "cf901d4d-13c4-4102-8fe7-6b37fdb165b2": {
+      "type": "iplanet_Section1",
+      "blocks": {
+        "adaeb8da-05a5-4124-be07-75997929bb48": {
+          "type": "image",
+          "settings": {
+            "iplanet_img1": "shopify:\/\/shop_images\/iplanet.png",
+            "iplanet_text1": ""
+          }
+        }
+      },
+      "block_order": [
+        "adaeb8da-05a5-4124-be07-75997929bb48"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cf901d4d-13c4-4102-8fe7-6b37fdb165b2"
+  ]
+}

@@ -1,0 +1,110 @@
+
+<div class="accord">
+  {% for block in section.blocks %}
+    <h4 class="title1">{{ block.settings.txt }}</h4>
+    <p class="passage">{{ block.settings.text }}</p>
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "accordian",
+    "settings": [],
+    "blocks":[{
+      "name":"pick",
+      "type":"text",
+      "settings":[
+        {
+          "type":"text",
+          "id":"txt",
+          "label":"title1"
+        },
+        {
+          "type":"text",
+          "id":"text",
+          "label":"Description"
+        }
+      ]
+    }],
+    "presets":[{"name":"accordian"}]
+  }
+{% endschema %}
+
+<style>
+  .main{
+    justify-content:"center";
+    width:100%;
+  }
+  .heading:before{
+    content:"";
+    height:2px;
+    background-color:black;
+    width:30%;
+    margin-left:10px;
+  }
+  .heading{
+    align-items:center;
+    justify-content:center;
+    display:flex;
+  }
+  .heading:after{
+   content: "";
+    height: 2px;
+    background-color: black;
+    width: 30%;
+    margin-right: 10px;
+  }
+  .accord{
+    width: 50%;
+    text-align: left;
+    margin-left: 50%;
+  }
+  .passage{
+    width:100%;
+    display: none;
+    overflow: hidden;
+  }
+  .title1{
+    color: blue;
+    cursor: pointer;
+    margin: 4px;
+    padding: 20px;
+  }
+  .title1:hover{
+    background-color : skyblue;
+  }
+  .title1:after{
+    content:"\002B";
+    color:blue;
+    font-weight:bold;
+    float:right;
+    margin-left:10px;
+  }
+  .active:after{
+    content:"\2212";
+  }
+</style>
+
+<script>
+  var acc = document.getElementsByClassName("title1");
+  var i;
+  for(i=0; i<acc.length; i++)
+    {
+      acc[i].addEventListener("click",function(){
+        var passage = this.nextElementSibling;
+        if(passage.style.display === "block")
+        {
+          passage.style.display = "none";
+        }
+        else
+        {
+          passage.style.display = "block";
+        }
+        for(j=0; j<acc.length; j++){
+          var moreContent = acc[j].nextElementSibling;
+           if(moreContent !==passage){
+             moreContent.style.display = "none";
+    }
+        }
+      });
+    }
+</script>
