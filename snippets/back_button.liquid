@@ -5,18 +5,18 @@
 </section>
 
 <style>
-  .back_button_main{
-    position:absolute;
-    z-index:9;
-    padding:20px 10px;
+  .back_button_main {
+    position: absolute;
+    z-index: 9;
+    padding: 20px 10px;
   }
 </style>
 
 <script>
   console.log(document.location);
   console.log(document.state);
-  // document.querySelector(".back_button_content").addEventListener("click", ()=> {window.history.back()});
-  window.addEventListener("popState", (event) => {
+  document.querySelector(".back_button_content").addEventListener("click", ()=> { alert("working"); window.history.back()});
+  // window.addEventListener("popState", (event) => {
     
-  });
+  // });
 </script>
