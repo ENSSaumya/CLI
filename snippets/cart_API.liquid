@@ -62,9 +62,9 @@
     {% comment %} If sections['cart-Drawer', 'text/html'] has .querySelector("#CartDrawer") then convert into innerHTML else null {% endcomment %}
     var newCartDrawer = new DOMParser().parseFromString(sections['cart-drawer'], 'text/html')?.querySelector("#CartDrawer")?.innerHTML;
     var newCartIcon = new DOMParser().parseFromString(sections['cart-icon-bubble'], 'text/html')?.querySelector("#shopify-section-cart-icon-bubble")?.innerHTML;
-    console.log("Sections",sections);
-    console.log("Cart", oldCartDrawer);
-    console.log("New Icon", oldCartIcon);
+    // console.log("Sections",sections);
+    // console.log("Cart", oldCartDrawer);
+    // console.log("New Icon", oldCartIcon);
   if (oldCartDrawer && newCartDrawer) {
     oldCartDrawer.innerHTML = newCartDrawer;
     document.querySelector("cart-drawer") ?. classList.remove("is-empty");
