@@ -106,14 +106,16 @@
           "type": "text",
           "settings": {
             "personalize_text": "Font 1",
-            "personalize_url": ""
+            "personalize_url": "",
+            "personalize_font_family": "baris-scriptmtbold"
           }
         },
         "1d4b30a6-a923-4a38-91a3-c16d651ae62f": {
           "type": "text",
           "settings": {
             "personalize_text": "Font 2",
-            "personalize_url": ""
+            "personalize_url": "",
+            "personalize_font_family": ""
           }
         }
       },
