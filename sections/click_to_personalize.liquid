@@ -1,0 +1,43 @@
+<div class="main_personalize">
+  <div class="content_personalize">
+    <button class="biutton_personalize" onclick="">Personalized</button>
+  </div>
+  <div class="container_personalize">
+    <p>PERSONALIZE YOUR NECKLACE</p>
+    <input type="text" placeholder="Enter your text">
+    <p>CHOOSE FONT</p>
+    {% for block in section.blocks %}
+      <span>{{ block.settings.personalize_text }}<a>{{ block.settings.personalize_url }}</a>
+      </span>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Personalize",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Choose",
+        "type": "text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "personalize_text",
+            "label": "Text"
+          }, {
+            "type": "url",
+            "id": "personalize_url",
+            "label": "URL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Personalize"
+      }
+    ]
+  }
+{% endschema %}
