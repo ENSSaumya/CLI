@@ -7,7 +7,8 @@
     <input type="text" placeholder="Enter your text">
     <p class="choose_container">CHOOSE FONT</p>
     {% for block in section.blocks %}
-      <span>{{ block.settings.personalize_text }}<a>{{ block.settings.personalize_url }}</a>
+      <span class="font_family_text">
+        {{ block.settings.personalize_text }}<a>{{ block.settings.personalize_url }}</a>
       </span>
     {% endfor %}
     <p class="is_this_container">IS THIS A GIFT? ADD GIFT BOX AND A CUSTOM NOTE</p>
@@ -63,5 +64,11 @@
   .container_personalize input[type="text"] {
     width: 80%;
     padding: 15px 10px;
+  }
+  .container_personalize .font_family_text {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
   }
 </style>
