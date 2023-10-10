@@ -3,7 +3,7 @@
     <button
       class="class_variant"
       variant-id="{{ product.selected_or_first_available_variant.id }}"
-      onclick="POST_add()">CART</button>
+      onclick="Variant_id()">CART</button>
   </div>
 </div>
 
@@ -28,6 +28,12 @@
 </style>
 
 <script>
+  function Variant_id(){
+  {% for product in product.variants %}
+  console.log({{ product.selected_or_first_available_variant.id }})
+  {% endfor %}
+  };
+
    var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
   
@@ -155,3 +161,7 @@
   })
   };
 </script>
+
+{% comment %} {% for product in product.variants %}
+    console.log({{ product.selected_or_first_available_variant.id }})
+{% endfor %} {% endcomment %}
