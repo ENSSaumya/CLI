@@ -1,0 +1,164 @@
+<div class="cart_main">
+  <div class="content_cart">
+    <button
+      class="class_variant"
+      variant-id="{{ product.selected_or_first_available_variant.id }}"
+      onclick="pop_open()">Click To Personization</button>
+  </div>
+</div>
+
+<style>
+  .cart_main {
+    width: 80%;
+    text-align: center;
+  }
+  .content_cart button {
+    padding: 15px;
+    width: 100%;
+    border-radius: 30px;
+    font-weight: 900;
+    color: #4770db;
+    background: #ffffff;
+    border: none;
+  }
+  .content_cart button:hover {
+    color: #ffffff;
+    background: #4770db;
+  }
+</style>
+
+<script>
+   var attr = document.querySelector('.class_variant').getAttribute('variant-id');
+   console.log('variant-id', attr);
+  
+   function pop_open(){
+    
+   };
+  
+  function POST_add(){
+   var quan = document.querySelector('[name="quantity"]').value;
+    var store = parseInt(quan);
+  alert("Add to Cart working on cli");
+  let formData = {
+    "items":[{
+      "id":attr,
+      "quantity":store
+    }],
+    sections:["cart-drawer","cart-icon-bubble"]
+  };
+  fetch("/cart/add.js",{
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(formData)
+  })
+  .then(response => {
+    return response.json();
+  })
+  .then(val => {
+    var sections = val.sections;
+    var oldCartDrawer = document.querySelector("#CartDrawer");
+    var oldCartIcon = document.querySelector("#cart-icon-bubble");
+    {% comment %} DOMParser => It is a web browser API to convert xml to html, from string to DOM HTML {% endcomment %}
+    {% comment %} sections[] = > It is used to retrive html from the section {% endcomment %}
+    {% comment %} parseFromString => it has two parameter the source first and then its type {% endcomment %}
+    {% comment %} If sections['cart-Drawer', 'text/html'] has .querySelector("#CartDrawer") then convert into innerHTML else null {% endcomment %}
+    var newCartDrawer = new DOMParser().parseFromString(sections['cart-drawer'], 'text/html')?.querySelector("#CartDrawer")?.innerHTML;
+    var newCartIcon = new DOMParser().parseFromString(sections['cart-icon-bubble'], 'text/html')?.querySelector("#shopify-section-cart-icon-bubble")?.innerHTML;
+    // console.log("Sections",sections);
+    // console.log("Cart", oldCartDrawer);
+    // console.log("New Icon", oldCartIcon);
+  if (oldCartDrawer && newCartDrawer) {
+    oldCartDrawer.innerHTML = newCartDrawer;
+    document.querySelector("cart-drawer") ?. classList.remove("is-empty");
+    document.querySelector("#cart-icon-bubble").click();
+  }
+  if (oldCartIcon && newCartIcon) {
+    oldCartIcon.innerHTML = newCartIcon;
+  }
+  })
+  .catch(error => {
+    console.error("ERROR :",error);
+  });
+  };
+  
+  // Change using POST, at least 1 item should be present in cart and change is used for one line item only
+  function POST_change(){
+  alert("Change Workking");
+  let formData = {
+    "line":1, // line item indicates the first index present in the cart.
+    "quantity":2
+  };
+  fetch("/cart/change.js", {
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(formData)
+  })
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    console.log("DATA :", data);
+  })
+  .catch(error => {
+    console.error("Error : ",error);
+  })
+  };
+  
+  //Update through api
+  function POST_update(){
+  alert("Update working");
+  let formData = {
+    updates:{
+      "id":attr,
+      "quantity": 1
+    }
+  };
+  fetch("/cart/update.js", {
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(formData)
+  })
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+   console.log("DATA :",data);
+  })
+  .catch(error => {
+    console.error("ERROR : ", error);
+  })
+  };
+  
+  // POST clear to clear the cart
+  function POST_clear(){
+  alert("POST clear is working");
+  let formData = {
+    
+  };
+  fetch("/cart/clear.js", {
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(formData)
+  })
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log("DATA", data);
+  })
+  .catch(error => {
+    console.error("ERROR : ",error);
+  })
+  };
+  // for (var product in product.variants){
+  //   var con = product.variants[0].id
+  // }
+</script>
