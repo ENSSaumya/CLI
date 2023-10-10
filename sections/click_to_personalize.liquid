@@ -7,7 +7,7 @@
     <input type="text" placeholder="Enter your text">
     <p class="choose_container">CHOOSE FONT</p>
     {% for block in section.blocks %}
-      <span class="font_family_text">
+      <span class="font_family_text" style="font-family:{{ block.settings.personalize_font_family }};">
         {{ block.settings.personalize_text }}<a>{{ block.settings.personalize_url }}</a>
       </span>
     {% endfor %}
@@ -36,6 +36,10 @@
             "type": "url",
             "id": "personalize_url",
             "label": "URL"
+          }, {
+            "type": "textarea",
+            "id": "personalize_font_family",
+            "label": "Font-Family"
           }
         ]
       }
