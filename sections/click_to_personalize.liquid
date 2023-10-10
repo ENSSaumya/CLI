@@ -3,13 +3,18 @@
     <button class="biutton_personalize" onclick="">Personalized</button>
   </div>
   <div class="container_personalize">
-    <p>PERSONALIZE YOUR NECKLACE</p>
+    <p class="personalize_container">PERSONALIZE YOUR NECKLACE</p>
     <input type="text" placeholder="Enter your text">
-    <p>CHOOSE FONT</p>
+    <p class="choose_container">CHOOSE FONT</p>
     {% for block in section.blocks %}
       <span>{{ block.settings.personalize_text }}<a>{{ block.settings.personalize_url }}</a>
       </span>
     {% endfor %}
+    <p class="is_this_container">IS THIS A GIFT? ADD GIFT BOX AND A CUSTOM NOTE</p>
+    <div class="yes_no">
+      <p class="yes_yes_no">YES</p>
+      <p class="no_yes_no">NO</p>
+    </div>
   </div>
 </div>
 
