@@ -115,7 +115,7 @@
           "settings": {
             "personalize_text": "Font 2",
             "personalize_url": "",
-            "personalize_font_family": ""
+            "personalize_font_family": "times"
           }
         }
       },
