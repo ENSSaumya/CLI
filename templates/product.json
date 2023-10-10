@@ -108,10 +108,18 @@
             "personalize_text": "Font 1",
             "personalize_url": ""
           }
+        },
+        "1d4b30a6-a923-4a38-91a3-c16d651ae62f": {
+          "type": "text",
+          "settings": {
+            "personalize_text": "Font 2",
+            "personalize_url": ""
+          }
         }
       },
       "block_order": [
-        "b7c09ac0-d3f5-44f9-b6a4-4241d1abaaa6"
+        "b7c09ac0-d3f5-44f9-b6a4-4241d1abaaa6",
+        "1d4b30a6-a923-4a38-91a3-c16d651ae62f"
       ],
       "settings": {
       }
