@@ -5,6 +5,16 @@
       variant-id="{{ product.selected_or_first_available_variant.id }}"
       onclick="pop_open()">Click To Personization</button>
   </div>
+  <div class="popup_side">
+    <div class="content_popup_side">
+      <span class="popup_side_close">X</span>
+      <p class="make_it_text">Make it your Own</p>
+      <p>ENTER YOUR PERSONILIZATION</p>
+      <p>Personilization</p>
+      <input type="text"><br><br>
+      {% render "cart_API" %}
+    </div>
+  </div>
 </div>
 
 <style>
