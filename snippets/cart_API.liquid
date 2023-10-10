@@ -30,7 +30,7 @@
 <script>
   function Variant_id(){
   {% for product in product.variants %}
-  console.log({{ product.selected_or_first_available_variant.id }})
+  console.log("New ID",{{ product.selected_or_first_available_variant.id }})
   {% endfor %}
   };
 
@@ -163,5 +163,5 @@
 </script>
 
 {% comment %} {% for product in product.variants %}
-    console.log({{ product.selected_or_first_available_variant.id }})
+      console.log({{ product.selected_or_first_available_variant.id }})
 {% endfor %} {% endcomment %}
