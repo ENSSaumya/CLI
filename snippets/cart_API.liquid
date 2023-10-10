@@ -23,7 +23,8 @@
   }
   .content_cart button:hover {
     color: #ffffff;
-    background: #4770db;
+    /* background: #4770db; */
+    background-color: red;
   }
 </style>
 
@@ -154,8 +155,7 @@
     console.error("ERROR : ",error);
   })
   };
+  // for (var product in product.variants){
+  //   var con = product.variants[0].id
+  // }
 </script>
-
-{% comment %} {% for product in product.variants %}
-        console.log({{ product.selected_or_first_available_variant.id }})
-{% endfor %} {% endcomment %}
