@@ -10,7 +10,7 @@
       placeholder="Enter your text">
     <p class="choose_container">CHOOSE FONT</p>
     {% for block in section.blocks %}
-      <span class="font_family_text" style="font-family:{{ block.settings.personalize_font_family | split:"-" | re }};">
+      <span class="font_family_text" style="font-family:{{ block.settings.personalize_font_family | split:"-" | remove:"Font" ;">
         {{ block.settings.personalize_font_family | split: "-" | first }}<a>{{ block.settings.personalize_url }}</a>
       </span>
     {% endfor %}
@@ -84,10 +84,10 @@
 
 <script>
   var input = document.getElementById("input_text");
-  var click_button = document.querySelectorAll("font_family_text");
+  var click_button = document.querySelectorAll(".font_family_text");
   click_button.forEach((item) => {
     item.addEventListener("click", () => {
-  
+      alert("Font",item);
     });
   });
 </script>
