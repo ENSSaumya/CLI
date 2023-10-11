@@ -113,7 +113,7 @@
           "type": "text",
           "settings": {
             "personalize_url": "",
-            "personalize_font_family": "Font 2 - times"
+            "personalize_font_family": "Font 2 ,times"
           }
         }
       },
