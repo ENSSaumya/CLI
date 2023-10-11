@@ -10,10 +10,10 @@
       placeholder="Enter your text">
     <p class="choose_container">CHOOSE FONT</p>
     {% for block in section.blocks %}
-      <span class="font_family_text" style="font-family:{{ block.settings.personalize_font_family | split:"-" | re }};">
+      <span class="font_family_text" style="font-family:{{ block.settings.personalize_font_family | split:"-" }};">
         {{ block.settings.personalize_font_family | split: "-" | first }}<a>{{ block.settings.personalize_url }}</a>
       </span>
-      {% assign val = block.settings.personalize_font_family |split:"-" %}
+      {% assign val = block.settings.personalize_font_family %}
     {% endfor %}
     <p class="is_this_container">IS THIS A GIFT? ADD GIFT BOX AND A CUSTOM NOTE</p>
     <div class="yes_no">
