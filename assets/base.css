@@ -3355,10 +3355,10 @@ details-disclosure > details {
   }
 }
 @font-face {
-  font-family: "script-mt";
+  font-family: "script-mt-bold";
   src: url("https://cdn.shopify.com/s/files/1/0775/6755/7938/files/ScriptMTBold.woff2?v=1697002034") format("woff2");
   font-style: normal;
 }
 .script-mt{
-  font-family: "script-mt";
+  font-family: "script-mt-bold";
 }
