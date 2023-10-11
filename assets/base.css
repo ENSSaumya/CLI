@@ -3359,6 +3359,6 @@ details-disclosure > details {
   src: url("https://cdn.shopify.com/s/files/1/0775/6755/7938/files/SCRIPTBL.woff?v=1696998911") format("woff");
   font-style: normal;
 }
-p{
+.script-mt{
   font-family: "script-mt";
 }
