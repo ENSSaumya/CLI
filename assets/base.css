@@ -3354,3 +3354,7 @@ details-disclosure > details {
     --sparkle: url('./sparkle.gif');
   }
 }
+@font-face {
+  font-family: "script-mt-bold-font";
+  src: url();
+}
