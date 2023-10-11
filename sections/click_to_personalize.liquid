@@ -65,6 +65,9 @@
     padding: 20px 50px;
     text-align: center;
   }
+  .container_personalize {
+    display: none;
+  }
   .container_personalize input[type="text"] {
     width: 80%;
     padding: 15px 10px;
@@ -88,6 +91,9 @@
 </style>
 
 <script>
+  document.querySelector(".content_personalize").addEventListener("click",() => {
+    document.querySelector(".container_personalize").style.display = "block";
+  })
   var input = document.getElementById("input_text");
   var click_button = document.querySelectorAll(".font_family_text");
   let prop = "{{ val }}";
