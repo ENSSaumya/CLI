@@ -3355,10 +3355,10 @@ details-disclosure > details {
   }
 }
 @font-face {
-  font-family: "script mt bold";
+  font-family: "script-mt";
   src: url("SCRIPTBL.woff")format("woff");
   font-style: normal;
 }
 p{
-  font-family: "script mt bold";
+  font-family: "script-mt";
 }
