@@ -13,7 +13,7 @@
       <span class="font_family_text" style="font-family:{{ block.settings.personalize_font_family | split:"-" | re }};">
         {{ block.settings.personalize_font_family | split: "-" | first }}<a>{{ block.settings.personalize_url }}</a>
       </span>
-    {% assign val = block.settings.personalize_font_family %}
+      {% assign val = block.settings.personalize_font_family %}
     {% endfor %}
     <p class="is_this_container">IS THIS A GIFT? ADD GIFT BOX AND A CUSTOM NOTE</p>
     <div class="yes_no">
@@ -89,7 +89,9 @@
   let prop = "{{ val }}";
   click_button.forEach((item) => {
     item.addEventListener("click", () => {
-      console.log("Font", prop);
+      item.forEach((count) => {
+        console.log("->",prop);
+      });
     });
   });
 </script>
