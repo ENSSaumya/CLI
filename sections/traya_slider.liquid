@@ -1,7 +1,37 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Traya Slider",
+    "settings": [],
+    "blocks":[{
+      "name":"PICK",
+      "type":"Text",
+      "settings":[{
+        "type":"image_picker",
+        "id":"main_img1",
+        "label":"Main Image"
+      },
+      {
+        "type":"text",
+        "id":"Heading_text",
+        "label":"Heading"
+      },
+      {
+        "type":"text",
+        "id":"list_item_text",
+        "label":"Advantages"
+      },
+      {
+        "type":"image_picker",
+        "id":"Ingredients_image",
+        "label":"Ingredients Image"
+      },
+      {
+        "type":"text",
+        "id":"Ingredients_text",
+        "label":"Ingredients Text"
+      }]
+    }],
+    "presets":[{"name":"Traya Slider"}]
   }
 {% endschema %}
 
