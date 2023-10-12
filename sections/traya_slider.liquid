@@ -1,6 +1,7 @@
 <div class="main_traya_slider">
   <div class="content_traya_slider">
     {% assign data = block.settings.collection_product %}
+    {{ data }}
     {% for product in data.products %}
       {{ product.title }}
     {% endfor %}
