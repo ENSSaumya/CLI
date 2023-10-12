@@ -13,7 +13,8 @@
             </div>
             <p class="advantage_li">{{ block.settings.list_item_text }}</p>
             <div class="Collection_traya">
-              <p>{{ block.settings.collection_product }}</p>
+              {% assign data = block.settings.collection_product %}
+              <p>{{ data.title }}</p>
             </div>
             <div class="ingredients_div">
               <div class="div_img1">
