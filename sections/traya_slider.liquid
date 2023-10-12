@@ -6,7 +6,9 @@
     </div>
     <div class="container_traya_slider">
       <p class="heading_traya_slider">{{ block.settings.Heading_text }}</p>
-      <p class="advantage_traya_slider">{{ block.settings.list_item_text }}</p>
+      <ul class="">
+        <li class="advantage_li">{{ block.settings.list_item_text }}</li>
+      </ul>
       <div class="ingredients_div">
         <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image | img_url:"master"}}"/>
         <p class="text_ingredients_div">{{ block.settings.Ingredients_text }}</p>
@@ -33,7 +35,7 @@
         "label":"Heading"
       },
       {
-        "type":"text",
+        "type":"textarea",
         "id":"list_item_text",
         "label":"Advantages"
       },
