@@ -15,6 +15,7 @@
             <div class="Collection_traya">
               {% assign data = block.settings.collection_product %}
               <p id="title">{{ data.title }}</p>
+              {{ data.products | json }}
             </div>
             <div class="ingredients_div">
               <div class="div_img1">
