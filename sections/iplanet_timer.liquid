@@ -1,4 +1,4 @@
-{% render "Traya_slider_snippet" %}
+{% comment %} {% render "Traya_slider_snippet" %} {% endcomment %}
 <div class="main_iplanet_timer">
   <div class="content_iplanet_timer">
     <div class="heading_timer">
@@ -88,24 +88,24 @@
 </style>
 
 <script>
-function countdown(timerId, limit, interval, elementId) {
-    let timer = 0;
+  function countdown(timerId, limit, interval, elementId) {
+      let timer = 0;
 
-    function updateTimer() {
-        timer++;
-        document.getElementById(elementId).innerHTML = String(timer);
+      function updateTimer() {
+          timer++;
+          document.getElementById(elementId).innerHTML = String(timer);
 
-        if (timer < limit) {
-            setTimeout(updateTimer, interval);
-        }
-    }
-    setTimeout(updateTimer, 1000);
-}
+          if (timer < limit) {
+              setTimeout(updateTimer, interval);
+          }
+      }
+      setTimeout(updateTimer, 1000);
+  }
 
-  window.addEventListener("load", () => {
-    countdown(1, 11, 150, "timer1"); 
-    countdown(2, 52, 30, "timer2"); 
-    countdown(3, 12, 140, "timer3");
-    countdown(4, 19, 90, "timer4"); 
-});
+    window.addEventListener("load", () => {
+      countdown(1, 11, 150, "timer1");
+      countdown(2, 52, 30, "timer2");
+      countdown(3, 12, 140, "timer3");
+      countdown(4, 19, 90, "timer4");
+  });
 </script>
