@@ -1,7 +1,7 @@
 <div class="main_traya_slider">
   <div class="content_traya_slider">
-    {% for product in collection.products %}
-      {% for meta in product.metafields.custom.details_of_product %}
+    {% for collection in collection.products %}
+      {% for meta in collection.metafields.custom.product_detail %}
         <div class="grid_traya_slider">
           <div class="image_div_traya_slider">
             <img class="image_traya_slider" src="{{ meta.image | img_url:"master"}}">
