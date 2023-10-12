@@ -8,19 +8,21 @@
         "padding_bottom": 28
       }
     },
-    "cf901d4d-13c4-4102-8fe7-6b37fdb165b2": {
-      "type": "iplanet_Section1",
+    "38eb6a56-a1f0-41a2-b185-913e3e18d5a2": {
+      "type": "traya_slider",
       "blocks": {
-        "adaeb8da-05a5-4124-be07-75997929bb48": {
-          "type": "image",
+        "41e4bcc3-8c51-4771-a04a-89bd8e30b6ba": {
+          "type": "Text",
           "settings": {
-            "iplanet_img1": "shopify:\/\/shop_images\/iplanet.png",
-            "iplanet_text1": ""
+            "main_img1": "shopify:\/\/shop_images\/Layer_1.png",
+            "Heading_text": "",
+            "list_item_text": "",
+            "Ingredients_text": ""
           }
         }
       },
       "block_order": [
-        "adaeb8da-05a5-4124-be07-75997929bb48"
+        "41e4bcc3-8c51-4771-a04a-89bd8e30b6ba"
       ],
       "settings": {
       }
@@ -28,6 +30,6 @@
   },
   "order": [
     "main",
-    "cf901d4d-13c4-4102-8fe7-6b37fdb165b2"
+    "38eb6a56-a1f0-41a2-b185-913e3e18d5a2"
   ]
 }

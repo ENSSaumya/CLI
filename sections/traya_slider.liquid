@@ -2,13 +2,13 @@
   <div class="content_traya_slider">
     {% for block in section.blocks %}
     <div class="image_div_traya_slider">
-      <img class="image_traya_slider" src="{{ block.settings.main_img1 }}"/>
+      <img class="image_traya_slider" src="{{ block.settings.main_img1 | img_url:"master"}}"/>
     </div>
     <div class="container_traya_slider">
       <p class="heading_traya_slider">{{ block.settings.Heading_text }}</p>
       <p class="advantage_traya_slider">{{ block.settings.list_item_text }}</p>
       <div class="ingredients_div">
-        <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image }}"/>
+        <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image | img_url:"master"}}"/>
         <p class="text_ingredients_div">{{ block.settings.Ingredients_text }}</p>
       </div>
     </div>
