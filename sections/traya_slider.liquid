@@ -1,74 +1,74 @@
-{% comment %}<div class="main_traya_slider">
+<div class="main_traya_slider">
   <div class="content_traya_slider">
     {% for block in section.blocks %}
-    <div class="grid_traya_slider">
-      <div class="image_div_traya_slider">
-        <img class="image_traya_slider" src="{{ block.settings.main_img1 | img_url:"master"}}"/>
-      </div>
-      <div class="position">
-      <div class="container_traya_slider">
-        <div class="section_heading_traya_slider">
-          <p class="heading_traya_slider">{{ block.settings.Heading_text }}</p>
-          <img class="batch_slider_traya" src="{{ block.settings.tag  | img_url:"master"}}"/>
+      <div class="grid_traya_slider">
+        <div class="image_div_traya_slider">
+          <img class="image_traya_slider" src="{{ block.settings.main_img1 | img_url:"master"}}">
         </div>
-        <p class="advantage_li">{{ block.settings.list_item_text }}</p>
-        <div class="ingredients_div">
-          <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image1 | img_url:"master"}}"/>
-          <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image2 | img_url:"master"}}"/>
-          <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image3 | img_url:"master"}}"/>
+        <div class="position">
+          <div class="container_traya_slider">
+            <div class="section_heading_traya_slider">
+              <p class="heading_traya_slider">{{ block.settings.Heading_text }}</p>
+              <img class="batch_slider_traya" src="{{ block.settings.tag  | img_url:"master"}}">
+            </div>
+            <p class="advantage_li">{{ block.settings.list_item_text }}</p>
+            <div class="ingredients_div">
+              <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image1 | img_url:"master"}}">
+              <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image2 | img_url:"master"}}">
+              <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image3 | img_url:"master"}}">
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-    </div>
     {% endfor %}
   </div>
 </div>
 
 {% schema %}
-  {
-    "name": "Traya Slider",
-    "settings": [],
-    "blocks":[{
-      "name":"PICK",
-      "type":"Text",
-      "settings":[{
-        "type":"image_picker",
-        "id":"main_img1",
-        "label":"Main Image"
-      },
-      {
-        "type":"image_picker",
-        "id":"tag",
-        "label":"Batch"
-      },
-      {
-        "type":"text",
-        "id":"Heading_text",
-        "label":"Heading"
-      },
-      {
-        "type":"text",
-        "id":"list_item_text",
-        "label":"Advantages"
-      },
-      {
-        "type":"image_picker",
-        "id":"Ingredients_image1",
-        "label":"Ingredients Image1"
-      },
-      {
-        "type":"image_picker",
-        "id":"Ingredients_image2",
-        "label":"Ingredients Image2"
-      },
-      {
-        "type":"image_picker",
-        "id":"Ingredients_image3",
-        "label":"Ingredients Image3"
-      }]
-    }],
-    "presets":[{"name":"Traya Slider"}]
-  }
+{
+  "name": "Traya Slider",
+  "settings": [],
+  "blocks":[{
+    "name":"PICK",
+    "type":"Text",
+    "settings":[{
+      "type":"image_picker",
+      "id":"main_img1",
+      "label":"Main Image"
+    },
+    {
+      "type":"image_picker",
+      "id":"tag",
+      "label":"Batch"
+    },
+    {
+      "type":"text",
+      "id":"Heading_text",
+      "label":"Heading"
+    },
+    {
+      "type":"text",
+      "id":"list_item_text",
+      "label":"Advantages"
+    },
+    {
+      "type":"image_picker",
+      "id":"Ingredients_image1",
+      "label":"Ingredients Image1"
+    },
+    {
+      "type":"image_picker",
+      "id":"Ingredients_image2",
+      "label":"Ingredients Image2"
+    },
+    {
+      "type":"image_picker",
+      "id":"Ingredients_image3",
+      "label":"Ingredients Image3"
+    }]
+  }],
+  "presets":[{"name":"Traya Slider"}]
+}
 {% endschema %}
 
 <style>
@@ -126,13 +126,13 @@
 </style>
 
 <script>
-    $(document).ready(function(){
-  $('.content_traya_slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoPlay:false,
-    speed:2500,
-    dots: true
-});
-</script>{% endcomment %}
+  //     $(document).ready(function(){
+  //   $('.content_traya_slider').slick({
+  //     infinite: true,
+  //     slidesToShow: 3,
+  //     slidesToScroll: 1,
+  //     autoPlay:false,
+  //     speed:2500,
+  //     dots: true
+  // });
+</script>
