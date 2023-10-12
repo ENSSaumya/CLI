@@ -11,6 +11,8 @@
       </ul>
       <div class="ingredients_div">
         <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image | img_url:"master"}}"/>
+        <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image | img_url:"master"}}"/>
+        <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image | img_url:"master"}}"/>
       </div>
     </div>
     {% endfor %}
@@ -40,8 +42,18 @@
       },
       {
         "type":"image_picker",
-        "id":"Ingredients_image",
-        "label":"Ingredients Image"
+        "id":"Ingredients_image1",
+        "label":"Ingredients Image1"
+      },
+      {
+        "type":"image_picker",
+        "id":"Ingredients_image2",
+        "label":"Ingredients Image2"
+      },
+      {
+        "type":"image_picker",
+        "id":"Ingredients_image3",
+        "label":"Ingredients Image3"
       }]
     }],
     "presets":[{"name":"Traya Slider"}]
