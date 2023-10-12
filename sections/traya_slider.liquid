@@ -1,6 +1,6 @@
 <div class="main_traya_slider">
   <div class="content_traya_slider">
-    {% assign data = block.settings.collection_product %}
+    {% assign data = section.settings.collection_product %}
     {{ data.title }}kkkk
     {% for product in data.products %}
       {{ product.title }}
@@ -41,7 +41,13 @@
 {% schema %}
 {
   "name": "Traya Slider",
-  "settings": [],
+  "settings": [
+    {
+      "type":"collection",
+      "id":"collection_product",
+      "label":"Collection"
+    }
+  ],
   "blocks":[{
     "name":"PICK",
     "type":"Text",
@@ -79,12 +85,8 @@
       "type":"image_picker",
       "id":"Ingredients_image3",
       "label":"Ingredients Image3"
-    },
-    {
-      "type":"collection",
-      "id":"collection_product",
-      "label":"Collection"
-    }]
+    }
+    ]
   }],
   "presets":[{"name":"Traya Slider"}]
 }
