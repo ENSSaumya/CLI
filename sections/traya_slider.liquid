@@ -124,5 +124,14 @@
   }
 </style>
 
-{% javascript %}
-{% endjavascript %}
+<script>
+    $(document).ready(function(){
+  $('.container_testimonials').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoPlay:false,
+    speed:2500,
+    dots: true
+});
+</script>
