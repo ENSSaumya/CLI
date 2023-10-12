@@ -1,8 +1,8 @@
 <div class="main_traya_slider">
   <div class="content_traya_slider">
-    {% assign data = section.settings.collection_product %}
+    {% assign collection = section.settings.collection_product %}
 
-    {% for product in data.products %}
+    {% for product in collection.products %}
       {{ product.title }}
     {% endfor %}
     {% for block in section.blocks %}
