@@ -2,34 +2,36 @@
   <div class="content_traya_slider">
     {% assign collection = section.settings.collection_product %}
     {% for product in collection.products %}
-      <div class="grid_traya_slider">
-        <div class="image_div_traya_slider">
-          <img class="image_traya_slider" src="{{ product.featured_image | img_url:"master"}}">
-        </div>
-        <div class="position">
-          <div class="container_traya_slider">
-            <div class="section_heading_traya_slider">
-              <p class="heading_traya_slider">{{ product.title }}</p>
-              <!-- <img class="batch_slider_traya" src="{{ block.settings.tag  | img_url:"master"}}"> -->
-            </div>
-            <p class="advantage_li">{{ block.settings.list_item_text }}</p>
-            <div class="Collection_traya">
-              {% assign data = block.settings.collection_product %}
-            </div>
-            <div class="ingredients_div">
-              <div class="div_img1">
-                <img class="image_ingredients_div" src="{{ meta.image | img_url:"master"}}">
+      {% for meta in product.metafields.custom.bottom_meta.value %}
+        <div class="grid_traya_slider">
+          <div class="image_div_traya_slider">
+            <img class="image_traya_slider" src="{{ product.featured_image | img_url:"master"}}">
+          </div>
+          <div class="position">
+            <div class="container_traya_slider">
+              <div class="section_heading_traya_slider">
+                <p class="heading_traya_slider">{{ product.title }}</p>
+                <!-- <img class="batch_slider_traya" src="{{ block.settings.tag  | img_url:"master"}}"> -->
               </div>
-              <div class="div_img2">
-                <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image2 | img_url:"master"}}">
+              <p class="advantage_li">{{ block.settings.list_item_text }}</p>
+              <div class="Collection_traya">
+                {% assign data = block.settings.collection_product %}
               </div>
-              <div class="div_img2">
-                <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image3 | img_url:"master"}}">
+              <div class="ingredients_div">
+                <div class="div_img1">
+                  <img class="image_ingredients_div" src="{{ meta.image | img_url:"master"}}">
+                </div>
+                <div class="div_img2">
+                  <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image2 | img_url:"master"}}">
+                </div>
+                <div class="div_img2">
+                  <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image3 | img_url:"master"}}">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
     {% endfor %}
   </div>
 </div>
