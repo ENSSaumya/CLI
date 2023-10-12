@@ -1,5 +1,6 @@
+{% render 'Traya_slider_snippet' %}
 <div class="range_div">
-  {% render "range_slider" %}
+  {% render 'range_slider' %}
 </div>
 {% capture symbol %} $ {% endcapture %}
 <div class="main_round">
@@ -8,33 +9,48 @@
       <tr>
         <th></th>
         <th>Shape</th>
-        <th onclick="sortTable()">Carat<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
-        <th onclick="sortTable()">Cut<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
-        <th onclick="sortTable()">Color<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
-        <th onclick="sortTable()">Clarity<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
-        <th onclick="sortTable()">Price<i class='fa fa-angle-down' style="font-size:24px;"></i></th>
+        <th onclick="sortTable()">Carat<i class="fa fa-angle-down" style="font-size:24px;"></i></th>
+        <th onclick="sortTable()">Cut<i class="fa fa-angle-down" style="font-size:24px;"></i></th>
+        <th onclick="sortTable()">Color<i class="fa fa-angle-down" style="font-size:24px;"></i></th>
+        <th onclick="sortTable()">Clarity<i class="fa fa-angle-down" style="font-size:24px;"></i></th>
+        <th onclick="sortTable()">Price<i class="fa fa-angle-down" style="font-size:24px;"></i></th>
       </tr>
       {% for product in collection.products %}
         {% for item in product.metafields.custom.clear_origin.value %}
           <tr class="table_row">
             <td><img src="{{ item.picture | img_url:"" }}"></td>
-            <td><a class="shape" href="{{ product.url }}">{{ item.shape }}</a></td>
-            <td><a class="carat" href="{{ product.url }}">{{ item.carat }}</a></td>
-            <td><a class="cut" href="{{ product.url }}">{{ item.cut }}</a></td>
-            <td><a class="color" href="{{ product.url }}">{{ item.color }}</a></td>
-            <td><a class="clarity" href="{{ product.url }}">{{ item.clarity }}</a></td>
-            <td><a class="price" href="{{ product.url }}">{{ symbol }}{{ product.price | money_without_currency }}</a></td>
+            <td>
+              <a class="shape" href="{{ product.url }}">{{ item.shape }}</a>
+            </td>
+            <td>
+              <a class="carat" href="{{ product.url }}">{{ item.carat }}</a>
+            </td>
+            <td>
+              <a class="cut" href="{{ product.url }}">{{ item.cut }}</a>
+            </td>
+            <td>
+              <a class="color" href="{{ product.url }}">{{ item.color }}</a>
+            </td>
+            <td>
+              <a class="clarity" href="{{ product.url }}">{{ item.clarity }}</a>
+            </td>
+            <td>
+              <a class="price" href="{{ product.url }}">
+                {{- symbol -}}
+                {{- product.price | money_without_currency -}}
+              </a>
+            </td>
           </tr>
         {% endfor %}
       {% endfor %}
     </table>
   </div>
-  {% render "diamond_detail_div" %}
+  {% render 'diamond_detail_div' %}
 </div>
 
 <style>
   .main_round{
-    display:flex;  
+    display:flex;
     padding:30px;
   }
   .content_round{
@@ -67,7 +83,7 @@
     font-family:"Bradford Regular";
     font-size:14px;
     font-weight:400;
-  }   
+  }
   .table_round span:after{
     content: '\e927';
     font-family: 'Cleanorigin-Theme-Icons';
