@@ -5,20 +5,20 @@
         <div class="image_div_traya_slider">
           <img class="image_traya_slider" src="{{ block.settings.main_img1 | img_url:"master"}}">
         </div>
-        <div class="position">
-          <div class="container_traya_slider">
-            <div class="section_heading_traya_slider">
-              <p class="heading_traya_slider">{{ block.settings.Heading_text }}</p>
-              <img class="batch_slider_traya" src="{{ block.settings.tag  | img_url:"master"}}">
-            </div>
-            <p class="advantage_li">{{ block.settings.list_item_text }}</p>
-            <div class="ingredients_div">
-              <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image1 | img_url:"master"}}">
-              <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image2 | img_url:"master"}}">
-              <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image3 | img_url:"master"}}">
-            </div>
+        <!-- <div class="position"> -->
+        <div class="container_traya_slider">
+          <div class="section_heading_traya_slider">
+            <p class="heading_traya_slider">{{ block.settings.Heading_text }}</p>
+            <img class="batch_slider_traya" src="{{ block.settings.tag  | img_url:"master"}}">
+          </div>
+          <p class="advantage_li">{{ block.settings.list_item_text }}</p>
+          <div class="ingredients_div">
+            <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image1 | img_url:"master"}}">
+            <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image2 | img_url:"master"}}">
+            <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image3 | img_url:"master"}}">
           </div>
         </div>
+        <!-- </div> -->
       </div>
     {% endfor %}
   </div>
@@ -72,62 +72,65 @@
 {% endschema %}
 
 <style>
-  .main_traya_slider{
-    width:100%;
-  }
-  .main_traya_slider .content_traya_slider{
-    width:90%;
-    margin:auto;
-    display:flex;
-    background: #FFF6F5;
-  }
-  .main_traya_slider .grid_traya_slider{
-    width:30%;
-    margin:0px 10px;
-    position:relative;
-  }
-  .image_div_traya_slider{
-    width:100%;
-  }
-  .image_traya_slider{
-    z-index:2;
-    position:relative;
-    width:100%;
-  }
-  .position{
-    background: #ffffff;
-    position: relative;
-    height: 35vh;
-    z-index: 1;
-    bottom: 100px;
-  }
-  .main_traya_slider .container_traya_slider{
-    background:#ffffff;
-    position:absolute;
-    z-index:1;
-    bottom:0;
-    padding:0 10px;
-    border-radius: 6px;
-  }
-  .main_traya_slider .container_traya_slider .heading_traya_slider{
-    font-family:Nunito Sans;
-    font-weight:700;
-    font-size:17px;
-    line-height:23.19px;
-    text-align:center;
-  }
-  .main_traya_slider .section_heading_traya_slider{
-    display:flex;
-    justify-content:center;
-  }
-  .advantage_li{
-    font-size:12px;
-    font-weight:400;
-  }
-  .main_traya_slider .ingredients_div{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    .main_traya_slider{
+      width:100%;
+    }
+    .main_traya_slider .content_traya_slider{
+      width:90%;
+      margin:auto;
+      display:flex;
+      background: #FFF6F5;
+    }
+    .main_traya_slider .grid_traya_slider{
+      width:30%;
+      margin:0px 10px;
+      position:relative;
+    }
+    .image_div_traya_slider{
+      width:100%;
+    }
+    .image_traya_slider{
+      z-index:2;
+      position:relative;
+      width:100%;
+    }
+    .position{
+      background: #ffffff;
+      position: relative;
+      height: 35vh;
+      z-index: 1;
+      bottom: 100px;
+    }
+    .main_traya_slider .container_traya_slider{
+      background:#ffffff;
+      position:absolute;
+      z-index:1;
+      bottom:0;
+      padding:0 10px;
+      border-radius: 6px;
+    }
+    .main_traya_slider .container_traya_slider .heading_traya_slider{
+      font-family:Nunito Sans;
+      font-weight:700;
+      font-size:17px;
+      line-height:23.19px;
+      text-align:center;
+    }
+    .main_traya_slider .section_heading_traya_slider{
+      display:flex;
+      justify-content:center;
+    }
+    .advantage_li{
+      font-size:12px;
+      font-weight:400;
+    }
+    .main_traya_slider .ingredients_div{
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+  @media only screen and (max-width: 1199.98px) and (min-width: 992px) {
+
   }
 </style>
 
