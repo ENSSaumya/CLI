@@ -3,9 +3,9 @@
     {% assign collection = section.settings.collection_product %}
     {% for product in collection.products %}
       <div class="grid_traya_slider">
-        {% for img in product.metafields.custom.image.value %}
+        {% for img in product.metafields.custom.image %}
           <div class="image_div_traya_slider">
-            <img class="image_traya_slider" src="{{ img.featured_image | img_url:"master"}}">
+            <img class="image_traya_slider" src="{{ img.image | img_url:"master"}}">
           </div>
         {% endfor %}
         <div class="position">
