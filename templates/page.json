@@ -32,19 +32,11 @@
             "Ingredients_image2": "shopify:\/\/shop_images\/Group_102353374.png",
             "Ingredients_image3": "shopify:\/\/shop_images\/Group_102353375.png"
           }
-        },
-        "04c95d6b-8e54-4248-b2ab-9baebbfa0cdf": {
-          "type": "Text",
-          "settings": {
-            "Heading_text": "",
-            "list_item_text": ""
-          }
         }
       },
       "block_order": [
         "41e4bcc3-8c51-4771-a04a-89bd8e30b6ba",
-        "e5e179f2-a8c5-42b8-9255-899368f404fb",
-        "04c95d6b-8e54-4248-b2ab-9baebbfa0cdf"
+        "e5e179f2-a8c5-42b8-9255-899368f404fb"
       ],
       "settings": {
       }
