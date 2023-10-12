@@ -9,17 +9,9 @@
       <ul class="">
         <li class="advantage_li">{{ block.settings.list_item_text }}</li>
       </ul>
-      <div class="ingredients_div1">
-        <img class="image_ingredients_div1" src="{{ block.settings.Ingredients_image1 | img_url:"master"}}"/>
-        <p class="text_ingredients_div1">{{ block.settings.Ingredients_text1 }}</p>
-      </div>
-      <div class="ingredients_div2">
-        <img class="image_ingredients_div2" src="{{ block.settings.Ingredients_image2 | img_url:"master"}}"/>
-        <p class="text_ingredients_div2">{{ block.settings.Ingredients_text2 }}</p>
-      </div>
-      <div class="ingredients_div3">
-        <img class="image_ingredients_div3" src="{{ block.settings.Ingredients_image3 | img_url:"master"}}"/>
-        <p class="text_ingredients_div3">{{ block.settings.Ingredients_text3 }}</p>
+      <div class="ingredients_div">
+        <img class="image_ingredients_div" src="{{ block.settings.Ingredients_image | img_url:"master"}}"/>
+        <p class="text_ingredients_div">{{ block.settings.Ingredients_text }}</p>
       </div>
     </div>
     {% endfor %}
@@ -43,39 +35,19 @@
         "label":"Heading"
       },
       {
-        "type":"textarea",
+        "type":"text",
         "id":"list_item_text",
         "label":"Advantages"
       },
       {
         "type":"image_picker",
-        "id":"Ingredients_image1",
-        "label":"Ingredients Image1"
+        "id":"Ingredients_image",
+        "label":"Ingredients Image"
       },
       {
         "type":"text",
-        "id":"Ingredients_text1",
-        "label":"Ingredients Text1"
-      },
-      {
-        "type":"image_picker",
-        "id":"Ingredients_image2",
-        "label":"Ingredients Image2"
-      },
-      {
-        "type":"text",
-        "id":"Ingredients_text2",
-        "label":"Ingredients Text2"
-      },
-      {
-        "type":"image_picker",
-        "id":"Ingredients_image3",
-        "label":"Ingredients Image3"
-      },
-      {
-        "type":"text",
-        "id":"Ingredients_text3",
-        "label":"Ingredients Text3"
+        "id":"Ingredients_text",
+        "label":"Ingredients Text"
       }]
     }],
     "presets":[{"name":"Traya Slider"}]
