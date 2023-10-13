@@ -274,6 +274,21 @@
 </style>
 
 <script>
+  $(document).ready(function(){
+  $('.content_traya_slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    dots: true,
+    responsive:[{
+      breakpoint:576,
+      settings:{
+          slidesToShow: 1,
+          slidesToScroll: 1
+      }
+    }]
+  });
+});
+  
   var color_btn = document.querySelectorAll(".btn_collection");
   color_btn.forEach((item) => {
     item.addEventListener("click", () => {
