@@ -24,11 +24,19 @@
             "collection_name": "shopify:\/\/shop_images\/Group_1023599.png",
             "Collection_heading": "Dermatology"
           }
+        },
+        "737c13da-53cf-42f3-84de-a18352f11d42": {
+          "type": "text",
+          "settings": {
+            "collection_name": "shopify:\/\/shop_images\/Group_102352880.png",
+            "Collection_heading": "Nutrition"
+          }
         }
       },
       "block_order": [
         "e0a1e850-be3a-4272-8824-1ea41fd89c27",
-        "1e9bfaef-7fcb-4650-b0c3-8ab9a8baa864"
+        "1e9bfaef-7fcb-4650-b0c3-8ab9a8baa864",
+        "737c13da-53cf-42f3-84de-a18352f11d42"
       ],
       "settings": {
         "heading_scientific": "Three Science Formula",
