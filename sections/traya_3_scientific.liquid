@@ -99,12 +99,13 @@
 
 <script>
   var color_btn = document.querySelectorAll(".btn_collection span");
+  var svg_colour = document.querySelectorAll(".btn_collection span svg path");
   color_btn.forEach((item) => {
     item.addEventListener("click", () => {
      item.classList.add("clr_svg");
       color_btn.forEach((btn) => {
         btn.classList.remove("clr_svg");
-        item.classList.add("clr_svg");
+        svg_colour.classList.add("clr_svg");
       });
     });
   });
