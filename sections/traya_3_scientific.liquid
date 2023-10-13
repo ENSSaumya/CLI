@@ -22,8 +22,6 @@
 
 <div class="main_traya_slider">
   <div class="content_traya_slider">
-  {% for collection in section.blocks %}
-    <p>{{ collection | json }}</p>
     {% assign collection = collection.settings.collection_product %}
     {% for product in collection.products %}
       <div class="grid_traya_slider">
@@ -51,7 +49,6 @@
           </div>
         </div>
       </div>
-    {% endfor %}
   {% endfor %}
   </div>
 </div>
