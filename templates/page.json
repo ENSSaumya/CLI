@@ -23,22 +23,18 @@
             "Ingredients_image3": "shopify:\/\/shop_images\/Group_102353375_1.png"
           }
         },
-        "e5e179f2-a8c5-42b8-9255-899368f404fb": {
+        "dad4be36-5248-4fc1-a588-6a635264d94b": {
           "type": "Text",
           "settings": {
-            "main_img1": "shopify:\/\/shop_images\/Layer_1_2.png",
-            "tag": "shopify:\/\/shop_images\/Frame_102352693.svg",
-            "Heading_text": "Mom Santulan",
-            "list_item_text": "Rejuvenates Hair Follicles • Improves Hair Quality • Delays Premature Greying • Baldness Dosha",
-            "Ingredients_image1": "shopify:\/\/shop_images\/Group_102353373.png",
-            "Ingredients_image2": "shopify:\/\/shop_images\/Group_102353374.png",
-            "Ingredients_image3": "shopify:\/\/shop_images\/Group_102353375.png"
+            "main_img1": "shopify:\/\/shop_images\/Group_102353374_1.png",
+            "Heading_text": "",
+            "list_item_text": ""
           }
         }
       },
       "block_order": [
         "41e4bcc3-8c51-4771-a04a-89bd8e30b6ba",
-        "e5e179f2-a8c5-42b8-9255-899368f404fb"
+        "dad4be36-5248-4fc1-a588-6a635264d94b"
       ],
       "settings": {
         "collection_product": "traya-collection"
