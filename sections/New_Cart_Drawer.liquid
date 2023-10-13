@@ -1,95 +1,99 @@
-{% comment %} {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %} {% endcomment %}
-
-<section class="section_NewCart">
-<div class="NewCart_Main">
-  <div class="NewCart_Overlay"></div>
-  <div class="NewCart_Header">
-    <div class="Heading_NewCart">
-      <h3>Your Cart</h3>
-    </div>
-    <div class="div_close">
-      <span class="Close_Heading">X</span>
-    </div>
-  </div>
-  <cart-drawer-items id="item_in_cart">
-  </cart-drawer-items>
-  <div class="NewCart_Footer">
-    <div class="dash_bottom"></div>
-    <div class="text_bottom">
-      <h3 class="NewCart_" >Total: </h3><span id="NewCart_Total"></span>
-    </div>
-    <div class="div_checkout">
-      <a id="NewCart_checkout" href="/checkout"><span>Checkout</span></a>
-    </div>
-  </div>
-</div>
-</section>
-
-<style>
-  .section_NewCart{
-    display:none;
-  }
-  .NewCart_Main{
-    position: absolute;
-    right: 0;
-    height: 100%;
-    z-index: 11;
-    background: #ffffff;
-    width: 35%;
-    padding:0 10px;
-  }
-  .NewCart_Header{
-    display:flex;
-    justify-content:space-between;
-  }
-  .Close_Heading{
-    font-size:35px;
-    font-weight:700;
-    cursor:pointer;
-  }
-  .NewCart_Footer{
-    position:absolute;
-    bottom:0;
-    width:97%;
-  }
-  .div_checkout{
-    display:flex;
-    justify-content:center;
-    padding-bottom:10px;
-  }
-  #NewCart_checkout{
-    color: #4770db;
-    padding: 10px 80px;
-    border-radius: 30px;
-    background: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-weight: 600;
-  }
-  #NewCart_checkout:hover{background:#4770db; color:#ffffff;}
-</style>
-
-<script>
-  document.querySelector(".div_close").addEventListener("click", ()=> {document.querySelector(".NewCart_Main").style.display = "none"});
-  fetch("/cart.js")
-  .then((response) => response.json())
-  .then((data) => {
-    if(data.items.length>0){
-      data.items.forEach(function(product,index){
-        document.getElementById("item_in_cart").innerHTML = '<img src="'+ product.featured_image.url + '"alt ="' + product.featured_image.alt +'"><h5>'+product.title+'"</h5><p>"'+
-      });
+{% comment %}
+  {% schema %}
+    {
+      "name": "Section name",
+      "settings": []
     }
-  });
-</script>
+  {% endschema %}
+
+  {% stylesheet %}
+  {% endstylesheet %}
+
+  {% javascript %}
+  {% endjavascript %}
+{% endcomment %}
+
+<!--
+  <section class="section_NewCart">
+  <div class="NewCart_Main">
+    <div class="NewCart_Overlay"></div>
+    <div class="NewCart_Header">
+      <div class="Heading_NewCart">
+        <h3>Your Cart</h3>
+      </div>
+      <div class="div_close">
+        <span class="Close_Heading">X</span>
+      </div>
+    </div>
+    <cart-drawer-items id="item_in_cart">
+    </cart-drawer-items>
+    <div class="NewCart_Footer">
+      <div class="dash_bottom"></div>
+      <div class="text_bottom">
+        <h3 class="NewCart_" >Total: </h3><span id="NewCart_Total"></span>
+      </div>
+      <div class="div_checkout">
+        <a id="NewCart_checkout" href="/checkout"><span>Checkout</span></a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <style>
+    .section_NewCart{
+      display:none;
+    }
+    .NewCart_Main{
+      position: absolute;
+      right: 0;
+      height: 100%;
+      z-index: 11;
+      background: #ffffff;
+      width: 35%;
+      padding:0 10px;
+    }
+    .NewCart_Header{
+      display:flex;
+      justify-content:space-between;
+    }
+    .Close_Heading{
+      font-size:35px;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .NewCart_Footer{
+      position:absolute;
+      bottom:0;
+      width:97%;
+    }
+    .div_checkout{
+      display:flex;
+      justify-content:center;
+      padding-bottom:10px;
+    }
+    #NewCart_checkout{
+      color: #4770db;
+      padding: 10px 80px;
+      border-radius: 30px;
+      background: #ffffff;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+    #NewCart_checkout:hover{background:#4770db; color:#ffffff;}
+  </style>
+
+  <script>
+    document.querySelector(".div_close").addEventListener("click", ()=> {document.querySelector(".NewCart_Main").style.display = "none"});
+    fetch("/cart.js")
+    .then((response) => response.json())
+    .then((data) => {
+      if(data.items.length>0){
+        data.items.forEach(function(product,index){
+          document.getElementById("item_in_cart").innerHTML = '<img src="'+ product.featured_image.url + '"alt ="' + product.featured_image.alt +'"><h5>'+product.title+'"</h5><p>"'+
+        });
+      }
+    });
+  </script>
+-->
