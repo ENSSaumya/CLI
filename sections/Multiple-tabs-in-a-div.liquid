@@ -5,7 +5,7 @@
         {% if block.type == "type1" %}
         <div class="image-text">
           <div class="div-of-img">
-            <img class="class-of-img" src="{{ block.settings.img2 | img_url: '200x' }}" width="" height=""/>
+            <img class="class-of-img" src="{{ block.settings.img2 | img_url: '200x' }}"/>
           </div>
           {% for block1 in section.blocks %}
             {% if block1.type == "type2" %}
