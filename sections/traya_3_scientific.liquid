@@ -22,8 +22,8 @@
 
 <div class="main_traya_slider">
   <div class="content_traya_slider">
-  {% for collection in section.blocks %}
-    {% assign collection = section.settings.collection_product %}
+  {% for product in section.blocks %}
+    {% assign collection = product.settings.collection_product %}
     {% for product in collection.products %}
       <div class="grid_traya_slider">
         <div class="image_div_traya_slider">
