@@ -96,9 +96,11 @@
     margin:0;
   }
   .clr_svg svg path{ 
-    /* background:#BE6C5D; */
     fill:#EEEEEE;
     stroke:#EEEEEE;
+  }
+  .clr_text{
+    
   }
 </style>
 
@@ -110,6 +112,8 @@
       color_btn.forEach((btn) => {
         btn.classList.remove("clr_svg");
         item.classList.add("clr_svg");
+        document.querySelector(".btn_collection p").style.color = "#EEEEEE";
+        document.querySelector(".btn_collection").style.color = "#BE6C5D";
       });
     });
   });
