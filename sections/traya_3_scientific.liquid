@@ -82,6 +82,41 @@
       "type":"text",
       "id":"Collection_heading",
       "label":"Collection Heading"
+    },
+    {
+      "type":"image_picker",
+      "id":"main_img1",
+      "label":"Main Image"
+    },
+    {
+      "type":"image_picker",
+      "id":"tag",
+      "label":"Batch"
+    },
+    {
+      "type":"text",
+      "id":"Heading_text",
+      "label":"Heading"
+    },
+    {
+      "type":"text",
+      "id":"list_item_text",
+      "label":"Advantages"
+    },
+    {
+      "type":"image_picker",
+      "id":"Ingredients_image1",
+      "label":"Ingredients Image1"
+    },
+    {
+      "type":"image_picker",
+      "id":"Ingredients_image2",
+      "label":"Ingredients Image2"
+    },
+    {
+      "type":"image_picker",
+      "id":"Ingredients_image3",
+      "label":"Ingredients Image3"
     }]
   }],
   "presets":[{"name":"Traya_scientific"}]
@@ -145,9 +180,170 @@
   .clr_background{
     background:#BE6C5D;
   }
+  @media only screen and (max-width: 1199.98px) and (min-width: 992px) {
+  }
+/* Slider Part CSS Below */
+  .main_traya_slider{
+    width:100%;
+  }
+  .main_traya_slider .content_traya_slider{
+    width:90%;
+    margin:auto;
+    display:flex;
+    background: #FFF6F5;
+  }
+  .main_traya_slider .grid_traya_slider{
+    width:30%;
+    padding:0px 25px;
+    position:relative;
+  }
+  .image_div_traya_slider{
+    width:100%;
+  }
+  .image_traya_slider{
+    z-index:2;
+    position:relative;
+    width:100%;
+  }
+  .position{
+    background: #ffffff;
+    position: relative;
+    height: 55vh;
+    z-index: 1;
+    bottom: 140px;
+    box-shadow: 0px 5px 8px 0px #00000014;
+  }
+  .main_traya_slider .container_traya_slider{
+    background: #ffffff;
+    position: absolute;
+    z-index: 1;
+    padding: 50px 10px 20px 10px;
+    border-radius: 6px;
+    width: 100%;
+    bottom:0;
+  }
+  .main_traya_slider .container_traya_slider .heading_traya_slider{
+    font-family:Nunito Sans;
+    font-weight:700;
+    font-size:17px;
+    line-height:23.19px;
+    text-align:center;
+    color: #3F3F3F;
+  }
+  .main_traya_slider .section_heading_traya_slider{
+    display:flex;
+    justify-content:center;
+  }
+  .advantage_li{
+    font-size:12px;
+    font-weight:400;
+  }
+  .main_traya_slider .ingredients_div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_traya_slider .ingredients_div img{
+    width:100%;
+  }
+.content_traya_slider .slick-list.draggable{
+  padding-right:140px;
+}
+  .slick-dots li.slick-active button:before{
+    font-size:10px;
+    color:#be6c5d;
+  }
+  .slick-dots{
+    bottom:70px;
+  }
+  .dosage_div p{
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  @media only screen and (max-width: 1199.98px) and (min-width: 992px) {
+    .conetnt_scientific{
+      width:100%;
+    }
+  }
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+/* Dektop */
+    .conetnt_scientific{
+      width:100%;
+    }
+    .main_traya_slider .grid_traya_slider{
+      padding:0 10px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) and (min-width: 576px) {
+    /* Tablet */
+    .conetnt_scientific{
+      width:100%;
+    }
+    .main_traya_slider .grid_traya_slider{
+      padding:0;
+    }
+    .content_traya_slider .slick-list.draggable{
+      padding-right:20px;
+    }
+  }
+@media only screen and (max-width: 575.98px) {
+  .slick-dots li.slick-active button:before{
+    font-size:8px;
+  }
+  .main_traya_slider .grid_traya_slider{
+    padding:0 10px;
+  }
+  .content_traya_slider .slick-list.draggable{
+    padding-right:20px;
+  }
+  .conetnt_scientific{
+      width:100%;
+  }
+  .btn_collection{
+    padding: 10px 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .btn_collection{
+    padding: 10px 15px;
+  }
+}
 </style>
 
+
+
+
+
+
+
+
+
 <script>
+  $(document).ready(function(){
+  $('.content_traya_slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    dots: true,
+    responsive:[{
+      breakpoint:768,
+      settings:{
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint:576,
+      settings:{
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  });
+});
+  
   var color_btn = document.querySelectorAll(".btn_collection");
   color_btn.forEach((item) => {
     item.addEventListener("click", () => {
