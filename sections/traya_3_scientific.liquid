@@ -43,6 +43,7 @@
             </div>
            {% for dose in product.metafields.custom.dosage.value %}
             <div class="dosage_div">
+              <span>{{ dose.icon }}</span>
               <p>{{ dose.text }}</p>
             </div>
             {% endfor %}
