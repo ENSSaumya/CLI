@@ -1,6 +1,14 @@
 <div class="main_3_scientific">
   <div class="conetnt_scientific">
-    <h3></h3>
+    <h3>{{ section.settings.heading_scientific }}</h3>
+  </div>
+  <div>
+    <p>{{ section.settings.passage_scientific }}</p>
+  </div>
+  <div>
+    {% for block in section.settings.blocks %}
+      <span>{{ block.settings.collection_name }}</span>
+    {% endfor %}
   </div>
 </div>
 {% schema %}
