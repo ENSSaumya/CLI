@@ -25,6 +25,7 @@
   {% for collection in section.blocks %}
     <p>{{ collection | json }}</p>
     {% assign collection = collection.settings.collection_product %}
+    <h4>{{ collection | json }}</h4>
     {% for product in collection.products %}
       <div class="grid_traya_slider">
         <div class="image_div_traya_slider">
