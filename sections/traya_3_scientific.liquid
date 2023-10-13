@@ -9,7 +9,7 @@
     <div class="btn_traya_scientific">
       {% for block in section.blocks %}
         <div class="btn_collection">
-          <span>{{ block.settings.collection_icon }}</span>
+          <span>{{ block.settings.collection_name }}</span>
           <p>{{ block.settings.Collection_heading }}</p>
         </div>
       {% endfor %}
@@ -34,7 +34,7 @@
     "type":"text",
     "settings":[{
       "type":"html",
-      "id":"collection_icon",
+      "id":"collection_name",
       "label":"Name"
     },
     {
@@ -97,12 +97,10 @@
 </style>
 
 <script>
-  // var color_btn = document.querySelectorAll(".btn_collection");
-  // color_btn.forEach((btn) => {
-  //   btn.addEventListener("click", () => {
-  //   document.querySelector(".btn_collection").style.backgroundColor = "#BE6C5D";
-  //    // document.querySelector(".btn_collection span").style.color = "#EEEEEE";
-  //    document.querySelector(".btn_collection p").style.color = "#EEEEEE";
-  //   });
-  // });
+  var color_btn = document.querySelectorAll(".btn_collection");
+  color_btn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+     console.log("w");
+    });
+  });
 </script>
