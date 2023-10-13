@@ -47,7 +47,7 @@
       "settings": {
         "heading_scientific": "Three Science Formula",
         "passage_scientific": "Our approach combines the goodness of three sciences. With ingredients from the most authentic sources, we personalize your treatment delivering assured results.",
-        "collection_product": ""
+        "collection_product": "traya-collection"
       }
     },
     "38eb6a56-a1f0-41a2-b185-913e3e18d5a2": {
@@ -78,6 +78,7 @@
         "41e4bcc3-8c51-4771-a04a-89bd8e30b6ba",
         "dad4be36-5248-4fc1-a588-6a635264d94b"
       ],
+      "disabled": true,
       "settings": {
         "collection_product": "traya-collection"
       }
