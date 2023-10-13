@@ -24,6 +24,7 @@
   <div class="content_traya_slider">
     {% for combo in section.blocks %}
     {% assign collection = combo.settings.collection_product %}
+      <p>{{ collection | json }}</p>
       {% for product in collection.product %}
       <div class="grid_traya_slider">
         <div class="image_div_traya_slider">
