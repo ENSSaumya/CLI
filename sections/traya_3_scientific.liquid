@@ -9,7 +9,7 @@
     </div>
     <div class="btn_traya_scientific">
       {% for block in section.blocks %}
-        <a href="{{ block.settings.Link_url }}" style="text-decoration:none">
+        <a href="{{ block.settings.Link_url }}">
         <div class="btn_collection">
           <span>{{ block.settings.collection_name }}</span>
           <p>{{ block.settings.Collection_heading }}</p>
@@ -66,6 +66,11 @@
     "type":"textarea",
     "id":"passage_scientific",
     "label":"Content"
+  },
+  {
+    "type":"collection",
+    "id":"collection_product",
+    "label":"Collection"
   }],
   "blocks":[{
     "name":"Collection Button",
