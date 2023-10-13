@@ -22,17 +22,21 @@
 
 <div class="main_traya_slider">
   <div class="content_traya_slider">
-    {% assign collection = block.settings.collection_product %}
-    <p>{{ collection | json }}</p>
+    {% assign collection = section.settings.collection_product %}
     {% for product in collection.products %}
       <div class="grid_traya_slider">
         <div class="image_div_traya_slider">
           <img class="image_traya_slider" src="{{ product.metafields.custom.image | img_url:"master"}}">
         </div>
         <div class="position">
-         <div class="container_traya_slider">
+          <div class="container_traya_slider">
             <div class="section_heading_traya_slider">
               <p class="heading_traya_slider">{{ product.title }}</p>
+              <!-- <img class="batch_slider_traya" src="{{ block.settings.tag  | img_url:"master"}}"> -->
+            </div>
+            <p class="advantage_li">{{ block.settings.list_item_text }}</p>
+            <div class="Collection_traya">
+              {% assign data = block.settings.collection_product %}
             </div>
             <div class="ingredients_div">
               {% for meta in product.metafields.custom.bottom_meta.value %}
@@ -41,12 +45,9 @@
                 </div>
               {% endfor %}
             </div>
-           {% for dose in product.metafields.custom.dosage.value %}
             <div class="dosage_div">
-              <span>{{ dose.icon }}</span>
-              <p>{{ dose.text }}</p>
+              <p>{{ product.metafields.custom.dosage }}</p>
             </div>
-            {% endfor %}
           </div>
         </div>
       </div>
@@ -72,7 +73,7 @@
     "settings":[{
       "type":"html",
       "id":"collection_name",
-      "label":"SVG Icon"
+      "label":"Name"
     },
     {
       "type":"text",
@@ -83,6 +84,41 @@
       "type":"collection",
       "id":"collection_product",
       "label":"Collection"
+    },
+    {
+      "type":"image_picker",
+      "id":"main_img1",
+      "label":"Main Image"
+    },
+    {
+      "type":"image_picker",
+      "id":"tag",
+      "label":"Batch"
+    },
+    {
+      "type":"text",
+      "id":"Heading_text",
+      "label":"Heading"
+    },
+    {
+      "type":"text",
+      "id":"list_item_text",
+      "label":"Advantages"
+    },
+    {
+      "type":"image_picker",
+      "id":"Ingredients_image1",
+      "label":"Ingredients Image1"
+    },
+    {
+      "type":"image_picker",
+      "id":"Ingredients_image2",
+      "label":"Ingredients Image2"
+    },
+    {
+      "type":"image_picker",
+      "id":"Ingredients_image3",
+      "label":"Ingredients Image3"
     }]
   }],
   "presets":[{"name":"Traya_scientific"}]
