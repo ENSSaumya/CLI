@@ -8,8 +8,10 @@
     </div>
     <div class="btn_traya_scientific">
       {% for block in section.blocks %}
-        <span>{{ block.settings.collection_name }}</span>
-        <p>{{ block.settings.Collection_heading }}</p>
+        <div class="btn_collection">
+          <span>{{ block.settings.collection_name }}</span>
+          <p>{{ block.settings.Collection_heading }}</p>
+        </div>
       {% endfor %}
     </div>
   </div>
