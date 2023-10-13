@@ -24,8 +24,7 @@
   <div class="content_traya_slider">
     {% for collection in section.blocks %}
       <p>{{ collection | json }}</p>
-    {% assign data = collection.settings.collection_product %}
-      <h3>{{ data | json }}</h3>
+    {% assign product = collection.settings.collection_product %}
       <div class="grid_traya_slider">
         <div class="image_div_traya_slider">
           <img class="image_traya_slider" src="{{ product.metafields.custom.image | img_url:"master"}}">
