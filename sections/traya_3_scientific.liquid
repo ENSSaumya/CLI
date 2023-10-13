@@ -23,7 +23,7 @@
 <div class="main_traya_slider">
   <div class="content_traya_slider">
     {% for collection in collection.products %}
-      {{ collection | json }}
+      <p>{{ collection | json }}</p>
       {% assign product = collection.settings.collection_product %}
       <div class="grid_traya_slider">
         <div class="image_div_traya_slider">
