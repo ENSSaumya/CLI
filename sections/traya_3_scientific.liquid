@@ -22,7 +22,7 @@
 
 <div class="main_traya_slider">
   <div class="content_traya_slider">
-    {% assign collection = section.blocks.collection_product %}
+    {% assign collection = block.settings.collection_product %}
     <p>{{ collection | json }}</p>
     {% for product in collection.products %}
       <div class="grid_traya_slider">
