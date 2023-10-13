@@ -41,9 +41,11 @@
                 </div>
               {% endfor %}
             </div>
+           {% for dose in product.metafields.custom.dosage.value %}
             <div class="dosage_div">
-              <p>{{ product.metafields.custom.dosage }}</p>
+              <p>{{ dose.text }}</p>
             </div>
+            {% endfor %}
           </div>
         </div>
       </div>
