@@ -334,10 +334,10 @@
   });
 
   var collection_btn = document.querySelectorAll(".collection_link");
-  var btn_collect = document.querySelector(".collection_link").getAttribute("tab");
+  // var btn_collect = document.querySelector(".collection_link").getAttribute("tab");
   collection_btn.forEach((item) => {
     item.addEventListener("click", ()=> {
-      console.log(btn_collect);
+      console.log(iten.getAttribute("tab"));
     });
   });
 </script>
