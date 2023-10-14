@@ -10,7 +10,7 @@
       {% for block in section.blocks %}
        <a href="{{ block.settings.Link_url }}" style="text-decoration:none">
         <div class="btn_collection">
-          <span>{{ block.settings.collection_svg }}</span>
+          <span>{{ block.settings.collection_name }}</span>
           <p>{{ block.settings.Collection_heading }}</p>
         </div>
         </a>
@@ -68,7 +68,7 @@
     "type":"text",
     "settings":[{
       "type":"html",
-      "id":"collection_svg",
+      "id":"collection_name",
       "label":"Icon SVG"
     },
     {
