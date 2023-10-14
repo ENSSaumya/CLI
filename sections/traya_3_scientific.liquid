@@ -295,7 +295,7 @@
 
 <script>
   $(document).ready(function(){
-  $('.content_traya_slider').slick({
+  $('.grid_traya_slider').slick({
     infinite: true,
     slidesToShow: 3,
     dots: true,
@@ -334,14 +334,16 @@
   });
 
   var collection_btn = document.querySelectorAll(".collection_link");
-  var product_div = document.querySelectorAll(".grid_traya_slider");
-  collection_btn.forEach((item, index) => {
+  collection_btn.forEach((item) => {
     item.addEventListener("click", ()=> {
-      product_div.forEach((ele) => {
-        ele.style.display = "none";
-      });
-      product_div[index].style.display = "block";
+      console.log(item.getAttribute("tab"));
     });
   });
 
+  var product_div = document.querySelectorAll(".grid_traya_slider");
+  product_div.forEach((pro) => {
+    pro.addEventListener("click", ()=> {
+      console.log(pro.getAttribute("tab"));
+    });
+  });
 </script>
