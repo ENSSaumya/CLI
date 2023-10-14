@@ -8,7 +8,7 @@
     </div>
     <div class="btn_traya_scientific">
       {% for block in section.blocks %}
-       <a href="{{ block.settings.Link_url }}" style="text-decoration:none" onclick="collection_name()">
+       <a class="btn{{ forloop.index }}" href="{{ block.settings.Link_url }}" style="text-decoration:none" onclick="collection_name()">
         <div class="btn_collection">
           <span>{{ block.settings.collection_name }}</span>
           <p>{{ block.settings.Collection_heading }}</p>
@@ -25,7 +25,7 @@
     {% assign collection = combo.settings.collection_product %}
         <p>{{ collection.title | json }}</p>
       {% for product in collection.products %}
-      <div class="grid_traya_slider">
+      <div class="grid_traya_slider-{{ forloop.index }}">
         <div class="image_div_traya_slider">
           <img class="image_traya_slider" src="{{ product.metafields.custom.image | img_url:"master"}}">
         </div>
@@ -335,6 +335,9 @@
 
   var name_of_collection = {{ collection.title | json }}
   function collection_name(){
-    document.querySelector(".btn_traya_scientific a").setAttribute("Collection",name_of_collection);
+    var con = document.querySelectorAll(".btn_traya_scientific a");
+    con.forEach((item) => {
+      item      
+    })
   }
 </script>
