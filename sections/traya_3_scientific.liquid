@@ -8,7 +8,7 @@
     </div>
     <div class="btn_traya_scientific">
       {% for block in section.blocks %}
-       <a class="btn" tab="{{ forloop.index }}" href="{{ block.settings.Link_url }}" style="text-decoration:none">
+       <a class="collection_link" tab="{{ forloop.index }}" href="{{ block.settings.Link_url }}" style="text-decoration:none">
         <div class="btn_collection">
           <span>{{ block.settings.collection_name }}</span>
           <p>{{ block.settings.Collection_heading }}</p>
@@ -333,4 +333,11 @@
     });
   });
 
+  var collection_btn = document.querySelectorAll(".collection_link");
+  var each_btn = document.querySelector(".collection_link").getAttribute("tab");
+  collection_btn.forEach((item) => {
+    item.addEventListener("click", ()=> {
+      
+    });
+  });
 </script>
