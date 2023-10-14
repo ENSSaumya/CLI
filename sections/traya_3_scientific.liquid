@@ -8,7 +8,7 @@
     </div>
     <div class="btn_traya_scientific">
       {% for block in section.blocks %}
-       <a class="btn{{ forloop.index }}" href="{{ block.settings.Link_url }}" style="text-decoration:none" onclick="collection_name()">
+       <a class="btn" tab="{{ forloop.index }}" href="{{ block.settings.Link_url }}" style="text-decoration:none" onclick="collection_name()">
         <div class="btn_collection">
           <span>{{ block.settings.collection_name }}</span>
           <p>{{ block.settings.Collection_heading }}</p>
