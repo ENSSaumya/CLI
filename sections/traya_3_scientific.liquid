@@ -339,4 +339,11 @@
       console.log(item.getAttribute("tab"));
     });
   });
+
+  var product_div = document.querySelectorAll(".grid_traya_slider");
+  product_div.forEach((pro) => {
+    pro.addEventListener("click", ()=> {
+      console.log(pro.getAttribute("tab"));
+    });
+  });
 </script>
