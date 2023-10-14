@@ -332,4 +332,9 @@
       });
     });
   });
+
+  var name_of_collection = {{ collection.title | json }}
+  function collection_name(){
+    document.querySelector(".btn_traya_scientific a").setAttribute("Collection",name_of_collection);
+  }
 </script>
