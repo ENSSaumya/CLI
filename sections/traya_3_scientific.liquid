@@ -42,7 +42,8 @@
               {% endfor %}
             </div>
             <div class="dosage_div">
-              <p>{{ product.metafields.custom.dosage }}</p>
+              <span>{{ combo.settings.dosage_svg }}</span>
+              <p>{{ combo.settings.dosage_text }}</p>
             </div>
           </div>
         </div>
@@ -81,6 +82,16 @@
       "type":"collection",
       "id":"collection_product",
       "label":"Collection"
+    },
+    {
+      "type":"html",
+      "id":"dosage_svg",
+      "label":"Icon for Dosage"
+    },
+    {
+      "type":"text",
+      "id":"dosage_text",
+      "label":"Duration of Dosage"
     }]
   }],
   "presets":[{"name":"Traya_scientific"}]
@@ -245,10 +256,6 @@
     .content_traya_slider .slick-list.draggable{
       padding-right:20px;
     }
-    /* .position{
-      height: 50vh;
-      bottom: 75px;
-    } */
   }
   @media only screen and (max-width: 767.98px) and (min-width: 576px) {
     /* Tablet */
