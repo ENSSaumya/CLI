@@ -23,7 +23,6 @@
   <div class="content_traya_slider">
     {% for combo in section.blocks %}
     {% assign collection = combo.settings.collection_product %}
-        <p>{{ collection.title | json }}</p>
       {% for product in collection.products %}
       <div class="grid_traya_slider" tab="{{ forloop.index }}">
         <div class="image_div_traya_slider">
@@ -306,6 +305,7 @@
 </style>
 
 <script>
+  document.addEventListener
   $(document).ready(function(){
   $('.content_traya_slider').slick({
     infinite: true,
