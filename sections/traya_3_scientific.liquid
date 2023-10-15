@@ -305,7 +305,7 @@
 </style>
 
 <script>
-  document.addEventListener
+  document.addEventListener("DOMContentLoad", () => {
   $(document).ready(function(){
   $('.content_traya_slider').slick({
     infinite: true,
@@ -356,5 +356,5 @@
       console.log(product_div[index]);
     });
   });
-
+});
 </script>
