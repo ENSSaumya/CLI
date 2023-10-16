@@ -384,6 +384,7 @@
 // On press of button of collection its CSS changes
 var color_btn = document.querySelectorAll(".btn_collection");
 color_btn.forEach((item) => {
+  color_btn[0].classList.add("clr_svg", "clr_text", "clr_background");
   item.addEventListener("click", () => {
     color_btn.forEach((btn) => {
       btn.classList.remove("clr_svg", "clr_text", "clr_background");
