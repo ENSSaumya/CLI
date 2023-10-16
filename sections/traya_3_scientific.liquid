@@ -329,6 +329,50 @@
     }]
   });
 });
+
+  $(document).ready(function(){
+  $('#slider_2').slick({
+    infinite: true,
+    slidesToShow: 3,
+    dots: true,
+    responsive:[{
+      breakpoint:768,
+      settings:{
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint:576,
+      settings:{
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  });
+});
+
+  $(document).ready(function(){
+  $('#slider_3').slick({
+    infinite: true,
+    slidesToShow: 3,
+    dots: true,
+    responsive:[{
+      breakpoint:768,
+      settings:{
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint:576,
+      settings:{
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  });
+});
   
   var color_btn = document.querySelectorAll(".btn_collection");
   color_btn.forEach((item) => {
