@@ -393,14 +393,23 @@
 
   var collection_btn = document.querySelectorAll(".collection_link");
   var product_div = document.querySelectorAll(".grid_traya_slider");
-  collection_btn.forEach((item, index) => {
-    item.addEventListener("click", ()=> {
-     product_div.forEach((ele) => {
+  // collection_btn.forEach((item, index) => {
+  //   item.addEventListener("click", ()=> {
+  //    product_div.forEach((ele) => {
+  //       ele.style.display = "none";
+  //     });
+  //     product_div[index].style.display = "block";
+  //     console.log(product_div[index]);
+  //   });
+  // });
+
+  collection_btn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      product_div.forEach((ele) => {
         ele.style.display = "none";
       });
       product_div[index].style.display = "block";
-      console.log(product_div[index]);
     });
   });
-  
+
 </script>
