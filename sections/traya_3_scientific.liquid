@@ -386,15 +386,10 @@ var color_btn = document.querySelectorAll(".btn_collection");
 color_btn.forEach((item) => {
   item.addEventListener("click", () => {
    item.classList.add("clr_svg", "clr_text", "clr_background");
-    // item.classList.add("clr_text");
-    // item.classList.add("clr_background");
     color_btn.forEach((btn) => {
       btn.classList.remove("clr_svg", "clr_text", "clr_background");
-      // btn.classList.remove("clr_text");
-      // btn.classList.remove("clr_background");
       item.classList.add("clr_svg", "clr_text", "clr_background");
-      // item.classList.add("clr_text");
-      // item.classList.add("clr_background");
+
     });
   });
 });
