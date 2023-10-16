@@ -51,44 +51,10 @@
         "heading_scientific": "Three Science Formula",
         "passage_scientific": "Our approach combines the goodness of three sciences. With ingredients from the most authentic sources, we personalize your treatment delivering assured results."
       }
-    },
-    "38eb6a56-a1f0-41a2-b185-913e3e18d5a2": {
-      "type": "traya_slider",
-      "blocks": {
-        "41e4bcc3-8c51-4771-a04a-89bd8e30b6ba": {
-          "type": "Text",
-          "settings": {
-            "main_img1": "shopify:\/\/shop_images\/Layer_1_2.png",
-            "tag": "shopify:\/\/shop_images\/Frame_102352693.svg",
-            "Heading_text": "Mom Santulan",
-            "list_item_text": "Rejuvenates Hair Follicles • Improves Hair Quality • Delays Premature Greying • Baldness Dosha",
-            "Ingredients_image1": "shopify:\/\/shop_images\/Group_102353373_1.png",
-            "Ingredients_image2": "shopify:\/\/shop_images\/Group_102353374_1.png",
-            "Ingredients_image3": "shopify:\/\/shop_images\/Group_102353375_1.png"
-          }
-        },
-        "dad4be36-5248-4fc1-a588-6a635264d94b": {
-          "type": "Text",
-          "settings": {
-            "main_img1": "shopify:\/\/shop_images\/Group_102353374_1.png",
-            "Heading_text": "",
-            "list_item_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "41e4bcc3-8c51-4771-a04a-89bd8e30b6ba",
-        "dad4be36-5248-4fc1-a588-6a635264d94b"
-      ],
-      "disabled": true,
-      "settings": {
-        "collection_product": "traya-collection"
-      }
     }
   },
   "order": [
     "main",
-    "538a15c1-793e-4e1c-a949-0e6db9496ade",
-    "38eb6a56-a1f0-41a2-b185-913e3e18d5a2"
+    "538a15c1-793e-4e1c-a949-0e6db9496ade"
   ]
 }
