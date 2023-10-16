@@ -318,6 +318,7 @@ $(document).ready(function() {
 });
 
   $(document).ready(function(){
+    function slider_(){
   $('.content_traya_slider').slick({
     infinite: true,
     slidesToShow: 3,
@@ -339,6 +340,7 @@ $(document).ready(function() {
       }
     }]
   });
+    }
 });
 
    
@@ -360,11 +362,12 @@ var product_div = document.querySelectorAll(".content_traya_slider");
 collection_btn.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     product_div.forEach((ele) => {
-      ele.slick("unslick");
+      // ele.slick("unslick");
       ele.style.display = "none";
     });
     product_div[index].style.display = "block";
-    product_div[index].slick();
+    // product_div[index].slick();
+    slider_();
   });
 });
 
