@@ -321,7 +321,7 @@ $(document).ready(function(){
   function slider_(id){
     console.log('id',id)
   $('.content_traya_slider.slick-initialized').slick('unslick');
-  $(`#${id}`).not('.slick-initialized').slick({
+  $(`#${id}`).slick({
     infinite: true,
     slidesToShow: 3,
     autoplay:true,
