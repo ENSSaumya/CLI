@@ -360,11 +360,11 @@ var product_div = document.querySelectorAll(".content_traya_slider");
 collection_btn.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     product_div.forEach((ele) => {
-      $(".content_traya_slider").slick("unslick");
+      ele.slick("unslick");
       ele.style.display = "none";
     });
     product_div[index].style.display = "block";
-    $(".content_traya_slider").slick();
+    product_div[index].slick();
   });
 });
 
