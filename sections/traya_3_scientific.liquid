@@ -311,10 +311,7 @@
 <script>
 $(document).ready(function() {
   $(".collection_link").click(function() {
-    // Initialize the Slick Slider on the clicked element
     $(this).slick();
-
-    // Unslick the other elements with the same class
     $(".collection_link").not(this).slick("unslick");
   });
 });
