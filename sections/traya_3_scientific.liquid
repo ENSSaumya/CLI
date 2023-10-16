@@ -309,20 +309,13 @@
 </style>
 
 <script>
-// $(document).ready(function() {
-//   $(".collection_link").click(function() {
-//     $(this).slick();
-//     $(".collection_link").not(this).slick("unslick");
-//   });
-// });
-
+$(document).ready(function() {
   $(".collection_link").click(function() {
-    var sliderID = $(this).attr("tab"); 
-    $(".content_traya_slider").slick("unslick");
-    $('#slider_' + sliderID).slick({
-    });
+    $(this).slick();
+    $(".collection_link").not(this).slick("unslick");
   });
-  
+});
+
   $(document).ready(function(){
   $('#slider_1').slick({
     infinite: true,
