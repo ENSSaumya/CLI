@@ -303,11 +303,13 @@
 </style>
 
 <script>
-  $(document).ready(function(){
-    $(".collection_link").click(function(){
-      
-    });
+$(document).ready(function(){
+  $(".collection_link").click(function(){
+    $(.this).slick();
+    $(".collection_link").not(this).unslick();
   });
+});
+  
   $(document).ready(function(){
   $('#slider_1').slick({
     infinite: true,
@@ -380,8 +382,7 @@
   });
 });
 
-  
-  
+   
 // On press of button of collection its CSS changes
 var color_btn = document.querySelectorAll(".btn_collection");
 color_btn.forEach((item) => {
