@@ -309,12 +309,12 @@
 </style>
 
 <script>
-// $(document).ready(function(){
-//   $(".collection_link").click(function(){
-//     $(this).slick();
-//     $(".collection_link").not(this).unslick();
-//   });
-// }); 
+$(document).ready(function(){
+  $(".collection_link").click(function(){
+    $(this).slick();
+    $(".collection_link").not(this).slick("unslick");
+  });
+}); 
   
   $(document).ready(function(){
   $('#slider_1').slick({
