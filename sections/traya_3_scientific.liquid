@@ -361,8 +361,10 @@ collection_btn.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     product_div.forEach((ele) => {
       ele.style.display = "none";
+      $(".content_traya_slider").slick("unslick");
     });
     product_div[index].style.display = "block";
+    $(".content_traya_slider").slick();
   });
 });
 
