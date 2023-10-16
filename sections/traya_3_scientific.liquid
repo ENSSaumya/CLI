@@ -9,7 +9,7 @@
     <div class="btn_traya_scientific">
       {% for block in section.blocks %}
       <span class="collection_link" tab="{{ forloop.index }}" href="{{ block.settings.Link_url }}" style="text-decoration:none">
-        <div class="btn_collection">
+        <div class="btn_collection" id="btn__{{ forloop.index }}">
           <span>{{ block.settings.collection_name }}</span>
           <p>{{ block.settings.Collection_heading }}</p>
         </div>
@@ -381,6 +381,10 @@
   });
 });
 
+window.addEventlistener("load", ()=>{
+  var color_btn = document.querySelectorAll(".btn_collection");
+});
+  
 // On press of button of collection its CSS changes
 var color_btn = document.querySelectorAll(".btn_collection");
 color_btn.forEach((item) => {
