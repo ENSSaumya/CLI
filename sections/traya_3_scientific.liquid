@@ -383,37 +383,37 @@
   });
 });
 
-  // On press of button of collection its CSS changes
-  var color_btn = document.querySelectorAll(".btn_collection");
-  color_btn.forEach((item) => {
-    item.addEventListener("click", () => {
-     item.classList.add("clr_svg");
+// On press of button of collection its CSS changes
+var color_btn = document.querySelectorAll(".btn_collection");
+color_btn.forEach((item) => {
+  item.addEventListener("click", () => {
+   item.classList.add("clr_svg");
+    item.classList.add("clr_text");
+    item.classList.add("clr_background");
+    color_btn.forEach((btn) => {
+      btn.classList.remove("clr_svg");
+      btn.classList.remove("clr_text");
+      btn.classList.remove("clr_background");
+      item.classList.add("clr_svg");
       item.classList.add("clr_text");
       item.classList.add("clr_background");
-      color_btn.forEach((btn) => {
-        btn.classList.remove("clr_svg");
-        btn.classList.remove("clr_text");
-        btn.classList.remove("clr_background");
-        item.classList.add("clr_svg");
-        item.classList.add("clr_text");
-        item.classList.add("clr_background");
-      });
     });
   });
+});
 
-  // On Click Of Collection button product of that particular collection is shown
-  var collection_btn = document.querySelectorAll(".collection_link");  
-  var product_div = document.querySelectorAll(".content_traya_slider");
-  window.addEventListener("load",()=>{
-    
-  });
-  collection_btn.forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-      product_div.forEach((ele) => {
-        ele.style.display = "none";
-      });
-      product_div[index].style.display = "block";
+// On Click Of Collection button product of that particular collection is shown
+var collection_btn = document.querySelectorAll(".collection_link");  
+var product_div = document.querySelectorAll(".content_traya_slider");
+window.addEventListener("load",()=>{
+  
+});
+collection_btn.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    product_div.forEach((ele) => {
+      ele.style.display = "none";
     });
+    product_div[index].style.display = "block";
   });
+});
 
 </script>
