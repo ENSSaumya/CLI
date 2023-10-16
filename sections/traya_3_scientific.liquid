@@ -385,6 +385,7 @@
   
 var color_btn = document.querySelectorAll(".btn_collection");
 color_btn.forEach((item) => {
+    item.classList.add("clr_svg", "clr_text", "clr_background").index[0];
   item.addEventListener("click", () => {
     color_btn.forEach((btn) => {
       btn.classList.remove("clr_svg", "clr_text", "clr_background");
