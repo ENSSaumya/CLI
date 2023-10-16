@@ -309,7 +309,7 @@
 
 <script>
   $(document).ready(function(){
-  $('.content_traya_slider').slick({
+  $('.grid_traya_slider').slick({
     infinite: true,
     slidesToShow: 3,
     dots: true,
@@ -329,6 +329,19 @@
     }]
   });
 });
+
+  // $(".").slick({
+  //   infinite: true,
+  //   slidesToShow: 3,
+  //   dots: true,
+  //   responsive:[{
+  //     breakpoint:768,
+  //     settings:{
+  //       slidesToShow: 2,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  // });
   
   var color_btn = document.querySelectorAll(".btn_collection");
   color_btn.forEach((item) => {
@@ -358,4 +371,5 @@
       console.log(product_div[index]);
     });
   });
+  
 </script>
