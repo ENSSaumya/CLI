@@ -20,8 +20,8 @@
 </div>
 
 <div class="main_traya_slider">
+  {% for combo in section.blocks %}
   <div class="content_traya_slider">
-    {% for combo in section.blocks %}
     {% assign collection = combo.settings.collection_product %}
       {% for product in collection.products %}
       <div class="grid_traya_slider" tab="{{ forloop.index }}">
@@ -48,8 +48,8 @@
         </div>
       </div>
       {% endfor %}
+      </div>
     {% endfor %}
-  </div>
 </div>
 {% schema %}
 {
