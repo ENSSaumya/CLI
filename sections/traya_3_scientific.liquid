@@ -404,7 +404,7 @@
   // });
   
   var product_div = document.querySelectorAll(".content_traya_slider");
-  collection_btn.forEach((btn) => {
+  collection_btn.forEach((btn, index) => {
     btn.addEventListener("click", () => {
       product_div.forEach((ele) => {
         ele.style.display = "none";
