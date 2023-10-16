@@ -318,7 +318,8 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-  function slider_(){
+  function slider_(id){
+    console.log('id',id)
   $('.content_traya_slider.slick-initailized').slick('unslick');
   $('.content_traya_slider').slick({
     infinite: true,
@@ -367,7 +368,7 @@ collection_btn.forEach((btn, index) => {
     });
     product_div[index].style.display = "block";
     const id = product_div[index].getAttribute('id');
-    slider_();
+    slider_(id);
   });
 });
 });
