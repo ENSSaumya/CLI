@@ -363,11 +363,9 @@ var product_div = document.querySelectorAll(".content_traya_slider");
 collection_btn.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     product_div.forEach((ele) => {
-      // ele.slick("unslick");
       ele.style.display = "none";
     });
     product_div[index].style.display = "block";
-    // product_div[index].slick();
     slider_();
   });
 });
