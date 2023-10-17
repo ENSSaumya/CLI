@@ -38,39 +38,43 @@ var carat = document.querySelectorAll(".table_row .carat");
   // console.log("Sorted",arr);
 });
 
-// const storeURL = 'https://beautyrec.myshopify.com';
-// const apiURL = `${storeURL}/admin/api/2021-07/products.json`;
-// const headers = {
-//   'Accept': 'application/json',
-//   'Content-Type': 'application/json',
-// };
-// fetch(apiURL, { method: 'GET', headers: headers })
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     console.log('data', data);
-//     console.log('data', data.products.id);
-//   })
-//   .catch((error) => {
-//     console.error('Fetch error:', error);
-//   });
-
-const fetch = require('node-fetch'); 
-const apiUrl = 'https://example.com/api/product';
-fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
+const storeURL = 'https://beautyrec.myshopify.com';
+const apiURL = `${storeURL}/admin/api/2021-07/products.json`;
+const headers = {
+  'Accept': 'application/json',
+  'Content-Type': 'application/json',
+};
+console.log("HII",apiURL);
+fetch(apiURL, { method: 'GET', headers: headers })
+  .then((response) => {
     return response.json();
   })
-  .then(data => {
+  .then((data) => {
+    console.log('data', data);
+    console.log('data', data.products.id);
+  })
+  .catch((error) => {
+    console.error('Fetch error:', error);
+  });
 
-    console.log(data);
-    console.log("Product ---> ",data.product.id)
-  })
-  .catch(error => {
-    console.error("There was a problem with the fetch operation:", error);
-  })
+// const apiUrl = 'https://beautyrec.myshopify.com/products';
+// fetch(apiUrl,{
+//   method:"GET",
+//   headers:{
+//     "Content-Type":"application/json"
+//       }
+//   })
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok');
+//     }
+//     return response.json();
+//   })
+//   .then(data => {
+//     console.log(data);
+//     console.log("Product ---> ",data.product.id);
+//   })
+//   .catch(error => {
+//     console.error("There was a problem with the fetch operation:", error);
+//   })
 
