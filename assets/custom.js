@@ -68,11 +68,9 @@ fetch(apiUrl)
   .then(data => {
 
     console.log(data);
-
-    const fs = require('fs');
-    fs.writeFileSync('product.json', JSON.stringify(data, null, 2));
+    console.log("Product ---> ",data.product.id)
   })
   .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
+    console.error("There was a problem with the fetch operation:", error);
+  })
 
