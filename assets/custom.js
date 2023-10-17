@@ -38,25 +38,5 @@ var carat = document.querySelectorAll(".table_row .carat");
   // console.log("Sorted",arr);
 });
 
-// function sortTable() {
-//   var table, rows, switching, i, x, y, shouldSwitch;
-//   table = document.querySelector(".table_round");
-//   switching = true;
-//   while (switching) {
-//     switching = false;
-//     rows = table.rows;
-//     for (i = 1; i < (rows.length - 1); i++) {
-//       shouldSwitch = false;
-//       x = rows[i].getElementsByTagName("td")[0];
-//       y = rows[i + 1].getElementsByTagName("td")[0];
-//       if (Number(x.innerHTML) > Number(y.innerHTML)) {
-//         shouldSwitch = true;
-//         break;
-//       }
-//     }
-//     if (shouldSwitch) {
-//       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-//       switching = true;
-//     }
-//   }
-// }
+const storeURL = 'https://beautyrec.myshopify.com';
+const apiURL = `${storeURL}`
