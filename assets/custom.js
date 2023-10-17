@@ -60,9 +60,9 @@ const apiUrl = 'https://beautyrec.myshopify.com/products';
 fetch(apiUrl,{
   method:GET,
   headers:{
-    "Content-Type":"application/json";
+    "Content-Type":"application/json"
       }
-  });
+  })
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
