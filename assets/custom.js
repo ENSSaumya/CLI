@@ -57,7 +57,7 @@ var carat = document.querySelectorAll(".table_row .carat");
 //   console.error('Fetch error:', error);
 // });
 
-const storeAPI = 'https://beautyrec.myshopify.com/products/9-to-5-primer-matte-lip-color.json';
+const storeAPI = 'https://beautyrec.myshopify.com/products.json';
 fetch(storeAPI,{
   method:"GET"
 }).then((response) => {
