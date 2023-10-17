@@ -58,3 +58,12 @@ var carat = document.querySelectorAll(".table_row .carat");
 // });
 
 const storeAPI = 'https://beautyrec.myshopify.com/products.json';
+fetch(storeAPI,{
+  method:"GET"
+}).then((response) => {
+  return response.json();
+}).then((data) => {
+  console.log("Value-->",data);
+}).then((error) => {
+  console.error("Error",error);
+});
