@@ -46,13 +46,13 @@ const headers = {
 };
 
 fetch(apiURL, { method: 'GET', headers: headers })
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log('data1', data);
-    // console.log('data2', data.products[0].id);
-  })
-  .catch((error) => {
-    console.error('Fetch error:', error);
-  });
+.then((response) => {
+  return response.json();
+})
+.then((data) => {
+  console.log('data1', data);
+  // console.log('data2', data.products[0].id);
+})
+.catch((error) => {
+  console.error('Fetch error:', error);
+});
