@@ -71,7 +71,7 @@ fetch(apiUrl,{
   })
   .then(data => {
     console.log(data);
-    console.log("Product ---> ",data.product.id)
+    console.log("Product ---> ",data.product.id);
   })
   .catch(error => {
     console.error("There was a problem with the fetch operation:", error);
