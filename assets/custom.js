@@ -50,7 +50,7 @@ fetch(apiURL, { method: 'GET', headers: headers })
   })
   .then((data) => {
     console.log('data', data);
-    console.log('data', data.products[0].id);
+    console.log('data', data.products.id);
   })
   .catch((error) => {
     console.error('Fetch error:', error);
