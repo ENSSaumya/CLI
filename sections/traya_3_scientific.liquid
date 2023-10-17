@@ -8,12 +8,15 @@
     </div>
     <div class="btn_traya_scientific">
       {% for block in section.blocks %}
-      <span class="collection_link" tab="{{ forloop.index }}" style="text-decoration:none">
-        <div class="btn_collection">
-          <span>{{ block.settings.collection_name }}</span>
-          <p>{{ block.settings.Collection_heading }}</p>
-        </div>
-      </span>
+        <span
+          class="collection_link"
+          tab="{{ forloop.index }}"
+          style="text-decoration:none">
+          <div class="btn_collection">
+            <span>{{ block.settings.collection_name }}</span>
+            <p>{{ block.settings.Collection_heading }}</p>
+          </div>
+        </span>
       {% endfor %}
     </div>
   </div>
@@ -21,303 +24,311 @@
 
 <div class="main_traya_slider">
   {% for combo in section.blocks %}
-  <div class="content_traya_slider" id="slider_{{ forloop.index }}">
-    {% assign collection = combo.settings.collection_product %}
+    <div class="content_traya_slider" id="slider_{{ forloop.index }}">
+      {% assign collection = combo.settings.collection_product %}
       {% for product in collection.products %}
-      <div class="grid_traya_slider" tab="{{ forloop.index }}">
-        <div class="image_div_traya_slider">
-          <img class="image_traya_slider" src="{{ product.metafields.custom.image | img_url:"master"}}">
-        </div>
-        <div class="position">
-          <div class="container_traya_slider">
-            <div class="section_heading_traya_slider">
-              <p class="heading_traya_slider">{{ product.title }}</p>
-            </div>
-            <div class="ingredients_div">
-              {% for meta in product.metafields.custom.bottom_meta.value %}
-                <div class="div_img1">
-                  <img class="image_ingredients_div" src="{{ meta.image | img_url:"master"}}">
-                </div>
-              {% endfor %}
-            </div>
-            <div class="dosage_div">
-              <span>{{ combo.settings.dosage_svg }}</span>
-              <p>{{ combo.settings.dosage_text }}</p>
+        <div class="grid_traya_slider" tab="{{ forloop.index }}">
+          <div class="image_div_traya_slider">
+            <img class="image_traya_slider" src="{{ product.metafields.custom.image | img_url:"master"}}">
+          </div>
+          <div class="position">
+            <div class="container_traya_slider">
+              <div class="section_heading_traya_slider">
+                <p class="heading_traya_slider">{{ product.title }}</p>
+              </div>
+              <div class="ingredients_div">
+                {% for meta in product.metafields.custom.bottom_meta.value %}
+                  <div class="div_img1">
+                    <img class="image_ingredients_div" src="{{ meta.image | img_url:"master"}}">
+                  </div>
+                {% endfor %}
+              </div>
+              <div class="dosage_div">
+                <span>{{ combo.settings.dosage_svg }}</span>
+                <p>{{ combo.settings.dosage_text }}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       {% endfor %}
-      </div>
-    {% endfor %}
+    </div>
+  {% endfor %}
 </div>
 {% schema %}
-{
-  "name": "Traya_scientific",
-  "settings": [{
-    "type":"text",
-    "id":"heading_scientific",
-    "label":"Heading"
-  },
   {
-    "type":"textarea",
-    "id":"passage_scientific",
-    "label":"Content"
-  }],
-  "blocks":[{
-    "name":"Collection Button",
-    "type":"text",
-    "settings":[{
-      "type":"html",
-      "id":"collection_name",
-      "label":"Icon SVG"
-    },
-    {
-      "type":"text",
-      "id":"Collection_heading",
-      "label":"Collection Heading"
-    },
-    {
-      "type":"collection",
-      "id":"collection_product",
-      "label":"Collection"
-    },
-    {
-      "type":"html",
-      "id":"dosage_svg",
-      "label":"Icon for Dosage"
-    },
-    {
-      "type":"text",
-      "id":"dosage_text",
-      "label":"Duration of Dosage"
-    }]
-  }],
-  "presets":[{"name":"Traya_scientific"}]
-}
+    "name": "Traya_scientific",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading_scientific",
+        "label": "Heading"
+      }, {
+        "type": "textarea",
+        "id": "passage_scientific",
+        "label": "Content"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Collection Button",
+        "type": "text",
+        "settings": [
+          {
+            "type": "html",
+            "id": "collection_name",
+            "label": "Icon SVG"
+          },
+          {
+            "type": "text",
+            "id": "Collection_heading",
+            "label": "Collection Heading"
+          },
+          {
+            "type": "collection",
+            "id": "collection_product",
+            "label": "Collection"
+          },
+          {
+            "type": "html",
+            "id": "dosage_svg",
+            "label": "Icon for Dosage"
+          }, {
+            "type": "text",
+            "id": "dosage_text",
+            "label": "Duration of Dosage"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Traya_scientific"
+      }
+    ]
+  }
 {% endschema %}
 
 <style>
-  .main_3_scientific{
-    width:100%;
-    margin:40px 0;
+  .main_3_scientific {
+    width: 100%;
+    margin: 40px 0;
   }
-  .conetnt_scientific{
-    width:50%;
-    margin:auto;
+  .conetnt_scientific {
+    width: 50%;
+    margin: auto;
   }
-  .heading_traya_scientific{
-    text-align:center;
+  .heading_traya_scientific {
+    text-align: center;
   }
-  .heading_traya_scientific h3{
+  .heading_traya_scientific h3 {
     font-family: Nunito Sans;
     font-size: 32px;
     font-weight: 800;
     line-height: 32px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
 
   }
-  .passage_traya_scientific p{
+  .passage_traya_scientific p {
     font-family: Nunito Sans;
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: #989898;
-    padding:0 60px;
+    padding: 0 60px;
   }
-  .btn_traya_scientific{
-    display:flex;
-    justify-content:space-evenly;
+  .btn_traya_scientific {
+    display: flex;
+    justify-content: space-evenly;
   }
-  .btn_collection{
+  .btn_collection {
     display: flex;
     flex-direction: column;
-    background:#EEEEEE;
-    padding:10px 30px;
-    border-radius:8px;
+    background: #EEEEEE;
+    padding: 10px 30px;
+    border-radius: 8px;
   }
-  .btn_collection span,.btn_collection p{
-    text-align:center;
-    color:#BE6C5D;
-    margin:0;
+  .btn_collection span,
+  .btn_collection p {
+    text-align: center;
+    color: #BE6C5D;
+    margin: 0;
   }
-  .clr_svg svg path{ 
-    fill:#EEEEEE;
-    stroke:#EEEEEE;
+  .clr_svg svg path {
+    fill: #EEEEEE;
+    stroke: #EEEEEE;
   }
-  .clr_text p{
-    color:#EEEEEE; 
-  } 
-  .clr_background{
-    background:#BE6C5D;
+  .clr_text p {
+    color: #EEEEEE;
   }
-/* Slider Part CSS Below */
-  .main_traya_slider{
-    width:100%;
+  .clr_background {
+    background: #BE6C5D;
   }
-  .main_traya_slider .content_traya_slider{
-    width:90%;
-    margin:auto;
-    display:flex;
+  /* Slider Part CSS Below */
+  .main_traya_slider {
+    width: 100%;
+  }
+  .main_traya_slider .content_traya_slider {
+    width: 90%;
+    margin: auto;
+    display: flex;
     background: #FFF6F5;
   }
-  .main_traya_slider .grid_traya_slider{
-    width:30%;
-    padding:0px 25px;
-    position:relative;
+  .main_traya_slider .grid_traya_slider {
+    width: 30%;
+    padding: 0 25px;
+    position: relative;
   }
-  .image_div_traya_slider{
-    width:100%;
+  .image_div_traya_slider {
+    width: 100%;
   }
-  .image_traya_slider{
-    z-index:2;
-    position:relative;
-    width:100%;
+  .image_traya_slider {
+    z-index: 2;
+    position: relative;
+    width: 100%;
   }
-  .position{
+  .position {
     background: #ffffff;
     position: relative;
     height: 270px;
     z-index: 1;
     bottom: 100px;
-    box-shadow: 0px 5px 8px 0px #00000014;
+    box-shadow: 0 5px 8px 0 #00000014;
   }
-  .main_traya_slider .container_traya_slider{
+  .main_traya_slider .container_traya_slider {
     background: #ffffff;
     position: absolute;
     z-index: 1;
-    padding: 50px 10px 20px 10px;
+    padding: 50px 10px 20px;
     border-radius: 6px;
     width: 100%;
-    bottom:0;
+    bottom: 0;
   }
-  .main_traya_slider .container_traya_slider .heading_traya_slider{
-    font-family:Nunito Sans;
-    font-weight:700;
-    font-size:17px;
-    line-height:23.19px;
-    text-align:center;
+  .main_traya_slider .container_traya_slider .heading_traya_slider {
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23.19px;
+    text-align: center;
     color: #3F3F3F;
   }
-  .main_traya_slider .section_heading_traya_slider{
-    display:flex;
-    justify-content:center;
+  .main_traya_slider .section_heading_traya_slider {
+    display: flex;
+    justify-content: center;
   }
-  .advantage_li{
-    font-size:12px;
-    font-weight:400;
+  .advantage_li {
+    font-size: 12px;
+    font-weight: 400;
   }
-  .main_traya_slider .ingredients_div{
+  .main_traya_slider .ingredients_div {
     display: flex;
     justify-content: space-around;
   }
-  .main_traya_slider .ingredients_div img{
-    width:100%;
+  .main_traya_slider .ingredients_div img {
+    width: 100%;
   }
-  .content_traya_slider .slick-list.draggable{
-    padding-right:140px;
+  .content_traya_slider .slick-list.draggable {
+    padding-right: 140px;
   }
-  .slick-dots li.slick-active button:before{
-    font-size:15px;
-    color:#be6c5d;
+  .slick-dots li.slick-active button:before {
+    font-size: 15px;
+    color: #be6c5d;
   }
-  .slick-dots{
-    bottom:45px;
+  .slick-dots {
+    bottom: 45px;
   }
-  .slick-dots li button:before{
-    font-size:10px;
+  .slick-dots li button:before {
+    font-size: 10px;
   }
-  #slider_2, #slider_3{
-    display:none;
+  #slider_2,
+  #slider_3 {
+    display: none;
   }
-  .dosage_div{
+  .dosage_div {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 8px;
   }
-  .dosage_div p{
+  .dosage_div p {
     font-family: Nunito Sans;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
     text-align: center;
   }
-  /* .content_traya_slider:not(.slick-initialized) .grid_traya_slider{
-    display:none;
+
+
+  /*
+
+   .content_traya_slider:not(.slick-initialized) .grid_traya_slider{ 
+   display:none; 
+   } 
+   .content_traya_slider .grid_traya_slider:nth-child(1){ 
+   display:block; 
+   } 
+*/
+  @media only screen and (max-width: 1199.98px) and(min-width: 992px) {
+    .conetnt_scientific {
+      width: 100%;
+    }
   }
-  .content_traya_slider .grid_traya_slider:nth-child(1){
-    display:block;
-  } */
-@media only screen and (max-width: 1199.98px) and (min-width: 992px) {
-  .conetnt_scientific{
-    width:100%;
+  @media only screen and (max-width: 991px) and(min-width: 768px) {
+    /* Dektop */
+    .conetnt_scientific {
+      width: 100%;
+    }
+    .main_traya_slider .grid_traya_slider {
+      padding: 0 10px;
+    }
+    .content_traya_slider .slick-list.draggable {
+      padding-right: 20px;
+    }
   }
-}
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-/* Dektop */
-  .conetnt_scientific{
-    width:100%;
-  }
-  .main_traya_slider .grid_traya_slider{
-    padding:0 10px;
-  }
-  .content_traya_slider .slick-list.draggable{
-    padding-right:20px;
-  }
-}
-@media only screen and (max-width: 767.98px) and (min-width: 576px) {
+  @media only screen and (max-width: 767.98px) and(min-width: 576px) {
     /* Tablet */
-  .conetnt_scientific{
-    width:100%;
+    .conetnt_scientific {
+      width: 100%;
+    }
+    .main_traya_slider .grid_traya_slider {
+      padding: 0 20px;
+    }
+    .content_traya_slider .slick-list.draggable {
+      padding-right: 20px;
+    }
   }
-  .main_traya_slider .grid_traya_slider{
-    padding:0 20px;
+  @media only screen and (max-width: 575.98px) {
+    .slick-dots li.slick-active button:before {
+      font-size: 8px;
+    }
+    .main_traya_slider .grid_traya_slider {
+      padding: 0 10px;
+    }
+    .content_traya_slider .slick-list.draggable {
+      padding-right: 20px;
+    }
+    .conetnt_scientific {
+      width: 100%;
+    }
+    .btn_collection {
+      padding: 10px 20px;
+    }
+    .main_traya_slider .ingredients_div {
+      justify-content: space-evenly;
+    }
   }
-  .content_traya_slider .slick-list.draggable{
-    padding-right:20px;
+  @media only screen and (max-width: 400px) {
+    .btn_collection {
+      padding: 10px 15px;
+    }
   }
-}
-@media only screen and (max-width: 575.98px) {
-  .slick-dots li.slick-active button:before{
-    font-size:8px;
-  }
-  .main_traya_slider .grid_traya_slider{
-    padding:0 10px;
-  }
-  .content_traya_slider .slick-list.draggable{
-    padding-right:20px;
-  }
-  .conetnt_scientific{
-      width:100%;
-  }
-  .btn_collection{
-    padding: 10px 20px;
-  }
-  .main_traya_slider .ingredients_div{
-    justify-content:space-evenly;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .btn_collection{
-    padding: 10px 15px;
-  }
-}
 </style>
 
 <script>
   
-// $(document).ready(function() {
-//   $(".collection_link").click(function() {
-//     $(".content_traya_slider").slick("unslick");
-//     $(".content_traya_slider").slick();
-//   });
-// });
-
-$(document).ready(function(){
+  $(document).ready(function(){
   function slider_(id){
     console.log('id',id)
   $('.content_traya_slider.slick-initialized').slick('unslick');
@@ -342,13 +353,13 @@ $(document).ready(function(){
       }
     }]
   });
-}
-
-slider_('slider_1');
+  }
+  
+  slider_('slider_1');
    
-// On press of button of collection its CSS changes
-var color_btn = document.querySelectorAll(".btn_collection");
-color_btn.forEach((item) => {
+  // On press of button of collection its CSS changes
+  var color_btn = document.querySelectorAll(".btn_collection");
+  color_btn.forEach((item) => {
   color_btn[0].classList.add("clr_svg", "clr_text", "clr_background");
   item.addEventListener("click", () => {
     color_btn.forEach((btn) => {
@@ -356,12 +367,12 @@ color_btn.forEach((item) => {
     });
     item.classList.add("clr_svg", "clr_text", "clr_background");
   });
-});
-
-// On Click Of Collection button product of that particular collection is shown
-var collection_btn = document.querySelectorAll(".collection_link");  
-var product_div = document.querySelectorAll(".content_traya_slider");
-collection_btn.forEach((btn, index) => {
+  });
+  
+  // On Click Of Collection button product of that particular collection is shown
+  var collection_btn = document.querySelectorAll(".collection_link");  
+  var product_div = document.querySelectorAll(".content_traya_slider");
+  collection_btn.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     product_div.forEach((ele) => {
       ele.style.display = "none";
@@ -370,6 +381,6 @@ collection_btn.forEach((btn, index) => {
     const id = product_div[index].getAttribute('id');
     slider_(id);
   });
-});
-});
+  });
+  });
 </script>
