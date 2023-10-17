@@ -64,6 +64,7 @@ fetch(storeAPI,{
   return response.json();
 }).then((data) => {
   console.log("Value-->",data);
+  console.log("FILTER",data);
 }).then((error) => {
   console.error("Error",error);
 });
