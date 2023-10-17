@@ -44,14 +44,14 @@ const headers = {
   'Accept': 'application/json',
   'Content-Type': 'application/json',
 };
-console.log("HII",apiURL);
+
 fetch(apiURL, { method: 'GET', headers: headers })
   .then((response) => {
     return response.json();
   })
   .then((data) => {
     console.log('data', data);
-    console.log('data', data.products.id);
+    console.log('data', data.products[0].id);
   })
   .catch((error) => {
     console.error('Fetch error:', error);
