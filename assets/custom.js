@@ -65,7 +65,8 @@ fetch(storeAPI,{
 }).then((data) => {
   console.log("Value-->",data);
   const pro_det = data.products.map((item) => item.title);
-  console.log(pro_det);
+  const str_pro = pro_det.toString();
+  console.log(str_pro.search("t"));
 }).then((error) => {
   console.error("Error",error);
 });
