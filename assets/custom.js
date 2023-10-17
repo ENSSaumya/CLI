@@ -56,16 +56,19 @@ var carat = document.querySelectorAll(".table_row .carat");
 //     console.error('Fetch error:', error);
 //   });
 
-// fetch(apiUrl)
-//   .then(response => {
-//     if (!response.ok) {
-//       throw new Error('Network response was not ok');
-//     }
-//     return response.json();
-//   })
-//   .then(data => {
-//     // Handle the JSON data
-//   })
-//   .catch(error => {
-//     console.error('There was a problem with the fetch operation:', error);
-//   });
+const apiUrl = 'https://beautyrec.myshopify.com/products';
+fetch(apiUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+    console.log("Product ---> ",data.product.id)
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
+
