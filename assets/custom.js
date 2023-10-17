@@ -38,21 +38,23 @@ var carat = document.querySelectorAll(".table_row .carat");
   // console.log("Sorted",arr);
 });
 
-const storeURL = 'https://beautyrec.myshopify.com';
-const apiURL = `${storeURL}/admin/api/2022-10/products.json`;
-const headers = {
-  'Accept': 'application/json',
-  'Content-Type': 'application/json',
-};
+// const storeURL = 'https://beautyrec.myshopify.com';
+// const apiURL = `${storeURL}/admin/api/2022-10/products.json`;
+// const headers = {
+//   'Accept': 'application/json',
+//   'Content-Type': 'application/json',
+// };
 
-fetch(apiURL, { method: 'GET', headers: headers })
-.then((response) => {
-  return response.json();
-})
-.then((data) => {
-  console.log('data1', data);
-  // console.log('data2', data.products[0].id);
-})
-.catch((error) => {
-  console.error('Fetch error:', error);
-});
+// fetch(apiURL, { method: 'GET', headers: headers })
+// .then((response) => {
+//   return response.json();
+// })
+// .then((data) => {
+//   console.log('data1', data);
+//   // console.log('data2', data.products[0].id);
+// })
+// .catch((error) => {
+//   console.error('Fetch error:', error);
+// });
+
+const storeAPI = 'https://beautyrec.myshopify.com/products.json';
