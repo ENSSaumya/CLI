@@ -39,4 +39,19 @@ var carat = document.querySelectorAll(".table_row .carat");
 });
 
 const storeURL = 'https://beautyrec.myshopify.com';
-const apiURL = `${storeURL}`
+const apiURL = `${storeURL}/admin/api/2021-07/products.json`;
+const headers = {
+  'Accept': 'application/json',
+  'Content-Type': 'application/json',
+};
+fetch(apiURL, { method: 'GET', headers: headers })
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log('data', data);
+    console.log('data', data.products[0].id);
+  })
+  .catch((error) => {
+    console.error('Fetch error:', error);
+  });
