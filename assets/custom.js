@@ -56,13 +56,9 @@ var carat = document.querySelectorAll(".table_row .carat");
 //     console.error('Fetch error:', error);
 //   });
 
-const apiUrl = 'https://beautyrec.myshopify.com/products';
-fetch(apiUrl,{
-  method:"GET",
-  headers:{
-    "Content-Type":"application/json"
-      }
-  })
+const fetch = require('node-fetch'); 
+const apiUrl = 'https://example.com/api/product';
+fetch(apiUrl)
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
@@ -70,8 +66,11 @@ fetch(apiUrl,{
     return response.json();
   })
   .then(data => {
+
     console.log(data);
-    console.log("Product ---> ",data.product.id)
+
+    const fs = require('fs');
+    fs.writeFileSync('product.json', JSON.stringify(data, null, 2));
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
