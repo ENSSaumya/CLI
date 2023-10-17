@@ -56,25 +56,3 @@ fetch(apiURL, { method: 'GET', headers: headers })
   .catch((error) => {
     console.error('Fetch error:', error);
   });
-
-// const apiUrl = 'https://beautyrec.myshopify.com/products';
-// fetch(apiUrl,{
-//   method:"GET",
-//   headers:{
-//     "Content-Type":"application/json"
-//       }
-//   })
-//   .then(response => {
-//     if (!response.ok) {
-//       throw new Error('Network response was not ok');
-//     }
-//     return response.json();
-//   })
-//   .then(data => {
-//     console.log(data);
-//     console.log("Product ---> ",data.product.id);
-//   })
-//   .catch(error => {
-//     console.error("There was a problem with the fetch operation:", error);
-//   })
-
