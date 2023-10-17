@@ -62,7 +62,7 @@ fetch(storeAPI,{
   method:"GET"
 }).then((response) => {
   return response.json();
-}).then((data[0]) => {
+}).then((data) => {
   console.log("Value-->",data);
 }).then((error) => {
   console.error("Error",error);
