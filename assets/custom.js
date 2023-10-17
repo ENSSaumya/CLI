@@ -58,7 +58,7 @@ var carat = document.querySelectorAll(".table_row .carat");
 
 const apiUrl = 'https://beautyrec.myshopify.com/products';
 fetch(apiUrl,{
-  method:GET,
+  method:"GET",
   headers:{
     "Content-Type":"application/json"
       }
