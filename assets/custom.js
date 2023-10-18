@@ -66,7 +66,7 @@ fetch(storeAPI,{
   console.log("Value-->",data);
   const pro_det = data.products.map((item) => item.title);
   const filter = pro_det.filter((search) => search.includes("t"));
-  const pro_json = data.products.filter((del) => del.includes("t"));
+  const pro_json = data.products.filter((del) => filter.includes(del.titte));
   console.log("FILTER", filter);
   console.log("Sorted Product",pro_json);
 }).then((error) => {
