@@ -65,7 +65,7 @@ fetch(storeAPI,{
 }).then((data) => {
   console.log("Value-->",data);
   const pro_det = data.products.map((item) => item.title);
-  const filter = pro_det.filter((search) => search.includes("dis"));
+  const filter = pro_det.filter((search) => search.includes("big"));
   console.log("FILTER", filter);
 }).then((error) => {
   console.error("Error",error);
