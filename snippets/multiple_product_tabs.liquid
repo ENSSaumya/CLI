@@ -2,12 +2,10 @@
   <div class="tab_price">
     <button type="button" > Price </button>
     <button type="button" > Title </button> 
-    <button type="button" > Meta </button>
   </div>
   <div class="cstm_Tab_Contents">
     <p id="data1" class="product_data">{{ product.price | money_with_currency }}</p>
     <p id="data2" class="product_data">{{product.title}}</p>
-    <!-- <img id="meta1" class="metadata" src="{{  product.metafields.custom.image_metafield | img_url: "300x" }}"/> -->
   </div>
 </section>
 
