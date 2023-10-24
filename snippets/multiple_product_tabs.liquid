@@ -34,11 +34,11 @@
 <script>
   var btn = document.querySelectorAll(".tab_price button"); // button
   var content = document.querySelectorAll(".product_data"); // content
-  btn.forEach((item) => {
+  btn.forEach((item, index) => {
     item.addEventListener("click", () => {
       console.log("multiple ---> ",btn);
-      content.forEach((ele, index) => {
-        content.style.display = "none";
+      content.forEach((ele) => {
+        ele.style.display = "none";
       });
       content[index].style.display = "block";
     });
