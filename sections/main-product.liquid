@@ -625,6 +625,12 @@
 {% comment %}----------------------------------------------------------------------------------------------{% endcomment %} 
   
 {% render "multiple_product_tabs" %}
+
+<div style="margin:20px 0px;">
+  {% if product.metafields.custom.trust_badge != blank %}
+    <img src="{{ product.metafields.custom.trust_badge | img_url:"300x" }}"/>
+  {% endif %}
+</div>
 <!-- <div>
   {% render "meta-recipes" %}
 </div> -->
