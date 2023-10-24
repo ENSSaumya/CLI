@@ -36,22 +36,10 @@
   var content = document.querySelectorAll(".product_data"); // content
   btn.forEach((item, index) => {
     item.addEventListener("click", () => {
-      console.log("multiple ---> ",btn);
       content.forEach((ele) => {
         ele.style.display = "none";
       });
       content[index].style.display = "block";
     });
   });
-  // var btn = document.querySelectorAll(".tab_price button");
-  // var content = document.querySelectorAll(".product_data");
-  // for (let i = 0; i < btn.length; i++) {
-  //   btn[i].addEventListener("click", function () {
-  //     for (let j = 0; j < content.length; j++) {
-  //       content[j].style.display = "none";
-  //     }
-  //     content[i].style.display = "block";
-  //   });
-  // }
-
 </script>
