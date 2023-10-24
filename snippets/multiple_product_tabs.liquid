@@ -35,7 +35,10 @@
 
 <script>
   var btn = document.querySelectorAll(".tab_price button");
+  var content = document.querySelector(".product_data");
   btn.forEach((item) => {
-    item.addEventListener("click",)
-  })
+    item.addEventListener("click", () => {
+      content.style.display = "none";
+    });
+  });
 </script>
