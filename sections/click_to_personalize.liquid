@@ -4,10 +4,7 @@
   </div>
   <div class="container_personalize">
     <p class="personalize_container">PERSONALIZE YOUR NECKLACE</p>
-    <input
-      id="input_text"
-      type="text"
-      placeholder="Enter your text">
+    <input id="input_text" type="text" placeholder="Enter your text">
     <p class="choose_container">CHOOSE FONT</p>
     {% for block in section.blocks %}
       <span class="font_family_text" style="font-family:{{ block.settings.personalize_font_family | split:"," | last }};">
