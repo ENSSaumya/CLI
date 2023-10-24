@@ -29,20 +29,32 @@
     font-size: 20px;
   }
   .product_data, .metadata{
-    /* display:none; */
+    display:none;
   }
 </style>
 
 <script>
+  // var btn = document.querySelectorAll(".tab_price button");
+  // var content = document.querySelectorAll(".product_data");
+  // btn.forEach((item) => {
+  //   item.addEventListener("click", () => {
+  //     console.log("multiple ---> ",btn);
+  //     content.forEach((ele, index) => {
+  //       ele.style.display = "none";
+  //     });
+  //     content[index].style.display = "block";
+  //   });
+  // });
   var btn = document.querySelectorAll(".tab_price button");
   var content = document.querySelectorAll(".product_data");
-  btn.forEach((item) => {
-    item.addEventListener("click", () => {
-      console.log("multiple ---> ",btn);
-      content.forEach((ele, index) => {
-        ele.style.display = "none";
-      });
-      content[index].style.display = "block";
+
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener("click", function () {
+      for (let j = 0; j < content.length; j++) {
+        content[j].style.display = "none";
+      }
+      content[i].style.display = "block";
     });
-  });
+  }
+
 </script>
