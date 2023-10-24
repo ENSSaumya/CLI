@@ -623,41 +623,9 @@
 </script>
   
 {% comment %}----------------------------------------------------------------------------------------------{% endcomment %} 
+  
+{% render "multiple_product_tabs" %}
 
-<section class="tab_section">
-    <div class="tab_price">
-      <button type="button" onclick="myfun()"> Price </button>
-      <button type="button" onclick="myfun()"> Title </button> 
-      <button type="button" onclick="myfun()"> Meta </button>
-    </div>
-    <div class="cstm_Tab_Contents">
-        <p id="data1" class="product_data1">{{ product.price | money_with_currency }}</p>
-        <p id="data2" class="product_data2">{{product.title}}</p>
-        <img id="meta1" class="metadata" src="{{  product.metafields.custom.image_metafield | img_url: "300x" }}"/>
-      </div>
-</section>
-
-  <style>
-    .tab_section
-    {
-      padding: 20px 0px 12px 0px;
-    }
-    .tab_price{
-      padding-right: 10px;
-      display: contents;
-    }
-    .tab2{
-      padding-left: 10px;
-      width: 20%;
-    }
-    .tab2 button{
-      width: 100%;
-      font-size: 20px;
-    }
-    .product_data1, .product_data2, .metadata{
-      display:none;
-    }
-  </style>
 <div>
   {% if product.metafields.custom.trust_badge != blank %}
     <img src="{{ product.metafields.custom.trust_badge | img_url:"300x" }}"/>
