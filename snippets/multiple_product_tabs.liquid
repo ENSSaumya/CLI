@@ -39,9 +39,10 @@
   btn.forEach((item) => {
     item.addEventListener("click", () => {
       console.log("multiple ---> ",btn);
-      content.forEach((ele) => {
-        ele.style.display = "block";
+      content.forEach((ele, index) => {
+        ele.style.display = "none";
       });
+      content[index].style.display = "block";
     });
   });
 </script>
