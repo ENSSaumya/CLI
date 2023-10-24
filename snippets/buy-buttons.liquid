@@ -154,8 +154,8 @@
             
 <!-- Script for variant update more than 100             -->
 <script>
-    var choose = document.querySelector(".select__select");
-      choose.addEventListener("change", () => {
+    var selects = document.querySelector(".select__select");
+      selects.addEventListener("change", () => {
       setTimeout(() => {
         document.querySelector(".product-form__submit.cart").removeAttribute("disabled");
       }, 2000);  
