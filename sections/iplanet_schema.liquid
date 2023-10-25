@@ -1,7 +1,15 @@
+<div>
+  <p>{{ section.settings.html_schema }}</p>
+</div>
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "settings": [{
+      "type":"html",
+      "id":"html_schema",
+      "label":"Content"
+    }],
+    "presets":[{"name":"iplanet_Text"}]
   }
 {% endschema %}
 
