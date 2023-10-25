@@ -3,56 +3,17 @@
 </div>
 
 <style>
-  .iplanet_text{
-    width:50%;
-    margin:auto;
-  }
-  .animation_css{
-    /* background: #6BB7FF; */
-    padding: 0 10px;
-    border-radius: 40px;
-    /* position: relative; */
-    animation-name: background_color;
-    animation-duration: 2s;
-    animation-delay:2s;
-    animation-fill-mode:forwards;
-  }
-  .background_class{
-    position: relative;
-    z-index: 0;
-    display: inline-block;
-  }
-  span.background_class::before {
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(var(--highlight-color),var(--highlight-color));
-    background-repeat: no-repeat;
-    background-position: 0;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 1em;
-    left: -0.1875em;
-    top: 50%;
-    z-index: -1;
-    width: 100%;
-    opacity: 1;
-    border-radius: 40px;
-    padding-left: 0.1875em;
-    padding-right: 0.1875em;
-    transform: translateY(-50%);
-    transition: width var(--highlight-duration) ease-out,opacity .2s ease;
-    transition-delay: calc(var(--highlight-duration)*var(--highlight-line) + var(--highlight-delay, 0));
-}
-  /* .background_class:before{
-    content:"";
-  } */
-  /* @keyframes background_color{
-    from{background:#ffffff;}
-    to{background:#6BB7FF;}
-  } */
-  @keyframes background_color{
-    from{background-color:#ffffff; left:0px;}
-    to{background-color:#6BB7FF; left:200px;}
+    .animation_css{
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    display: block;
+  
+    background: linear-gradient(to right, #6BB7FF 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
   }
 </style>
 {% schema %}
