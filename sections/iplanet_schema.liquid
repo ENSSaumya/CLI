@@ -3,32 +3,29 @@
 </div> 
 
 <style>
-  .iplanet_text{
-    width:50%;
-    margin:auto;
+  .iplanet_text {
+    width: 50%;
+    margin: auto;
+    text-align: center; /* Center the text horizontally */
   }
+  
   .animation_css {
-  /*   border: 1px solid black; */
     border-radius: 3px;
-    /* width: 100px; */
-    /* height: 30px; */
-    /* display: block; */
     background: linear-gradient(to right, #6BB7FF 50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all .2s ease-out;
-    animation-name:trans;
-    animation-delay:2s;
+    animation: trans 2s 2s ease-out forwards; /* Combine animation properties */
   }
   
-  /* .animation_css:hover {
-    background-position: left bottom;
-  } */
-
-  @keyframes trans{
-    from{background-position: right bottom;}
-    to{background-position: left bottom;}
+  @keyframes trans {
+    from {
+      background-position: right bottom;
+    }
+    to {
+      background-position: left bottom;
+    }
   }
+
 </style>
 {% schema %}
   {
