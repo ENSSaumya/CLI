@@ -17,10 +17,17 @@
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .2s ease-out;
+    animation-name:trans;
+    animation-delay:2s;
   }
   
-  .animation_css:hover {
+  /* .animation_css:hover {
     background-position: left bottom;
+  } */
+
+  @keyframes trans{
+    from{background-position: right bottom;}
+    to{background-position: left bottom;}
   }
 </style>
 {% schema %}
