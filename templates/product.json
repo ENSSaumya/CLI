@@ -1,5 +1,11 @@
 {
   "sections": {
+    "48ec08a5-9980-4726-9160-af14187a910a": {
+      "type": "iplanet_schema",
+      "settings": {
+        "html_schema": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -238,21 +244,15 @@
       "disabled": true,
       "settings": {
       }
-    },
-    "48ec08a5-9980-4726-9160-af14187a910a": {
-      "type": "iplanet_schema",
-      "settings": {
-        "html_schema": ""
-      }
     }
   },
   "order": [
+    "48ec08a5-9980-4726-9160-af14187a910a",
     "main",
     "61cc90b9-39ec-43c5-8fed-94de1246998a",
     "a90a24f9-9cb1-4e4b-98af-43e4d3bf2347",
     "16874082970aea6857",
     "related-products",
-    "c5b95b8c-e69c-47f1-a375-fa6f9b8ea1aa",
-    "48ec08a5-9980-4726-9160-af14187a910a"
+    "c5b95b8c-e69c-47f1-a375-fa6f9b8ea1aa"
   ]
 }
