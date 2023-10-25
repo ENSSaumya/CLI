@@ -18,20 +18,42 @@
     animation-fill-mode:forwards;
   }
   .background_class{
-    position:relative;
-    display:contents;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
   }
-  .background_class:before{
+  span.background_class::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(var(--highlight-color),var(--highlight-color));
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 1em;
+    left: -0.1875em;
+    top: 50%;
+    z-index: -1;
+    width: 100%;
+    opacity: 1;
+    border-radius: 40px;
+    padding-left: 0.1875em;
+    padding-right: 0.1875em;
+    transform: translateY(-50%);
+    transition: width var(--highlight-duration) ease-out,opacity .2s ease;
+    transition-delay: calc(var(--highlight-duration)*var(--highlight-line) + var(--highlight-delay, 0));
+}
+  /* .background_class:before{
     content:"";
-  }
+  } */
   /* @keyframes background_color{
     from{background:#ffffff;}
     to{background:#6BB7FF;}
   } */
-  @keyframes background_color{
+  /* @keyframes background_color{
     from{background-color:#ffffff; left:0px;}
     to{background-color:#6BB7FF; left:200px;}
-  }
+  } */
 </style>
 {% schema %}
   {
