@@ -2309,6 +2309,10 @@
             "label": "Large"
           }
         },
+        "tag_on_image": {
+          "label": "Tag On Image",
+          "info": "Tag to be place ovr the image."
+        },
         "image_zoom": {
           "label": "Image zoom",
           "info": "Click and hover defaults to open lightbox on mobile.",
