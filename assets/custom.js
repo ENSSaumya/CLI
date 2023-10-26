@@ -1,8 +1,4 @@
-var card_inn = document.querySelectorAll(".color-background-1");
-console.log("inner",card_inn);
-card_inn.forEach((innerbtn)=>{
-  // innerbtn.style.display="none";
-})
+
 $(document).ready(function(){
   const rows = document.querySelectorAll('.table_row');
   const div_right = document.querySelectorAll('.div_top');
@@ -59,14 +55,8 @@ var carat = document.querySelectorAll(".table_row .carat");
 //   console.error("Error",error);
 // });
 
-// document.addEventListener("load", function () {
-  
-    var gg = document.querySelectorAll(".grid__item .card-wrapper");
-    gg.forEach((item) => {
-      console.log("gg",item);
-      item.style.display = "none";
-    });
-    // console.log(gg,"gg");
-
-
-// });
+var card_inn = document.querySelectorAll(".color-background-1");
+console.log("inner",card_inn);
+card_inn.forEach((innerbtn)=>{
+  innerbtn.style.display="none";
+});
