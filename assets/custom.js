@@ -64,5 +64,5 @@ document.addEventListener("DOMContentLoaded", function () {
   //       document.getElementbyId("")
   //   },1000);
   // }
-  document.querySelectorAll("#id_card_inner").style.display = "none";
+  document.querySelector("#id_card_inner").style.display = "none";
 })
