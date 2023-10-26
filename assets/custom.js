@@ -54,7 +54,7 @@ var carat = document.querySelectorAll(".table_row .carat");
 //   console.error("Error",error);
 // });
 
-document.addEventListener("load", function () {
+// document.addEventListener("load", function () {
   setTimeout(function(){
     var gg = document.querySelectorAll("id_card_inner");
     gg.forEach((item) => {
@@ -64,4 +64,4 @@ document.addEventListener("load", function () {
     // console.log(gg,"gg");
       // document.getElementById("id_card_inner").style.display = "none";
   },2000);
-});
+// });
