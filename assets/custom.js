@@ -1,5 +1,8 @@
 var card_inn = document.querySelectorAll(".color-background-1");
 console.log("inner",card_inn);
+card_inn.forEach((innerbtn)=>{
+  innerbtn.style.display="none";
+})
 $(document).ready(function(){
   const rows = document.querySelectorAll('.table_row');
   const div_right = document.querySelectorAll('.div_top');
