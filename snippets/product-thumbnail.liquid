@@ -110,8 +110,8 @@
       }}
     </div>
     <div>
-      {% for media in product.media %}
-        {% include 'media' %}
+      {% for images in product.images %}
+        <img src="{{ image.src | product_img_url:"medium" }}">
       {% endfor %}
     </div>
     <button class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
