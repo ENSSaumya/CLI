@@ -1,3 +1,5 @@
+var card_inn = document.querySelectorAll(".card__inner");
+console.log("inner",card_inn);
 $(document).ready(function(){
   const rows = document.querySelectorAll('.table_row');
   const div_right = document.querySelectorAll('.div_top');
@@ -62,7 +64,6 @@ var carat = document.querySelectorAll(".table_row .carat");
       item.style.display = "none";
     });
     // console.log(gg,"gg");
-var card_inn = document.querySelectorAll(".card__inner");
-console.log("inner",card_inn);
+
 
 // });
