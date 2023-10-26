@@ -2313,7 +2313,7 @@
           "label": "Image Over Image",
           "info": "Image to be place over the image."
         },
-        "tetx_on_image": {
+        "text_on_image": {
           "label": "Text Over Image",
           "info": "Iamge to be placed over the image."
         },
