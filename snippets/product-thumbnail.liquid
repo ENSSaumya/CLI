@@ -110,8 +110,11 @@
       }}    
     </div>
     <div class="img_image">
+    {% if section.settings.tag_on_image != "null" &&  section.settings.text_on_image == "null"  %}
       <img class="tag_image" src="{{ section.settings.tag_on_image }}">
+    {% else %}
       <p class="tag_text">{{ section.settings.text_on_image }}</p>
+    {% endif %}
     </div>
       <style>
         .parent_tag_text{
@@ -201,4 +204,8 @@
   var text_val = '{{ section.settings.text_on_image }}';
   var image_val = '{{ section.settings.tag_on_image }}';
   // console.log(text_val); 
+  if(text_val == "null" && image_val != 'null'){
+        
+  }
+  else()
 </script>
