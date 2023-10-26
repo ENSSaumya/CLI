@@ -112,7 +112,7 @@
 <div class="img_image">
   {% if section.settings.tag_on_image != "null" and section.settings.text_on_image == "null" %}
     <img class="tag_image" src="{{ section.settings.tag_on_image }}">
-  {% elsif section.settings.text_on_image != "null" %}
+  {% elsif section.settings.tag_on_image != "null" %}
     <p class="tag_text">{{ section.settings.text_on_image }}</p>
   {% endif %}
 </div>
