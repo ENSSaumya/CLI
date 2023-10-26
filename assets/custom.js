@@ -1,4 +1,4 @@
-var card_inn = document.querySelectorAll(".card__inner");
+var card_inn = document.querySelectorAll(".color-background-1");
 console.log("inner",card_inn);
 $(document).ready(function(){
   const rows = document.querySelectorAll('.table_row');
