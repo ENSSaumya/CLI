@@ -2311,7 +2311,7 @@
         },
         "tag_on_image": {
           "label": "Tag On Image",
-          "info": "Tag to be place ovr the image."
+          "info": "Tag to be place over the image."
         },
         "image_zoom": {
           "label": "Image zoom",
