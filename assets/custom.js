@@ -58,7 +58,7 @@ var carat = document.querySelectorAll(".table_row .carat");
   
     var gg = document.querySelectorAll(".grid__item .card-wrapper");
     gg.forEach((item) => {
-      console.log("item",item);
+      console.log("gg",item);
       item.style.display = "none";
     });
     // console.log(gg,"gg");
