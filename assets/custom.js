@@ -55,5 +55,5 @@ var carat = document.querySelectorAll(".table_row .carat");
 // });
 
 document.addEventListener("load", function () {
-  document.getElementById("id_card_inner").style.visiblity = "hidden";
+  document.getElementById("id_card_inner").style.display = "none";
 });
