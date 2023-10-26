@@ -2311,7 +2311,13 @@
         },
         "tag_on_image": {
           "label": "Tag On Image",
-          "info": "Tag to be place over the image."
+          "info": "Tag to be place over the image.",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Right"
+          }
         },
         "image_zoom": {
           "label": "Image zoom",
