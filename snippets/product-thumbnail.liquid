@@ -129,10 +129,6 @@
           bottom:0;
         }
       </style>
-      <script>
-        var text_val = '{{ section.settings.text_on_image }}';
-        console.log(text_val);
-      </script>
     <button class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
       <span class="visually-hidden">
         {{ 'products.product.media.open_media' | t: index: position }}
@@ -201,3 +197,7 @@
     {%- endif -%}
   {%- endif -%}
 </div>
+<script>
+  var text_val = '{{ section.settings.text_on_image }}';
+  console.log(text_val);
+</script>
