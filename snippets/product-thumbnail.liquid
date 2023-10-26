@@ -109,13 +109,10 @@
         widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
       }}    
     </div>
-<div class="img_image">
-  <!-- {% if section.settings.tag_on_image != "null" and section.settings.text_on_image == "null" %} -->
-    <img class="tag_image" src="{{ section.settings.tag_on_image }}">
-  <!-- {% elsif section.settings.tag_on_image != "null" %} -->
-    <p class="tag_text">{{ section.settings.text_on_image }}</p>
-  <!-- {% endif %} -->
-</div>
+    <div class="img_image">
+      <img class="tag_image" src="{{ section.settings.tag_on_image }}">
+      <p class="tag_text">{{ section.settings.text_on_image }}</p>
+    </div>
       <style>
         .parent_tag_text{
           position:relative;
@@ -200,8 +197,8 @@
     {%- endif -%}
   {%- endif -%}
 </div>
-<!-- <script>
+<script>
   var text_val = '{{ section.settings.text_on_image }}';
   var image_val = '{{ section.settings.tag_on_image }}';
   // console.log(text_val); 
-</script> -->
+</script>
