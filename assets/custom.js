@@ -65,6 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
   //   },1000);
   // }
   document.querySelectorAll("#id_card_inner").forEach((pic) => {
-    pic.style.display = "none";
+    document.querySelector("#id_card_inner").style.display = "none";
   });
 })
