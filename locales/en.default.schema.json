@@ -2310,8 +2310,12 @@
           }
         },
         "tag_on_image": {
-          "label": "Tag On Image",
-          "info": "Tag to be place over the image."
+          "label": "Image Over Image",
+          "info": "Image to be place over the image."
+        },
+        "tetx_on_image": {
+          "label": "Text Over Image",
+          "info": "Iamge to be placed over the image."
         },
         "image_zoom": {
           "label": "Image zoom",
