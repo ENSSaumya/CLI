@@ -2297,7 +2297,7 @@
           "label": "Constrain media to screen height"
         },
         "media_size": {
-          "label": "Desktop media width",
+          "label": "Desktop media ",
           "info": "Media is automatically optimized for mobile.",
           "options__1": {
             "label": "Small"
