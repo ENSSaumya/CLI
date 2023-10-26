@@ -65,5 +65,5 @@ var carat = document.querySelectorAll(".table_row .carat");
   //   },1000);
   // }
   document.getElementById("id_card_inner").style.display = "none";
-  });
+  // });
 // });
