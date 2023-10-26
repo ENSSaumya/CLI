@@ -54,16 +54,6 @@ var carat = document.querySelectorAll(".table_row .carat");
 //   console.error("Error",error);
 // });
 
-// document.addEventListener("load", function () {
-  // if(state == "interactive"){
-  //   document.querySelectorAll(".card__inner").style.visiblity = "hidden";
-  // }
-  // else if(state == "active"){
-  //   setTimeout(function(){
-  //       document.getElementbyId("interactive");
-  //       document.getElementbyId("")
-  //   },1000);
-  // }
-  document.getElementById("id_card_inner").style.display = "none";
-  // });
-// });
+document.addEventListener("load", function () {
+  document.getElementById("id_card_inner").style.visiblity = "hidden";
+});
