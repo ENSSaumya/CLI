@@ -62,5 +62,7 @@ var carat = document.querySelectorAll(".table_row .carat");
       item.style.display = "none";
     });
     // console.log(gg,"gg");
+var card_inn = document.querySelectorAll(".card__inner");
+console.log("inner",card_inn);
 
 // });
