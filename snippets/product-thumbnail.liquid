@@ -110,7 +110,7 @@
       }}    
     </div>
 <div class="img_image">
-  {% if section.settings.tag_on_image != null %}
+  {% if section.settings.tag_on_image != blank %}
     <img class="tag_image" src="{{ section.settings.tag_on_image }}">
   {% else%}
     <p class="tag_text">{{ section.settings.text_on_image }}</p>
