@@ -55,9 +55,12 @@ var carat = document.querySelectorAll(".table_row .carat");
 // });
 
 document.addEventListener("load", function () {
-  setTimeout(function(){
-    var gg = document.getElementById("id_card_inner");
+  // setTimeout(function(){
+    var gg = document.querySelectorAll("id_card_inner");
+    gg.forEach((item) => {
+      item.style.display = "none";
+    });
     console.log(gg,"gg");
-      document.getElementById("id_card_inner").style.display = "none";
-  },2000)
+      // document.getElementById("id_card_inner").style.display = "none";
+  // },2000)
 });
