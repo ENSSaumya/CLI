@@ -109,6 +109,7 @@
         widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
       }}
       <div class="tag_text">{{ section.settings.tag_on_image }}</div>    
+    </div>
       <style>
         .product__media.parent_tag_text{
           position:relative;
@@ -119,7 +120,6 @@
           bottom:0;
         }
       </style>
-    </div>
     <button class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
       <span class="visually-hidden">
         {{ 'products.product.media.open_media' | t: index: position }}
