@@ -1,3 +1,8 @@
+var card_inn = document.querySelectorAll(".color-background-1");
+console.log("inner",card_inn);
+card_inn.forEach((innerbtn)=>{
+  innerbtn.style.visiblity = "hidden";
+});
 
 $(document).ready(function(){
   const rows = document.querySelectorAll('.table_row');
@@ -55,8 +60,3 @@ var carat = document.querySelectorAll(".table_row .carat");
 //   console.error("Error",error);
 // });
 
-var card_inn = document.querySelectorAll(".color-background-1");
-console.log("inner",card_inn);
-card_inn.forEach((innerbtn)=>{
-  innerbtn.style.visiblity = "hidden";
-});
