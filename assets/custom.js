@@ -40,10 +40,10 @@ var carat = document.querySelectorAll(".table_row .carat");
 
 window.addEventListener("load",function() {
   setTimeout(function(){
-      var card_inn = document.querySelectorAll(".color-background-1"); // 
+      var card_inn = document.querySelectorAll(".color-background-1");  
       console.log("inner",card_inn);
       card_inn.forEach((innerbtn)=>{
-      innerbtn.style.visibility = "hidden";
+      // innerbtn.style.visibility = "hidden";
     });
   }, 2000);
 });  
