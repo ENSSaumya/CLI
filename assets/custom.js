@@ -45,5 +45,5 @@ window.addEventListener("load",function() {
       card_inn.forEach((innerbtn)=>{
       innerbtn.style.display = "none";
     });
-  });
+  }, 2000);
 });  
