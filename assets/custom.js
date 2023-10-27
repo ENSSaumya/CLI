@@ -38,8 +38,12 @@ var carat = document.querySelectorAll(".table_row .carat");
   // console.log("Sorted",arr);
 });
 
-var card_inn = document.querySelectorAll(".color-background-1");
-console.log("inner",card_inn);
-card_inn.forEach((innerbtn)=>{
-  innerbtn.style.display = "none";
-});
+window.addEventListener("load",function() {
+  setTimeout(function(){
+      var card_inn = document.querySelectorAll(".color-background-1");
+      console.log("inner",card_inn);
+      card_inn.forEach((innerbtn)=>{
+      innerbtn.style.display = "none";
+    });
+  });
+});  
