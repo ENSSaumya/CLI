@@ -39,6 +39,7 @@ var carat = document.querySelectorAll(".table_row .carat");
 });
 
 window.addEventListener("load",function() {
+  var org_img = document.querySelector(".loading_icon_img");
   var card_inn = document.querySelectorAll(".card__media");  
       card_inn.forEach((innerbtn)=>{
       innerbtn.style.visibility = "hidden";
@@ -46,5 +47,6 @@ window.addEventListener("load",function() {
   setTimeout(function(){
       // console.log("inner",card_inn);
       innerbtn.style.visibility = "visible";
+      org_img.style.visibility = "hidden";
   }, 2000);
 });  
