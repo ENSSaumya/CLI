@@ -1,7 +1,7 @@
 var card_inn = document.querySelectorAll(".color-background-1");
 console.log("inner",card_inn);
 card_inn.forEach((innerbtn)=>{
-  innerbtn.style.visiblity = "hidden";
+  innerbtn.style.display = "none";
 });
 
 $(document).ready(function(){
