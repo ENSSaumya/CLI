@@ -44,6 +44,7 @@ window.addEventListener("load",function() {
       innerbtn.style.visibility = "hidden";
     });
   setTimeout(function(){
-      console.log("inner",card_inn);
+      // console.log("inner",card_inn);
+      innerbtn.style.visibility = "visible";
   }, 2000);
 });  
