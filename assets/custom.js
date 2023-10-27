@@ -39,11 +39,11 @@ var carat = document.querySelectorAll(".table_row .carat");
 });
 
 window.addEventListener("load",function() {
-  setTimeout(function(){
-      var card_inn = document.querySelectorAll(".card__media");  
-      console.log("inner",card_inn);
+  var card_inn = document.querySelectorAll(".card__media");  
       card_inn.forEach((innerbtn)=>{
       innerbtn.style.visibility = "hidden";
     });
+  setTimeout(function(){
+      console.log("inner",card_inn);
   }, 2000);
 });  
