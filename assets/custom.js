@@ -44,7 +44,7 @@ window.addEventListener("load",function() {
       card_inn.forEach((innerbtn)=>{
       innerbtn.style.visibility = "hidden";
     });
-    setTimeOut(function(){
+    setTimeout(function(){
       card_inn.forEach((item) => {
         item.style.visiblity = "visible";
       });
