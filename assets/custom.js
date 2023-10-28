@@ -44,9 +44,9 @@ window.addEventListener("load",function() {
       card_inn.forEach((innerbtn)=>{
       innerbtn.style.visibility = "hidden";
     });
-  setTimeout(function(){
-      // console.log("inner",card_inn);
-      innerbtn.style.visibility = "visible";
-      org_img.style.visibility = "hidden";
-  }, 2000);
+  // setTimeout(function(){
+  //     // console.log("inner",card_inn);
+  //     innerbtn.style.visibility = "visible";
+  //     org_img.style.visibility = "hidden";
+  // }, 2000);
 });  
