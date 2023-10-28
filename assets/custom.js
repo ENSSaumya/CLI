@@ -44,4 +44,7 @@ window.addEventListener("load",function() {
     card_inn.forEach((innerbtn)=>{
       innerbtn.style.visibility = "hidden";
     });
+  setTimeout(function(){
+    
+  });
 });  
