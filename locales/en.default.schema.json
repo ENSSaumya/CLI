@@ -2309,6 +2309,14 @@
             "label": "Large"
           }
         },
+        "tag_on_image": {
+          "label": "Image Over Image",
+          "info": "Image to be place over the image."
+        },
+        "text_on_image": {
+          "label": "Text Over Image",
+          "info": "Iamge to be placed over the image."
+        },
         "image_zoom": {
           "label": "Image zoom",
           "info": "Click and hover defaults to open lightbox on mobile.",

@@ -1,0 +1,54 @@
+<section class="tab_section">
+  <div class="tab_price">
+    <button type="button" > Price </button>
+    <button type="button" > Title </button> 
+  </div>
+  <div class="cstm_Tab_Contents">
+    <p id="data1" class="product_data">{{ product.price | money_with_currency }}</p>
+    <p id="data2" class="product_data">{{product.title}}</p>
+  </div>
+</section>
+
+<style>
+  .tab_section
+  {
+    padding: 20px 0px 12px 0px;
+  }
+  .tab_price{
+    padding-right: 10px;
+    display: contents;
+  }
+  .tab_price button{
+    padding: 10px 40px;
+    margin: 0 10px;
+    border: none;
+    background: mediumspringgreen;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50px;
+  }
+  .tab2{
+    padding-left: 10px;
+    width: 20%;
+  }
+  .tab2 button{
+    width: 100%;
+    font-size: 20px;
+  }
+  .product_data, .metadata{
+    display:none;
+  }
+</style>
+
+<script>
+  var btn = document.querySelectorAll(".tab_price button"); // button
+  var content = document.querySelectorAll(".product_data"); // content
+  btn.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      content.forEach((ele) => {
+        ele.style.display = "none";
+      });
+      content[index].style.display = "block";
+    });
+  });
+</script>

@@ -38,18 +38,13 @@ var carat = document.querySelectorAll(".table_row .carat");
   // console.log("Sorted",arr);
 });
 
-const storeAPI = 'https://beautyrec.myshopify.com/products.json';
-fetch(storeAPI,{
-  method:"GET"
-}).then((response) => {
-  return response.json();
-}).then((data) => {
-  console.log("Value-->",data);
-  const pro_det = data.products.map((item) => item.title);
-  const filter = pro_det.filter((search) => search.includes("BIG"));
-  const pro_json = data.products.filter((del) => filter.includes(del.title));
-  console.log("FILTER", filter);
-  console.log("Sorted Product",pro_json);
-}).then((error) => {
-  console.error("Error",error);
-});
+window.addEventListener("load",function() {
+  var org_img = document.querySelector(".loading_icon_img");
+  var card_inn = document.querySelectorAll(".card__media");  
+    card_inn.forEach((innerbtn)=>{
+      innerbtn.style.visibility = "hidden";
+    });
+  setTimeout(function(){
+    
+  });
+});  

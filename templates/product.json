@@ -1,5 +1,11 @@
 {
   "sections": {
+    "48ec08a5-9980-4726-9160-af14187a910a": {
+      "type": "iplanet_schema",
+      "settings": {
+        "html_schema": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -96,7 +102,9 @@
         "enable_video_looping": false,
         "padding_top": 60,
         "padding_bottom": 60,
-        "area": "301201,301202,246163,246149"
+        "area": "301201,301202,246163,246149",
+        "tag_on_image": "https:\/\/cdn.igp.com\/raw\/upload\/assets\/images\/igp-logo-revamp.png",
+        "text_on_image": ""
       }
     },
     "61cc90b9-39ec-43c5-8fed-94de1246998a": {
@@ -241,6 +249,7 @@
     }
   },
   "order": [
+    "48ec08a5-9980-4726-9160-af14187a910a",
     "main",
     "61cc90b9-39ec-43c5-8fed-94de1246998a",
     "a90a24f9-9cb1-4e4b-98af-43e4d3bf2347",

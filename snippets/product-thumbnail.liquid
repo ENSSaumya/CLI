@@ -101,14 +101,37 @@
         <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
       </svg>
     </div>
-    <div class="product__media media media--transparent">
+    <div class="product__media media media--transparent parent_tag_text">
       {{ media.preview_image | image_url: width: 1946 | image_tag:
         class: image_class,
         loading: lazy,
         sizes: sizes,
         widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
-      }}
+      }}    
     </div>
+<div class="img_image">
+  {% if section.settings.tag_on_image != blank %}
+    <img class="tag_image" src="{{ section.settings.tag_on_image }}">
+  {% else%}
+    <p class="tag_text">{{ section.settings.text_on_image }}</p>
+  {% endif %}
+</div>
+  <style>
+    .parent_tag_text{
+      position:relative;
+    }
+    .tag_image{
+      position:absolute;
+      right:0;
+      bottom:0;
+      width:80px;
+    }
+    .tag_text{
+      position:absolute;
+      right:0;
+      bottom:0;
+    }
+  </style>
     <button class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
       <span class="visually-hidden">
         {{ 'products.product.media.open_media' | t: index: position }}
