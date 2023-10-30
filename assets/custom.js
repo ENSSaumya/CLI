@@ -45,6 +45,8 @@ window.addEventListener("load",function() {
       innerbtn.style.visibility = "hidden";
     });
   setTimeout(function(){
-    
-  });
+    card_inn.forEach((innerbtn)=>{
+      innerbtn.style.visibility = "visible";
+    });
+  },2000);
 });  
