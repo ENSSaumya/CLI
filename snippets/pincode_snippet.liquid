@@ -1,0 +1,76 @@
+{% comment %} ------------------------------------------ PINCODE -------------------------------------------{% endcomment %}
+              <div class="pincode-div">
+                <label class="pincode" for="pin">Pincode:</label><br>
+                <input class="classnum" type="number" id="pin" pattern="/^-?\d+\.?\d*$/"  onKeyPress="if(this.value.length==6) return false;" onkeydown="if (event.key === 'Enter') pincodechk()"/><br>
+                <button class="classbtn" onclick="pincodechk()">Check</button>      
+                <p id="dip"></p>
+              </div>                        
+            <style>
+              .pincode-div{
+                margin-left:50px;
+                position:relative;
+              }
+              .pincode{
+                font-size:20px;
+                font-weight:700;
+              }
+              .classnum{
+                color: black;
+                margin:15px 0px;
+              }
+              .classbtn{
+                background-color: #18bdbd91;
+                color:#FFFFFF;
+                position:absolute;
+                border-radius: 10px;
+                font-size: 15px;
+                font-weight: 500;
+                width: 25%;
+                padding:5px;
+                margin:0px 15px;
+              }
+              #dip{
+                font-size:16px; 
+              }
+            </style>
+            <script>
+              // Method 1
+              var str = ["110001","201001","201309","201009"];
+              // function validate()
+              //   {
+              //     var code = document.getElementById("pin").value;                
+              //     for(var i=0;i<str.length;i++)
+              //       {
+              //         if(code.match(str[i]))
+              //         {                        
+              //           document.getElementById("dip").innerHTML= "Product is available at this location";
+              //           break;
+              //         }
+              //         // else if(code.length < 6 || code.length==0)
+              //         // {
+              //         //   document.getElementById("dip").innerHTML="Enter the 6 digit pincode";
+              //         // }
+              //          if(!code.match(str[i]))
+              //         {
+              //           document.getElementById("dip").innerHTML="Please Enter a valid Location";
+              //         }         
+              //       }
+              //   }
+            // Method 2
+            var cd = '{{ section.settings.area }}';
+              var pincodes = cd.split(",");
+              //console.log("PINCODE -->",pincodes);
+            function pincodechk() {
+                var k = document.getElementById("pin").value;                
+                for(let j=0; j<pincodes.length; j++) {                 
+                    if(k == pincodes[j]) {                    
+                      document.getElementById("dip").innerHTML = "Vaild";
+                      break;
+                    }
+                    if(k != pincodes[j]) {
+                      document.getElementById("dip").innerHTML = "Invalid";
+                    }
+                }
+              }
+            </script
+{% comment %}----------------------------------------- PINCODE END ----------------------------------------{% endcomment %}                
