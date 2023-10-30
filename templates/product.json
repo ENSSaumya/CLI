@@ -108,6 +108,12 @@
         "text_on_image": ""
       }
     },
+    "61c79098-94b6-4d45-9308-7651477e6e3e": {
+      "type": "pincode_product_igp",
+      "settings": {
+        "igp_txt": ""
+      }
+    },
     "61cc90b9-39ec-43c5-8fed-94de1246998a": {
       "type": "click_to_personalize",
       "blocks": {
@@ -253,6 +259,7 @@
   "order": [
     "48ec08a5-9980-4726-9160-af14187a910a",
     "main",
+    "61c79098-94b6-4d45-9308-7651477e6e3e",
     "61cc90b9-39ec-43c5-8fed-94de1246998a",
     "a90a24f9-9cb1-4e4b-98af-43e4d3bf2347",
     "16874082970aea6857",
