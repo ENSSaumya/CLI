@@ -38,7 +38,7 @@ var carat = document.querySelectorAll(".table_row .carat");
   // console.log("Sorted",arr);
 });
 
-window.addEventListener("load",function() {
+document.addEventListener("load",function() {
   var org_img = document.querySelector(".loading_icon_img");
   var card_inn = document.querySelectorAll(".card__media");  
     card_inn.forEach((innerbtn)=>{
