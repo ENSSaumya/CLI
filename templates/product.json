@@ -44,6 +44,7 @@
         },
         "645293da-4410-484c-8361-79223c1750db": {
           "type": "Number",
+          "disabled": true,
           "settings": {
             "area": "201001,\n110001,\n201309,\n201009"
           }
@@ -207,6 +208,7 @@
         "6cbe2fad-30cb-4498-80ab-fe7b0c13c950",
         "28146e99-ba5b-4b8d-ac0e-872de6ced2b0"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
