@@ -42,13 +42,6 @@
           "settings": {
           }
         },
-        "645293da-4410-484c-8361-79223c1750db": {
-          "type": "Number",
-          "disabled": true,
-          "settings": {
-            "area": "201001,\n110001,\n201309,\n201009"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -75,6 +68,12 @@
             "content": "",
             "page": ""
           }
+        },
+        "46902a3a-0240-4438-9a23-275206bc9044": {
+          "type": "collection",
+          "settings": {
+            "pincode_igp": "201002,\n201001,\n123456,\n393024"
+          }
         }
       },
       "block_order": [
@@ -84,11 +83,11 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "645293da-4410-484c-8361-79223c1750db",
         "buy_buttons",
         "description",
         "share",
-        "1a66f2c0-6cd5-42e8-a440-35b3ed7ba0f9"
+        "1a66f2c0-6cd5-42e8-a440-35b3ed7ba0f9",
+        "46902a3a-0240-4438-9a23-275206bc9044"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -104,14 +103,9 @@
         "padding_top": 60,
         "padding_bottom": 60,
         "area": "301201,301202,246163,246149",
+        "pincode_igp": "",
         "tag_on_image": "https:\/\/cdn.igp.com\/raw\/upload\/assets\/images\/igp-logo-revamp.png",
         "text_on_image": ""
-      }
-    },
-    "61c79098-94b6-4d45-9308-7651477e6e3e": {
-      "type": "pincode_product_igp",
-      "settings": {
-        "igp_txt": ""
       }
     },
     "61cc90b9-39ec-43c5-8fed-94de1246998a": {
@@ -259,7 +253,6 @@
   "order": [
     "48ec08a5-9980-4726-9160-af14187a910a",
     "main",
-    "61c79098-94b6-4d45-9308-7651477e6e3e",
     "61cc90b9-39ec-43c5-8fed-94de1246998a",
     "a90a24f9-9cb1-4e4b-98af-43e4d3bf2347",
     "16874082970aea6857",
