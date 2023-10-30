@@ -448,6 +448,7 @@
                 block: block
               %}
           {%- endcase -%}
+          {% render "pincode_igp" %}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
