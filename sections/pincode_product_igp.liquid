@@ -1,7 +1,13 @@
+{% render "pincode_igp" %}
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Pincode",
+    "settings": [{
+      "type":"textarea",
+      "id":"igp_txt",
+      "label":"Store Pincode"
+    }],
+    "presets":[{"name":"Pincode"}]
   }
 {% endschema %}
 
