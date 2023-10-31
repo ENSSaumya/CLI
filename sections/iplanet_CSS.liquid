@@ -197,11 +197,6 @@
 
 <script>
 
-// var cl_high = text2.clientHeight;
-  // var off = text2.offsetTop;
-  // console.log(off);
-  // console.log(cl_high);
-
   var text1 = document.querySelector(".input1_div");
   window.addEventListener("scroll", () => {
     var high = window.pageYOffset;
@@ -209,14 +204,11 @@
     // console.log(high);
   });
 
-    var slide = document.querySelector(".abc");
-    var text2 = document.querySelector(".content_div .sub_heading");
-
-slide.addEventListener("scroll", () => {
-  var scrollPosition = slide.scrollTop;
-  text2.style.opacity = 1 - scrollPosition / 140;
-  // console.log(scrollPosition);
-});
-
-
+  var slide = document.querySelector(".abc");
+  var text2 = document.querySelector(".content_div .sub_heading");
+    slide.addEventListener("scroll", () => {
+      var scrollPosition = slide.scrollTop;
+      text2.style.opacity = 1 - scrollPosition / 140;
+      // console.log(scrollPosition);
+    });
 </script>
