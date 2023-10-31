@@ -1,7 +1,27 @@
+<div class="iplanet_new_main">
+  <div class="content_new">
+    {% for block in section.blocks %}
+    <div class="input1_div">
+      <h2>Essential tools.</h2>
+      <span class="background_light_green"><span class="">Incredible possibilities.</span></span>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "iplanet CSS",
+    "settings": [],
+    "blocks":[{
+      "type":"image",
+      "name":"apple",
+      "settings":[{
+        "type":"html",
+        "id":"essential_tools",
+        "label":"Input field 1"
+      }]
+    }],
+    "presets":[{"name":"iplanet CSS"}]
   }
 {% endschema %}
 
