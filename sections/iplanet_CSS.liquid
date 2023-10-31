@@ -129,8 +129,9 @@
 
 <script>
   window.addEventListener("scroll",() => {
+    var header = document.querySelector(".input1_div");
     var high = window.pageYOffset;
-    var header = 
+    header.style.opacity = 1 - high/700;
     console.log(high);
   });
 </script>
