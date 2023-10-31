@@ -318,7 +318,8 @@
 {% comment %} -------------------------------------------------------------------------------------------{% endcomment %}            
             {%- when 'textarea' -%}
                {% assign pincode_value = section.settings.pincode_igp %}
-                {% render 'pincode_igp', pin_igp : pincode_value  %}
+                {% render 'pincode_igp', pin_igp : pincode_value %}
+            {{ pin_igp | json }}
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
             ss
             {%- when 'buy_buttons' -%}
