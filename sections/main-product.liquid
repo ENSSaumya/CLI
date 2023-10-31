@@ -321,7 +321,6 @@
                 {% render 'pincode_igp', pin_igp : pincode_value %}
             {{ pincode_value | json }}
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
-            ss
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
               {% render "cart_API" %}
