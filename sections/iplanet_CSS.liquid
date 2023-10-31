@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var text2 = document.querySelector(".content_div .sub_heading");
     
     slide.addEventListener("scroll", () => {
-        var len = document.pageYOffset;
+        var len = window.pageYOffset;
         text2.style.opacity = 1 - len / 400;
         console.log("LEN", len);
         console.log(1 - len / 400, "1-opac");
