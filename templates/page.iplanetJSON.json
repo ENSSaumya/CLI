@@ -3,14 +3,20 @@
     "9f2d487d-7c66-4256-861c-8640c6356981": {
       "type": "iplanet_CSS",
       "blocks": {
+        "f6a3825c-6e4b-4d35-926e-277f011e5755": {
+          "type": "text",
+          "settings": {
+            "essential_tools": "<div class=\"input1_div\">\n      <h2>Essential tools.<\/h2>\n      <span class=\"background_light_green\"><span class=\"incredible_posibilities\">Incredible possibilities.<\/span><\/span>\n    <\/div>"
+          }
+        },
         "2db7af9c-fe61-4915-aecc-e4e70bd5f64c": {
           "type": "image",
           "settings": {
-            "essential_tools": "<div class=\"input1_div\">\n      <h2>Essential tools.<\/h2>\n      <span class=\"background_light_green\"><span class=\"incredible_posibilities\">Incredible possibilities.<\/span><\/span>\n    <\/div>"
           }
         }
       },
       "block_order": [
+        "f6a3825c-6e4b-4d35-926e-277f011e5755",
         "2db7af9c-fe61-4915-aecc-e4e70bd5f64c"
       ],
       "settings": {
