@@ -210,10 +210,9 @@
   });
 
   var slide = document.querySelector(".abc");
+  var text2 = document.querySelector(".sub_heading");
   window.addEventListener("scroll",()=>{
-    var text2 = document.querySelector(".sub_heading");
-    // var len = window.pageYOffset ;
-    console.log(text2.scrollHeight);
+    var len = window.pageYOffset;
     text2.style.opacity = 1 - len/500;
     // console.log("LEN",len);
     // console.log(1 - len/400,"1-opac");
