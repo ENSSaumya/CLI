@@ -197,18 +197,20 @@
 
 <script>
 
-  var text1 = document.querySelector(".input1_div");
+  var heading_text = document.querySelector(".input1_div");
   window.addEventListener("scroll", () => {
     var high = window.pageYOffset;
-    text1.style.opacity = 1 - high/140; 
+    heading_text.style.opacity = 1 - high/140; 
     // console.log(high);
   });
 
   var slide = document.querySelector(".abc");
-  var text2 = document.querySelector(".content_div .sub_heading");
+  var text1 = document.querySelector(".content_div .sub_heading");
+  var text2 = document.querySelector(".content_div .content_text_1");
+  var text1 = document.querySelector(".content_div .content_text_2");
     slide.addEventListener("scroll", () => {
       var scrollPosition = slide.scrollTop;
-      text2.style.opacity = 1 - scrollPosition / 140;
+      text1.style.opacity = 1 - scrollPosition / 140;
       console.log(scrollPosition);
     });
 </script>
