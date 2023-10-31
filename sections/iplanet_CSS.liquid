@@ -8,7 +8,7 @@
         {% endif %}
       </div>
       <div class="content_text">
-        <p>Learning <span class="background_#FFA950">goes anywhere</span> with iPad. With a lightweight design and up to 10 hours of battery life, it‘s easy to stay connected all day.</p>
+        <p>Learning <span class="background_FFA950">goes anywhere</span> with iPad. With a lightweight design and up to 10 hours of battery life, it‘s easy to stay connected all day.</p>
       </div>
     {% endfor %}
   </div>
@@ -130,6 +130,20 @@
   }
   .content_div{
     border: 1px solid;
+  }
+  .content_text .background_FFA950{
+    background: linear-gradient(to right, #FFA950 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    animation: orange 0.7s 2s linear forwards;
+  }
+  @keyframes orange{
+    from{
+      background-position: right bottom;      
+    }
+    to{
+      background-position: left bottom;
+    }
   }
 </style>
 
