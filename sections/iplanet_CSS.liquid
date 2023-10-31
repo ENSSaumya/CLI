@@ -209,8 +209,9 @@ var text2 = document.querySelector(".content_div");
     // console.log(high);
   });
 
-  document.querySelector(".abc").addEventListener("scroll",()=>{
-    var len = document.querySelector(".abc").pageYOffset;
+  var slide = document.querySelector(".abc");
+  slide.addEventListener("scroll",()=>{
+    var len = slide.pageYOffset;
     text2.style.opacity = 1 - len/140;
   });
 
