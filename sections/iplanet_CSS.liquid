@@ -3,7 +3,7 @@
     {% for block in section.blocks %}
     <div class="input1_div">
       <h2>Essential tools.</h2>
-      <span class="background_light_green"><h2 class="incredible_posibilities">Incredible possibilities.</h2></span>
+      <span class="background_light_green"><span class="incredible_posibilities">Incredible possibilities.</span></span>
     </div>
     {% endfor %}
   </div>
@@ -39,7 +39,6 @@
     background-size: 200% 100%;
     background-position: right bottom;
     animation: animate 0.7s 2s linear forwards;
-    
   }
   @keyframes animate {
     from {
@@ -50,7 +49,7 @@
     }
   }
   .input1_div .incredible_posibilities{
-    /* font-size: 35px; */
+    font-size: 35px;
     line-height: 1.0625;
     font-weight: 600;
     letter-spacing: -0.009em;
