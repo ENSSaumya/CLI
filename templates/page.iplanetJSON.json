@@ -1,5 +1,21 @@
 {
   "sections": {
+    "9f2d487d-7c66-4256-861c-8640c6356981": {
+      "type": "iplanet_CSS",
+      "blocks": {
+        "2db7af9c-fe61-4915-aecc-e4e70bd5f64c": {
+          "type": "image",
+          "settings": {
+            "essential_tools": ""
+          }
+        }
+      },
+      "block_order": [
+        "2db7af9c-fe61-4915-aecc-e4e70bd5f64c"
+      ],
+      "settings": {
+      }
+    },
     "375ad0e2-25c5-4b08-bc2d-14ff0ad64c13": {
       "type": "iplanet_timer",
       "settings": {
@@ -109,7 +125,6 @@
         "253c742c-4874-423b-a223-b7ac3f46b434": {
           "type": "image",
           "settings": {
-            "pic_section7": "shopify:\/\/shop_images\/Digit88.jpg",
             "heading_section7": "Dheeraj Sood",
             "subscript_section7": "Head",
             "text_section7": "iPlanet Enterprise has been a rock solid IT Partner in Digit88’s growth over the past year helping us with critical IT needs with their super responsive and flexible approach to conducting business."
@@ -118,7 +133,6 @@
         "6d62afca-f0d0-4b99-b31f-7845704575eb": {
           "type": "image",
           "settings": {
-            "pic_section7": "shopify:\/\/shop_images\/Nutanix.jpg",
             "heading_section7": "Manunath N",
             "subscript_section7": "Head",
             "text_section7": "Appreciate iPlanet Enterprise support during this challenging time. Service team support is excellent. I’m always impressed with the dedication and skill of the team."
@@ -127,7 +141,6 @@
         "b65be830-772f-474c-8e2a-66ad9fd727bf": {
           "type": "image",
           "settings": {
-            "pic_section7": "shopify:\/\/shop_images\/gameskraft.jpg",
             "heading_section7": "Prasanth Natarajan",
             "subscript_section7": "IT Manager",
             "text_section7": "iPlanet Enterprise was the perfect partner for us, easily exceeded our expectations. They are personable, responsive and results oriented."
@@ -144,6 +157,7 @@
     }
   },
   "order": [
+    "9f2d487d-7c66-4256-861c-8640c6356981",
     "375ad0e2-25c5-4b08-bc2d-14ff0ad64c13",
     "5a5c385c-1eaa-4d46-9d58-041e8c230ed0",
     "main",
