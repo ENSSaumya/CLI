@@ -213,7 +213,7 @@
   var text2 = document.querySelector(".sub_heading");
   slide.addEventListener("scroll",()=>{
     var len = window.pageYOffset;
-    text2.style.opacity = 1 - len/100;
+    text2.style.opacity = 1 - len/1000;
     console.log("LEN",len);
     console.log(1 - len/400,"1-opac");
   });
