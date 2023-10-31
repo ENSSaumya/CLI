@@ -1,16 +1,17 @@
 <div class="iplanet_new_main">
   <div class="container_new">
-    {% for new_block in section.blocks %}
+  {% assign block = section.blocks %}
+    {% for new_block in block %}
       {{ new_block.settings.essential_tools }}
     {% endfor %}
-    {% for heading_block in new_block %}
+    {% for heading_block in block %}
       <div class="img_block_div">
         {% if block.settings.tab_image_new != blank %}
           <img class="img_apple" src="{{ block.settings.tab_image_new | img_url:"400x" }}" >
         {% endif %}
       </div>
     {% endfor %}
-    {% for text_block in new_block %}
+    {% for text_block in block %}
       <div class="abc">
         {{ block.settings.text_con }}
       </div> 
