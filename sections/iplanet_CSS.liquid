@@ -7,7 +7,7 @@
     <div class="img_block_div">
       {% for heading_block in blocks %}
         {% if heading_block.settings.tab_image_new != blank %}
-          <img class="img_apple" src="{{ heading_block.settings.tab_image_new | img_url:"400x" }}" >
+          <img class="img_apple" src="{{ heading_block.settings.tab_image_new | img_url:"master" }}" >
         {% endif %}
       {% endfor %}
     </div>
