@@ -24,7 +24,13 @@
         "18447a30-5be7-4cbc-ae2b-c16b941e0dfb": {
           "type": "textarea",
           "settings": {
-            "text_con": "<div class=\"content_text\">\n        <p>Learning <span class=\"background_FFA950\">goes anywhere<\/span> with iPad. With a lightweight design and up to 10 hours of battery life, it‘s easy to stay connected all day.<\/p>\n      <\/div>"
+            "text_con": "<div class=\"content_text_1\">\n        <p>Learning <span class=\"background_FFA950\">goes anywhere<\/span> with iPad. With a lightweight design and up to 10 hours of battery life, it‘s easy to stay connected all day.<\/p>\n      <\/div>"
+          }
+        },
+        "22bd79b1-f0fa-4ed7-a1f4-044e78c709b5": {
+          "type": "textarea",
+          "settings": {
+            "text_con": ""
           }
         }
       },
@@ -32,7 +38,8 @@
         "f6a3825c-6e4b-4d35-926e-277f011e5755",
         "2db7af9c-fe61-4915-aecc-e4e70bd5f64c",
         "eb87bd49-392f-4bf7-974f-1efc05375741",
-        "18447a30-5be7-4cbc-ae2b-c16b941e0dfb"
+        "18447a30-5be7-4cbc-ae2b-c16b941e0dfb",
+        "22bd79b1-f0fa-4ed7-a1f4-044e78c709b5"
       ],
       "settings": {
       }
