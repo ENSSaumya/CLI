@@ -68,12 +68,6 @@
             "content": "",
             "page": ""
           }
-        },
-        "46902a3a-0240-4438-9a23-275206bc9044": {
-          "type": "collection",
-          "settings": {
-            "pincode_igp": "201002,\n201001,\n123456,\n393024"
-          }
         }
       },
       "block_order": [
@@ -86,8 +80,7 @@
         "buy_buttons",
         "description",
         "share",
-        "1a66f2c0-6cd5-42e8-a440-35b3ed7ba0f9",
-        "46902a3a-0240-4438-9a23-275206bc9044"
+        "1a66f2c0-6cd5-42e8-a440-35b3ed7ba0f9"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -103,7 +96,7 @@
         "padding_top": 60,
         "padding_bottom": 60,
         "area": "301201,301202,246163,246149",
-        "pincode_igp": "",
+        "pincode_igp_pr": "200000,10000000",
         "tag_on_image": "https:\/\/cdn.igp.com\/raw\/upload\/assets\/images\/igp-logo-revamp.png",
         "text_on_image": ""
       }
