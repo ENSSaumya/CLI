@@ -2,6 +2,9 @@
   <div class="content_new">
     {% for block in section.blocks %}
       {{ block.settings.essential_tools }}
+      <div class="img_block_div">
+        <img class="img_apple" src="{{ block.settings.tab_image | img_url:"master" }}" >
+      </div>
     {% endfor %}
   </div>
 </div>
