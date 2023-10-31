@@ -68,6 +68,12 @@
             "content": "",
             "page": ""
           }
+        },
+        "a634c879-abaf-4d20-b0a1-d4e65175d04c": {
+          "type": "image",
+          "settings": {
+            "pincode_igp": "111111,222222,444444"
+          }
         }
       },
       "block_order": [
@@ -80,7 +86,8 @@
         "buy_buttons",
         "description",
         "share",
-        "1a66f2c0-6cd5-42e8-a440-35b3ed7ba0f9"
+        "1a66f2c0-6cd5-42e8-a440-35b3ed7ba0f9",
+        "a634c879-abaf-4d20-b0a1-d4e65175d04c"
       ],
       "settings": {
         "enable_sticky_info": true,
