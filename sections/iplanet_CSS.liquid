@@ -199,7 +199,14 @@
     display:none;
   }
 @media screen and (max-width: 767px){
-  
+  /* .input1_div .background_light_green{
+    background: linear-gradient(to right, #86f18d 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    animation: animate 0.7s 2s linear forwards;
+    padding: 0 15px;
+    border-radius: 20px;
+  } */
 }
 </style>
 
@@ -224,15 +231,12 @@ var text3 = slide.querySelector(".sub_text2");
 
 slide.addEventListener("scroll", () => {
   var scrollPosition = slide.scrollTop;
-
   if (scrollPosition < 160) {
     text1.style.opacity = 1 - scrollPosition / 160;
   }
-
   if (scrollPosition >= 160 && scrollPosition < 320) {
     text2.style.opacity = 1 - (scrollPosition - 160) / 160;
   }
-
   if (scrollPosition >= 320) {
     text3.style.opacity = 1 - (scrollPosition - 320) / 160;
   }
