@@ -218,16 +218,16 @@ var text3 = slide.querySelector(".sub_text2");
 slide.addEventListener("scroll", () => {
   var scrollPosition = slide.scrollTop;
 
-  if (scrollPosition < 140) {
-    text1.style.opacity = 1 - scrollPosition / 140;
+  if (scrollPosition < 160) {
+    text1.style.opacity = 1 - scrollPosition / 160;
   }
 
-  if (scrollPosition >= 140 && scrollPosition < 280) {
-    text2.style.opacity = 1 - (scrollPosition - 140) / 140;
+  if (scrollPosition >= 160 && scrollPosition < 320) {
+    text2.style.opacity = 1 - (scrollPosition - 140) / 160;
   }
 
-  if (scrollPosition >= 280) {
-    text3.style.opacity = 1 - (scrollPosition - 280) / 140;
+  if (scrollPosition >= 320) {
+    text3.style.opacity = 1 - (scrollPosition - 280) / 160;
   }
 });
 </script>
