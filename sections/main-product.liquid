@@ -320,7 +320,6 @@
             {% render 'pincode_igp' %}
             {% assign pincode_value = section.settings.pincode_igp_pr %}
                 {% render 'pincode_igp', pin_igp : pincode_value %} 
-            {{ pincode_value | json }}
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
@@ -2289,6 +2288,6 @@
 }
 {% endschema %}
 <script>
-  var saumya = '{{ pincode_value }}';
+  var saumya = {{ pincode_value | json }};
   console.log('Store',saumya);
 </script>
