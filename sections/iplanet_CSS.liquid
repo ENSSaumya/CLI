@@ -1,9 +1,12 @@
 <div class="iplanet_new_main">
-  <div class="content_new">
+  <div class="container_new">
     {% for block in section.blocks %}
       {{ block.settings.essential_tools }}
       <div class="img_block_div">
         <img class="img_apple" src="{{ block.settings.tab_image | img_url:"400x" }}" >
+      </div>
+      <div class="">
+        
       </div>
     {% endfor %}
   </div>
@@ -44,7 +47,7 @@
 {% endschema %}
 
 <style>
-  .content_new{
+  .container_new{
     margin: auto;
     width: 50%;
     text-align: center;
