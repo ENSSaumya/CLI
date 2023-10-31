@@ -128,10 +128,13 @@
 </style>
 
 <script>
-  var text2 = document.querySelector(".content_div");
-  console.log(text2);
-  text2.addEventListener("scroll", () => {
-    // console.log(pageYOffset);
-    alert();
-  });
+var text2 = document.querySelector(".content_div");
+
+text2.addEventListener("scroll", () => {
+  var scrollTop = text2.scrollTop;
+  console.log("Scroll Top:", scrollTop);
+  // if (scrollTop > 100) {
+  // }
+});
+
 </script>
