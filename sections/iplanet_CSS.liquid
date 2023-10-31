@@ -212,7 +212,8 @@
   var slide = document.querySelector(".abc");
   var text2 = document.querySelector(".sub_heading");
   window.addEventListener("scroll",()=>{
-    var len = window.pageYOffset || document.documentElement.scrollTop;
+    // var len = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(text2.scrollHeight);
     text2.style.opacity = 1 - len/500;
     // console.log("LEN",len);
     // console.log(1 - len/400,"1-opac");
