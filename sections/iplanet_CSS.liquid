@@ -128,7 +128,8 @@
 </style>
 
 <script>
-  document.querySelector(".content_div").addEventListener("scroll",() => {
+  var text2 =   document.querySelector(".content_div");
+  text2.addEventListener("scroll",() => {
     var high = window.pageYOffset;
     // header.style.opacity = 1 - high/2000;
     console.log(high);
