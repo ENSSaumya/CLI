@@ -209,14 +209,12 @@ var text1 = document.querySelector(".content_div .sub_heading");
 var text2 = document.querySelector(".content_div .sub_text1");
 var text3 = document.querySelector(".content_div .sub_text2");
 
-slide.style.overflowY = "auto"; // Make the .abc div scrollable vertically
-
 slide.addEventListener("scroll", () => {
   var scrollPosition = slide.scrollTop;
   text1.style.opacity = 1 - scrollPosition / 140;
   text2.style.opacity = 1 - scrollPosition / 140;
   text3.style.opacity = 1 - scrollPosition / 140;
-  // console.log(scrollPosition);
 });
+
 
 </script>
