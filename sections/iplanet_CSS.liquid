@@ -39,7 +39,15 @@
     background-size: 200% 100%;
     background-position: right bottom;
     animation-delay:2s;
-    animation: trans 1s 1s ease-out forwards;
+    animation: animate 1s 1s ease-out forwards;
+  }
+  @keyframes animate {
+    from {
+      background-position: right bottom;
+    }
+    to {
+      background-position: left bottom;
+    }
   }
   .input1_div .incredible_posibilities{
     font-size: 35px;
