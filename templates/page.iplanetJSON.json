@@ -38,6 +38,12 @@
           "settings": {
             "text_con": "<div class=\"content_text3\">\n      <p class=\"sub_text3\"><span class=\"background_6BB7FF\">iPad is compatible<\/span> with the apps teachers and students use every day, including those from Google and Microsoft.<\/p>\n    <\/div>"
           }
+        },
+        "7a82bd2e-9a33-4a70-a198-99cfc2f181f1": {
+          "type": "html",
+          "settings": {
+            "btn_apple": "Learn More About iPad"
+          }
         }
       },
       "block_order": [
@@ -46,7 +52,8 @@
         "3f60bd0c-9d1a-47b1-90b2-72626c011b89",
         "18447a30-5be7-4cbc-ae2b-c16b941e0dfb",
         "22bd79b1-f0fa-4ed7-a1f4-044e78c709b5",
-        "30142331-a5ee-4466-ab10-ea699ab099ef"
+        "30142331-a5ee-4466-ab10-ea699ab099ef",
+        "7a82bd2e-9a33-4a70-a198-99cfc2f181f1"
       ],
       "settings": {
       }
