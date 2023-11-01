@@ -20,7 +20,7 @@
     </div>
     <div class="button_div">
       {% for btn in blocks %}
-        <span class="btn_iplanet">{{ btn.settings.btn_apple }}</span>
+        <span class="btn_iplanet"><a href="{{ btn.settings.redirect }}">{{ btn.settings.btn_apple }}</a></span>
       {% endfor %}
     </div>
   </div>
