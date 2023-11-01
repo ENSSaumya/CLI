@@ -212,6 +212,7 @@
 
 <script>
 
+if (window.innerWidth > 1500){
   var heading_text = document.querySelector(".input1_div");
   window.addEventListener("scroll", () => {
     var high = window.pageYOffset;
@@ -219,21 +220,22 @@
     // console.log(high);
   });
 
-var slide = document.querySelector(".abc");
-var text1 = slide.querySelector(".sub_heading");
-var text2 = slide.querySelector(".sub_text1");
-var text3 = slide.querySelector(".sub_text2");
-
-slide.addEventListener("scroll", () => {
-  var scrollPosition = slide.scrollTop;
-  if (scrollPosition < 160) {
-    text1.style.opacity = 1 - scrollPosition / 160;
-  }
-  if (scrollPosition >= 160 && scrollPosition < 320) {
-    text2.style.opacity = 1 - (scrollPosition - 160) / 160;
-  }
-  if (scrollPosition >= 320) {
-    text3.style.opacity = 1 - (scrollPosition - 320) / 160;
-  }
-});
+  var slide = document.querySelector(".abc");
+  var text1 = slide.querySelector(".sub_heading");
+  var text2 = slide.querySelector(".sub_text1");
+  var text3 = slide.querySelector(".sub_text2");
+  
+  slide.addEventListener("scroll", () => {
+    var scrollPosition = slide.scrollTop;
+    if (scrollPosition < 160) {
+      text1.style.opacity = 1 - scrollPosition / 160;
+    }
+    if (scrollPosition >= 160 && scrollPosition < 320) {
+      text2.style.opacity = 1 - (scrollPosition - 160) / 160;
+    }
+    if (scrollPosition >= 320) {
+      text3.style.opacity = 1 - (scrollPosition - 320) / 160;
+    }
+  });
+};  
 </script>
