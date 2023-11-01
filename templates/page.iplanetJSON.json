@@ -69,7 +69,7 @@
         "cec931ca-7fff-43e7-b02c-73094a8dc704": {
           "type": "textarea",
           "settings": {
-            "text_con": ""
+            "text_con": "<div class=\"content_text_2\">\n          <p>Mac is powered by Apple silicon for exceptional <span class=\"background_FCF268\">performance and power efficiency.<\/span> Tackle big projects and multitask in all kinds of apps.<\/p>\n        <\/div>"
           }
         }
       },
