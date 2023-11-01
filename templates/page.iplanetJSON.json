@@ -38,6 +38,12 @@
           "settings": {
             "text_con": "<div class=\"content_text3\">\n      <p class=\"sub_text3\"><span class=\"background_6BB7FF\">iPad is compatible<\/span> with the apps teachers and students use every day, including those from Google and Microsoft.<\/p>\n    <\/div>"
           }
+        },
+        "ec82ed1d-42d7-4aef-8bb3-c781077ceced": {
+          "type": "image_picker",
+          "settings": {
+            "tab_image_new_2": "shopify:\/\/shop_images\/tools_macbook_hw__d59dayfv806e_large_dd5907bf-22f4-4560-9e07-d822cc94e7cb.png"
+          }
         }
       },
       "block_order": [
@@ -46,7 +52,8 @@
         "3f60bd0c-9d1a-47b1-90b2-72626c011b89",
         "18447a30-5be7-4cbc-ae2b-c16b941e0dfb",
         "22bd79b1-f0fa-4ed7-a1f4-044e78c709b5",
-        "30142331-a5ee-4466-ab10-ea699ab099ef"
+        "30142331-a5ee-4466-ab10-ea699ab099ef",
+        "ec82ed1d-42d7-4aef-8bb3-c781077ceced"
       ],
       "settings": {
       }
