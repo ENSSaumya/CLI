@@ -252,6 +252,7 @@
   
   slide.addEventListener("scroll", () => {
     var scrollPosition = slide.scrollTop;
+    console.log(scrollPosition);
     if (scrollPosition < 160) {
       text1.style.opacity = 1 - scrollPosition / 160;
     }
