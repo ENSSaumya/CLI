@@ -53,6 +53,7 @@
     },
     "375ad0e2-25c5-4b08-bc2d-14ff0ad64c13": {
       "type": "iplanet_timer",
+      "disabled": true,
       "settings": {
         "text_timer": "Why iPlanet?"
       }
