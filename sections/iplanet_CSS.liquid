@@ -63,8 +63,7 @@
     text-align: center;
   }
   .parent_class{
-    position: relative;
-    height: 720px;
+    position:relative;
   }
   .img_block_div, .img_apple{
     width:100%;
@@ -138,12 +137,12 @@
     font-weight: 600;
     letter-spacing: .004em;
     margin:0;
-    padding:0 50px;
+    padding:0 90px;
   }
   .img_block_div{
     position:sticky;
     top:0;
-    margin-top: 10%;
+    margin: 10% 0;
     z-index:2;
   }
   .content_text_1 p{
@@ -176,7 +175,6 @@
     line-height: 1.125;
     font-weight: 600;
     letter-spacing: .004em;
-    margin-bottom: 70px;
   }
   .content_text_2 .background_FCF268{
     background: linear-gradient(to right, #FCF268 50%, white 50%);
@@ -263,17 +261,17 @@
     var scrollPosition = slide.scrollTop;
     console.log(scrollPosition);
     if (scrollPosition < 220) {
-      text1.style.opacity = 1 - scrollPosition / 160;
+      text1.style.opacity = 1 - scrollPosition / 140;
       // text1.style.transform = matrix(1, 0, 0, 1, 0, 0);
     }
-    if (scrollPosition >= 240 && scrollPosition < 360) {
-      text2.style.opacity = 1 - (scrollPosition - 160) / 320;
+    if (scrollPosition >= 240 && scrollPosition < 350) {
+      text2.style.opacity = 1 - (scrollPosition - 240) / 160;
     }
-    if (scrollPosition >= 370 && scrollPosition < 510) {
-      text3.style.opacity = 1 - (scrollPosition - 430) / 480;
+    if (scrollPosition >= 320 && scrollPosition < 480) {
+      text3.style.opacity = 1 - (scrollPosition - 320) / 160;
     }
-    if (scrollPosition >= 520) {
-      text4.style.opacity = 1 - (scrollPosition - 480) / 500;
+    if (scrollPosition >= 500) {
+      text3.style.opacity = 1 - (scrollPosition - 480) / 160;
     }
   });
 </script>
