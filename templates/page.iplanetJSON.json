@@ -87,6 +87,7 @@
     },
     "10a4fc4a-cec3-4418-9b10-7af4190c1240": {
       "type": "iplanet_section2",
+      "disabled": true,
       "settings": {
         "img_iplanet2": "shopify:\/\/shop_images\/background_iplanet2.jpg",
         "heading1_iplanet2": "Enterprise IT solutions",
