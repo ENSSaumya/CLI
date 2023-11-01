@@ -70,6 +70,7 @@
       "blocks": {
         "adaeb8da-05a5-4124-be07-75997929bb48": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "iplanet_img1": "shopify:\/\/shop_images\/iplanet.png",
             "iplanet_heading1": "Help Companies to Grow with Apple Products!",
@@ -82,6 +83,7 @@
       "block_order": [
         "adaeb8da-05a5-4124-be07-75997929bb48"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -99,6 +101,7 @@
       "blocks": {
         "6b713c17-13a9-43c2-8ed8-4f73ef614431": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text_iplanet3": ""
           }
@@ -113,6 +116,7 @@
     },
     "ab93d828-90b3-4640-8934-dc1b4cc62cc6": {
       "type": "iplanet_section4",
+      "disabled": true,
       "settings": {
         "heading_section4": "",
         "text_section4": "",
@@ -124,6 +128,7 @@
       "blocks": {
         "f36f51bd-627c-4e30-ac0e-4dbe9feb6f5c": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "pic_section6": "shopify:\/\/shop_images\/blog1.jpg",
             "heading_section6": "Apple Products for Business Success: Profit-Driven System",
@@ -134,6 +139,7 @@
         },
         "729af1da-8d23-4697-b56b-85cb29e494a8": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "pic_section6": "shopify:\/\/shop_images\/blog2.jpg",
             "heading_section6": "Apple Products in IT Infrastructure: Seamless Integration",
@@ -147,6 +153,7 @@
         "f36f51bd-627c-4e30-ac0e-4dbe9feb6f5c",
         "729af1da-8d23-4697-b56b-85cb29e494a8"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -155,6 +162,7 @@
       "blocks": {
         "253c742c-4874-423b-a223-b7ac3f46b434": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "heading_section7": "Dheeraj Sood",
             "subscript_section7": "Head",
@@ -163,6 +171,7 @@
         },
         "6d62afca-f0d0-4b99-b31f-7845704575eb": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "heading_section7": "Manunath N",
             "subscript_section7": "Head",
@@ -171,6 +180,7 @@
         },
         "b65be830-772f-474c-8e2a-66ad9fd727bf": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "heading_section7": "Prasanth Natarajan",
             "subscript_section7": "IT Manager",
@@ -183,6 +193,7 @@
         "6d62afca-f0d0-4b99-b31f-7845704575eb",
         "b65be830-772f-474c-8e2a-66ad9fd727bf"
       ],
+      "disabled": true,
       "settings": {
       }
     }
