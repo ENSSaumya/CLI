@@ -12,7 +12,7 @@
           {% endif %}
         {% endfor %}
       </div>
-      <div class="abc">
+      <div class="opac_text">
         {% for text_block in blocks %}
           {{ text_block.settings.text_con }}
         {% endfor %}
@@ -61,6 +61,9 @@
     margin: auto;
     width: 50%;
     text-align: center;
+  }
+  .parent_class{
+    position:relative;
   }
   .img_block_div, .img_apple{
     width:100%;
@@ -212,11 +215,12 @@
        background-position: left bottom;
     }
   }
-  .abc{
+  .opac_text{
     overflow-y: auto;
     height: 200px;
+    position:absolute;
   }
-  .abc::-webkit-scrollbar{
+  .opac_text::-webkit-scrollbar{
     display:none;
   }
   .content_div, .content_div1, .content_div2{
@@ -247,7 +251,7 @@
     // console.log(high);
   });
 
-  var slide = document.querySelector(".abc");
+  var slide = document.querySelector(".opac_text");
   var text1 = slide.querySelector(".sub_heading");
   var text2 = slide.querySelector(".sub_text1");
   var text3 = slide.querySelector(".sub_text2");
