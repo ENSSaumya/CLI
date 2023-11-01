@@ -18,6 +18,11 @@
         {% endfor %}
       </div>
     </div>
+    <div class="mac_div">
+      {% for mac in blocks %}
+        <img class="img_mac" src="{{ mac.settings.tab_image_new | img_url:"400x" }}" />
+      {% endfor %}
+    </div>
   </div>
 </div>
 
