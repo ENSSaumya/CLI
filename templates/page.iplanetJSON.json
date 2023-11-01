@@ -71,12 +71,19 @@
           "settings": {
             "text_con": "<div class=\"content_text_2\">\n          <p>Mac is powered by Apple silicon for exceptional <span class=\"background_FCF268\">performance and power efficiency.<\/span> Tackle big projects and multitask in all kinds of apps.<\/p>\n        <\/div>"
           }
+        },
+        "7d343ea6-702b-4a0b-8f30-11c2912fd149": {
+          "type": "textarea",
+          "settings": {
+            "text_con": "<div class=\"content_div\">\n          <p class=\"sub_heading\" style=\"font-size:32px;\"><span class=\"background_pink\">Built to last.<\/span>Light enough to take anywhere with a battery that lasts long after the final bell.<\/p>\n        <\/div>"
+          }
         }
       },
       "block_order": [
         "69a163e9-47c1-421d-b4ba-5b73d32cf6ca",
         "763a5dbd-f642-4e82-9d44-0aae0ebdfbe5",
-        "cec931ca-7fff-43e7-b02c-73094a8dc704"
+        "cec931ca-7fff-43e7-b02c-73094a8dc704",
+        "7d343ea6-702b-4a0b-8f30-11c2912fd149"
       ],
       "settings": {
       }
