@@ -71,25 +71,25 @@
         "763a5dbd-f642-4e82-9d44-0aae0ebdfbe5": {
           "type": "textarea",
           "settings": {
-            "text_con": "<div class=\"input1_div\">\n            <p class=\"incredible_posibilities\" style=\"font-size:48px;\">Mac. Surprisingly light. Remarkably fast.<span class=\"background_light_green\">Performance<\/span>that’s a grade ahead.<\/p>\n          <\/div>"
+            "text_con": "<div class=\"input1_div\">\n            <p class=\"sub_text1\" style=\"font-size:48px;\">Mac. Surprisingly light. Remarkably fast.<span class=\"background_light_green\">Performance<\/span>that’s a grade ahead.<\/p>\n          <\/div>"
           }
         },
         "cec931ca-7fff-43e7-b02c-73094a8dc704": {
           "type": "textarea",
           "settings": {
-            "text_con": "<div class=\"content_text_2\">\n          <p>Mac is powered by Apple silicon for exceptional <span class=\"background_FCF268\">performance and power efficiency.<\/span> Tackle big projects and multitask in all kinds of apps.<\/p>\n        <\/div>"
+            "text_con": "<div class=\"content_text_2\">\n          <p class=\"sub_text2\">Mac is powered by Apple silicon for exceptional <span class=\"background_FCF268\">performance and power efficiency.<\/span> Tackle big projects and multitask in all kinds of apps.<\/p>\n        <\/div>"
           }
         },
         "7d343ea6-702b-4a0b-8f30-11c2912fd149": {
           "type": "textarea",
           "settings": {
-            "text_con": "<div class=\"content_div\">\n          <p class=\"sub_heading\" style=\"font-size:32px;\"><span class=\"background_FF8CBD\">Built to last.<\/span>Light enough to take anywhere with a battery that lasts long after the final bell.<\/p>\n        <\/div>"
+            "text_con": "<div class=\"content_div\">\n          <p class=\"sub_text3\" style=\"font-size:32px;\"><span class=\"background_FF8CBD\">Built to last.<\/span>Light enough to take anywhere with a battery that lasts long after the final bell.<\/p>\n        <\/div>"
           }
         },
         "278b05b2-3f77-42ce-8e80-f6f96c6022c0": {
           "type": "textarea",
           "settings": {
-            "text_con": "<div class=\"content_text_2\">\n          <p class=\"sub_heading\" style=\"font-size:32px;\"><span class=\"background_B494FF\">Always intuitive.<\/span>Never intimidating. Mac makes it easy to find what you need when you need it and take on projects of any size.<\/p>\n      <\/div>"
+            "text_con": "<div class=\"content_text_2\">\n          <p class=\"sub_text4\" style=\"font-size:32px;\"><span class=\"background_B494FF\">Always intuitive.<\/span>Never intimidating. Mac makes it easy to find what you need when you need it and take on projects of any size.<\/p>\n      <\/div>"
           }
         },
         "852cef9b-1ee9-4a64-ba15-b388930ab232": {
