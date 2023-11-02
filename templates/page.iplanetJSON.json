@@ -68,17 +68,16 @@
             "tab_image_new": "shopify:\/\/shop_images\/tools_macbook_hw__d59dayfv806e_large_dd5907bf-22f4-4560-9e07-d822cc94e7cb.png"
           }
         },
-        "852cef9b-1ee9-4a64-ba15-b388930ab232": {
-          "type": "html",
+        "d916fe61-a2a0-4eb9-8c0f-e412e974dcab": {
+          "type": "textarea",
           "settings": {
-            "btn_apple": "Learn About Mac",
-            "redirect": ""
+            "text_con": "<div class=\"content_div\">\n        <p class=\"mac_heading\">Mac. Surprisingly light. Remarkably fast.<span class=\"background_light_green\">Performance<\/span> that’s a grade ahead.<\/p>\n      <\/div>"
           }
         }
       },
       "block_order": [
         "69a163e9-47c1-421d-b4ba-5b73d32cf6ca",
-        "852cef9b-1ee9-4a64-ba15-b388930ab232"
+        "d916fe61-a2a0-4eb9-8c0f-e412e974dcab"
       ],
       "settings": {
       }
