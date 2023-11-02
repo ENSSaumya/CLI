@@ -71,7 +71,7 @@
         "763a5dbd-f642-4e82-9d44-0aae0ebdfbe5": {
           "type": "textarea",
           "settings": {
-            "text_con": "<div class=\"input1_div\">\n            <p class=\"sub_text1\" style=\"font-size:48px;\">Mac. Surprisingly light. Remarkably fast.<span class=\"background_light_green\">Performance<\/span>that’s a grade ahead.<\/p>\n          <\/div>"
+            "text_con": "<div class=\"input1_div\">\n            <p class=\"sub_heading\" style=\"font-size:48px;\">Mac. Surprisingly light. Remarkably fast.<span class=\"background_light_green\">Performance<\/span>that’s a grade ahead.<\/p>\n          <\/div>"
           }
         },
         "cec931ca-7fff-43e7-b02c-73094a8dc704": {
