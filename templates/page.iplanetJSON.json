@@ -83,6 +83,12 @@
         "7d343ea6-702b-4a0b-8f30-11c2912fd149": {
           "type": "textarea",
           "settings": {
+            "text_con": "<div class=\"content_div\">\n          <p class=\"sub_heading\" style=\"font-size:32px;\"><span class=\"background_FF8CBD\">Built to last.<\/span>Light enough to take anywhere with a battery that lasts long after the final bell.<\/p>\n        <\/div>"
+          }
+        },
+        "278b05b2-3f77-42ce-8e80-f6f96c6022c0": {
+          "type": "textarea",
+          "settings": {
             "text_con": "<div class=\"content_div\">\n          <p class=\"sub_heading\" style=\"font-size:32px;\"><span class=\"background_pink\">Built to last.<\/span>Light enough to take anywhere with a battery that lasts long after the final bell.<\/p>\n        <\/div>"
           }
         },
@@ -92,11 +98,6 @@
             "btn_apple": "Learn About Mac",
             "redirect": ""
           }
-        },
-        "76f727a4-92a4-4660-9cac-c23fad454eab": {
-          "type": "image",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -104,8 +105,8 @@
         "763a5dbd-f642-4e82-9d44-0aae0ebdfbe5",
         "cec931ca-7fff-43e7-b02c-73094a8dc704",
         "7d343ea6-702b-4a0b-8f30-11c2912fd149",
-        "852cef9b-1ee9-4a64-ba15-b388930ab232",
-        "76f727a4-92a4-4660-9cac-c23fad454eab"
+        "278b05b2-3f77-42ce-8e80-f6f96c6022c0",
+        "852cef9b-1ee9-4a64-ba15-b388930ab232"
       ],
       "settings": {
       }
