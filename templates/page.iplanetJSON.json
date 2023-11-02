@@ -73,11 +73,18 @@
           "settings": {
             "text_con": "<div class=\"content_div\">\n        <p class=\"mac_heading\">Mac. Surprisingly light. Remarkably fast.<span class=\"background_light_green\">Performance<\/span> that’s a grade ahead.<\/p>\n      <\/div>"
           }
+        },
+        "9e0d760f-1633-47f4-ae76-9afec29555f7": {
+          "type": "textarea",
+          "settings": {
+            "text_con": "<div class=\"content_text_2\">\n        <p class=\"sub_text2\">Mac is powered by Apple silicon for exceptional<span class=\"background_FCF268\">performance and power efficiency. <\/span> Tackle big projects and multitask in all kinds of apps.<\/p>\n      <\/div>"
+          }
         }
       },
       "block_order": [
         "69a163e9-47c1-421d-b4ba-5b73d32cf6ca",
-        "d916fe61-a2a0-4eb9-8c0f-e412e974dcab"
+        "d916fe61-a2a0-4eb9-8c0f-e412e974dcab",
+        "9e0d760f-1633-47f4-ae76-9afec29555f7"
       ],
       "settings": {
       }
