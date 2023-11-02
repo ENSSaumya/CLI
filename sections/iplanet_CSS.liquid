@@ -15,12 +15,12 @@
       <div class="opac_text">
         {% for text_block in blocks %}
           {{ text_block.settings.text_con }}
+          <div class="button_div">
+            {% for btn in blocks %}
+              <a href="{{ btn.settings.redirect }}"><span class="btn_iplanet">{{ btn.settings.btn_apple }}</span></a>
+            {% endfor %}
+          </div>
         {% endfor %} 
-      </div>
-      <div class="button_div">
-        {% for btn in blocks %}
-          <a href="{{ btn.settings.redirect }}"><span class="btn_iplanet">{{ btn.settings.btn_apple }}</span></a>
-        {% endfor %}
       </div>
     </div>
   </div>
