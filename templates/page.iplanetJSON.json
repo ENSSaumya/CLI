@@ -42,7 +42,8 @@
         "7a82bd2e-9a33-4a70-a198-99cfc2f181f1": {
           "type": "html",
           "settings": {
-            "btn_apple": "Learn More About iPad"
+            "btn_apple": "Learn More About iPad",
+            "redirect": ""
           }
         }
       },
@@ -84,13 +85,21 @@
           "settings": {
             "text_con": "<div class=\"content_div\">\n          <p class=\"sub_heading\" style=\"font-size:32px;\"><span class=\"background_pink\">Built to last.<\/span>Light enough to take anywhere with a battery that lasts long after the final bell.<\/p>\n        <\/div>"
           }
+        },
+        "852cef9b-1ee9-4a64-ba15-b388930ab232": {
+          "type": "html",
+          "settings": {
+            "btn_apple": "Learn About Mac",
+            "redirect": ""
+          }
         }
       },
       "block_order": [
         "69a163e9-47c1-421d-b4ba-5b73d32cf6ca",
         "763a5dbd-f642-4e82-9d44-0aae0ebdfbe5",
         "cec931ca-7fff-43e7-b02c-73094a8dc704",
-        "7d343ea6-702b-4a0b-8f30-11c2912fd149"
+        "7d343ea6-702b-4a0b-8f30-11c2912fd149",
+        "852cef9b-1ee9-4a64-ba15-b388930ab232"
       ],
       "settings": {
       }
