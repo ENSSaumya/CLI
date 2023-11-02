@@ -17,9 +17,7 @@
           {{ text_block.settings.text_con }}
           <div class="button_div">
             {% for btn in blocks %}
-              {% if btn.settings.btn_apple != blank %}
-                <a href="{{ btn.settings.redirect }}"><span class="btn_iplanet">{{ btn.settings.btn_apple }}</span></a>
-              {% endif %}
+              <a href="{{ btn.settings.redirect }}"><span class="btn_iplanet">{{ btn.settings.btn_apple }}</span></a>
             {% endfor %}
           </div>
         {% endfor %} 
@@ -57,8 +55,12 @@
         "type":"html",
         "id":"text_con",
         "label":"Text Input content"
-      },
-      {
+      }]
+    },
+    {
+      "type":"html",
+      "name":"Button",
+      "settings":[{
         "type":"text",
         "id":"btn_apple",
         "label":"Button"
