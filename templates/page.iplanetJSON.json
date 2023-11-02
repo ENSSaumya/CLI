@@ -77,13 +77,19 @@
         "9e0d760f-1633-47f4-ae76-9afec29555f7": {
           "type": "textarea",
           "settings": {
-            "text_con": "<div class=\"content_text_2\">\n        <p class=\"sub_text2\">Mac is powered by Apple silicon for exceptional<span class=\"background_FCF268\">performance and power efficiency. <\/span> Tackle big projects and multitask in all kinds of apps.<\/p>\n      <\/div>"
+            "text_con": "<div class=\"text_div_1\">\n        <p class=\"mac_text_1\">Mac is powered by Apple silicon for exceptional<span class=\"background_FCF268\">performance and power efficiency. <\/span> Tackle big projects and multitask in all kinds of apps.<\/p>\n      <\/div>"
           }
         },
         "292f3d4f-7b9e-46fd-b6e9-a30dc6827881": {
           "type": "textarea",
           "settings": {
-            "text_con": "<div class=\"text_div_3\">\n        <p class=\"sub_heading\">iPad.<span class=\"background_pink\">Built to last.<\/span>Light enough to take anywhere with a battery that lasts long after the final bell.<\/p>\n      <\/div>"
+            "text_con": "<div class=\"text_div_2\">\n        <p class=\"mac_text_2\">iPad.<span class=\"background_pink\">Built to last.<\/span>Light enough to take anywhere with a battery that lasts long after the final bell.<\/p>\n      <\/div>"
+          }
+        },
+        "048e44ed-1608-4b4f-a18b-36b386ad4cae": {
+          "type": "textarea",
+          "settings": {
+            "text_con": ""
           }
         }
       },
@@ -91,7 +97,8 @@
         "69a163e9-47c1-421d-b4ba-5b73d32cf6ca",
         "d916fe61-a2a0-4eb9-8c0f-e412e974dcab",
         "9e0d760f-1633-47f4-ae76-9afec29555f7",
-        "292f3d4f-7b9e-46fd-b6e9-a30dc6827881"
+        "292f3d4f-7b9e-46fd-b6e9-a30dc6827881",
+        "048e44ed-1608-4b4f-a18b-36b386ad4cae"
       ],
       "settings": {
       }
