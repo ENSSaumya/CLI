@@ -12,7 +12,7 @@
           {% endif %}
         {% endfor %}
       </div>
-      <div class="opac_text" id="scroll__{{ forloop.index }}">
+      <div class="opac_text">
         {% for text_block in blocks %}
           {{ text_block.settings.text_con }}
         {% endfor %}       
@@ -371,7 +371,7 @@
       text2.style.opacity = 1 - (scrollPosition - 280) / 70;
     }
     if (scrollPosition >= 350 && scrollPosition < 550) {
-      text3.style.opacity = 1 - (scrollPosition - 470) / 80;
+      text3.style.opacity = 1 - (scrollPosition - 470) / 70;
     }
     // if (scrollPosition >= 550) {
     //   text4.style.opacity = 1 - (scrollPosition - 600) / 80;
