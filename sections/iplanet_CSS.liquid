@@ -360,7 +360,7 @@
   var text3 = slide.querySelector(".sub_text2");
   var text4 = slide.querySelector(".sub_text3");
   
-  window.addEventListener("scroll", () => {
+  slide.addEventListener("scroll", () => {
     var scrollPosition = slide.scrollTop;
     var delta = window.deltaY;
     console.log("speed",scrollPosition);
