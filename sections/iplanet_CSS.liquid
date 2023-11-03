@@ -360,8 +360,8 @@
   var text3 = slide.querySelector(".sub_text2");
   var text4 = slide.querySelector(".sub_text3");
   
-  window.addEventListener("scroll", () => {
-    var scrollPosition = slide.scrollTop;
+  slide.addEventListener("scroll", () => {
+    // var scrollPosition = slide.scrollTop;
     console.log(scrollPosition);
     if (scrollPosition < 220) {
       text1.style.opacity = 1 - scrollPosition / 140;
