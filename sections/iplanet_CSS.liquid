@@ -16,7 +16,7 @@
         {% for text_block in blocks %}
           {{ text_block.settings.text_con }}
         {% endfor %}       
-        <div class="button_div" {% if btn.settings.btn_apple != blank %} style="display:none" {% else %} style="display:block" {% endif %}>
+        <div class="button_div" {% if btn.settings.btn_apple == blank %} style="display:none" {% else %} style="display:block" {% endif %}>
           {% for btn in blocks %}
               <a href="{{ btn.settings.redirect }}"><span class="btn_iplanet">{{ btn.settings.btn_apple }}</span></a>
           {% endfor %}
