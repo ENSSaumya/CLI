@@ -8,7 +8,7 @@
       <div class="img_block_div">
         {% for Tab_Image in blocks %}
           {% if Tab_Image.settings.tab_image_new != blank %}
-            <img class="img_apple" src="{{ Tab_Image.settings.tab_image_new | img_url:"" }}" >
+            <img class="img_apple" src="{{ Tab_Image.settings.tab_image_new | img_url:"master" }}" >
           {% endif %}
         {% endfor %}
       </div>
@@ -89,7 +89,7 @@
     height:800px;
     padding:30px 0;
   }
-  .img_block_div{
+  .img_block_div, .img_apple{
     width:100%;
   }
   .input1_div h2{
