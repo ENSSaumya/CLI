@@ -1,4 +1,4 @@
-<div class="iplanet_new_main" id="section--{{ section.id }}">
+<div class="iplanet_new_main">
   <div class="container_new">
   {% assign blocks = section.blocks %}
     {% for new_block in blocks %}
@@ -12,7 +12,7 @@
           {% endif %}
         {% endfor %}
       </div>
-      <div class="opac_text">
+      <div class="opac_text" id="scroll__{{ forloop.index }}">
         {% for text_block in blocks %}
           {{ text_block.settings.text_con }}
         {% endfor %}       
