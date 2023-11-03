@@ -13,9 +13,20 @@
         {% endfor %}
       </div>
       <div class="opac_text">
-        {% for text_block in blocks %}
+        <!-- {% for text_block in blocks %}
           {{ text_block.settings.text_con }}
-        {% endfor %} 
+        {% endfor %}  -->
+
+      <div class="content_div">
+        <p class="mac_heading">Mac. Surprisingly light. Remarkably fast.<span class="background_light_green">Performance</span> that’s a grade ahead.</p>
+      </div>
+      <div class="text_div_1">
+        <p class="mac_text_1">Mac is powered by Apple silicon for exceptional<span class="background_FCF268">performance and power efficiency. </span> Tackle big projects and multitask in all kinds of apps.</p>
+      </div>
+      <div class="text_div_2">
+        <p class="mac_text_2">iPad.<span class="background_pink">Built to last.</span>Light enough to take anywhere with a battery that lasts long after the final bell.</p>
+      </div>
+        
         <div class="button_div">
           {% for btn in blocks %}
             <a href="{{ btn.settings.redirect }}"><span class="btn_iplanet">{{ btn.settings.btn_apple }}</span></a>
