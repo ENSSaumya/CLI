@@ -39,6 +39,9 @@
       <div class="mac_div3">
         <p class="mac_text_2"><span class="background_FF8CBD">Built to last.</span>Light enough to take anywhere with a battery that lasts long after the final bell.</p>
       </div>
+      <div class="mac_div4">
+        <p class="mac_text_3"><span class="background_">Always intuitive.</span>Never intimidating. Mac makes it easy to find what you need when you need it and take on projects of any size.</p>
+      </div>
         
         <div class="button_div">
           {% for btn in blocks %}
@@ -157,6 +160,22 @@
     border-radius: 20px;
   }
   @keyframes pink{
+    from {
+       background-position: right bottom;
+    }
+    to{
+       background-position: left bottom;
+    }
+  }
+  .mac_div3 .background_B494FF{
+    background: linear-gradient(to right, #B494FF 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    animation: purple 0.7s 2s linear forwards;
+    padding: 0 10px;
+    border-radius: 20px;
+  }
+  @keyframes purple{
     from {
        background-position: right bottom;
     }
