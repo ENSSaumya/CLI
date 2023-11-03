@@ -18,7 +18,9 @@
         {% endfor %}       
         <div class="button_div">
           {% for btn in blocks %}
-            <a href="{{ btn.settings.redirect }}"><span class="btn_iplanet">{{ btn.settings.btn_apple }}</span></a>
+            {% if btn.settings.btn_apple != blank %}
+              <a href="{{ btn.settings.redirect }}"><span class="btn_iplanet">{{ btn.settings.btn_apple }}</span></a>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
