@@ -360,7 +360,7 @@
   var text3 = slide.querySelector(".sub_text2");
   var text4 = slide.querySelector(".sub_text3");
   
-  window.addEventListener("scroll", () => {
+  document.addEventListener("scroll", () => {
     var scrollPosition = text3.scrollTop;
     console.log(scrollPosition);
     if (scrollPosition < 220) {
