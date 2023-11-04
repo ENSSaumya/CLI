@@ -319,7 +319,7 @@
             {%- when 'textarea' -%}
             {% assign pincode_value = block.settings.pincode_igp %}
               {% for val in pincode_value %}
-              <p class="pincode_value">{{ var | json }}</p>
+              <p class="pincode_value">{{ val | json }}</p>
               {% endfor %}
                 {% render 'pincode_igp' %} 
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
