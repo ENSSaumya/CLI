@@ -12,7 +12,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
+            "text": "",
             "text_style": "body"
           }
         },
@@ -69,10 +69,10 @@
             "page": ""
           }
         },
-        "a634c879-abaf-4d20-b0a1-d4e65175d04c": {
-          "type": "image",
+        "83d51391-1e55-47d9-ac8f-6b356977adc0": {
+          "type": "collection",
           "settings": {
-            "pincode_igp": "111111,222222,444444"
+            "pincode_igp": "111111,3222222,555555"
           }
         }
       },
@@ -87,7 +87,7 @@
         "description",
         "share",
         "1a66f2c0-6cd5-42e8-a440-35b3ed7ba0f9",
-        "a634c879-abaf-4d20-b0a1-d4e65175d04c"
+        "83d51391-1e55-47d9-ac8f-6b356977adc0"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -103,7 +103,6 @@
         "padding_top": 60,
         "padding_bottom": 60,
         "area": "301201,301202,246163,246149",
-        "pincode_igp": "201002,200102,301773",
         "tag_on_image": "https:\/\/cdn.igp.com\/raw\/upload\/assets\/images\/igp-logo-revamp.png",
         "text_on_image": ""
       }
@@ -140,7 +139,7 @@
           "type": "text",
           "settings": {
             "txt": "Details",
-            "text": "Combines the goodness of your daily skin cream with just the right touch of <br>make-up to give you that perfect look in just a few minutes. This cream combines the goodness of your daily skin cream with just the right touch of make-up to give you<br> that perfect look in just a few minutes. The cream is available in 2 skin tones that work perfectly well for all Indian skin tones. Its skin care benefits include sun protection<br>(SPF 30), moisturizing, brightening and freshness while its make-up benefits are an even skin tone and basic coverage to give you a naturally flawless look."
+            "text": "Combines the goodness of your daily skin cream with just the right touch of make-up to give you that perfect look in just a few minutes. This cream combines the goodness of your daily skin cream with just the right touch of make-up to give you that perfect look in just a few minutes. The cream is available in 2 skin tones that work perfectly well for all Indian skin tones. Its skin care benefits include sun protection(SPF 30), moisturizing, brightening and freshness while its make-up benefits are an even skin tone and basic coverage to give you a naturally flawless look."
           }
         },
         "904fd912-266b-41c4-b421-f123e79d28ec": {
