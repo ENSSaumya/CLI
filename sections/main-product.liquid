@@ -318,7 +318,8 @@
 {% comment %} -------------------------------------------------------------------------------------------{% endcomment %}            
             {%- when 'textarea' -%}
               {% for block in section.blocks %}
-                <p class="pincode_value">{{ block.settings.pincode_igp }}</p>
+                {% assign pin = block.settings.pincode_igp %}
+                <p class="pincode_value">{{ pin | json }}</p>
               {% endfor %}
                 {% render 'pincode_igp' %} 
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
@@ -2284,6 +2285,6 @@
 }
 {% endschema %}
 <script>
-  var saumya = {{ pincode_value | json }};
+  var saumya = {{ pin | json }};
   console.log('Store',saumya);
 </script>
