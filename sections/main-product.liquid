@@ -317,7 +317,7 @@
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% comment %} -------------------------------------------------------------------------------------------{% endcomment %}            
             {%- when 'textarea' -%}
-            {% assign pincode_value = block.settings.pincode_igp.value %}
+            {% assign pincode_value = block.settings.pincode_igp %}
               <p class="pincode_value">{{ var | json }}</p>
                 {% render 'pincode_igp' %} 
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
