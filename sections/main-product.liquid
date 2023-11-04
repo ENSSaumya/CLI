@@ -318,9 +318,7 @@
 {% comment %} -------------------------------------------------------------------------------------------{% endcomment %}            
             {%- when 'textarea' -%}
             {% assign pincode_value = section.settings.pincode_igp %}
-            {% for var in pincode_value %}
               <p class="pincode_value">{{ var | json }}</p>
-            {% endfor %}
                 {% render 'pincode_igp' %} 
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
             {%- when 'buy_buttons' -%}
