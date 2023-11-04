@@ -454,7 +454,7 @@
         {%- endfor -%}
               {% for block in section.blocks %}
                 {% assign pincode = block.settings.pincode_igp %}
-                <p class="pincode_value">{{ pincode | json }}</p>
+                <p class="pincode_value">{{ pincode }}</p>
               {% endfor %}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
