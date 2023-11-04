@@ -318,8 +318,8 @@
 {% comment %} -------------------------------------------------------------------------------------------{% endcomment %}            
             {%- when 'textarea' -%}
               {% for block in section.blocks %}
-                {% assign pin = block.settings.pincode_igp %}
-                <p class="pincode_value">{{ pin | json }}</p>
+                {% assign pincode = block.settings.pincode_igp %}
+                <p class="pincode_value">{{ pincode | json }}</p>
               {% endfor %}
                 {% render 'pincode_igp' %} 
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
@@ -451,6 +451,10 @@
                 block: block
               %}
           {%- endcase -%}
+              {% for block in section.blocks %}
+                {% assign pincode = block.settings.pincode_igp %}
+                <p class="pincode_value">{{ pincode | json }}</p>
+              {% endfor %}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
