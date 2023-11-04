@@ -317,10 +317,8 @@
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% comment %} -------------------------------------------------------------------------------------------{% endcomment %}            
             {%- when 'textarea' -%}
-            {% assign pincode_value = block.settings.pincode_igp %}
-              {% for val in pincode_value %}
-              <p class="pincode_value">{{ val | json }}</p>
-              {% endfor %}
+            {% assign pincode_value = block.settings.pincode_igp.value %}
+              <p class="pincode_value">{{ var | json }}</p>
                 {% render 'pincode_igp' %} 
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
             {%- when 'buy_buttons' -%}
@@ -2270,7 +2268,7 @@
       "label": "PINCODE"
     },
     {
-      "type": "textarea",
+      "type": "collection",
       "id": "pincode_igp",
       "label": "PINCODE For IGP"
     },
