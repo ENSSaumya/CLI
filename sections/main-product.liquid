@@ -321,7 +321,7 @@
             {% for var in pincode_value %}
               <p class="pincode_value">{{ var | json }}</p>
             {% endfor %}
-                {% render 'pincode_igp', pin_igp : pincode_value %} 
+                {% render 'pincode_igp' %} 
 {% comment %} --------------------------------------------------------------------------------------------{% endcomment %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
