@@ -57,19 +57,20 @@ var store_pin = pin.split(",");
 console.log("pin", store_pin);
 
 function validate() {
-  var isAvailable = false;
   var input = document.querySelector(".input2").value;
   for (var i = 0; i < store_pin.length; i++) {
     if (input === store_pin[i].trim()) {
-      isAvailable = true;
+      document.querySelector(".message").innerHTML = "Available";
       break;
+    }
+    else{
+      document.querySelector(".message").innerHTML = "Invalid";
     }
   }
 
-  if (isAvailable) {
-    document.querySelector(".message").innerHTML = "Available";
-  } else {
-    document.querySelector(".message").innerHTML = "Invalid";
-  }
+  // if (isAvailable) {
+  // } else {
+    
+  // }
 }
 </script>
