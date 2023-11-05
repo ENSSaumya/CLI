@@ -204,7 +204,7 @@
          {% comment %} {% render "pincode_1" %} {% endcomment %}            
             {% render "pincode_igp" %}
               {% assign val = section.blocks %}
-                <p>{{ val.settings.pincode_igp }}</p>
+                <p class="pincode_new">{{ val.settings.pincode_igp }}</p>
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
