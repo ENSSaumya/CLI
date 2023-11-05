@@ -203,9 +203,8 @@
             {{ product.selected_or_first_available_variant.inventory_quantity }}
          {% comment %} {% render "pincode_1" %} {% endcomment %}            
             {% render "pincode_igp" %}
-              {% for block in section.blocks %}
-                <p>{{ block.settings.pincode_igp }}</p>
-              {% endfor %}
+              {% assign val = section.blocks %}
+                <p>{{ val.settings.pincode_igp }}</p>
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
