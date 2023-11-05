@@ -57,7 +57,7 @@
   
   function validate(){
     for(i=0;i<=store_pin[i];i++){
-      if(input.matche(store_pin[i])){
+      if(input.match(store_pin[i])){
         document.querySelector(".message").innerHTML = "Available";
       }
       else{
