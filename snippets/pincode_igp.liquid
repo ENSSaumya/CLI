@@ -9,6 +9,9 @@
     <div class="check_btn_div">
       <button class="check_btn" onclick="validate()">Check</button>
     </div>
+    <div class="valid_message_div">
+      <span class="message"></span>
+    </div>
   </div>
 </div>
 
@@ -49,9 +52,15 @@
   var pin = `{{ code }}`;
   var store_pin = pin.split(",");
   var input = document.querySelector(".input2").value;
-  console.log("pin", pin);
+  console.log("pin", store_pin);
   console.log(input);
   
   function validate(){
+    if(input.matches(store_pin)){
+      document.querySelector(".message").innerHTML = "Available";
+    }
+    else{
+      document.querySelector(".message").innerHTML = "Not Available";
+    }
   }
 </script>
