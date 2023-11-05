@@ -56,12 +56,18 @@
   console.log(input);
   
   function validate(){
+    var isAvailable = false;
     for(i=0;i<=store_pin[i];i++){
-      if(input.match(store_pin[i])){
+      if(input === store_pin[i]){
+        isAvailable = true;
+        break;
+      }
+
+      if(isAvailable){
         document.querySelector(".message").innerHTML = "Available";
       }
       else{
-        document.querySelector(".message").innerHTML = "Not Available";
+        document.querySelector(".message").innerHTML = "In Valid";
       }
     }
   }
