@@ -47,7 +47,8 @@
 
 <script>
   var pin = `{{ code }}`;
-  var input = document.querySelector(".input2");
+  var store_pin = pin.split(",");
+  var input = document.querySelector(".input2").value;
   console.log("pin", pin);
   console.log(input);
   
