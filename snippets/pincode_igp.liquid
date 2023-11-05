@@ -60,7 +60,7 @@
   function validate(){
     var isAvailable = false;
     var input = document.querySelector(".input2").value;
-    for(i=0;i<store_pin.length;i++){
+    for(var i=0; i<store_pin.length; i++){
       if(input === store_pin[i]){
         isAvailable = true;
         break;
