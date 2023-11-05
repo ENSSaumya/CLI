@@ -54,12 +54,12 @@
 <script>
   var pin = `{{ code }}`;
   var store_pin = pin.split(",");
-  var input = document.querySelector(".input2").value;
   console.log("pin", store_pin);
   console.log(input);
   
   function validate(){
     var isAvailable = false;
+    var input = document.querySelector(".input2").value;
     for(i=0;i<store_pin.length;i++){
       if(input === store_pin[i]){
         isAvailable = true;
