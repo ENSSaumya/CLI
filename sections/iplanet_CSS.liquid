@@ -239,7 +239,7 @@
     line-height: 1.125;
     font-weight: 600;
     letter-spacing: .004em;
-    margin-bottom:40px;
+    margin-bottom:70px;
   }
   .mac_div2 .background_FCF268, .content_text_2 .background_FCF268{
     background: linear-gradient(to right, #FCF268 50%, white 50%);
@@ -298,7 +298,7 @@
   }
   .opac_text{
     overflow-y: auto;
-    height: 250px;
+    height: 300px;
     /* position:absolute; */
   }
   .opac_text::-webkit-scrollbar{
@@ -347,7 +347,13 @@
 </style>
 
 <script>
-    
+  var heading_text = document.querySelector(".input1_div");
+  window.addEventListener("scroll", () => {
+    var high = window.pageYOffset;
+    heading_text.style.opacity = 1 - high/140; 
+    // console.log(high);
+  });
+
   var slide = document.querySelector(".opac_text");
   var text1 = slide.querySelector(".sub_heading");
   var text2 = slide.querySelector(".sub_text1");
@@ -368,16 +374,4 @@
       text3.style.opacity = 1 - (scrollPosition - 470) / 70;
     }
   }); 
-
-  // var tab_height = document.querySelectorAll(".img_block_div");
-  // var main_div = document.querySelector("");
-  // tab_height.forEach((item) => {
-  // var get_height = item.offsetHeight;
-  //   console.log(get_height);
-  //   if( get_height <= 380){
-  //     main_div.style.position = "sticky";
-  //     main_div.style.top = "0";
-  //     body.style.overfow = "hidden";
-  //   }
-  // });
 </script>
