@@ -374,5 +374,11 @@
       text3.style.opacity = 1 - (scrollPosition - 470) / 70;
     }
   });
-    
+
+  var iplanet_div = document.querySelectorAll(".iplanet_new_main");
+  iplanet_div.forEach((item) => {
+    item.addEventlistener("scroll",() => {
+      body.style.overflow = "hidden";
+    });
+  });
 </script>
