@@ -370,8 +370,12 @@
   }); 
 
   var tab_height = document.querySelectorAll(".img_block_div");
+  var main_div = document.querySelector(".container_new");
   tab_height.forEach((item) => {
   var get_height = item.offsetHeight;
     console.log(get_height);
+    if( get_height <= 390){
+      main_div.style.position = "sticky";
+    }
   });
 </script>
