@@ -375,11 +375,12 @@
     }
   });
 
-  var iplanet_div = document.querySelectorAll(".iplanet_new_main");
-  iplanet_div.forEach((item) => {
-    item.addEventListener("scroll",() => {
-      alert();
-      document.body.style.overflow = "hidden";
-    });
+var iplanet_div = document.querySelectorAll(".iplanet_new_main");
+
+iplanet_div.forEach((item) => {
+  item.addEventListener("scroll", () => {
+    alert();
+    document.body.style.overflow = "hidden";
   });
+});
 </script>
