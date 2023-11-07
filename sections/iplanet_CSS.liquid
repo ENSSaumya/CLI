@@ -377,7 +377,7 @@
 
   var iplanet_div = document.querySelectorAll(".iplanet_new_main");
   iplanet_div.forEach((item) => {
-    item.addEventlistener("scroll",() => {
+    item.addEventListener("scroll",() => {
       body.style.overflow = "hidden";
     });
   });
