@@ -375,7 +375,11 @@
     }
   }); 
 
-  var iplanet = document.querySelector(".iplanet_new_main");
-  var hight_iplanet = iplanet.offsetHeight;
-  console.log(hight_iplanet);
+  var iplanet = document.querySelectorAll(".iplanet_new_main");
+  iplanet.forEach((item) => {
+    var height = item.offsetHeight;
+    console.log("hight",height);
+  });
+  // var hight_iplanet = iplanet.offsetHeight;
+  // console.log(hight_iplanet);
 </script>
