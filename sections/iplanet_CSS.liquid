@@ -347,6 +347,11 @@
 </style>
 
 <script>
+  var iplanet = document.querySelectorAll(".iplanet_new_main");
+  iplanet.forEach((item) => {
+    var height = item.offsetHeight;
+    console.log("hight",height);
+  });
   var heading_text = document.querySelector(".input1_div");
   window.addEventListener("scroll", () => {
     var high = window.pageYOffset;
@@ -374,12 +379,4 @@
       text3.style.opacity = 1 - (scrollPosition - 470) / 70;
     }
   }); 
-
-  var iplanet = document.querySelectorAll(".iplanet_new_main");
-  iplanet.forEach((item) => {
-    var height = item.offsetHeight;
-    console.log("hight",height);
-  });
-  // var hight_iplanet = iplanet.offsetHeight;
-  // console.log(hight_iplanet);
 </script>
