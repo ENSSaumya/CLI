@@ -203,8 +203,8 @@
     padding:0 90px;
   }
   .img_block_div{
-    /* position:sticky;
-    top:0; */
+    position:sticky;
+    top:0;
     margin-bottom: 10%;
     padding:0 10%;
     z-index:2;
@@ -350,7 +350,7 @@
   var heading_text = document.querySelector(".input1_div");
   window.addEventListener("scroll", () => {
     var high = window.pageYOffset;
-    heading_text.style.opacity = 1 - high/160; 
+    heading_text.style.opacity = 1 - high/140; 
     // console.log(high);
   });
 
