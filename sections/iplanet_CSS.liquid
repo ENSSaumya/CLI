@@ -347,6 +347,13 @@
 </style>
 
 <script>
+  
+  var tab_height = document.querySelectorAll(".iplanet_new_main");
+  tab_height.forEach((item) => {
+    var get_height = item.offsetHeight;
+  });
+  console.log(get_height);
+  
   var slide = document.querySelector(".opac_text");
   var text1 = slide.querySelector(".sub_heading");
   var text2 = slide.querySelector(".sub_text1");
