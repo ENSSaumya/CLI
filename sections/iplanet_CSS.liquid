@@ -347,13 +347,7 @@
 </style>
 
 <script>
-  
-  var tab_height = document.querySelectorAll(".img_block_div");
-  tab_height.forEach((item) => {
-    var get_height = item.offsetHeight;
-      console.log(get_height);
-  });
-  
+    
   var slide = document.querySelector(".opac_text");
   var text1 = slide.querySelector(".sub_heading");
   var text2 = slide.querySelector(".sub_text1");
@@ -374,4 +368,10 @@
       text3.style.opacity = 1 - (scrollPosition - 470) / 70;
     }
   }); 
+
+  var tab_height = document.querySelectorAll(".img_block_div");
+  tab_height.forEach((item) => {
+  var get_height = item.offsetHeight;
+    console.log(get_height);
+  });
 </script>
