@@ -2,6 +2,7 @@
   "sections": {
     "48ec08a5-9980-4726-9160-af14187a910a": {
       "type": "iplanet_schema",
+      "disabled": true,
       "settings": {
         "html_schema": ""
       }
