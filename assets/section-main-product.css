@@ -24,6 +24,10 @@
     top: 3rem;
     z-index: 2;
   }
+  #MediaGallery-template--21383073923378__main{
+    diaplay:flex;
+    flex-direction:row-reverse;
+  }
 
   .product--thumbnail .thumbnail-list {
     padding-right: var(--media-shadow-horizontal-offset);
