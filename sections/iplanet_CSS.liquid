@@ -378,10 +378,24 @@
     }
   });
   
-  // const body = document.getElementsByTagName("body");
-  // console.log(body);
-  // body.addEventListener("scroll",(event) => {
-  //   event.preventDefault();
-  // });
-  
+  function enableScroll(){
+    var enable = document.body.style.overflow = "block";\
+    console.log(enable);
+  }
+  function disableScroll(){
+    document.body.style.overflow = "none";
+  }
+  var main_iplanet = document.querySelectorAll(".iplanet_new_main");
+  main_iplanet.forEach((item) => {
+    if(){
+      item.addEventListener("scroll",() => {
+        main_iplanet = enableScroll();
+      });
+    }
+    else{
+      item.addEventListener("scroll",() => {
+        main_iplanet = disableScroll();
+      }
+    }
+  });
 </script>
