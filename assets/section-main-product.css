@@ -29,6 +29,9 @@
     display:flex;
     flex-direction:row-reverse;
   }
+  #GalleryViewer-template--21383073923378__main{
+    width:80%;
+  }
 
   .product--thumbnail .thumbnail-list {
     padding-right: var(--media-shadow-horizontal-offset);
