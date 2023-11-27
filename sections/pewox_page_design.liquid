@@ -18,18 +18,20 @@
         <p class="description_class_pewox">{{ section.settings.text_pewox }}</p>
       </div>
       {% for block in section.blocks %}
+        {% for new_block in block %}
           <div class="thumbnail_svg">
             <div class="sub_thumbnail_svg">
-              <img class="class_sub_thumbnail" src="{{ block.settings.pewox_svg_1 | img_url:"master" }}">
-              <img class="class_sub_thumbnail" src="{{ block.settings.pewox_svg_2 | img_url:"master" }}">
-              <img class="class_sub_thumbnail" src="{{ block.settings.pewox_svg_3 | img_url:"master" }}">
+              <img class="class_sub_thumbnail" src="{{ new_block.settings.pewox_svg_1 | img_url:"master" }}">
+              <!-- <img class="class_sub_thumbnail" src="{{ block.settings.pewox_svg_2 | img_url:"master" }}">
+              <img class="class_sub_thumbnail" src="{{ block.settings.pewox_svg_3 | img_url:"master" }}"> -->
             </div>
             <div class="text_below_svg">
-              <p class="class_text_below_svg">{{ block.settings.pewox_text_1 }}</p>
-              <p class="class_text_below_svg">{{ block.settings.pewox_text_2 }}</p>
-              <p class="class_text_below_svg">{{ block.settings.pewox_text_3 }}</p>
+              <p class="class_text_below_svg">{{ new_block.settings.pewox_text_1 }}</p>
+              <!-- <p class="class_text_below_svg">{{ block.settings.pewox_text_2 }}</p>
+              <p class="class_text_below_svg">{{ block.settings.pewox_text_3 }}</p> -->
             </div>
           </div>
+        {% endfor %}
       {% endfor %}
     </div>
   </div>
