@@ -27,6 +27,8 @@
             </div>
             <div class="text_below_svg">
               <p class="class_text_below_svg">{{ block.settings.pewox_text_1 }}</p>
+              <p class="class_text_below_svg">{{ block.settings.pewox_text_2 }}</p>
+              <p class="class_text_below_svg">{{ block.settings.pewox_text_3 }}</p>
             </div>
           </div>
         {% endfor %}
@@ -78,7 +80,17 @@
       {
         "type":"text",
         "id":"pewox_text_1",
-        "label":"Text"
+        "label":"Text 1"
+      },
+      {
+        "type":"text",
+        "id":"pewox_text_2",
+        "label":"Text 2"
+      },
+      {
+        "type":"text",
+        "id":"pewox_text_3",
+        "label":"Text 3"
       }]
     }],
     "presets":[{"name":"pewox_design"}]
