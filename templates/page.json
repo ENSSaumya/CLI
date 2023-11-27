@@ -54,6 +54,24 @@
     },
     "b2c5b8a2-31fd-47d0-ad66-f735daeeadbc": {
       "type": "pewox_page_design",
+      "blocks": {
+        "dacb2923-d145-4e5c-9845-68dcd4bfdf7c": {
+          "type": "image_picker",
+          "settings": {
+            "pewox_img_1": "shopify:\/\/shop_images\/Layer_1_799bbd3e-1753-4f4d-8a1b-05491e5a9492.png",
+            "pewox_img_2": "shopify:\/\/shop_images\/watch.jpg",
+            "pewox_svg_1": "shopify:\/\/shop_images\/Group_102353373_1_a256abe7-6c5c-4e40-87f8-81011bbdc989.png",
+            "pewox_svg_2": "shopify:\/\/shop_images\/Group_102353375_1.png",
+            "pewox_svg_3": "shopify:\/\/shop_images\/Group_102353374_1.png",
+            "pewox_text_1": "",
+            "pewox_text_2": "",
+            "pewox_text_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "dacb2923-d145-4e5c-9845-68dcd4bfdf7c"
+      ],
       "settings": {
         "heading_pewox": "",
         "text_pewox": ""
