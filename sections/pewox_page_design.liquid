@@ -1,7 +1,39 @@
+<div class="main_why_pewox">
+  <div class="content_why_pewox">
+    <div class="left_why_pewox">
+      {% for block in section.blocks %}
+        <img class="img_left_pewox" src="{{ block.settings.pewox_img_1 | img_url:"master" }}">
+      {% endfor %}
+    </div>
+    <div class="right_why_pewox">
+      <div class="img_top_right_why_pewox">
+        {% for block in section.blocks %}
+          <img class="img_right_top_pewox" src="{{ block.settings.pewox_img_2 | img_url:"master" }}">
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "pewox_design",
+    "settings": [],
+    "blocks":[{
+      "type":"image_picker",
+      "name":"Pick",
+      "settings":[{
+        "type":"image_picker",
+        "id":"pewox_img_1",
+        "label":"Image Left"
+      },
+      {
+        "type":"image_picker",
+        "id":"pewox_img_2",
+        "label":"Image Left"
+      }
+      ]
+    }],
+    "presets":[{"name":"pewox_design"}]
   }
 {% endschema %}
 
