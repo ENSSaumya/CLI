@@ -51,10 +51,18 @@
         "heading_scientific": "Three Science Formula",
         "passage_scientific": "Our approach combines the goodness of three sciences. With ingredients from the most authentic sources, we personalize your treatment delivering assured results."
       }
+    },
+    "b2c5b8a2-31fd-47d0-ad66-f735daeeadbc": {
+      "type": "pewox_page_design",
+      "settings": {
+        "heading_pewox": "",
+        "text_pewox": ""
+      }
     }
   },
   "order": [
     "main",
-    "538a15c1-793e-4e1c-a949-0e6db9496ade"
+    "538a15c1-793e-4e1c-a949-0e6db9496ade",
+    "b2c5b8a2-31fd-47d0-ad66-f735daeeadbc"
   ]
 }
