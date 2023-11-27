@@ -11,13 +11,35 @@
           <img class="img_right_top_pewox" src="{{ block.settings.pewox_img_2 | img_url:"master" }}">
         {% endfor %}
       </div>
+      <div class="heading_right_pewox">
+        <p class="heading_class_pewox">{{ section.settings.heading_pewox }}</p>
+      </div>
+      <div class="description_right_pewox">
+        <p class="description_class_pewox">{{ section.settings.text_pewox }}</p>
+      </div>
+      <div class="thumbnail_svg">
+        <div class="sub_thumbnail_svg">
+          {% for block in section.blocks %}
+            <img class="class_sub_thumbnail" src="{{ block.settings.pewox_img_3 | img_url:"master" }}">
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </div>
 </div>
 {% schema %}
   {
     "name": "pewox_design",
-    "settings": [],
+    "settings": [{
+      "type":"text",
+      "id":"heading_pewox",
+      "label":"Heading"
+    },
+    {
+      "type":"textarea",
+      "id":"text_pewox",
+      "label":"Description"
+    }],
     "blocks":[{
       "type":"image_picker",
       "name":"Pick",
@@ -30,8 +52,12 @@
         "type":"image_picker",
         "id":"pewox_img_2",
         "label":"Image Left"
-      }
-      ]
+      },
+      {
+        "type":"image_picker",
+        "id":"pewox_img_3",
+        "label":"Image Left"
+      }]
     }],
     "presets":[{"name":"pewox_design"}]
   }
