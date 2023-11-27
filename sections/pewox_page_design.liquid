@@ -17,13 +17,16 @@
       <div class="description_right_pewox">
         <p class="description_class_pewox">{{ section.settings.text_pewox }}</p>
       </div>
+      {% for block in section.blocks %}
       <div class="thumbnail_svg">
         <div class="sub_thumbnail_svg">
-          {% for block in section.blocks %}
-            <img class="class_sub_thumbnail" src="{{ block.settings.pewox_img_3 | img_url:"master" }}">
-          {% endfor %}
+          <img class="class_sub_thumbnail" src="{{ block.settings.pewox_img_3 | img_url:"master" }}">
+        </div>
+        <div class="text_below_svg">
+          <p class="class_text_below_svg">{{ block.settings.pewox_text_1 }}</p>
         </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -56,6 +59,11 @@
       {
         "type":"image_picker",
         "id":"pewox_img_3",
+        "label":"Image Left"
+      },
+      {
+        "type":"text",
+        "id":"pewox_text_1",
         "label":"Image Left"
       }]
     }],
