@@ -21,7 +21,7 @@
         {% for new_block in block %}
           <div class="thumbnail_svg">
             <div class="sub_thumbnail_svg">
-              <img class="class_sub_thumbnail" src="{{ block.settings.pewox_img_3 | img_url:"master" }}">
+              <img class="class_sub_thumbnail" src="{{ block.settings.pewox_svg_1 | img_url:"master" }}">
             </div>
             <div class="text_below_svg">
               <p class="class_text_below_svg">{{ block.settings.pewox_text_1 }}</p>
@@ -60,8 +60,18 @@
       },
       {
         "type":"image_picker",
-        "id":"pewox_img_3",
-        "label":"SVG"
+        "id":"pewox_svg_1",
+        "label":"SVG 1"
+      },
+      {
+        "type":"image_picker",
+        "id":"pewox_svg_2",
+        "label":"SVG 2"
+      },
+      {
+        "type":"image_picker",
+        "id":"pewox_svg_3",
+        "label":"SVG 3"
       },
       {
         "type":"text",
