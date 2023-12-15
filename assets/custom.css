@@ -1,3 +1,6 @@
+.card--media .card__inner .card__content{
+  padding:10px;
+}
 .yotpo-review{
   height: 100px !important;
 }
