@@ -1,6 +1,10 @@
 .card--media .card__inner .card__content{
   padding:10px;
 }
+.card__badge.top.left{
+  position:absolute;
+  right:0;
+}
 .yotpo-review{
   height: 100px !important;
 }
