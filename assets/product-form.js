@@ -31,6 +31,7 @@ if (!customElements.get('product-form')) {
 
         const formData = new FormData(this.form);
         if (this.cart) {
+          console.log("formData",formData);
           formData.append(
             'sections',
             this.cart.getSectionsToRender().map((section) => section.id)
