@@ -24,19 +24,8 @@ $(document).ready(function(){
   });
 });
 
-// Sort By
-document.addEventListener("DOMContentLoaded", function() {
-var carat = document.querySelectorAll(".table_row .carat");
-  // console.log("Carat",carat);
-  var arr = [];
-    carat.forEach((item,i) => {
-    item.addEventListener("mouseover",() => {
-      arr[i] = item.innerText;
-    });
-  });
-  arr.sort();
-  // console.log("Sorted",arr);
-});
+// Sort By in minify js
+document.addEventListener("DOMContentLoaded",function(){var carat=document.querySelectorAll(".table_row .carat");var arr=[];carat.forEach((item,i)=>{item.addEventListener("mouseover",()=>{arr[i]=item.innerText})});arr.sort()})
 
 document.addEventListener("load",function() {
   var org_img = document.querySelector(".loading_icon_img");
