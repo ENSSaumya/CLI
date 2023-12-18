@@ -2,7 +2,7 @@
    <div id="color-div">
       <button id="color-btn1" >Red</button>
       <button id="color-btn2" >Green</button>
-      <button id="color-btn3" onclick="myFunction()">Blue</button>
+      <button id="color-btn3" >Blue</button>
       <button id="color-btn4" onclick="myFunction()">Gray</button>
       <button id="color-btn5" onclick="myFunction()">Yellow</button>
    </div>
@@ -39,11 +39,11 @@
 </style>
 
 <script>
-  var btn = document.querySelectorAll('.color-div button');
+  var btn = document.querySelectorAll('#color-div button');
     btn.forEach(item => {
       item.addEventListener('click',() => {
-        console.log("hii");
-      alert("hww");
+        alert("hww");
+        console.log(item.getAttribute('id'));
       // document.querySelector('.button-container').style.backgroundColor = "red";
     });
   });
