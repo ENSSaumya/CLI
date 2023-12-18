@@ -1,8 +1,8 @@
 <div class="button-container">
    <div id="color-div">
-      <button id="color-btn1" color='red' onclick="myfunction()">Red</button>
-      <button id="color-btn2" color='green' onclick="myfunction()">Green</button>
-      <button id="color-btn3" color='blue' onclick="myfunction()">Blue</button>
+      <button id="color-btn1" color='red' onclick="myfunction(this)">Red</button>
+      <button id="color-btn2" color='green' onclick="myfunction(this)">Green</button>
+      <button id="color-btn3" color='blue' onclick="myfunction(this)">Blue</button>
       <button id="color-btn4" color='gray' onclick="myfunction()">Gray</button>
       <button id="color-btn5" color='yellow' onclick="myfunction()">Yellow</button>
    </div>
@@ -47,12 +47,9 @@
   //     document.querySelector('.button-container').style.backgroundColor = button_style;
   //   });
   // });
-
-  function myfunction(){
-    var btn = document.querySelectorAll('#color-div button');
-    btn.forEach(item => {
-      var con = item.getAttribute('id');
+  
+  function myfunction(this){
+      var con = this.getAttribute('id');
       console.log(con);
-    });
   }
 </script>
