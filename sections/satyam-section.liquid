@@ -1,10 +1,10 @@
 <div class="button-container">
    <div id="color-div">
-      <button id="color-btn1" color='red'>Red</button>
-      <button id="color-btn2" color='green'>Green</button>
-      <button id="color-btn3" color='blue'>Blue</button>
-      <button id="color-btn4" color='gray'>Gray</button>
-      <button id="color-btn5" color='yellow'>Yellow</button>
+      <button id="color-btn1" color='red' onclick="myfunction()">Red</button>
+      <button id="color-btn2" color='green' onclick="myfunction()">Green</button>
+      <button id="color-btn3" color='blue' onclick="myfunction()">Blue</button>
+      <button id="color-btn4" color='gray' onclick="myfunction()">Gray</button>
+      <button id="color-btn5" color='yellow' onclick="myfunction()">Yellow</button>
    </div>
 </div>
 
@@ -39,12 +39,18 @@
 </style>
 
 <script>
-  var btn = document.querySelectorAll('#color-div button');
-  btn.forEach(item => {
-    item.addEventListener('click',() => {
-      // var button_num = item.getAttribute('id');
-      var button_style = item.getAttribute("color");
-      document.querySelector('.button-container').style.backgroundColor = button_style;
-    });
-  });
+  // var btn = document.querySelectorAll('#color-div button');
+  // btn.forEach(item => {
+  //   item.addEventListener('click',() => {
+  //     // var button_num = item.getAttribute('id');
+  //     var button_style = item.getAttribute("color");
+  //     document.querySelector('.button-container').style.backgroundColor = button_style;
+  //   });
+  // });
+
+  function myfunction(){
+    var btn = document.querySelector('#color-div button');
+    var con = btn.getAttribute('id');
+    console.log(con);
+  }
 </script>
