@@ -1,12 +1,51 @@
+<div class="button-container">
+   <div id="color-div">
+      <button id="color-btn1" >Red</button>
+      <button id="color-btn2" >Green</button>
+      <button id="color-btn3" onclick="myFunction()">Blue</button>
+      <button id="color-btn4" onclick="myFunction()">Gray</button>
+      <button id="color-btn5" onclick="myFunction()">Yellow</button>
+   </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "five-button",
+    "settings": [],
+    "presets":[
+      {
+        "name":"five-button"
+      }
+    ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+<style>
+   .button-container{
+     width:100%;
+     height:300px;
+     display:flex;
+   }
 
-{% javascript %}
-{% endjavascript %}
+   #color-div{
+     width:43%;
+     height:auto;
+     margin:auto;
+   }
+ 
+  button#color-btn1, button#color-btn2, button#color-btn3, button#color-btn4, button#color-btn5{ 
+    padding: 15px 25px;
+  }
+</style>
+
+<script>
+  var btn = document.querySelectorAll('.color-div button');
+    btn.forEach(item => {
+      item.addEventListener('click',() => {
+        console.log("hii");
+      alert("hww");
+      // document.querySelector('.button-container').style.backgroundColor = "red";
+    });
+  });
+
+</script>
