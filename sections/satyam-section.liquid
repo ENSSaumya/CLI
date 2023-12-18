@@ -49,8 +49,10 @@
   // });
 
   function myfunction(){
-    var btn = document.querySelector('#color-div button');
-    var con = btn.getAttribute('id');
-    console.log(con);
+    var btn = document.querySelectorAll('#color-div button');
+    btn.forEach(item => {
+      var con = item.getAttribute('id');
+      console.log(con);
+    });
   }
 </script>
