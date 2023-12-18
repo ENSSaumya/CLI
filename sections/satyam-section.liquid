@@ -44,7 +44,7 @@
       item.addEventListener('click',() => {
         var button_num = item.getAttribute('id');
         var button_style = item.getAttribute("color");
-          button_num.style.backgroundColor = "button_style";
+          document.querySelector('.button-container').style.backgroundColor = "button_style";
       // document.querySelector('.button-container').style.backgroundColor = "red";
     });
   });
