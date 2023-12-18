@@ -78,11 +78,17 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "13491744-083d-429f-8aca-ae5fa435adc2": {
+      "type": "satyam-section",
+      "settings": {
+      }
     }
   },
   "order": [
     "e4895fd2-3557-45e4-ad7f-ca3670ccdaac",
     "announcement-bar",
-    "header"
+    "header",
+    "13491744-083d-429f-8aca-ae5fa435adc2"
   ]
 }
