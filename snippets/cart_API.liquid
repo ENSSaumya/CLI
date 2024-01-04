@@ -28,11 +28,13 @@
    var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
   var cart_total_price = "{{ cart.total_price }}";
+  var new_data;
   
   function POST_add(){
    var quan = document.querySelector('[name="quantity"]').value;
     var store = parseInt(quan);
   // alert("Add to Cart working on cli");
+    
   let formData = {
     "items":[{
       "id":attr,
@@ -40,6 +42,7 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
+    
   let free_formData = {
     "items":[{
       "id":"45451657675058",
@@ -50,12 +53,18 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
+    if(cart_total_price >99900){
+       new_data = free_formData;
+    }
+    else{
+       new_data = formData;
+    }
   fetch("/cart/add.js",{
     method:"POST",
     headers:{
       "Content-Type":"application/json"
     },
-    body:JSON.stringify(formData)
+    body:JSON.stringify(new_data);
   })
   .then(response => {
     return response.json();
