@@ -70,15 +70,8 @@
     var sections = val.sections;
     var oldCartDrawer = document.querySelector("#CartDrawer");
     var oldCartIcon = document.querySelector("#cart-icon-bubble");
-    // {% comment %} DOMParser => It is a web browser API to convert xml to html, from string to DOM HTML {% endcomment %}
-    // {% comment %} sections[] = > It is used to retrive html from the section {% endcomment %}
-    // {% comment %} parseFromString => it has two parameter the source first and then its type {% endcomment %}
-    // {% comment %} If sections['cart-Drawer', 'text/html'] has .querySelector("#CartDrawer") then convert into innerHTML else null {% endcomment %}
     var newCartDrawer = new DOMParser().parseFromString(sections['cart-drawer'], 'text/html')?.querySelector("#CartDrawer")?.innerHTML;
     var newCartIcon = new DOMParser().parseFromString(sections['cart-icon-bubble'], 'text/html')?.querySelector("#shopify-section-cart-icon-bubble")?.innerHTML;
-    // console.log("Sections",sections);
-    // console.log("Cart", oldCartDrawer);
-    // console.log("New Icon", oldCartIcon);
   if (oldCartDrawer && newCartDrawer) {
     oldCartDrawer.innerHTML = newCartDrawer;
     document.querySelector("cart-drawer") ?. classList.remove("is-empty");
