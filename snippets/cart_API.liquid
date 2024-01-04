@@ -28,7 +28,7 @@
    var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
   var cart_total = "{{ cart.total_price }}";
-  
+  console.log(cart_total);
   function POST_add(){
    var quan = document.querySelector('[name="quantity"]').value;
     var store = parseInt(quan);
