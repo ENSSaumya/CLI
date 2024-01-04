@@ -1,6 +1,6 @@
 <div class="cart_main">
   <div class="content_cart">
-    <button class="class_variant" variant-id="{{ product.selected_or_first_available_variant.id }}" cart-price="{{ cart.total_price }}"onclick="POST_add()">CART</button>
+    <button class="class_variant" variant-id="{{ product.selected_or_first_available_variant.id }}" onclick="POST_add()">CART</button>
   </div>
 </div>
 
@@ -27,22 +27,31 @@
 <script>
    var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
+  var cart_total = "{{ cart.total_price }}";
   
   function POST_add(){
    var quan = document.querySelector('[name="quantity"]').value;
     var store = parseInt(quan);
-  alert("Add to Cart working on cli");
+  // alert("Add to Cart working on cli");
+    
   let formData = {
     "items":[{
-     "id":'45451593220402',
-     "quantity":1
-    },{
       "id":attr,
       "quantity":store
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
-    let con = ()
+    
+    let freebie_formdata = {
+      "items":[{
+     "id":'45451593220402',
+     "quantity":1
+    },{
+      "id":attr,
+      "quantity":store
+    }]
+    }
+    let con = (cart_total >= 99900)?
   fetch("/cart/add.js",{
     method:"POST",
     headers:{
