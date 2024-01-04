@@ -1,6 +1,6 @@
 <div class="cart_main">
   <div class="content_cart">
-    <button class="class_variant" variant-id="{{ product.selected_or_first_available_variant.id }}" onclick="POST_add()">CART</button>
+    <button class="class_variant" variant-id="{{ product.selected_or_first_available_variant.id }}" cart-price="{{ cart.total_price }}"onclick="POST_add()">CART</button>
   </div>
 </div>
 
@@ -42,6 +42,7 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
+    let con = ()
   fetch("/cart/add.js",{
     method:"POST",
     headers:{
