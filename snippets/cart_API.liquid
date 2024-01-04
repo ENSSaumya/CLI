@@ -42,7 +42,7 @@
     sections:["cart-drawer","cart-icon-bubble"]
   };
     
-    let freebie_formdata = {
+  let freebie_formdata = {
       "items":[{
      "id":'45451593220402',
      "quantity":1
@@ -50,8 +50,10 @@
       "id":attr,
       "quantity":store
     }]
-    }
-    let con = (cart_total >= 99900)?
+    sections:["cart-drawer","cart-icon-bubble"]
+  };
+    let con = (cart_total >= 99900)? freebie_formdata: formData;
+      
   fetch("/cart/add.js",{
     method:"POST",
     headers:{
