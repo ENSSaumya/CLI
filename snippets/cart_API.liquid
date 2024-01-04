@@ -30,7 +30,7 @@
   var price_cart = "{{ cart.total_price }}";
   var cart_total_price = parseFloat(price_cart);
   // console.log("mmm",typeof(cart_total_price));
-  var new_data;
+  var new_data ={};
   
   function POST_add(){
    var quan = document.querySelector('[name="quantity"]').value;
@@ -74,7 +74,7 @@
     var newCartIcon = new DOMParser().parseFromString(sections['cart-icon-bubble'], 'text/html')?.querySelector("#shopify-section-cart-icon-bubble")?.innerHTML;
   if (oldCartDrawer && newCartDrawer) {
     oldCartDrawer.innerHTML = newCartDrawer;
-    document.querySelector("cart-drawer") ?. classList.remove("is-empty");
+    document.querySelector("#CartDrawer")?.classList.remove("is-empty");
     document.querySelector("#cart-icon-bubble").click();
   }
   if (oldCartIcon && newCartIcon) {
