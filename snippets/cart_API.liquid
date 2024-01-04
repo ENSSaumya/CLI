@@ -56,12 +56,7 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
-  // new_data = (cart_total_price) > 99900 ? free_formData : formData;
-    if(cart_total_price>=99900){
-      alert("good");
-    }else{
-      alert("false");
-    }
+  new_data = (cart_total_price) > 99900 ? free_formData : formData;
   fetch("/cart/add.js",{
     method:"POST",
     headers:{
