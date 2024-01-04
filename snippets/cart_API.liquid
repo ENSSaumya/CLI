@@ -27,13 +27,11 @@
 <script>
    var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
-  var cart_total = "{{ cart.total_price }}";
-  console.log(cart_total);
+  
   function POST_add(){
    var quan = document.querySelector('[name="quantity"]').value;
     var store = parseInt(quan);
-  // alert("Add to Cart working on cli");
-    
+  alert("Add to Cart working on cli");
   let formData = {
     "items":[{
       "id":attr,
@@ -41,25 +39,12 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
-    
-  let freebie_formdata = {
-      "items":[{
-     "id":'45451593220402',
-     "quantity":1
-    },{
-      "id":attr,
-      "quantity":store
-    }]
-    sections:["cart-drawer","cart-icon-bubble"]
-  };
-    let con = (cart_total >= 99900)? freebie_formdata: formData;
-      
   fetch("/cart/add.js",{
     method:"POST",
     headers:{
       "Content-Type":"application/json"
     },
-    body:JSON.stringify(con)
+    body:JSON.stringify(formData)
   })
   .then(response => {
     return response.json();
@@ -68,8 +53,15 @@
     var sections = val.sections;
     var oldCartDrawer = document.querySelector("#CartDrawer");
     var oldCartIcon = document.querySelector("#cart-icon-bubble");
+    // {% comment %} DOMParser => It is a web browser API to convert xml to html, from string to DOM HTML {% endcomment %}
+    // {% comment %} sections[] = > It is used to retrive html from the section {% endcomment %}
+    // {% comment %} parseFromString => it has two parameter the source first and then its type {% endcomment %}
+    // {% comment %} If sections['cart-Drawer', 'text/html'] has .querySelector("#CartDrawer") then convert into innerHTML else null {% endcomment %}
     var newCartDrawer = new DOMParser().parseFromString(sections['cart-drawer'], 'text/html')?.querySelector("#CartDrawer")?.innerHTML;
     var newCartIcon = new DOMParser().parseFromString(sections['cart-icon-bubble'], 'text/html')?.querySelector("#shopify-section-cart-icon-bubble")?.innerHTML;
+    // console.log("Sections",sections);
+    // console.log("Cart", oldCartDrawer);
+    // console.log("New Icon", oldCartIcon);
   if (oldCartDrawer && newCartDrawer) {
     oldCartDrawer.innerHTML = newCartDrawer;
     document.querySelector("cart-drawer") ?. classList.remove("is-empty");
