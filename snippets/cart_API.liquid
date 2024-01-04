@@ -29,7 +29,7 @@
    console.log('variant-id', attr);
   var price_cart = "{{ cart.total_price }}";
   var cart_total_price = parseFloat(price_cart);
-  // console.log("mmm",typeof(cart_total_price));
+  console.log("mmm",typeof(cart_total_price));
   var new_data ={};
   console.log("nnnn",new_data);
   
@@ -45,7 +45,7 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
-    console.log("formdata",formData);
+    console.log("formdata",(formData));
   let free_formData = {
     "items":[{
       "id":"45451657675058",
