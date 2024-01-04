@@ -27,8 +27,8 @@
 <script>
    var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
-  var cart_total_price = "{{ cart.total_price }}";
-  console.log(typeof(cart_total_price));
+  var price_cart = "{{ cart.total_price }}";
+  var cart_total_price = parseFloat(price_cart);
   var new_data;
   
   function POST_add(){
@@ -54,12 +54,7 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
-    if(parseInt(cart_total_price) >99900){
-       new_data = free_formData;
-    }
-    else{
-       new_data = formData;
-    }
+  new_data = (cart_total_price) > 99900 ? free_formData : formData;
   fetch("/cart/add.js",{
     method:"POST",
     headers:{
