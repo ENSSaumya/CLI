@@ -28,6 +28,7 @@
    var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
   var cart_total_price = "{{ cart.total_price }}";
+  console.log(typeof(cart_total_price));
   var new_data;
   
   function POST_add(){
