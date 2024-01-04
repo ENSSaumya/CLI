@@ -28,7 +28,7 @@
    var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
   var price_cart = "{{ cart.total_price }}";
-  var cart_total_price = (price_cart);
+  var cart_total_price = parseInt(price_cart);
   console.log("mmm",typeof(cart_total_price));
   var new_data;
   
