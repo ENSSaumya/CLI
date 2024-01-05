@@ -54,7 +54,6 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
-    console.log("formdata",typeof(formData));
   new_data = (cart_total_price) > 99900 ? free_formData : formData;
   fetch("/cart/add.js",{
     method:"POST",
