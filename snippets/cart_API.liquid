@@ -34,7 +34,6 @@
   function POST_add(){
    var quan = document.querySelector('[name="quantity"]').value;
     var store = parseInt(quan);
-  // alert("Add to Cart working on cli");
     
   let formData = {
     "items":[{
@@ -43,6 +42,7 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
+    
     // console.log("formdata",(formData));
   let free_formData = {
     "items":[{
@@ -54,6 +54,7 @@
     }],
     sections:["cart-drawer","cart-icon-bubble"]
   };
+    
   new_data = (cart_total_price) > 99900 ? free_formData : formData;
   fetch("/cart/add.js",{
     method:"POST",
