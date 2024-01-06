@@ -44,7 +44,6 @@
     sections:["cart-drawer","cart-icon-bubble"]
   };
     
-    // console.log("formdata",(formData));
   let free_formData = {
     "items":[{
       "id":"45451657675058",
@@ -57,6 +56,7 @@
   };
     
   new_data = (cart_total_price) > 99900 ? free_formData : formData;
+    
   fetch("/cart/add.js",{
     method:"POST",
     headers:{
