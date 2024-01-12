@@ -27,12 +27,12 @@
 <script>
    var attr = document.querySelector('.class_variant').getAttribute('variant-id');
    console.log('variant-id', attr);
-  var price_cart = "{{ cart.total_price }}";
-  var cart_total_price = parseFloat(price_cart);
 
-  var new_data ={};
   
   function POST_add(){
+  var new_data ={};
+  var price_cart = "{{ cart.total_price }}";
+  var cart_total_price = parseFloat(price_cart);
    var quan = document.querySelector('[name="quantity"]').value;
     var store = parseInt(quan);
     
