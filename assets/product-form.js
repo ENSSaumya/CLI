@@ -63,7 +63,7 @@ if (!customElements.get('product-form')) {
               return;
             } else if (!this.cart) {
               window.location = window.routes.cart_url;
-              console.log(window.location,"22")
+              alert(window.location,"22")
               return;
             }
 
