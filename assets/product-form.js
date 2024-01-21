@@ -30,7 +30,7 @@ if (!customElements.get('product-form')) {
         delete config.headers['Content-Type'];
 
         const formData = new FormData(this.form);
-        console.log("11",formData)
+        // console.log("11",formData)
         if (this.cart) {
           // console.log("formData",formData);
           formData.append(
@@ -63,6 +63,7 @@ if (!customElements.get('product-form')) {
               return;
             } else if (!this.cart) {
               window.location = window.routes.cart_url;
+              console.log(window.location,"22")
               return;
             }
 
