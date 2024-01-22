@@ -47,7 +47,6 @@ if (!customElements.get('product-form')) {
           .then((response) => {
             console.log("qq",response)
             if (response.status) {
-              console.log("aa",response.status)
               publish(PUB_SUB_EVENTS.cartError, {
                 source: 'product-form',
                 productVariantId: formData.get('id'),
