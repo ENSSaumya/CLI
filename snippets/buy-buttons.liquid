@@ -157,7 +157,9 @@
     var variants = document.querySelector("select.select__select");
   // console.log("elect",selects);
   variants.addEventListener('click',() => {
-    variants.getAttribute('name');
+    setTimeout(() => {
+      variants.getAttribute('name');
+    }, 2000);
   });
   
     //   selects.addEventListener("change", () => {
