@@ -159,8 +159,8 @@
   variants.addEventListener('change',() => {
       var chosen = document.querySelectorAll('select option');
         chosen.forEach((item) => {
-          var index = item.getAttribute('value');
-          console.log('val',index);
+          var select = item.getAttribute('value');
+          console.log('val',select);
         });
       console.log(chosen);
   });
