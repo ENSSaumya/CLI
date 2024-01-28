@@ -155,10 +155,10 @@
 <!-- Script for variant update more than 100 -->
 <script>
     var selects = document.querySelector("select .select__select");
-  console.log("elect",selects);
+  // console.log("elect",selects);
       selects.addEventListener("change", () => {
       setTimeout(() => {
-        document.querySelector(".product-form__submit.cart").removeAttribute("disabled");
+        // document.querySelector(".product-form__submit.cart").removeAttribute("disabled");
       }, 2000);  
       let chose = selects.options[selects.selectedIndex];
         // console.log("chose", chose);
