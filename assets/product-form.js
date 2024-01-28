@@ -113,9 +113,9 @@ if (!customElements.get('product-form')) {
         }
       }
 
-      function freebie(){
-        console.log("done");
-      }
+      // function freebie(){
+      //   console.log("done");s
+      // }
     }
   );
 }
