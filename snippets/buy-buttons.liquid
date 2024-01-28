@@ -154,10 +154,10 @@
             
 <!-- Script for variant update more than 100 -->
 <script>
-    var variants = document.querySelector("select.select__select");
+  var variants = document.querySelector("select.select__select");
+  var chosen = document.querySelectorAll('select option');
   // console.log("elect",selects);
   variants.addEventListener('change',() => {
-      var chosen = document.querySelectorAll('select option');
         chosen.forEach((item, index) => {
           var select = item.getAttribute('value');
           console.log('val',chosen[index]);
