@@ -157,7 +157,11 @@
     var variants = document.querySelector("select.select__select");
   // console.log("elect",selects);
   variants.addEventListener('change',() => {
-      var chosen = document.querySelectorAll('select option').getAttribute('value');
+      var chosen = document.querySelectorAll('select option');
+        chosen.forEach((item) => {
+          var index = item.getAttribute('value');
+          console.log('val',index);
+        });
       console.log(chosen);
   });
   
