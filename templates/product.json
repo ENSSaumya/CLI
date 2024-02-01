@@ -165,7 +165,7 @@
         "12b1d075-02e3-4d65-aa78-305f75ab98a8"
       ],
       "settings": {
-        "liquid_accord": "{"
+        "liquid_accord": "{% assign meta_product = product.metafields.custom.meta_product.value %}\n      {{ meta_product | json }}"
       }
     },
     "related-products": {
