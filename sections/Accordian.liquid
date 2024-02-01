@@ -1,5 +1,7 @@
 
 <div class="accord">
+    {% assign meta_product = product.metafields.custom.meta_product.value %}
+      {{ meta_product | json }}
   {% for block in section.blocks %}
     <h4 class="title1">{{ block.settings.txt }}</h4>
     <p class="passage">{{ block.settings.text }}</p>
