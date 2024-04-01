@@ -304,7 +304,23 @@
       media="print"
       onload="this.media='all'">
   {%- endif -%}
-
+<!-- Start NB Pixel Snippet -->
+  <script>
+    !(function (e, n, t, i, p, a, s) {
+      e[i] ||
+        (((p = e[i] =
+          function () {
+            p.process ? p.process.apply(p, arguments) : p.queue.push(arguments);
+          }).queue = []),
+        (p.t = +new Date()),
+        ((a = n.createElement(t)).async = 1),
+        (a.src = 'https://static.newsbreak.com/business/tracking/nbpixel.js?t=' + 864e5 * Math.ceil(new Date() / 864e5)),
+        (s = n.getElementsByTagName(t)[0]).parentNode.insertBefore(a, s));
+    })(window, document, 'script', 'nbpix'),
+      nbpix('init', 'ID-1774661252033724418'),
+      nbpix('event', 'pageload');
+  </script>
+<!-- End NB Pixel Snippet -->
   <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
