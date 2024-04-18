@@ -101,7 +101,8 @@
       {% if option_disabled -%}
         {{- 'products.product.value_unavailable' | t: option_value: value -}}
       {%- else -%}
-        tt{{- value -}}
+        <span>{{- value -}}</span>
+        <span><input type="number"></span>
       {%- endif %}
     </option>
   {%- endif -%}
