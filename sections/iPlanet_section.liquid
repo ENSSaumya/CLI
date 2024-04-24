@@ -8,153 +8,58 @@
                                 </div>
                               
                                 <div class="formElement_2 form-group fadeMe text clearfix col-sm-12 email paymentCount" data-count="2">
-                                    <label class="fitText block_label" style="display: block;">Email: *</label>
+                                    <label class="fitText block_label" style="display: block;">Official Email Id: *</label>
                                     <input class="form-control email_confirm" required id="form_input_2" name="Email: " type="email" placeholder="">
                                 </div>
-                              
+              
                                 <div class="formElement_3 form-group fadeMe text clearfix col-sm-12 phone paymentCount" data-count="3">
-                                    <label class="fitText block_label" style="display: block;">Contact Number: *</label>
+                                    <label class="fitText block_label" style="display: block;">Mobile Number: *</label>
                                     <div class="inputWrapper" style="position: relative;">
                                         <span>+91</span>
                                         <input class="form-control" required name="Contact Number:" type="tel" pattern="[0-9]*" maxlength="10" placeholder="">
                                     </div>
                                 </div>
-                              
-                                <div class="formElement_4 form-group fadeMe text clearfix col-sm-12  paymentCount" data-count="4" id="form_input_4" >
+
+                                <div class="formElement_3a form-group fadeMe text clearfix col-sm-12 companyName paymentCount" data-count="3a">
+                                    <label class="fitText block_label" style="display: block;">Company Name: *</label>
+                                    <input class="form-control" required id="form_input_3a" name="companyName: " type="text" placeholder="">
+                                </div>
+
+                                <div class="formElement_3b form-group fadeMe text clearfix col-sm-12 gstNumber paymentCount" data-count="3b">
+                                    <label class="fitText block_label" style="display: block;">GST: *</label>
+                                    <input class="form-control" required id="form_input_3b" name="gstNumber: " type="text" placeholder="">
+                                </div>
+
+                                <div class="formElement_3c form-group fadeMe text clearfix col-sm-12 designation paymentCount" data-count="3c">
+                                    <label class="fitText block_label" style="display: block;">Designation: *</label>
+                                    <input class="form-control" required id="form_input_3c" name="designation: " type="text" placeholder="">
+                                </div>
+
+                                <div class="formElement_3d form-group fadeMe text clearfix col-sm-12 countEmployee paymentCount" data-count="3d">
+                                    <label class="fitText block_label" style="display: block;">No. of Employees: *</label>
+                                    <input class="form-control" required id="form_input_3d" name="No. of Employees: " type="text" placeholder="">
+                                </div>
+
+                                <div class="formElement_3e form-group fadeMe text clearfix col-sm-12 typeIndustry paymentCount" data-count="3e">
+                                    <label class="fitText block_label" style="display: block;">Type of Industry: *</label>
+                                    <input class="form-control" required id="form_input_3e" name="Type of Industry: " type="text" placeholder="">
+                                </div>
+
+                                <div class="formElement_3f form-group fadeMe text clearfix col-sm-12 city paymentCount" data-count="3f" id="form_input_10">
+                                    <label class="fitText block_label" style="display: block;">City: *</label>
+                                      <select name="City :" class="form-control"  required>
+                                        <option value=""> Please Select </option> 
+                                        <option value="Bangalore"> Bangalore </option>
+                                        <option value="Chennai"> Chennai </option>
+                                        <option value="Coimbatore"> Coimbatore </option>
+                                        <option value="Tiruppur"> Tiruppur </option>
+                                      </select>
+                                </div>
+
+                                <div class="formElement_3f1 form-group fadeMe text clearfix col-sm-12  paymentCount selectedState state-class" data-count="3f1" id="form_input_11">
                                     <div class="row"><div class="col-sm-12 form-group for-floating-label">
-                                        <label class="fitText block_label" style="display: block;">Choose&nbsp;your&nbsp;Product:*</label>
-                                        <select name="Choose&nbsp;your&nbsp;Product:" class="form-control"  required>
-                                            <option value=""> Please Select </option>
-                                            <option value="iPhone"> iPhone </option>
-                                            <option value="Apple Watch "> Apple Watch  </option>
-                                            <option value="MacBook "> MacBook  </option>
-                                            <option value="iPad "> iPad  </option>
-                                            <option value="AirPods "> AirPods  </option>
-                                        </select>
-                                    </div></div>
-                                </div>
-
-                                <div class="formElement_5 form-group fadeMe text clearfix col-sm-12  paymentCount product_category product-class selectedProduct" data-count="5" id="form_input_5">
-                                    <div class="row"><div class="col-sm-12 form-group for-floating-label">
-                                        <label class="fitText block_label" style="display: block;">iPhone Products:*</label>
-                                        <select name="iPhone Products:" class="form-control" required>
-                                            <option value="" sku=""> Please Select </option>
-                                            <option value="iPhone 13" sku="MLPJ3HN/A"> iPhone 13</option>
-                                            <option value="iPhone 14" sku="MPVA3HN/A"> iPhone 14</option>
-                                            <option value="iPhone 14 Plus" sku="MQ513HN/A"> iPhone 14 Plus</option>
-                                            <option value="iPhone 14 Pro" sku="MQ0G3HN/A"> iPhone 14 Pro</option>
-                                            <option value="iPhone 14 Pro Max" sku="MQ9T3HN/A"> iPhone 14 Pro Max</option>
-                                            <option value="iPhone 15" sku="MTP03HN/A"> iPhone 15 </option>
-                                            <option value="iPhone 15 Plus" sku="MU0Y3HN/A"> iPhone 15 Plus</option>
-                                            <option value="iPhone 15 Pro" sku="MTUV3HN/A"> iPhone 15 Pro</option>
-                                            <option value="iPhone 15 Pro Max" sku="MU7G3HN/A"> iPhone 15 Pro Max </option>
-                                        </select>
-                                    </div></div>
-                                </div>
-
-                                <div class="formElement_6 form-group fadeMe text clearfix col-sm-12  paymentCount product_category product-class" data-count="6" id="form_input_6">
-                                    <div class="row"><div class="col-sm-12 form-group for-floating-label">
-                                        <label class="fitText block_label" style="display: block;">Apple Watch Products:*</label>
-                                        <select name="Apple Watch Products:" class="form-control"  required>
-                                            <option value="" sku=""> Please Select </option>
-                                            <option value="Watch S7" sku="MKL33HN/A"> Watch S7	 </option>
-                                            <option value="Watch S8" sku="MNJ23HN/A"> Watch S8	 </option>
-                                            <option value="Watch S9" sku="MRY83HN/A"> Watch S9	 </option>
-                                            <option value="Watch Ultra" sku="MQFX3HN/A"> Watch Ultra</option>
-                                            <option value="Watch SE" sku="MRE33HN/A"> Watch SE </option>
-                                        </select>
-                                    </div></div>
-                                </div>
-
-                                <div class="formElement_7 form-group fadeMe text clearfix col-sm-12  paymentCount product_category product-class" data-count="7" id="form_input_7">
-                                    <div class="row"><div class="col-sm-12 form-group for-floating-label"><label class="fitText block_label" style="display: block;">MacBook Products:*</label>
-                                        <select name="MacBook Products:"  class="form-control" required >
-                                            <option value="" sku=""> Please Select </option>
-                                            <option value="MacBook Air" sku="MGND3HN/A"> MacBook Air	 </option>
-                                            <option value="MacBook Pro" sku="MNEP3HN/A"> MacBook Pro </option>
-                                        </select>
-                                    </div></div>
-                                </div>
-
-                                <div class="formElement_8 form-group fadeMe text clearfix col-sm-12  paymentCount product_category product-class" data-count="8" id="form_input_8" ><div class="row">
-                                    <div class="col-sm-12 form-group for-floating-label"><label class="fitText block_label" style="display: block;">iPad Products:*</label>
-                                        <select name="iPad Products:" class="form-control" required>
-                                            <option value="" sku=""> Please Select </option>
-                                            <option value="iPad" sku="MK2K3HN/A"> iPad </option>
-                                        </select>
-                                    </div></div>
-                                </div>
-
-                                <div class="formElement_9 form-group fadeMe text clearfix col-sm-12  paymentCount product_category product-class" data-count="9" id="form_input_9" >
-                                    <div class="row"><div class="col-sm-12 form-group for-floating-label">
-                                        <label class="fitText block_label" style="display: block;">AirPods Products:*</label>
-                                        <select name="AirPods Products:" class="form-control" required>
-                                           <option value="" sku=""> Please Select </option>
-                                           <option value="AirPods" sku="MPNY3HN/A "> AirPods	 </option>
-                                           <option value="AirPods Pro" sku="MQD83HN/A"> AirPods Pro </option>
-                                        </select>
-                                    </div></div>
-                                </div>
-
-                                <div class="formElement_10 form-group fadeMe text clearfix col-sm-12  paymentCount" data-count="10" id="form_input_10" ><div class="row">
-                                    <div class="col-sm-12 form-group for-floating-label">
-                                        <label class="fitText block_label" style="display: block;">Choose your State: *</label>
-                                        <select name="Choose your State: " class="form-control" required>
-                                            <option value=""> Please Select </option>
-                                            <option value="Tamil Nadu"> Tamil Nadu </option>
-                                            <option value="Pondicherry"> Pondicherry </option>
-                                            <option value="Karnatka"> Karnatka </option>
-                                            <option value="Kerala"> Kerala </option>
-                                        </select>
-                                    </div></div>
-                                </div>
-
-                                <div class="formElement_11 form-group fadeMe text clearfix col-sm-12  paymentCount selectedState state-class" data-count="11"id="form_input_11">
-                                    <div class="row"><div class="col-sm-12 form-group for-floating-label">
-                                        <label class="fitText block_label" style="display: block;">Choose Your Tamil Nadu Store:*</label>
-                                        <select name="Choose Your Tamil Nadu Store:" class="form-control" required>
-                                            <option value="" storecode=""> Please Select </option>
-                                            <option value="Chennai - Mogappair" storecode="MGP1"> Chennai - Mogappair </option>
-                                            <option value="Chennai - OMR" storecode="OMR1"> Chennai - OMR </option>
-                                            <option value="Chennai - Pondy Bazaar" storecode="PBZ1"> Chennai - Pondy Bazaar </option>
-                                            <option value="Chennai - Tambaram"  storecode="TAM1"> Chennai - Tambaram </option>
-                                            <option value="Chennai - Valasaravakkam" storecode="VAL1"> Chennai - Valasaravakkam </option>
-                                            <option value="Coimbatore - 100 Feet Road" storecode="IND1"> Coimbatore - 100 Feet Road </option>
-                                            <option value="Coimbatore - Brookefields Mall" storecode="CBE4"> Coimbatore - Brookefields Mall </option>
-                                            <option value="Coimbatore - Prozone Mall" storecode="PZM1"> Coimbatore - Prozone Mall </option>
-                                            <option value="Coimbatore - R.S Puram" storecode="TVHU"> Coimbatore - R.S Puram </option>
-                                            <option value="Coimbatore - Trichy Road" storecode="CBE7"> Coimbatore - Trichy Road </option>
-                                            <option value="Dindigul - Palani Rd" storecode="DGL1"> Dindigul - Palani Rd </option>
-                                            <option value="Vellore - Anna Salai" storecode="VLR1"> Vellore - Anna Salai </option>
-                                            <option value="Madurai - Bypass Road" storecode="MDU1"> Madurai - Bypass Road </option>
-                                            <option value="Madurai - Simmakkal" storecode="MDU3"> Madurai - Simmakkal </option>
-                                            <option value="Nagercoil - KP Road" storecode="NCL1"> Nagercoil - KP Road </option>
-                                            <option value="Salem - Multiplex Road" storecode="SLM1"> Salem - Multiplex Road </option>
-                                            <option value="Tirunelveli - Palayamkottai" storecode="TVL1"> Tirunelveli - Palayamkottai </option>
-                                            <option value="Tiruppur - Avinashi Road" storecode="TRP1"> Tiruppur - Avinashi Road </option>
-                                          
-                                            <!-- <option value="Trichy - Kailash Nagar" storecode=""> Trichy - Kailash Nagar </option>
-                                            <option value="Trichy - Thillai Nagar" storecode=""> Trichy - Thillai Nagar </option>
-                                            <option value="Madurai - Anna Nagar"  storecode=""> Madurai - Anna Nagar </option> -->
-                                          
-                                        </select>
-                                    </div></div>
-                                </div>
-
-                                <div class="formElement_12 form-group fadeMe text clearfix col-sm-12  paymentCount state-class" data-count="12"  id="form_input_12">
-                                    <div class="row"><div class="col-sm-12 form-group for-floating-label">
-                                        <label class="fitText block_label" style="display: block;">Choose Your Pondicherry Store:*</label>
-                                        <select name="Choose Your Pondicherry Store:" class="form-control" required>
-                                            <option value="" storecode=""> Please Select </option>
-                                            <option value="Pondicherry - Providence Mall" storecode="PNY1"> Pondicherry - Providence Mall </option>
-                                        </select>
-                                    </div></div>
-                                </div>
-
-                                <div class="formElement_13 form-group fadeMe text clearfix col-sm-12  paymentCount state-class" data-count="13" id="form_input_13">
-                                    <div class="row"><div class="col-sm-12 form-group for-floating-label">
-                                        <label class="fitText block_label" style="display: block;">Choose Your Karnatka Store:*</label>
-                                        <select name="Choose Your Karnatka Store:" class="form-control" required>
+                                        <label class="fitText block_label" style="display: block;">Choose Your Banglore Store: *</label>
+                                        <select name="Choose Your Banglore Store:" class="form-control" required>
                                             <option value="" storecode=""> Please Select </option>
                                             <option value="Bangalore - Banashankari" storecode="BSK1">  Bangalore - Banashankari     </option>
                                             <option value="Bangalore - Forum South Bangalore" storecode="NSN1"> Bangalore - Forum South Bangalore </option>
@@ -168,30 +73,47 @@
                                             <option value="Bangalore - Royal Meenakshi Mall" storecode="RMM1"> Bangalore - Royal Meenakshi Mall </option>
                                             <option value="Bangalore - VR Bengaluru" storecode="VRM1"> Bangalore - VR Bengaluru </option>
                                             <option value="Bangalore - Yelahanka New Town" storecode="YNK1"> Bangalore - Yelahanka New Town </option>
-                                            <option value="Mysore - Mall Of Mysore" storecode="MYS1"> Mysore - Mall Of Mysore </option>
                                         </select>
                                     </div></div>
                                 </div>
 
-                                <div class="formElement_14 form-group fadeMe text clearfix col-sm-12  paymentCount state-class" data-count="14" id="form_input_14">
+                                  <div class="formElement_3f2 form-group fadeMe text clearfix col-sm-12  paymentCount state-class" data-count="3f2" id="form_input_12">
                                     <div class="row"><div class="col-sm-12 form-group for-floating-label">
-                                        <label class="fitText block_label" style="display: block;">Choose Your Kerala Store:*</label>
-                                        <select name="Choose Your Kerala Store:" class="form-control" required>
+                                        <label class="fitText block_label" style="display: block;">Choose Your Chennai Store:*</label>
+                                        <select name="Choose Your Chennai Store:" class="form-control" required>
                                             <option value="" storecode=""> Please Select </option>
-                                            <option value="Kannur - Thana Jn" storecode="KNR1"> Kannur - Thana Jn </option>
-                                            <option value="Kottayam - Lal Bahadur Shastri Road" storecode="KOT1"> Kottayam - Lal Bahadur Shastri Road </option>
-                                            <option value="Kochi - Vytilla" storecode="VYT1"> Kochi - Vytilla </option>
-                                          
-                                            <!-- 
-                                              <option value="Palakkad - Stadium Bypass Road" storecode=""> Palakkad - Stadium Bypass Road </option>
-                                              <option value="Trivandrum - Pulimoodu Junction" storecode=""> Trivandrum - Pulimoodu Junction </option>
-                                              <option value="Trivandrum - Mall of Travancore" storecode=""> Trivandrum - Mall of Travancore </option>
-                                              -->
-
-                                          
+                                            <option value="Chennai - Mogappair" storecode="MGP1"> Chennai - Mogappair </option>
+                                            <option value="Chennai - OMR" storecode="OMR1"> Chennai - OMR </option>
+                                            <option value="Chennai - Pondy Bazaar" storecode="PBZ1"> Chennai - Pondy Bazaar </option>
+                                            <option value="Chennai - Tambaram"  storecode="TAM1"> Chennai - Tambaram </option>
+                                            <option value="Chennai - Valasaravakkam" storecode="VAL1"> Chennai - Valasaravakkam </option>
                                         </select>
                                     </div></div>
-                                </div>
+                                  </div>
+
+                                  <div class="formElement_3f3 form-group fadeMe text clearfix col-sm-12  paymentCount state-class" data-count="3f3" id="form_input_13">
+                                    <div class="row"><div class="col-sm-12 form-group for-floating-label">
+                                        <label class="fitText block_label" style="display: block;">Choose Your Coimbatore Store:*</label>
+                                        <select name="Choose Your Coimbatore Store:" class="form-control" required>
+                                            <option value="" storecode=""> Please Select </option>
+                                            <option value="Coimbatore - 100 Feet Road" storecode="IND1"> Coimbatore - 100 Feet Road </option>
+                                            <option value="Coimbatore - Brookefields Mall" storecode="CBE4"> Coimbatore - Brookefields Mall </option>
+                                            <option value="Coimbatore - Prozone Mall" storecode="PZM1"> Coimbatore - Prozone Mall </option>
+                                            <option value="Coimbatore - R.S Puram" storecode="TVHU"> Coimbatore - R.S Puram </option>
+                                            <option value="Coimbatore - Trichy Road" storecode="CBE7"> Coimbatore - Trichy Road </option>
+                                        </select>
+                                    </div></div>
+                                  </div>
+
+                                  <div class="formElement_3f4 form-group fadeMe text clearfix col-sm-12  paymentCount state-class" data-count="3f4" id="form_input_14">
+                                    <div class="row"><div class="col-sm-12 form-group for-floating-label">
+                                        <label class="fitText block_label" style="display: block;">Choose Your Tiruppur Store:*</label>
+                                        <select name="Choose Your Tiruppur Store:" class="form-control" required>
+                                            <option value="" storecode=""> Please Select </option>
+                                            <option value="Tiruppur - Avinashi Road" storecode="TRP1"> Tiruppur - Avinashi Road </option>
+                                        </select>
+                                    </div></div>
+                                  </div>
                          <div class="form_submit_div text-center">
                             <input type="button" value="Submit" class="btn" inquire-form>
                         </div>
@@ -299,6 +221,11 @@ $(document).ready(function() {
           var name = form?.querySelector('[name="name: "]')?.value;
           var email = form?.querySelector('[name="Email: "]')?.value;
           var number = form?.querySelector('[name="Contact Number:"]')?.value;
+          var companyName = form?.querySelector('[name="companyName: "]')?.value;
+          var gstNum = form?.querySelector('[name="gstNumber: "]')?.value;
+          var designation = form?.querySelector('[name="designation: "]')?.value;
+          var countEmp = form?.querySelector('[name="No. of Employees: "]')?.value;
+          var industry = form?.querySelector('[name="Type of Industry: "]')?.value;
           var productName = form?.querySelector('.product_category.selectedProduct')?.querySelector('select');
           var selectedProductIndex = productName?.selectedIndex;
           var productSku = productName[selectedProductIndex].getAttribute('sku');
@@ -307,7 +234,7 @@ $(document).ready(function() {
           var store = form?.querySelector('.state-class.selectedState')?.querySelector('select');
           var selectedStoreIndex = store?.selectedIndex;
           var storeName = store[selectedStoreIndex].getAttribute('storecode');
-          if(name !== '' && email !== '' && number !== '' && productSku !== '' && state !== '' && storeName !== '') {
+          if(name !== '' && email !== '' && number !== '' && companyName !== '' && gstNum !== '' && storeName !== '') {
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             var source = urlParams.get("utm_source");
@@ -397,17 +324,16 @@ $(document).ready(function() {
         'AirPods': '#form_input_9'
     };
     const stateMap = {
-        'Tamil Nadu': '#form_input_11',
-        'Pondicherry': '#form_input_12',
-        'Karnatka': '#form_input_13',
-        'Kerala': '#form_input_14'
+        'Banglore': '#form_input_11',
+        'Chennai': '#form_input_12',
+        'Coimbatore': '#form_input_13',
+        'Tiruppur': '#form_input_14'
     };
 
     function DropdownChange(dropdown, map, targetClass, selectionClass) {
         $(targetClass).hide();
         $(dropdown).on('change', function() {
             const selectedText = $(this).find('option:selected').text().trim();
-            console.log('selectedText',selectedText);
             if (map[selectedText]) {
                 $(map[selectedText]).show();
                 $(targetClass).removeClass(selectionClass);
