@@ -381,6 +381,11 @@ $(document).ready(function() {
           var name = form?.querySelector('[name="name: "]')?.value;
           var email = form?.querySelector('[name="Email: "]')?.value;
           var number = form?.querySelector('[name="Contact Number:"]')?.value;
+          var companyName = form?.querySelector('[name="companyName: "]')?.value;
+          var gstNum = form?.querySelector('[name="gstNumber: "]')?.value;
+          var designation= form?.querySelector('[name="designation: "]')?.value;
+          var countEmp = form?.querySelector('[name="No. of Employees: "]')?.value;
+          var industry = form?.querySelector('[name="Type of Industry: "]')?.value;
           var productName = form?.querySelector('.product_category.selectedProduct')?.querySelector('select');
           var selectedProductIndex = productName?.selectedIndex;
           var productSku = productName[selectedProductIndex].getAttribute('sku');
@@ -479,10 +484,10 @@ $(document).ready(function() {
         'AirPods': '#form_input_9'
     };
     const stateMap = {
-        'Tamil Nadu': '#form_input_11',
-        'Pondicherry': '#form_input_12',
-        'Karnatka': '#form_input_13',
-        'Kerala': '#form_input_14'
+        'Banglore': '#form_input_11',
+        'Chennai': '#form_input_12',
+        'Coimbatore': '#form_input_13',
+        'Tiruppur': '#form_input_14'
     };
 
     function DropdownChange(dropdown, map, targetClass, selectionClass) {
