@@ -407,6 +407,7 @@ $(document).ready(function() {
         $(targetClass).hide();
         $(dropdown).on('change', function() {
             const selectedText = $(this).find('option:selected').text().trim();
+            console.log('selectedText',selectedText);
             if (map[selectedText]) {
                 $(map[selectedText]).show();
                 $(targetClass).removeClass(selectionClass);
