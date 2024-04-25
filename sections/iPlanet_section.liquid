@@ -260,14 +260,8 @@ $(document).ready(function() {
       [numField, emailField].forEach((field) => {
         field.addEventListener('input',() => {
           var valueNum = numField.value;
-          var firstNum = ['6','7','8','9'];
           if (/[^0-9]/.test(valueNum)){
             numField.value = valueNum.replace(/[a-zA-Z]/g, '');
-            valueNum.forEach((num) => {
-              if(/[6789]/.test(num[0])){
-                console.log('not 6789')
-                numField.value = valueNum;
-              }
             })
           }
         })
