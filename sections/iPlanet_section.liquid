@@ -261,8 +261,13 @@ $(document).ready(function() {
         field.addEventListener('input',() => {
           var valueNum = numField.value;
           var firstNum = ['6','7','8','9'];
-          if (/[^0-9]/.test(valueNum) && ){
+          if (/[^0-9]/.test(valueNum)){
             numField.value = valueNum.replace(/[a-zA-Z]/g, '');
+            valueNum.forEach((num) => {
+              if(/[6789]/.test(num[0])){
+                numField.value = valueNum;
+              }
+            })
           }
         })
       })
