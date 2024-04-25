@@ -258,7 +258,7 @@ $(document).ready(function() {
    $('.form-control.email_confirm').on('input', function() {
     var email = $(this).val();
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-      $('#alertMessage').text('');
+      $('#alertMessage').text('Enter a valid mail Id');
     }
   });
       var numField = document.querySelector(".form-control[type='tel']");
