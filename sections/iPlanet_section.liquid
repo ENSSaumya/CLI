@@ -137,13 +137,13 @@
                   </div>
         </form>
     </div>
-<div class="thanku-msg-div Container page-width">
+<!-- <div class="thanku-msg-div Container page-width">
  <p class="thanku-message">Your enquiry has been recorded.</p> 
-</div>
+</div> -->
   
 </section>
 <style>
-/ ******************** custome code by Sandhya CSS Start ******************** /
+/ ****************** custome code by Sandhya CSS Start ****************** /
   .thanku-msg-div.Container.page-width {
     display: none;
     text-align: center;
@@ -206,7 +206,7 @@
   .inputWrapper {
     display: flex;
 }
-/ ******************** custome code by Sandhya CSS END ******************** /
+/ ****************** custome code by Sandhya CSS END ****************** /
 </style>
                 
 {% schema %}
@@ -229,41 +229,13 @@
 
 <script>
 $(document).ready(function() {
-  window.addEventListener('DOMContentLoaded', function() {
-    var inquire_form = document.querySelectorAll('[inquire-form]');
-    if(inquire_form.length !== 0) {
-      inquire_form.forEach((form) => {
-        form.addEventListener('click', function() {
-          var form = this.closest('form');
-          var name = form?.querySelector('[name="name: "]')?.value;
-          var email = form?.querySelector('[name="Email: "]')?.value;
-          var number = form?.querySelector('[name="Contact Number:"]')?.value;
-          var companyName = form?.querySelector('[name="companyName: "]')?.value;
-          var gstNum = form?.querySelector('[name="gstNumber: "]')?.value;
-          var designation = form?.querySelector('[name="designation: "]')?.value;
-          var countEmp = form?.querySelector('[name="No. of Employees: "]')?.value;
-          var industry = form?.querySelector('[name="Type of Industry: "]')?.value;
-          var productName = form?.querySelector('.product_category.selectedProduct')?.querySelector('select');
-          var selectedProductIndex = productName?.selectedIndex;
-          var productSku = productName[selectedProductIndex].getAttribute('sku');
-          var productTitle = productName.value;
-          var state = form?.querySelector('[name="Choose your State: "]')?.value;
-          var store = form?.querySelector('.state-class.selectedState')?.querySelector('select');
-          var selectedStoreIndex = store?.selectedIndex;
-          var storeName = store[selectedStoreIndex].getAttribute('storecode');
-        });
-      });
-    }
-  });
-
-  
-// selected data show in dropdown
-const stateMap = {
-    'Bangalore': '#form_input_11',
-    'Chennai': '#form_input_12',
-    'Coimbatore': '#form_input_13',
-    'Tiruppur': '#form_input_14'
-};
+    // selected data show in dropdown
+    const stateMap = {
+        'Bangalore': '#form_input_11',
+        'Chennai': '#form_input_12',
+        'Coimbatore': '#form_input_13',
+        'Tiruppur': '#form_input_14'
+    };
 
     function DropdownChange(dropdown, map, targetClass, selectionClass) {
         $(targetClass).hide();
@@ -279,7 +251,8 @@ const stateMap = {
             }
         });
     }
-   DropdownChange('#form_input_10', stateMap, '.state-class', 'selectedState');
 
+    DropdownChange('#form_input_10', stateMap, '.state-class', 'selectedState');
 });
+
 </script>
