@@ -265,6 +265,7 @@ $(document).ready(function() {
             numField.value = valueNum.replace(/[a-zA-Z]/g, '');
             valueNum.forEach((num) => {
               if(/[6789]/.test(num[0])){
+                console.log('not 6789')
                 numField.value = valueNum;
               }
             })
