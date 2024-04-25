@@ -268,8 +268,8 @@ $(document).ready(function() {
         'Tiruppur': '#form_input_15'
     };
     function Validate(){
-      var numField = document.querySelector(".form-control[type='tel']");
-      var emailField = document.querySelector(".form-control[type='email']");
+      var numField = document.querySelector(".form-control[type='tel']").textContent;
+      var emailField = document.querySelector(".form-control[type='email']").textContent;
       console.log(numField,"--",emailField)
     }
   Validate();
