@@ -256,6 +256,7 @@ $(document).ready(function() {
         'Tiruppur': '#form_input_15'
     };
    $('.form-control.email_confirm').on('input', function() {
+     console.log('check')
     var email = $(this).val();
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
       $('#alertMessage').text('Enter a valid mail Id');
