@@ -258,7 +258,6 @@ $(document).ready(function() {
    $('.form-control.email_confirm').on('input', function() {
     var email = $(this).val();
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-      console.log('333')
       $('#alertMessage').text('Enter a valid mail Id');
     }
   });
