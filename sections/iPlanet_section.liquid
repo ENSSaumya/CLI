@@ -271,7 +271,7 @@ $(document).ready(function() {
       var emailField = document.querySelector(".form-control[type='email']");
       // console.log(numField,"--",emailField)
   (numField, emailField).addEventListener('input',() => {
-      console.log(numField.value,"--",emailField.value);
+      console.log(numField,"--",emailField);
   })
     function DropdownChange(dropdown, map, targetClass, selectionClass) {
         $(targetClass).hide();
