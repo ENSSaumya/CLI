@@ -270,8 +270,10 @@ $(document).ready(function() {
       var numField = document.querySelector(".form-control[type='tel']");
       var emailField = document.querySelector(".form-control[type='email']");
       // console.log(numField,"--",emailField)
-  (numField, emailField).addEventListener('input',() => {
-      console.log(numField,"--",emailField);
+  [numField, emailField].forEach((field) => {
+    field.addEventListener('input',() => {
+      console.log(numField.value,"--",emailField.value);
+    })
   })
     function DropdownChange(dropdown, map, targetClass, selectionClass) {
         $(targetClass).hide();
