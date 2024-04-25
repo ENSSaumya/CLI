@@ -272,7 +272,7 @@ $(document).ready(function() {
       [numField, emailField].forEach((field) => {
         field.addEventListener('input',() => {
           var valueNum = numField.value;
-          if (/[^0-9]/.test(valueNum)) {
+          if (/[^0-9]/.test(valueNum)){
             numField.value = valueNum.replace(/[a-zA-Z]/g, '');
           }
         })
