@@ -269,12 +269,14 @@ $(document).ready(function() {
     };
       var numField = document.querySelector(".form-control[type='tel']");
       var emailField = document.querySelector(".form-control[type='email']");
-      // console.log(numField,"--",emailField)
-  [numField, emailField].forEach((field) => {
-    field.addEventListener('input',() => {
-      console.log(numField.value,"--",emailField.value);
-    })
-  })
+      [numField, emailField].forEach((field) => {
+        field.addEventListener('input',() => {
+          if((numField.value).exec(/[^0-9]/g)){
+            console.log('ccc')
+          }
+        })
+      })
+  
     function DropdownChange(dropdown, map, targetClass, selectionClass) {
         $(targetClass).hide();
         $(dropdown).on('change', function() {
