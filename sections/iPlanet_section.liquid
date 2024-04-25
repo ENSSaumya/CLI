@@ -88,17 +88,11 @@
                                         <select name="Choose Your Banglore Store:" class="form-control" required>
                                             <option value="" storecode=""> Please Select </option>
                                             <option value="Bangalore - Banashankari" storecode="BSK1">  Bangalore - Banashankari     </option>
-                                            <option value="Bangalore - Forum South Bangalore" storecode="NSN1"> Bangalore - Forum South Bangalore </option>
-                                            <option value="Bangalore - Hennur" storecode="HNR1"> Bangalore - Hennur </option>
-                                            <option value="Bangalore - Indiranagar" storecode="IND1"> Bangalore - Indiranagar </option>
+                                            <option value="Bangalore - Forum South Bangalore" storecode="NSN1"> Bangalore -  Forum South Bangalore </option>
                                             <option value="Bangalore - Jayanagar" storecode="JNG1"> Bangalore - Jayanagar </option>
-                                            <option value="Bangalore - JP Nagar" storecode="JPN"> Bangalore - JP Nagar </option>
-                                            <option value="Bangalore - Kamanahalli" storecode="KAM1"> Bangalore - Kamanahalli </option>
-                                            <option value="Bangalore - Nexus Shantiniketan" storecode="NSN1"> Bangalore - Nexus Shantiniketan </option>
-                                            <option value="Bangalore - New BEL Road" storecode="BEL1"> Bangalore - New BEL Road </option>
-                                            <option value="Bangalore - Royal Meenakshi Mall" storecode="RMM1"> Bangalore - Royal Meenakshi Mall </option>
-                                            <option value="Bangalore - VR Bengaluru" storecode="VRM1"> Bangalore - VR Bengaluru </option>
-                                            <option value="Bangalore - Yelahanka New Town" storecode="YNK1"> Bangalore - Yelahanka New Town </option>
+                                            <option value="Bangalore - Indiranagar" storecode="IND1"> Bangalore - Indiranagar </option>
+                                            <option value="Bangalore - New BEL Road" storecode="BEL1"> Bangalore - Jayanagar </option>
+                                            <option value="Bangalore - VR Bengaluru" storecode="VRM1"> Bangalore - JP Nagar </option>
                                         </select>
                                     </div></div>
                                 </div>
@@ -108,11 +102,8 @@
                                         <label class="fitText block_label" style="display: block;">Choose Your Chennai Store:*</label>
                                         <select name="Choose Your Chennai Store:" class="form-control" required>
                                             <option value="" storecode=""> Please Select </option>
-                                            <option value="Chennai - Mogappair" storecode="MGP1"> Chennai - Mogappair </option>
                                             <option value="Chennai - OMR" storecode="OMR1"> Chennai - OMR </option>
                                             <option value="Chennai - Pondy Bazaar" storecode="PBZ1"> Chennai - Pondy Bazaar </option>
-                                            <option value="Chennai - Tambaram"  storecode="TAM1"> Chennai - Tambaram </option>
-                                            <option value="Chennai - Valasaravakkam" storecode="VAL1"> Chennai - Valasaravakkam </option>
                                         </select>
                                     </div></div>
                                   </div>
@@ -122,11 +113,8 @@
                                         <label class="fitText block_label" style="display: block;">Choose Your Coimbatore Store:*</label>
                                         <select name="Choose Your Coimbatore Store:" class="form-control" required>
                                             <option value="" storecode=""> Please Select </option>
-                                            <option value="Coimbatore - 100 Feet Road" storecode="IND1"> Coimbatore - 100 Feet Road </option>
                                             <option value="Coimbatore - Brookefields Mall" storecode="CBE4"> Coimbatore - Brookefields Mall </option>
-                                            <option value="Coimbatore - Prozone Mall" storecode="PZM1"> Coimbatore - Prozone Mall </option>
                                             <option value="Coimbatore - R.S Puram" storecode="TVHU"> Coimbatore - R.S Puram </option>
-                                            <option value="Coimbatore - Trichy Road" storecode="CBE7"> Coimbatore - Trichy Road </option>
                                         </select>
                                     </div></div>
                                   </div>
@@ -272,7 +260,8 @@ $(document).ready(function() {
       [numField, emailField].forEach((field) => {
         field.addEventListener('input',() => {
           var valueNum = numField.value;
-          if (/[^0-9]/.test(valueNum)){
+          var firstNum = ['6','7','8','9'];
+          if (/[^0-9]/.test(valueNum) && ){
             numField.value = valueNum.replace(/[a-zA-Z]/g, '');
           }
         })
