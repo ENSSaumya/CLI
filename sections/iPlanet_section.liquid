@@ -267,12 +267,12 @@ $(document).ready(function() {
         'Salem': '#form_input_14',
         'Tiruppur': '#form_input_15'
     };
-    function Validate(){
-      var numField = document.querySelector(".form-control[type='tel']").textContent;
-      var emailField = document.querySelector(".form-control[type='email']").textContent;
-      console.log(numField,"--",emailField)
-    }
-  Validate();
+      var numField = document.querySelector(".form-control[type='tel']");
+      var emailField = document.querySelector(".form-control[type='email']");
+      // console.log(numField,"--",emailField)
+  (numField, emailField).addEventListener('change',() => {
+      console.log(numField.textContent,"--",emailField.textContent);
+  })
     function DropdownChange(dropdown, map, targetClass, selectionClass) {
         $(targetClass).hide();
         $(dropdown).on('change', function() {
