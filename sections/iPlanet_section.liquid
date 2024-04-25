@@ -267,7 +267,12 @@ $(document).ready(function() {
         'Salem': '#form_input_14',
         'Tiruppur': '#form_input_15'
     };
-
+    function Validate(){
+      var numField = document.querySelector(".form-control[type='tel']");
+      var emailField = document.querySelector(".form-control[type='email']");
+      console.log(numField,"--",emailField)
+    }
+  Validate();
     function DropdownChange(dropdown, map, targetClass, selectionClass) {
         $(targetClass).hide();
         $(dropdown).on('change', function() {
