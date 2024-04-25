@@ -272,7 +272,7 @@ $(document).ready(function() {
       [numField, emailField].forEach((field) => {
         field.addEventListener('input',() => {
           var valueMail = numField.value;
-          if (/[^0-9]/.test(valueNum)){
+          if (/[^0-9]/.test(valueMail)){
             console.log('ccc')
           }
         })
