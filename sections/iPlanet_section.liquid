@@ -262,8 +262,8 @@ $(document).ready(function() {
           var valueNum = numField.value;
           if (/[^0-9]/.test(valueNum)){
             numField.value = valueNum.replace(/[a-zA-Z]/g, '');
-            }else if (!/^[6-9]/.test(valueNum)) {
-              numField.value = valueNum.substring(1); // Remove the first character if it's not 6, 7, 8, or 9
+            }else if (!/^[6-9]\d*$/.test(valueNum)){
+              numField.value = valueNum.substring(1);
             }
           })
         })
