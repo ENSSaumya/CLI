@@ -255,6 +255,12 @@ $(document).ready(function() {
         'Salem': '#form_input_14',
         'Tiruppur': '#form_input_15'
     };
+   $('.form-control.email_confirm').on('input', function() {
+    var email = $(this).val();
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      $('#alertMessage').text(''); // Clear the alert message
+    }
+  });
       var numField = document.querySelector(".form-control[type='tel']");
       var emailField = document.querySelector(".form-control[type='email']");
       [numField, emailField].forEach((field) => {
