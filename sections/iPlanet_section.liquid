@@ -271,7 +271,8 @@ $(document).ready(function() {
       var emailField = document.querySelector(".form-control[type='email']");
       [numField, emailField].forEach((field) => {
         field.addEventListener('input',() => {
-          if((numField.value).exec(/[^0-9]/g)){
+          var valueMail = numField.value;
+          if(valueMail.exec(/[^0-9]/g)){
             console.log('ccc')
           }
         })
