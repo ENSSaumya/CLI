@@ -273,7 +273,7 @@ $(document).ready(function() {
         field.addEventListener('input',() => {
           var valueNum = numField.value;
           if (/[^0-9]/.test(valueNum)) {
-            numField.value = valueNum.replace(/[a-zA-Z]/g, ' ');
+            numField.value = valueNum.replace(/[a-zA-Z]/g, '');
           }
         })
       })
