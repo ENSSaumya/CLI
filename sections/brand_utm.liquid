@@ -1,7 +1,7 @@
 <div class="brand_main">
   {% for block in section.blocks %}
   <div class="header_nav_brand">
-    {% for link in block.settings.header_menu %}
+    {% for link in block.settings.header_menu.links %}
       {% if link.links != blank %}
       <ul class="nav_menu_list">
         <a href="{{ link.links }}"><li>{{ link.title }}</li></a>
