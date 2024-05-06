@@ -1,6 +1,35 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "indulekha",
+    "settings": [],
+    "blocks": [{
+      "type":"image_picker",
+      "name":"Choose Brand",
+      "settings": [{
+        "type": "image_picker",
+        "id":"brand_logo",
+        "label":"Brand Logo"
+      },
+      {
+        "type":"link_list",
+        "id":"header_menu",
+        "label":"Header Menu List"
+      },
+      {
+        "type":"html",
+        "id":"cart_icon",
+        "label": "Cart"
+      },
+      {
+        "type":"html",
+        "id":"human_icon",
+        "label":"Login/Register"
+      },
+      {
+        "type":"html",
+        "id":"track_icon",
+        "label":"Track icon"
+      }]
+    }]
   }
 {% endschema %}
