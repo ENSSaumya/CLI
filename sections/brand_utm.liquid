@@ -19,7 +19,28 @@
     "blocks": [{
       "type":"image_picker",
       "name":"Choose Brand",
-      "settings": [{
+      "settings": [
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 10,
+          "max": 80,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Top",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 10,
+          "max": 80,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Bottom",
+          "default": 16
+      },
+      {
         "type": "image_picker",
         "id":"brand_logo",
         "label":"Brand Logo"
