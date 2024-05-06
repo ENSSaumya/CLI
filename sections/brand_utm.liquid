@@ -28,6 +28,16 @@
           <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
         {% endfor %}
         </ul>
+        <ul class="footer_list_2">
+        {% for link in block.settings.footer_list2 %}
+          <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
+        {% endfor %}
+        </ul>
+        <ul class="footer_list_3">
+        {% for link in block.settings.footer_list3 %}
+          <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
+        {% endfor %}
+        </ul>
       </span>
     </div>
   {% endif %}
