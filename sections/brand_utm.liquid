@@ -3,9 +3,7 @@
   <div class="header_nav_brand">
     <ul class="nav_menu_list">
     {% for link in block.settings.header_menu.links %}
-      {% if link.url != blank %}
-        <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
-      {% endif %}
+      {% if link.url != blank %} <a href="{{ link.url }}"><li>{{ link.title }}</li></a> {% endif %}
     {% endfor %}
     </ul>
   </div>
