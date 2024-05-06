@@ -153,10 +153,20 @@
               "track_icon": "Login",
               "position_track": "3"
             }
+          },
+          "text_rNLHPh": {
+            "type": "text",
+            "settings": {
+              "footer_logo_brd": "shopify:\/\/shop_images\/indulekha.webp",
+              "footer_list1": "product-link",
+              "footer_list2": "",
+              "footer_list3": ""
+            }
           }
         },
         "block_order": [
-          "image_picker_8cATQT"
+          "image_picker_8cATQT",
+          "text_rNLHPh"
         ],
         "settings": {
         }
