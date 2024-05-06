@@ -145,6 +145,7 @@
               "brand_logo": "shopify:\/\/shop_images\/indulekha.webp",
               "header_menu": "indulekha-header",
               "background_header": "#694133",
+              "font_color_header": "#ffffff",
               "cart_icon": "",
               "human_icon": "",
               "track_icon": ""
