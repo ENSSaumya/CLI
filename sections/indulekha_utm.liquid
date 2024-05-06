@@ -1,5 +1,13 @@
 <div class="brand_main">
-  
+  {% for block in section.blocks %}
+  <div class="header_nav_brand">
+    {% for link in block.settings.header_menu %}
+      <ul class="nav_menu_list">
+        <a href="{{ link.links }}"><li>{{ link.title }}</li></a>
+      </ul>
+    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
 {% schema %}
   {
