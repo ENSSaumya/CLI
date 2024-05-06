@@ -8,9 +8,11 @@
     {% for link in block.settings.header_menu.links %}
       {% if link.url != blank %} <a href="{{ link.url }}"><li>{{ link.title }}</li></a> {% endif %}
     {% endfor %}
-      {% if block.settings.cart_icon != blank %}<li>{{ block.settings.cart_icon }}</li> {% endif %}
-      {% if block.settings.track_icon != blank %}<li>{{ block.settings.track_icon }}</li> {% endif %}
-      {% if block.settings.human_icon != blank %}<li>{{ block.settings.human_icon }}</li> {% endif %}
+    <li>
+      {% if block.settings.cart_icon != blank %}<span>{{ block.settings.cart_icon }}</span> {% endif %}
+      {% if block.settings.track_icon != blank %}<span>{{ block.settings.track_icon }}</span> {% endif %}
+      {% if block.settings.human_icon != blank %}<span>{{ block.settings.human_icon }}</span> {% endif %}
+    </li>
     </ul>
   </div>
   {% endfor %}
