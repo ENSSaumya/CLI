@@ -24,17 +24,17 @@
       </div>
       <span class="footer_nav_menu_list">
         <ul class="footer_list_1">
-        {% for link in block.settings.footer_list1 %}
+        {% for link in block.settings.footer_list1.links %}
           <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
         {% endfor %}
         </ul>
         <ul class="footer_list_2">
-        {% for link in block.settings.footer_list2 %}
+        {% for link in block.settings.footer_list2.links %}
           <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
         {% endfor %}
         </ul>
         <ul class="footer_list_3">
-        {% for link in block.settings.footer_list3 %}
+        {% for link in block.settings.footer_list3.links %}
           <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
         {% endfor %}
         </ul>
