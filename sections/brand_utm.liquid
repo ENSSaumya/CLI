@@ -1,5 +1,6 @@
 <div class="brand_main">
   {% for block in section.blocks %}
+  {% if block.type == 'Header' %}
   <div class="header_nav_brand">
     <div class="brand_logo">
       <img src="{{ block.settings.brand_logo | img_url:'master' }}" width="" height=""/>
@@ -15,6 +16,7 @@
     </li>
     </ul>
   </div>
+  {% endif %}
   <div class="footer_nav_brand">
     
   </div>
@@ -25,7 +27,7 @@
     "name": "brand_utm",
     "settings": [],
     "blocks": [{
-      "type":"image_picker",
+      "type":"Header",
       "name":"Header",
       "settings": [
         {
@@ -100,7 +102,7 @@
       }]
     },
     {
-      "type":"text",
+      "type":"Footer",
       "name":"Footer",
       "settings": [{
         "type":"image_picker",
