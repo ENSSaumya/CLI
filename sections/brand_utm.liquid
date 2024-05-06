@@ -1,6 +1,6 @@
 <div class="brand_main">
   {% for block in section.blocks %}
-  <div class="header_nav_brand" style="background-color:{{ block.settings.background_header }}; padding-top:{{ block.settings.padding_top }}px; padding-bottom:{{ block.settings.padding_bottom }}px;">
+  <div class="header_nav_brand">
     <div class="brand_logo">
       <img src="{{ block.settings.brand_logo | img_url:'master' }}" />
     </div>
@@ -79,6 +79,16 @@
     "presets": [{"name":"brand_utm"}]
   }
 {% endschema %}
+
+{% style %}
+{% for block in section.blocks %}
+  .header_nav_brand{
+    background-color:{{ block.settings.background_header }}; 
+    padding-top:{{ block.settings.padding_top }}px;
+    padding-bottom:{{ block.settings.padding_bottom }}px;
+  }
+{% endfor %}
+{% endstyle %}
 
 <style>
   .header_nav_brand{
