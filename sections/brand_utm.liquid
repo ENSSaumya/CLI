@@ -21,6 +21,7 @@
     <div class=footer_nav_brand>
       <div class="footer_brand_logo">
         <img src="{{ block.settings.footer_logo_brd | img_url:'master' }}" width="" height=""/>
+        <p>{{ block.settings.address_brand }}</p>
       </div>
       <span class="footer_nav_menu_list">
         <ul class="footer_list_1">
@@ -128,6 +129,11 @@
       "settings": [{
         "type": "image_picker",
         "id":"footer_logo_brd",
+        "label": "Footer Logo Brand"
+      },
+      {
+        "type": "html",
+        "id":"address_brand",
         "label": "Footer Logo Brand"
       },
      {
