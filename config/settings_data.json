@@ -140,6 +140,8 @@
           "image_picker_8cATQT": {
             "type": "image_picker",
             "settings": {
+              "padding_top": 20,
+              "padding_bottom": 16,
               "brand_logo": "shopify:\/\/shop_images\/indulekha.webp",
               "header_menu": "indulekha-header",
               "background_header": "#694133",
