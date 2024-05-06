@@ -1,6 +1,6 @@
 <div class="brand_main">
   {% for block in section.blocks %}
-  <div class="header_nav_brand">
+  <div class="header_nav_brand" style="background-color:{{ block.settings.background_header }}">
     <div class="brand_logo">
       <img src="{{ block.settings.brand_logo | img_url:'master' }}" />
     </div>
