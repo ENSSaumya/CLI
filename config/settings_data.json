@@ -158,9 +158,11 @@
             "type": "text",
             "settings": {
               "footer_logo_brd": "shopify:\/\/shop_images\/indulekha.webp",
+              "address_brand": "<p><strong>Hindustan Unilever Limited,<\/strong><\/p><p><strong>Unilever House, B. D. Sawant Marg,<\/strong><\/p><p><strong>Chakala, Andheri (E),<\/strong><\/p><p><strong>Mumbai - 400099<\/strong><\/p>",
               "footer_list1": "product-link",
               "footer_list2": "indulekha-information",
-              "footer_list3": "indulekha-menu"
+              "footer_list3": "indulekha-menu",
+              "contact_detail_footer": ""
             }
           }
         },
