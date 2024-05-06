@@ -15,6 +15,9 @@
     </li>
     </ul>
   </div>
+  <div class="footer_nav_brand">
+    
+  </div>
   {% endfor %}
 </div>
 {% schema %}
@@ -23,7 +26,7 @@
     "settings": [],
     "blocks": [{
       "type":"image_picker",
-      "name":"Choose Brand",
+      "name":"Header",
       "settings": [
         {
           "type": "range",
@@ -94,6 +97,15 @@
         "type":"text",
         "id":"position_track",
         "label": "Position of Track Order"
+      }]
+    },
+    {
+      "type":"text",
+      "name":"Footer",
+      "settings": [{
+        "type":"image_picker",
+        "id":"footer_logo_brand",
+        "label":"Footer Brand Logo"
       }]
     }],
     "presets": [{"name":"brand_utm"}]
