@@ -1,5 +1,6 @@
 <div class="brand_main">
   {% for block in section.blocks %}
+  {% if block.type == 'slide' %}
   <div class="header_nav_brand">
     <div class="brand_logo">
       <img src="{{ block.settings.brand_logo | img_url:'master' }}" width="" height=""/>
@@ -15,6 +16,7 @@
     </li>
     </ul>
   </div>
+  {% endif %}
   {% endfor %}
 </div>
 {% schema %}
