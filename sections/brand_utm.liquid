@@ -2,7 +2,7 @@
   {% for block in section.blocks %}
   <div class="header_nav_brand">
     <div class="brand_logo">
-      {{ block.settings.brand_logo | image_url:'master' }}
+      {{ block.settings.brand_logo | img_url:'master' }}
     </div>
     <ul class="nav_menu_list">
     {% for link in block.settings.header_menu.links %}
