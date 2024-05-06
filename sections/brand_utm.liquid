@@ -1,11 +1,11 @@
 <div class="brand_main">
   {% for block in section.blocks %}
-  {% if block.type == 'slide' %}
+  {% if block.type == 'image_picker' %}
   <div class="header_nav_brand">
     <div class="brand_logo">
       <img src="{{ block.settings.brand_logo | img_url:'master' }}" width="" height=""/>
     </div>
-    <ul class="nav_menu_list">
+    <ul class="header_nav_menu_list">
     {% for link in block.settings.header_menu.links %}
       {% if link.url != blank %} <a href="{{ link.url }}"><li>{{ link.title }}</li></a> {% endif %}
     {% endfor %}
@@ -17,6 +17,20 @@
     </ul>
   </div>
   {% endif %}
+  {% if block.type == 'text' %}
+    <div class=footer_nav_brand>
+      <div class="footer_brand_logo">
+        <img src="{{ block.settings.footer_logo_brd | img_url:'master' }}" width="" height=""/>
+      </div>
+      <span class="footer_nav_menu_list">
+        <ul class="footer_list_1">
+        {% for link in block.settings.footer_list1 %}
+          <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
+        {% endfor %}
+        </ul>
+      </span>
+    </div>
+  {% endif %}
   {% endfor %}
 </div>
 {% schema %}
@@ -24,8 +38,8 @@
     "name": "brand_utm",
     "settings": [],
     "blocks": [{
+      "type":"image_picker",
       "name":"Choose Brand",
-      "type":"slide",
       "settings": [
         {
           "type": "range",
@@ -97,6 +111,31 @@
         "id":"position_track",
         "label": "Position of Track Order"
       }]
+    },
+    {
+      "type":"text",
+      "name":"Add Footer",
+      "settings": [{
+        "type": "image_picker",
+        "id":"footer_logo_brd",
+        "label": "Footer Logo Brand"
+      },
+     {
+        "type": "link_list",
+        "id":"footer_list1",
+        "label": "Footer Link 1"
+      },
+     {
+        "type": "link_list",
+        "id":"footer_list2",
+        "label": "Footer Link 2"
+      },
+      {
+        "type": "link_list",
+        "id":"footer_list3",
+        "label": "Footer Link 3"
+      }
+      ]
     }],
     "presets": [{"name":"brand_utm"}]
   }
@@ -109,7 +148,7 @@
     padding-top:{{ block.settings.padding_top }}px;
     padding-bottom:{{ block.settings.padding_bottom }}px;
   }
-  .nav_menu_list li{
+  .header_nav_menu_list li{
     color: {{block.settings.font_color_header}}
   }
 {% endfor %}
@@ -121,14 +160,14 @@
     align-items: center;
     justify-content: space-evenly;
   }
-  .nav_menu_list{
+  .header_nav_menu_list{
     display: contents;
     list-style: none;
   }
-  .nav_menu_list a{
+  .header_nav_menu_list a{
     text-decoration: none;
   }
-  .nav_menu_list li:last-child{
+  .header_nav_menu_list li:last-child{
     display: flex;
     align-content: center;
     flex-wrap: wrap;
