@@ -17,9 +17,14 @@
     </ul>
   </div>
   {% endif %}
-  <div class="footer_nav_brand">
-    
-  </div>
+  {% if block.type == 'Footer' %}
+    <div class="footer_nav_brand">
+      <div class="brand_logo_footer">
+        <img src="{{ block.settings.footer_logo_brand | img_url:'master' }}" width="" height=""/>
+      </div>
+      
+    </div>
+  {% endif %}
   {% endfor %}
 </div>
 {% schema %}
@@ -28,7 +33,7 @@
     "settings": [],
     "blocks": [{
       "type":"Header",
-      "name":"Header",
+      "name":"Pick Header",
       "settings": [
         {
           "type": "range",
@@ -103,7 +108,7 @@
     },
     {
       "type":"Footer",
-      "name":"Footer",
+      "name":"Pick Footer",
       "settings": [{
         "type":"image_picker",
         "id":"footer_logo_brand",
