@@ -1,5 +1,6 @@
 <div class="brand_main">
   {% for block in section.blocks %}
+  {% if block.type == 'Header' %}
   <div class="header_nav_brand">
     <div class="brand_logo">
       <img src="{{ block.settings.brand_logo | img_url:'master' }}" width="" height=""/>
@@ -15,6 +16,12 @@
     </li>
     </ul>
   </div>
+  {% endif %}
+  {% if block.type == 'Footer' %}
+    <div class="footer_nav_brand">
+      
+    </div>
+  {% endif %}
   {% endfor %}
 </div>
 {% schema %}
@@ -22,8 +29,8 @@
     "name": "brand_utm",
     "settings": [],
     "blocks": [{
-      "type":"image_picker",
-      "name":"Choose Brand",
+      "type":"Header",
+      "name":"Add header",
       "settings": [
         {
           "type": "range",
@@ -94,6 +101,15 @@
         "type":"text",
         "id":"position_track",
         "label": "Position of Track Order"
+      }]
+    },
+    {
+      "type":"Footer",
+      "name":"Add footer",
+      "settings":[{
+        "type":"image_picker",
+        "id":"footer_logo_brand",
+        "label": "Footer Logo"
       }]
     }],
     "presets": [{"name":"brand_utm"}]
