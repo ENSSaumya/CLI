@@ -133,6 +133,26 @@
         "type": "New_Cart_Drawer",
         "settings": {
         }
+      },
+      "brand_utm": {
+        "type": "brand_utm",
+        "blocks": {
+          "image_picker_8cATQT": {
+            "type": "image_picker",
+            "settings": {
+              "brand_logo": "shopify:\/\/shop_images\/indulekha.webp",
+              "header_menu": "indulekha-header",
+              "cart_icon": "",
+              "human_icon": "",
+              "track_icon": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_picker_8cATQT"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
