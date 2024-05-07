@@ -283,14 +283,19 @@
 <script>
   var paramsLinks = window.location.href;
   console.log(paramsLinks)
-  let hostName;
+  let hostName = 'https://www.indulekha.co.in/';
   var headerAlt = document.querySelectorAll('.brand_logo img');
-  var footerAlt = document.querySelectorAll('.footer_brand_logo img');
+  // var footerAlt = document.querySelectorAll('.footer_brand_logo img');
   headerAlt.forEach((alt) => {
     var brandurl = alt.getAttribute('alt');
     console.log('url',brandurl)
+    // (paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')) ? (hostName = window.location.hostname): (hostName = 'Invalid Link')
+    if(paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')){
+        if(hostName.matches(brandurl)){
+          console.log('match',brandurl)
+        }
+    }
   })
-  console.log(footerAlt,'headerAlt',headerAlt)
-  (paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')) ? (hostName = window.location.hostname): (hostName = 'Invalid Link')
-  console.log('Brand Name',hostName)
+  // console.log(footerAlt,'headerAlt',headerAlt)
+  // console.log('Brand Name',hostName)
 </script>
