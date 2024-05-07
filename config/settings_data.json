@@ -157,6 +157,8 @@
           "text_rNLHPh": {
             "type": "text",
             "settings": {
+              "margin_top": 70,
+              "margin_bottom": 5,
               "footer_background": "#694133",
               "footer_font_color": "#ffffff",
               "footer_logo_brd": "shopify:\/\/shop_images\/indulekha.webp",
