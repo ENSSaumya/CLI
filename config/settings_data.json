@@ -174,11 +174,29 @@
               "contact_detail_footer": "",
               "position_footer_5": ""
             }
+          },
+          "image_picker_ztCYqf": {
+            "type": "image_picker",
+            "settings": {
+              "padding_top": 16,
+              "padding_bottom": 16,
+              "brand_logo": "shopify:\/\/shop_images\/pewox.png",
+              "header_menu": "",
+              "background_header": "",
+              "font_color_header": "",
+              "cart_icon": "",
+              "position_cart": "",
+              "human_icon": "",
+              "position_login": "",
+              "track_icon": "",
+              "position_track": ""
+            }
           }
         },
         "block_order": [
           "image_picker_8cATQT",
-          "text_rNLHPh"
+          "text_rNLHPh",
+          "image_picker_ztCYqf"
         ],
         "settings": {
         }
