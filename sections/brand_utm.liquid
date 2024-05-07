@@ -1,13 +1,13 @@
 <div class="brand_main">
   {% for block in section.blocks %}
   {% if block.type == 'image_picker' %}
-  <div class="header_nav_brand">
+  <div class="header_nav_brand" style=" background-color:{{ block.settings.background_header }}; padding-top:{{ block.settings.padding_top }}px; padding-bottom:{{ block.settings.padding_bottom }}px;">
     <div class="brand_logo">
       <img src="{{ block.settings.brand_logo | img_url:'master' }}" width="" height=""/>
     </div>
     <ul class="header_nav_menu_list">
     {% for link in block.settings.header_menu.links %}
-      {% if link.url != blank %} <a href="{{ link.url }}"><li>{{ link.title }}</li></a> {% endif %}
+      {% if link.url != blank %} <a href="{{ link.url }}"><li style="color: {{block.settings.font_color_header}};">{{ link.title }}</li></a> {% endif %}
     {% endfor %}
     <li>
       {% if block.settings.cart_icon != blank %}<span style="order:{{ block.settings.position_cart }}px">{{ block.settings.cart_icon }}</span> {% endif %}
@@ -229,11 +229,11 @@
 
 {% style %}
 {% for block in section.blocks %}
-  .header_nav_brand{
+  /* .header_nav_brand{
     background-color:{{ block.settings.background_header }}; 
     padding-top:{{ block.settings.padding_top }}px;
     padding-bottom:{{ block.settings.padding_bottom }}px;
-  }
+  } */
   .header_nav_menu_list li{
     color: {{block.settings.font_color_header}}
   }
