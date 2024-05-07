@@ -157,7 +157,7 @@
           "text_rNLHPh": {
             "type": "text",
             "settings": {
-              "footer_background": "",
+              "footer_background": "#694133",
               "footer_font_color": "#ffffff",
               "footer_logo_brd": "shopify:\/\/shop_images\/indulekha.webp",
               "address_brand": "<p><strong>Hindustan Unilever Limited,<\/strong><\/p><p><strong>Unilever House, B. D. Sawant Marg,<\/strong><\/p><p><strong>Chakala, Andheri (E),<\/strong><\/p><p><strong>Mumbai - 400099<\/strong><\/p>",
