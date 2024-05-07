@@ -202,14 +202,14 @@
               "font_size_footer": "",
               "footer_logo_brd": "shopify:\/\/shop_images\/hul.webp",
               "address_brand": "<p><a href=\"mailto:orders@ponds.in\" target=\"_blank\" title=\"orders@ponds.in\"><span style=\"text-decoration:underline\">orders@ponds.in<\/span><\/a><a href=\"tel:1800-202-4850\" target=\"_blank\">1800-202-4850<\/a><\/p><p><strong>Working Hours<\/strong>- <strong>9am to 6pm <\/strong><\/p><p><strong>*Mon to Sat<\/strong><\/p>",
-              "position_footer_1": "",
+              "position_footer_1": "2",
               "footer_list1": "ponds-footer-top-product-categories",
               "position_footer_2": "",
               "footer_list2": "ponds-footer-trending-products",
               "position_footer_3": "",
               "footer_list3": "ponds-footer-contact-us",
               "position_footer_4": "",
-              "contact_detail_footer": "orders@ponds.in\n\n1800-202-4850\n\nWorking Hours- 9am to 6pm *Mon to Sat",
+              "contact_detail_footer": "",
               "position_footer_5": ""
             }
           }
