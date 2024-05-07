@@ -284,6 +284,8 @@
   var paramsLinks = window.location.href;
   console.log(paramsLinks)
   let hostName;
+  var headerAlt = $(".brand_logo img").attr('alt');
+  console.log('headerAlt',headerAlt)
   (paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')) ? (hostName = window.location.hostname): (hostName = 'Invalid Link')
   console.log('Brand Name',hostName)
 </script>
