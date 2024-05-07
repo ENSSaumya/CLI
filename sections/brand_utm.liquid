@@ -4,7 +4,7 @@
   <div class="header_nav_brand" style=" background-color:{{ block.settings.background_header }}; padding-top:{{ block.settings.padding_top }}px; padding-bottom:{{ block.settings.padding_bottom }}px;">
     {% if block.settings.brand_logo != blank %}
     <div class="brand_logo">
-      <img src="{{ block.settings.brand_logo | img_url:'master' }}" width="" height=""/>
+      <img src="{{ block.settings.brand_logo | img_url:'master' }}" width="" height="" alt="{{ block.settings.brand_logo.alt }}" />
     </div>
     {% endif %}
     <ul class="header_nav_menu_list">
