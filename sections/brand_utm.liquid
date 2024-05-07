@@ -23,7 +23,7 @@
     <div class=footer_nav_brand style="background: {{ block.settings.footer_background }}; margin-top: {{ block.settings.margin_top }}px; margin-bottom: {{ block.settings.margin_bottom }}px;">
       {% if block.settings.footer_logo_brd != blank %}
         <div class="footer_brand_logo">
-          <img src="{{ block.settings.footer_logo_brd | img_url:'master' }}" width="" height=""/>
+          <img src="{{ block.settings.footer_logo_brd | img_url:'master' }}" width="" height="" alt="{{ block.settings.footer_logo_brd.alt }}"/>
           <p style=" color: {{ block.settings.footer_font_color }}; font-size: {{ block.settings.font_size_footer }}px;">{{ block.settings.address_brand }}</p>
         </div>
       {% endif %}
