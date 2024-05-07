@@ -10,9 +10,9 @@
       {% if link.url != blank %} <a href="{{ link.url }}"><li style="color: {{block.settings.font_color_header}};">{{ link.title }}</li></a> {% endif %}
     {% endfor %}
     <li>
-      {% if block.settings.cart_icon != blank %}<span style="order:{{ block.settings.position_cart }}px">{{ block.settings.cart_icon }}</span> {% endif %}
-      {% if block.settings.track_icon != blank %}<span style="order:{{ block.settings.position_track }}px">{{ block.settings.track_icon }}</span> {% endif %}
-      {% if block.settings.human_icon != blank %}<span style="order:{{ block.settings.position_login }}px">{{ block.settings.human_icon }}</span> {% endif %}
+      {% if block.settings.cart_icon != blank %}<span style="order:{{ block.settings.position_cart }};">{{ block.settings.cart_icon }}</span> {% endif %}
+      {% if block.settings.track_icon != blank %}<span style="order:{{ block.settings.position_track }};">{{ block.settings.track_icon }}</span> {% endif %}
+      {% if block.settings.human_icon != blank %}<span style="order:{{ block.settings.position_login }};">{{ block.settings.human_icon }}</span> {% endif %}
     </li>
     </ul>
   </div>
