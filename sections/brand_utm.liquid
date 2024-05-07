@@ -40,9 +40,11 @@
         {% endfor %}
         </ul>
       </span>
-      <div class="contact_detail">
-        <p>{{ block.settings.contact_detail_footer }}</p>
-      </div>
+      {% if block.settings.contact_detail_footer != blank %}
+        <div class="contact_detail">
+          <p>{{ block.settings.contact_detail_footer }}</p>
+        </div>
+      {% endif %}
     </div>
   {% endif %}
   {% endfor %}
