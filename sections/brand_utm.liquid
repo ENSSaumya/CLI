@@ -18,7 +18,7 @@
   </div>
   {% endif %}
   {% if block.type == 'text' %}
-    <div class=footer_nav_brand>
+    <div class=footer_nav_brand style="background: {{ block.settings.footer_background }}; margin-top: {{ block.settings.margin_top }}px; margin-bottom: {{ block.settings.margin_bottom }}px;">
       <div class="footer_brand_logo">
         <img src="{{ block.settings.footer_logo_brd | img_url:'master' }}" width="" height=""/>
         <p>{{ block.settings.address_brand }}</p>
@@ -234,14 +234,14 @@
     padding-top:{{ block.settings.padding_top }}px;
     padding-bottom:{{ block.settings.padding_bottom }}px;
   } */
-  .header_nav_menu_list li{
+  /* .header_nav_menu_list li{
     color: {{block.settings.font_color_header}}
-  }
-  .footer_nav_brand{ 
+  } */
+  /* .footer_nav_brand{ 
     background: {{ block.settings.footer_background }};
     margin-top: {{ block.settings.margin_top }}px;
     margin-bottom: {{ block.settings.margin_bottom }}px;
-  }
+  } */
   .footer_brand_logo p, .footer_nav_menu_list ul li{
     color: {{ block.settings.footer_font_color }};
     font-size: {{ block.settings.font_size_footer }}px;
