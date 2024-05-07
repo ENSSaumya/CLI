@@ -182,7 +182,7 @@
               "padding_bottom": 16,
               "brand_logo": "shopify:\/\/shop_images\/pewox.png",
               "header_menu": "ponds-header",
-              "background_header": "",
+              "background_header": "#ffffff",
               "font_color_header": "#1e1919",
               "cart_icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon-cart\" width=\"19\" height=\"24\" viewbox=\"0 0 19 24\" fill=\"none\">\n      \n      <path d=\"M1.75 6.75H17.25V21.75H1.75V6.75Z\" stroke=\"currentColor\" stroke-width=\"1.5\"><\/path>\n      <path d=\"M13 10.5V5.5C13 2.83333 11.4444 1.5 9.5 1.5C7.55556 1.5 6 2.83333 6 5.5L6 10.5\" stroke=\"currentColor\" stroke-width=\"1.5\"><\/path>\n    <\/svg>",
               "position_cart": "3",
