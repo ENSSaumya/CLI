@@ -284,8 +284,12 @@
   var paramsLinks = window.location.href;
   console.log(paramsLinks)
   let hostName;
-  var headerAlt = $(".brand_logo img").attr('alt');
-  var footerAlt = $(".footer_brand_logo").attr('alt');
+  var headerAlt = document.querySelectorAll('.brand_logo img');
+  var footerAlt = document.querySelectorAll('.footer_brand_logo img');
+  headerAlt.forEach((alt) => {
+    var brandurl = alt.getAttribute('alt');
+    console.log('url',brandurl)
+  })
   console.log(footerAlt,'headerAlt',headerAlt)
   (paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')) ? (hostName = window.location.hostname): (hostName = 'Invalid Link')
   console.log('Brand Name',hostName)
