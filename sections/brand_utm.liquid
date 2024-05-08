@@ -293,8 +293,8 @@
     // if(paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')){
         if(hostName.match(brandurl)){
           console.log('wwww',headerAlt)
-          headerAlt.parentElement('.header_nav_brand').classList.add('hide');
-          headerAlt.parentElement('.footer_nav_brand').classList.add('hide');
+          document.querySelector('.brand_logo img').closest('.header_nav_brand').classList.add('hide');
+          // headerAlt.parentElement('.footer_nav_brand').classList.add('hide');
           // console.log('match',brandurl)
         }
     // }
