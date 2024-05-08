@@ -293,12 +293,9 @@
     // if(paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')){
         if(!hostName.match(brandurl)){
           var header = alt.closest('.header_nav_brand')
-          alt.closest('.header_nav_brand').classList.add('hide');
-          // alt.nextElementSibling.classList.add('hide');
-          console.log('nextElement',header.nextElementSibling.classList.add('hide'))
+          header.classList.add('hide');
+          header.nextElementSibling.classList.add('hide');
         }
     // }
   })
-  // console.log(footerAlt,'headerAlt',headerAlt)
-  // console.log('Brand Name',hostName)
 </script>
