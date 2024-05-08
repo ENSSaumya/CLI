@@ -292,11 +292,14 @@
     // console.log('url',brandurl)
     // (paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')) ? (hostName = window.location.hostname): (hostName = 'Invalid Link')
     // if(paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')){
+    if(paramsLinks.includes('utm_brand')){
+      var brandName = (window.location.search).replace('?utm_brand=','');
+      console.log('sss',brandName)
         if(!hostName.match(brandurl)){
           var header = alt.closest('.header_nav_brand')
           header.classList.add('hide');
           header.nextElementSibling.classList.add('hide');
         }
-    // }
+    }
   })
 </script>
