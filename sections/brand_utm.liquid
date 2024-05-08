@@ -282,20 +282,20 @@
 
 <script>
   var paramsLinks = window.location.href;
-  console.log(paramsLinks)
+  // console.log(paramsLinks)
   let hostName = 'https://www.indulekha.co.in/';
   var headerAlt = document.querySelectorAll('.brand_logo img');
   // var footerAlt = document.querySelectorAll('.footer_brand_logo img');
   headerAlt.forEach((alt) => {
     var brandurl = alt.getAttribute('alt');
-    console.log('url',brandurl)
+    // console.log('url',brandurl)
     // (paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')) ? (hostName = window.location.hostname): (hostName = 'Invalid Link')
     // if(paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')){
         if(hostName.match(brandurl)){
-          console.log('wwww',headerAlt)
+          // console.log('wwww',headerAlt)
           document.querySelector('.brand_logo img').closest('.header_nav_brand').classList.add('hide');
           // headerAlt.parentElement('.footer_nav_brand').classList.add('hide');
-          // console.log('match',brandurl)
+          console.log('match',document.querySelector('.brand_logo img').closest('.header_nav_brand'))
         }
     // }
   })
