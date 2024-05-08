@@ -292,8 +292,8 @@
     // (paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')) ? (hostName = window.location.hostname): (hostName = 'Invalid Link')
     // if(paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')){
         if(!hostName.match(brandurl)){
-          alt.closest('.header_nav_brand').classList.add('hide');
           var header = alt.closest('.header_nav_brand')
+          alt.closest('.header_nav_brand').classList.add('hide');
           // alt.nextElementSibling.classList.add('hide');
           console.log('nextElement',header)
         }
