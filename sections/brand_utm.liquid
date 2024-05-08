@@ -293,8 +293,9 @@
     // if(paramsLinks.includes('utm_source') && paramsLinks.includes('utm_medium')){
         if(!hostName.match(brandurl)){
           alt.closest('.header_nav_brand').classList.add('hide');
+          var header = alt.closest('.header_nav_brand')
           // alt.nextElementSibling.classList.add('hide');
-          console.log('nextElement',alt.closest('.header_nav_brand'))
+          console.log('nextElement',header)
         }
     // }
   })
