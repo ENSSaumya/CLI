@@ -1,6 +1,276 @@
+<div class="smart-wallet">
+    <span>Wallet</span>
+</div>
+<div class="smart-wallet-popup hide-content">
+    <div class="s-w-content">
+        <div class="s-w-cross"><span>&times;</span></div>
+        <div class="s-w-balance-box">
+            <div class="s-w-balance-head">
+                <img src="{{ 'wallet-icon.png' | asset_img_url: '' }}" width="35" height="" />
+                <span>Balance:</span>
+            </div>
+            <p class="s-w-balance-price">Rs. 0</p>
+        </div>
+        <div class="s-w-addmoney-box">
+            <div class="s-w-input-amount">
+                <input type="number" id="s-w-input-amount" min=1 />
+            </div>
+            <div class="s-w-add-amount">
+                <input type="button" id="s-w-add-amount" value="Add Money">
+            </div>
+        </div>
+    </div>
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Smart wallet",
+  "class": "ens-smart-wallet",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header"
+    }
+  ]
+}
 {% endschema %}
+
+<style>
+    .hide-content{
+        display: none !important;
+    }
+    .smart-wallet{
+        position: fixed;
+        top: 50%;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        background: #ffc0c0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-family: inherit;
+        font-weight: 500;
+        box-shadow: 0px 3px 8px -3px #000;
+        cursor: pointer;
+        z-index: 98;
+    }
+    .smart-wallet-popup{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #f6f6f67a;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: block;
+    }
+    .s-w-content{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 480px;
+        max-width: 90%;
+        background: #dddddd;
+        padding: 15px 15px 40px;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        box-shadow: 8px 13px 7px 0px #000;
+    }
+    .s-w-balance-box{
+        width: 200px;
+        background: #ffbb00;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .s-w-balance-head{
+        display: flex;
+        gap: 10px;
+    }
+    .s-w-balance-price{
+        text-align: center;
+        font-size: x-large;
+        margin: 10px auto;
+    }
+    .s-w-addmoney-box{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+    }
+    .s-w-add-amount input{
+        padding: 6px 10px;
+        background: #000000;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    .s-w-input-amount input{
+        border: none;
+        padding: 6px 10px;
+    }
+    .s-w-cross{
+        width: 100%;
+        text-align: right;
+    }
+    .s-w-cross span{
+        padding: 0px 10px;
+        cursor: pointer;
+        font-size: xx-large;
+        display: inline;
+    }
+    .add-amount-error{
+        color: #de0000;
+        margin: 8px 0 0
+    }
+    / use wallet button /
+    .use-wallet{
+        width: 100%;
+        padding: 10px;
+        background: #6b6bff;
+        border-color: #3f3fcc;
+        color: azure;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    / open popup /
+    const smart_wallet = document.querySelector('.smart-wallet')
+    if(smart_wallet){
+        smart_wallet.addEventListener('click',function(){
+            document.querySelector('.smart-wallet-popup').classList.remove('hide-content')
+        })
+    }
+
+    / close popup /
+    const cross = document.querySelector('.s-w-cross span')
+    if(cross){
+        cross.addEventListener('click',function(e){
+            e.preventDefault()
+            document.querySelector('.smart-wallet-popup').classList.add('hide-content')
+        })
+    }
+
+    / close popup on click outside the popup div /
+    const smart_wallet_popup = document.querySelector('.smart-wallet-popup')
+    if(smart_wallet_popup){
+        smart_wallet_popup.addEventListener('click',function(e){
+            const target = e.target
+            const hasClass = target.classList.contains('smart-wallet-popup')
+            if(hasClass){
+                document.querySelector('.smart-wallet-popup').classList.add('hide-content')
+            }
+        })
+    }
+
+    / add money to wallet /
+    const add_amount = document.querySelector('#s-w-add-amount')
+    let isCustomer = ''
+    if(add_amount){
+        add_amount.addEventListener('click',function(){
+            const input_amount = document.querySelector('#s-w-input-amount')
+            isCustomer = {% if customer.name %}true{% endif %}
+            console.log('1...')
+            const add_amount_error = document.querySelector('.add-amount-error')
+            add_amount_error?.remove()
+            if(input_amount?.value == null || input_amount?.value == ''){
+                const message = "Please ensure that the added amount is greater than zero."
+                highlight(message)
+                input_amount.focus()
+                console.log('2...',input_amount)
+            }else if(isCustomer){
+                orderCreate(input_amount.value)
+            }else{
+                const message = "Please <a href='/account/login'>login</a> first to access the wallet features."
+                highlight(message)
+            }
+
+            function highlight(message){
+                const error = document.createElement('p')
+                error.classList.add('add-amount-error')
+                error.innerHTML = message
+                document.querySelector('.s-w-content').appendChild(error)
+            }
+
+            async function orderCreate(input_amount){
+                let formData = new FormData();
+                formData.append('price', input_amount);
+                formData.append('customer_id', `{{ customer.id }}`);
+
+                const requestOptions = {
+                    method: "post",
+                    body: formData
+                };
+
+                fetch("/apps/smart-wallet/add-money-order", requestOptions)
+                .then((response) => response.json())
+                .then((result) => {
+                    console.log(result)
+                    window.location.href = result.order
+                })
+                .catch((error) => console.error(error));
+            }
+        })
+    }
+
+    / get money from wallet /
+    (function(){
+        const requestOptions = {
+            method: "get",
+        };
+        fetch("/apps/smart-wallet/add-money-order", requestOptions)
+        .then((response) => response.json())
+        .then((result) => {
+            console.log(result)
+            const balance_price = document.querySelector('.s-w-balance-price')
+            if(balance_price){
+                const rate = window.Shopify.currency.rate
+                const db_price = result?.walletCustomer[0]?.price || 0
+                const currency_format = "{{ shop.money_with_currency_format }}"
+                const amount = (db_price * rate).toFixed(2)
+                const text = currency_format;
+                const textIndexFirst = text.indexOf("\{\{")
+                const textIndexSecond = text.indexOf("\}\}")
+                const part = text.slice(textIndexFirst,textIndexSecond + 2);
+                const money = currency_format.replace(part,amount)
+
+                console.log('money:',money)
+                balance_price.innerText = money
+            }
+        })
+        .catch((error) => console.error(error));
+
+
+        const checkout_button = document.querySelector('#checkout[name="checkout"]')
+        if(checkout_button){
+            const use_wallet = document.createElement("div")
+            use_wallet.innerHTML = '<button type="button" class="use-wallet" name="use_wallet">Use Wallet</button>'
+            console.log('use_wallet',use_wallet)
+            checkout_button.parentElement.after(use_wallet)
+        }
+
+        / click to use-button /
+        const use_wallet = document.querySelector('.use-wallet')
+        if(use_wallet){
+            use_wallet.addEventListener('click',function(){
+                const requestOptions = {
+                    method: "get",
+                };
+                fetch("/apps/smart-wallet/add-money-order", requestOptions)
+                .then((response) => response.json())
+                .then((result) => {
+                    const db_price = result?.walletCustomer[0]?.price || 0
+                    window.location.href = `/checkout?discount=Use_Wallet`
+                })
+            })
+        }
+    })()
+</script>
