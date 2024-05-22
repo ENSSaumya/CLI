@@ -2,7 +2,7 @@
     <span>Wallet</span>
 </div>
 <div class="smart-wallet-popup hide-content">
-    <div class="s-w-content {{ section.settings.padding-wallet-box }}">
+    <div class="s-w-content {{ section.settings.padding-wallet-box }} {{ section.settings.shadow-wallet-box }}">
         <div class="s-w-cross"><span>&times;</span></div>
         <div class="s-w-balance-box">
             <div class="s-w-balance-head">
@@ -60,6 +60,21 @@
         {
           "value":"More",
           "label":"More"
+        }
+      ]
+    },
+    {
+      "type":"radio",
+      "id":"shadow-wallet-box",
+      "label":"Shadow of Popup",
+      "options": [
+        {
+          "value": "keep",
+          "label": "keep"
+        },
+        {
+          "value":"remove",
+          "label": "remove"
         }
       ]
     },
