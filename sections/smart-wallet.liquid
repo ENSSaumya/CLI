@@ -31,6 +31,11 @@
       "type": "text",
       "id": "header",
       "label": "Header"
+    },
+    {
+      "type":"color_scheme",
+      "id":"content-background-color",
+      "label": "Background of Wallet content"
     }
   ],
   "presets": [{
@@ -78,7 +83,7 @@
         transform: translate(-50%, -50%);
         width: 480px;
         max-width: 90%;
-        background: #dddddd;
+        background: {{ section.settings.content-background-color }};
         padding: 15px 15px 40px;
         border-radius: 5px;
         display: flex;
