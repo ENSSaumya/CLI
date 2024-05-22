@@ -1,5 +1,12 @@
 {
   "sections": {
+    "smart_wallet_ibxHVy": {
+      "type": "smart-wallet",
+      "settings": {
+        "header": "Phoenix",
+        "content-background-color": ""
+      }
+    },
     "9235e166-46f0-46dd-a2c8-09d9d996dbb2": {
       "type": "SliderNew",
       "blocks": {
@@ -352,15 +359,10 @@
       ],
       "settings": {
       }
-    },
-    "smart_wallet_ibxHVy": {
-      "type": "smart-wallet",
-      "settings": {
-        "header": "Phoenix"
-      }
     }
   },
   "order": [
+    "smart_wallet_ibxHVy",
     "9235e166-46f0-46dd-a2c8-09d9d996dbb2",
     "slideshow",
     "ff4f9c42-f069-49fd-bbb9-74819cbb43ad",
@@ -373,7 +375,6 @@
     "eb8568c5-6f2b-46ff-bdc5-28999216126b",
     "3b89b44e-4610-4a0d-8bfb-2fcd7ba49f2b",
     "multiple_tabs_in_a_div_Hyim8V",
-    "multiple_tabs_in_a_div_2_LiCR4y",
-    "smart_wallet_ibxHVy"
+    "multiple_tabs_in_a_div_2_LiCR4y"
   ]
 }
