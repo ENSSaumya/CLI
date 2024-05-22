@@ -5,7 +5,7 @@
       "settings": {
         "header": "Phoenix",
         "width-box": 480,
-        "padding-wallet-box": "less",
+        "padding-wallet-box": "medium",
         "shadow-wallet-box": "none",
         "content-background-color": "#dddddd",
         "text-for-content": "Balance:",
