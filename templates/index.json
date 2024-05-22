@@ -352,6 +352,12 @@
       ],
       "settings": {
       }
+    },
+    "smart_wallet_ibxHVy": {
+      "type": "smart-wallet",
+      "settings": {
+        "header": ""
+      }
     }
   },
   "order": [
@@ -367,6 +373,7 @@
     "eb8568c5-6f2b-46ff-bdc5-28999216126b",
     "3b89b44e-4610-4a0d-8bfb-2fcd7ba49f2b",
     "multiple_tabs_in_a_div_Hyim8V",
-    "multiple_tabs_in_a_div_2_LiCR4y"
+    "multiple_tabs_in_a_div_2_LiCR4y",
+    "smart_wallet_ibxHVy"
   ]
 }
