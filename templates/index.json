@@ -7,7 +7,8 @@
         "width-box": 480,
         "content-background-color": "#dddddd",
         "text-for-content": "Balance:",
-        "logo-wallet": "shopify:\/\/shop_images\/Wallet_Graphic_icon_efaa5b65-828a-4106-b0dc-50e79c15ac54.jpg"
+        "logo-wallet": "shopify:\/\/shop_images\/Wallet_Graphic_icon_efaa5b65-828a-4106-b0dc-50e79c15ac54.jpg",
+        "background-amount": "#ffbb00"
       }
     },
     "9235e166-46f0-46dd-a2c8-09d9d996dbb2": {
