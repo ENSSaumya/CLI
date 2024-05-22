@@ -5,7 +5,7 @@
       "settings": {
         "header": "Phoenix",
         "width-box": 480,
-        "padding-wallet-box": "LESS",
+        "padding-wallet-box": "MORE",
         "content-background-color": "#dddddd",
         "text-for-content": "Balance:",
         "logo-wallet": "shopify:\/\/shop_images\/Wallet_Graphic_icon_efaa5b65-828a-4106-b0dc-50e79c15ac54.jpg",
