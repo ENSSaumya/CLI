@@ -33,6 +33,16 @@
       "label": "Header"
     },
     {
+      "type": "range",
+      "id": "width-box",
+      "min": 450,
+      "max": 600,
+      "step": 10,
+      "unit": "px",
+      "label": "Width of Box",
+      "default": 480
+    },
+    {
       "type":"color",
       "id":"content-background-color",
       "label": "Background of Wallet content"
@@ -81,7 +91,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 480px;
+        width: {{ section.settings.width-box }};
         max-width: 90%;
         background: {{ section.settings.content-background-color }};
         padding: 15px 15px 40px;
