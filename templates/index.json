@@ -4,7 +4,9 @@
       "type": "smart-wallet",
       "settings": {
         "header": "Phoenix",
-        "content-background-color": "#dddddd"
+        "width-box": 480,
+        "content-background-color": "#dddddd",
+        "text-for-content": "Balance:"
       }
     },
     "9235e166-46f0-46dd-a2c8-09d9d996dbb2": {
