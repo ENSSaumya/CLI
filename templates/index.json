@@ -4,7 +4,7 @@
       "type": "smart-wallet",
       "settings": {
         "header": "Phoenix",
-        "width-box": 480,
+        "width-box": 540,
         "padding-wallet-box": "more",
         "shadow-wallet-box": "none",
         "content-background-color": "#dddddd",
