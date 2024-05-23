@@ -33,6 +33,11 @@
       "label": "Header"
     },
     {
+      "type": "color",
+      "id":"main-wallet-background",
+      "label": "Wallet Background Color"
+    },
+    {
       "type": "range",
       "id": "width-box",
       "min": 450,
@@ -147,7 +152,7 @@
         right: 10px;
         width: 50px;
         height: 50px;
-        background: #ffc0c0;
+        background: {{ section.settings.main-wallet-background }};
         border-radius: 50%;
         display: flex;
         justify-content: center;
