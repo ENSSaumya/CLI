@@ -6,7 +6,7 @@
         "header": "Phoenix",
         "main-wallet-background": "#ffc0c0",
         "padding-popup-wallet": 40,
-        "position-float-wallet": "right",
+        "position-float-wallet": "left",
         "vertical-position-float": 4,
         "width-box": 540,
         "padding-wallet-box": "more",
