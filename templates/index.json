@@ -6,7 +6,8 @@
         "header": "Phoenix",
         "main-wallet-background": "#ffc0c0",
         "padding-popup-wallet": 40,
-        "position-float-wallet": "left",
+        "position-float-wallet": "right",
+        "vertical-position-float": 4,
         "width-box": 540,
         "padding-wallet-box": "more",
         "shadow-wallet-box": "none",
@@ -300,6 +301,7 @@
     },
     "3b89b44e-4610-4a0d-8bfb-2fcd7ba49f2b": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
