@@ -66,6 +66,16 @@
       ]
     },
     {
+      "type":"range",
+      "id":"horizontal-position-float",
+      "label": "Horizontal position of floating wallet",
+      "min":35,
+      "step": 5,
+      "max": 70,
+      "info": "NOTE: Dimension for floating icon of wallet at center right",
+      "default": 40
+    },
+    {
       "type": "range",
       "id": "width-box",
       "min": 450,
@@ -192,8 +202,8 @@
         cursor: pointer;
         z-index: 98;
     }
-    .smart-wallet.left{ left: 0%; }
-    .smart-wallet.right{ right: 0%; }
+    .smart-wallet.left{ left: 1%; }
+    .smart-wallet.right{ right: 1%; }
     .smart-wallet-popup{
         position: fixed;
         width: 100%;
