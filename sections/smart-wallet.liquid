@@ -67,13 +67,13 @@
     },
     {
       "type":"range",
-      "id":"horizontal-position-float",
-      "label": "Horizontal position of floating wallet",
-      "min":35,
-      "step": 5,
-      "max": 70,
-      "info": "NOTE: Dimension for floating icon of wallet at center right",
-      "default": 40
+      "id":"vertical-position-float",
+      "label": "Vertical position of floating wallet",
+      "min":0,
+      "step": 2,
+      "max": 100,
+      "info": "NOTE: Horizontal adjustment of floating wallet",
+      "default": 2
     },
     {
       "type": "range",
@@ -186,7 +186,7 @@
     }
     .smart-wallet{
         position: fixed;
-        top: 50%;
+        top: {{ section.settings.vertical-position-float }}%;
         right: 10px;
         width: {{ section.settings.padding-popup-wallet }}px;
         height: {{ section.settings.padding-popup-wallet }}px;
