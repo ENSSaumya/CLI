@@ -49,6 +49,23 @@
       "default": 40
     },
     {
+      "type":"select",
+      "id":"position-float-wallet",
+      "label":"Floating Position",
+      "info":"NOTE: Position of floating wallet",
+      "default":"right",
+      "options": [
+        {
+          "value": "left",
+          "label":"left"
+        },
+        {
+          "value":"right",
+          "label": "right"
+        }
+      ]
+    },
+    {
       "type": "range",
       "id": "width-box",
       "min": 450,
@@ -175,6 +192,8 @@
         cursor: pointer;
         z-index: 98;
     }
+    .smart-wallet.left{ left: 0%; }
+    .smart-wallet.right{ right: 0%; }
     .smart-wallet-popup{
         position: fixed;
         width: 100%;
