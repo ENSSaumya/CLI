@@ -1,12 +1,28 @@
 <div class="smart-wallet {{ section.settings.position-float-wallet }}">
-    <span>{{ section.settings.logo-wallet }}</span>
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="30" height="30" viewBox="0 0 200 150" preserveAspectRatio="xMidYMid meet">   
+        <g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+        <path d="M860 1572 c-396 -74 -472 -91 -512 -114 -50 -30 -84 -76 -95 -129 l-6 -33 36 36 c19 20 51 41 69 46 48 16 960 182 995 182 46 0 77 -40 83 -108 l5 -57 49 -3 49 -3 -5 65 c-9 112 -76 193 -166 202 -20 2 -246 -36 -502 -84z"></path>
+        <path d="M355 1356 c-37 -17 -80 -62 -94 -99 -7 -18 -11 -163 -11 -403 0 -348 1 -377 19 -412 23 -46 46 -67 94 -87 31 -13 113 -15 584 -15 511 0 551 2 588 19 87 40 105 82 105 242 l0 119 -138 0 c-185 0 -182 -2 -182 134 0 139 -4 136 178 136 l142 0 0 128 c0 151 -15 190 -89 229 l-44 23 -561 0 c-446 -1 -567 -4 -591 -14z"></path>
+        <path d="M1352 958 c-19 -19 -16 -183 4 -202 23 -24 355 -24 378 0 20 19 23 183 4 202 -17 17 -369 17 -386 0z m297 -82 c16 -20 -3 -56 -29 -56 -26 0 -45 36 -29 56 6 8 19 14 29 14 10 0 23 -6 29 -14z"></path>
+        </g>
+      </svg>
+    </span>
 </div>
 <div class="smart-wallet-popup hide-content">
     <div class="s-w-content {{ section.settings.shadow-wallet-box }} {{ section.settings.padding-wallet-box }}">
         <div class="s-w-cross"><span>&times;</span></div>
         <div class="s-w-balance-box">
             <div class="s-w-balance-head">
-                <span>{{ section.settings.logo-wallet }}</span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="30" height="30" viewBox="0 0 200 150" preserveAspectRatio="xMidYMid meet">   
+                    <g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M860 1572 c-396 -74 -472 -91 -512 -114 -50 -30 -84 -76 -95 -129 l-6 -33 36 36 c19 20 51 41 69 46 48 16 960 182 995 182 46 0 77 -40 83 -108 l5 -57 49 -3 49 -3 -5 65 c-9 112 -76 193 -166 202 -20 2 -246 -36 -502 -84z"></path>
+                    <path d="M355 1356 c-37 -17 -80 -62 -94 -99 -7 -18 -11 -163 -11 -403 0 -348 1 -377 19 -412 23 -46 46 -67 94 -87 31 -13 113 -15 584 -15 511 0 551 2 588 19 87 40 105 82 105 242 l0 119 -138 0 c-185 0 -182 -2 -182 134 0 139 -4 136 178 136 l142 0 0 128 c0 151 -15 190 -89 229 l-44 23 -561 0 c-446 -1 -567 -4 -591 -14z"></path>
+                    <path d="M1352 958 c-19 -19 -16 -183 4 -202 23 -24 355 -24 378 0 20 19 23 183 4 202 -17 17 -369 17 -386 0z m297 -82 c16 -20 -3 -56 -29 -56 -26 0 -45 36 -29 56 6 8 19 14 29 14 10 0 23 -6 29 -14z"></path>
+                    </g>
+                  </svg>
+                </span>
                 <span>{{ section.settings.text-for-content }}</span>
             </div>
             <p class="s-w-balance-price">Rs. 0</p>
@@ -36,7 +52,8 @@
       "type": "color",
       "id":"main-wallet-background",
       "label": "Floating Wallet Background Color",
-      "info": "NOTE: Change the background color of wallet popup."
+      "info": "NOTE: Change the background color of wallet popup.",
+      "default":"#FFA500"
     },
     {
       "type":"range",
@@ -131,27 +148,26 @@
     {
       "type":"color",
       "id":"content-background-color",
-      "label": "Background of Wallet content"
+      "label": "Background of Wallet content",
+      "default":"#F1F1F1"
     },
     {
       "type":"text",
       "id":"text-for-content",
-      "label":"Text for Content"
-    },
-    {
-      "type":"html",
-      "id":"logo-wallet",
-      "label":"Icon of Wallet"
+      "label":"Text for Content",
+      "default":"Balance:"
     },
     {
       "type":"color",
       "id":"background-amount",
-      "label":"Background of Amount"
+      "label":"Background of Amount",
+      "default":"#FFA500"
     },
     {
       "type":"text_alignment",
       "id":"alignment-btn",
-      "label":"Alignment of button"
+      "label":"Alignment of button",
+      "default":"left"
     },
     {
       "type":"range",
