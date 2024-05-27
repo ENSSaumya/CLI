@@ -309,7 +309,7 @@
 </style>
 
 <script>
-    / open popup /
+    /* open popup */
     const smart_wallet = document.querySelector('.smart-wallet')
     if(smart_wallet){
         smart_wallet.addEventListener('click',function(){
@@ -317,7 +317,7 @@
         })
     }
 
-    / close popup /
+    /* close popup */
     const cross = document.querySelector('.s-w-cross span')
     if(cross){
         cross.addEventListener('click',function(e){
@@ -326,7 +326,7 @@
         })
     }
 
-    / close popup on click outside the popup div /
+    /* close popup on click outside the popup div */
     const smart_wallet_popup = document.querySelector('.smart-wallet-popup')
     if(smart_wallet_popup){
         smart_wallet_popup.addEventListener('click',function(e){
@@ -338,7 +338,7 @@
         })
     }
 
-    / add money to wallet /
+    /* add money to wallet */
     const add_amount = document.querySelector('#s-w-add-amount')
     let isCustomer = ''
     if(add_amount){
@@ -388,7 +388,7 @@
         })
     }
 
-    / get money from wallet /
+    /* get money from wallet */
     (function(){
         const requestOptions = {
             method: "get",
@@ -424,7 +424,7 @@
             checkout_button.parentElement.after(use_wallet)
         }
 
-        / click to use-button /
+        /* click to use-button */
         const use_wallet = document.querySelector('.use-wallet')
         if(use_wallet){
             use_wallet.addEventListener('click',function(){
