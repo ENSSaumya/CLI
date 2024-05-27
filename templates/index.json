@@ -4,7 +4,7 @@
       "type": "smart-wallet",
       "settings": {
         "header": "Phoenix",
-        "main-wallet-background": "#ffc0c0",
+        "main-wallet-background": "#ffa500",
         "padding-popup-wallet": 40,
         "position-float-wallet": "right",
         "vertical-position-float": 50,
