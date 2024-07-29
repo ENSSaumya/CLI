@@ -69,6 +69,7 @@
   })
   .then(val => {
     var sections = val.sections;
+    console.log('sections',sections)
     var oldCartDrawer = document.querySelector("#CartDrawer");
     var oldCartIcon = document.querySelector("#cart-icon-bubble");
     var newCartDrawer = new DOMParser().parseFromString(sections['cart-drawer'], 'text/html')?.querySelector("#CartDrawer")?.innerHTML;
